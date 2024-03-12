@@ -8,11 +8,11 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.353">
+  <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="David Schweizer">
-  <meta name="dcterms.date" content="2023-10-11">
-  <title>Applied Methods of Social Sciences - Course Website - Intro Session</title>
+  <meta name="dcterms.date" content="2024-03-13">
+  <title>Statistics - Course Website - Intro Session</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,6 +30,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -340,10 +405,14 @@ David Schweizer
     </div>
 </div>
 
-  <p class="date">October 11, 2023</p>
+  <p class="date">March 13, 2024</p>
 </section>
 <section id="plan-for-today" class="slide level2">
 <h2>Plan for today</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Session 01</a></li><li><a href="#tabset-1-2">Break</a></li><li><a href="#tabset-1-3">Session 02</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
 <ul>
 <li>Introduction round: Getting to know each other</li>
 <li>Course content and schedule</li>
@@ -351,27 +420,48 @@ David Schweizer
 <li>My expectations &amp; course requirements</li>
 <li>Motivation for the course</li>
 </ul>
+</div>
+<div id="tabset-1-2">
+<p>⏸️ <strong>15 minute break:</strong> Get some fresh air, a coffee, …</p>
+</div>
+<div id="tabset-1-3">
+<ul>
+<li><strong>Input</strong>
+<ul>
+<li><p>R, R Studio, and basics</p></li>
+<li><p>Data types &amp; formats</p></li>
+<li><p>How to deal with objects</p></li>
+</ul></li>
+<li><strong>Your turn</strong>!</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section>
+<section id="session-01-1" class="title-slide slide level1 center">
+<h1>Session 01</h1>
+
 </section>
 <section id="introduction-round" class="slide level2">
 <h2>Introduction round</h2>
 <ul>
 <li><p>I’ll go first. A few words about me</p></li>
-<li><p>You’re next. <em>Breakout rooms: Groups of 3-4</em></p>
+<li><p>You’re next. Groups of 3-4</p>
 <ul>
 <li>Introduce yourselves to your classmates</li>
-<li>What is your name? Where are you from? What do you study? Why Innsbruck? Did you pick up a new hobby recently?</li>
+<li>What is your name? Where are you from? What do you study? Did you pick up a new hobby recently?</li>
 </ul></li>
-<li><p><em>Back to the plenum</em></p>
+<li><p>Plenum</p>
 <ul>
-<li>In a few sentences, introduce someone of your group to the plenum</li>
+<li>In a few sentences, present yourself to the plenum and tell the others one thing about the person you just met</li>
 </ul></li>
 </ul>
 </section>
 <section id="about-me" class="slide level2">
 <h2>About me</h2>
 <ul>
-<li><p>PhD candidate in Political Science &amp; research associate at the University of Mannheim</p></li>
-<li><p>External lecturer at University of Innsbruck since this semester</p></li>
+<li><p>PhD candidate in Political Science at the CDSS and research associate at the Chair of Comparative Government since fall 2021</p></li>
 <li><p>Focus on party competition and intra-party politics</p></li>
 <li><p>Academic Background:</p>
 <ul>
@@ -380,198 +470,117 @@ David Schweizer
 </ul></li>
 <li><p>New hobby: mountaineering</p></li>
 </ul>
-</section>
+</section></section>
+<section>
 <section id="your-turn" class="title-slide slide level1 center">
 <h1>Your turn</h1>
-<p><em>Breakout rooms</em></p>
-</section>
 
-<section>
-<section id="introduce-your-group" class="title-slide slide level1 center">
-<h1>Introduce your group</h1>
-<p><em>In the plenum</em></p>
 </section>
-<section id="applied-methods" class="slide level2">
-<h2>Applied methods?</h2>
-<iframe src="https://app.sli.do/event/tn95QeYqrXg3nk7PxeziKW" height="100%" width="100%" frameborder="0" style="min-height: 560px;" title="Slido">
+<section id="experience-interests" class="slide level2">
+<h2>Experience &amp; Interests</h2>
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;">
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" height="315" src="https://www.mentimeter.com/app/presentation/alo7jy33sb4wytua852irx92w2pcq3fs/embed" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="420">
 </iframe>
+</div>
 </section>
-<section id="learning-outcome" class="slide level2">
-<h2>Learning outcome</h2>
-<p><strong><em>From research idea to presenting results</em></strong></p>
+<section id="schedule-content" class="slide level2">
+<h2>Schedule &amp; Content</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Intro</a></li><li><a href="#tabset-2-2">Block I</a></li><li><a href="#tabset-2-3">Block II</a></li><li><a href="#tabset-2-4">Block III</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
 <ul>
-<li><p>Finding a research question</p></li>
-<li><p>How to conduct a literature review</p></li>
-<li><p>Building theory</p></li>
-<li><p>What is a suitable research design?</p></li>
-<li><p>Collecting &amp; analyzing data</p></li>
-<li><p>Presenting your results</p></li>
+<li>Session 01 - 13.03.2024 - Intro Session</li>
+<li>Session 02 - 13.03.2024 - Intro to R</li>
 </ul>
-<p>And: critically engaging with empirical research</p>
-</section>
-<section id="schedule-i" class="slide level2">
-<h2>Schedule I</h2>
-<table>
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 58%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Session</td>
-<td>Date</td>
-<td>Topic</td>
-</tr>
-<tr class="even">
-<td>1</td>
-<td>11.10.2023</td>
-<td>Intro Session</td>
-</tr>
-<tr class="odd">
-<td>2</td>
-<td>18.10.2023</td>
-<td>The logic of social science research &amp; Finding a research question</td>
-</tr>
-<tr class="even">
-<td>3</td>
-<td>25.10.2023</td>
-<td>Literature review &amp; Building theory</td>
-</tr>
-<tr class="odd">
-<td>4</td>
-<td>01.11.2023</td>
-<td>No session due to public holiday</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="schedule-ii" class="slide level2">
-<h2>Schedule II</h2>
-<table>
-<colgroup>
-<col style="width: 12%">
-<col style="width: 16%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Session</td>
-<td>Date</td>
-<td>Topic</td>
-</tr>
-<tr class="even">
-<td>5</td>
-<td>08.11.2023</td>
-<td>Formulating hypotheses &amp; Research Design</td>
-</tr>
-<tr class="odd">
-<td>6</td>
-<td>15.11.2023</td>
-<td>Measurements &amp; Data collection</td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td>22.11.2023</td>
-<td>Data visualization &amp; How to present your results</td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td>29.11.2023</td>
-<td>Student presentations</td>
-</tr>
-<tr class="even">
-<td>9</td>
-<td>06.12.2023</td>
-<td>Closing session</td>
-</tr>
-</tbody>
-</table>
+</div>
+<div id="tabset-2-2">
+<p><strong>Block I: Data science workflow</strong></p>
+<ul>
+<li><p>Session 03 - 20.03.2024 - Import, tidy, and transform</p></li>
+<li><p>Session 04 - 20.03.2024 - Import, tidy, and transform</p></li>
+</ul>
+<p><em>Easter Break: No sessions on 27.03. and 03.04.2024</em></p>
+<ul>
+<li><p>Session 05 - 10.04.2024 - Visualize</p></li>
+<li><p>Session 06 - 10.04.2024 - Communicate</p></li>
+</ul>
+</div>
+<div id="tabset-2-3">
+<p><strong>Block II: Descriptives &amp; Inference</strong></p>
+<ul>
+<li><p>Session 07 - 17.04.2024 - Descriptives</p></li>
+<li><p>Session 08 - 17.04.2024 - Descriptives</p></li>
+<li><p>Session 09 - 24.04.2024 - Inference</p></li>
+<li><p>Session 10- 24.04.2024 - Inference</p></li>
+</ul>
+<p><em>National holiday: No session on 01.05.2024</em></p>
+</div>
+<div id="tabset-2-4">
+<p><strong>Block III: Hackathon and Closing</strong></p>
+<ul>
+<li><p>Session 11 - 08.05.2024 - Hackathon</p></li>
+<li><p>Session 12 - 08.05.2024 - Hackathon</p></li>
+<li><p>Session 13 - 15.05.2024 - Closing Session</p></li>
+</ul>
+</div>
+</div>
+</div>
 </section>
 <section id="your-expectations" class="slide level2">
 <h2>Your expectations</h2>
-<iframe src="https://app.sli.do/event/tn95QeYqrXg3nk7PxeziKW" height="100%" width="100%" frameborder="0" style="min-height: 560px;" title="Slido">
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;">
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" height="315" src="https://www.mentimeter.com/app/presentation/altwc2tk4gnet26g612gkm3ecju2evpp/embed" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="420">
 </iframe>
+</div>
 </section>
-<section id="any-concerns" class="slide level2">
-<h2>Any concerns?</h2>
-<iframe src="https://app.sli.do/event/tn95QeYqrXg3nk7PxeziKW" height="100%" width="100%" frameborder="0" style="min-height: 560px;" title="Slido">
-</iframe>
-</section>
-<section id="my-plan-expectations" class="slide level2">
-<h2>My plan &amp; expectations</h2>
+<section id="plan-expectations" class="slide level2">
+<h2>Plan &amp; expectations</h2>
 <ul>
-<li><p>We are a relatively small class. Great!</p></li>
-<li><p>Mix of lecture-style input, live coding, group exercises, and discussion.</p></li>
-<li><p>Dense schedule: Active participation in class and preparation is needed!</p></li>
-<li><p>Willingness to invest time to learn a (new) programming language, look for solutions on your own, and keep trying</p></li>
+<li><p>We are a large group. Therefore, there might be changes to the schedule and/or content during the semester.</p></li>
+<li><p>Mix of short lecture-style input &amp; (group) coding</p></li>
+<li><p>Relying on inverted classroom elements. Requires active preparation of materials and participation during the sessions.</p></li>
+<li><p>Willingness to invest time to learn a (new) programming language, look for solutions on your own, and keep trying!</p></li>
 </ul>
-</section>
-<section id="course-requirements" class="slide level2">
-<h2>Course requirements</h2>
-<div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Active participation</a></li><li><a href="#tabset-1-2">Presentation</a></li><li><a href="#tabset-1-3">Term paper</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1">
-<p>By active participation I mean:</p>
-<ul>
-<li><p>Critically engaging with the assigned readings for each session</p></li>
-<li><p>Working on little assignments throughout the semester (e.g., think of a research question)</p></li>
-<li><p>Actively participating in discussions during our weekly meetings</p></li>
-</ul>
-</div>
-<div id="tabset-1-2">
-<ul>
-<li><p>You will present in groups of 2-3 research ideas and designs towards the end of the semester. We will form groups during the semester</p></li>
-<li><p>Each presentation should last around 15 minutes</p></li>
-<li><p>We will then actively discuss each presentation. We will assign discussants beforehand</p></li>
-</ul>
-</div>
-<div id="tabset-1-3">
-<ul>
-<li><p>~1500 words (excluding cover page and references)</p></li>
-<li><p>It should include:</p>
-<ul>
-<li><p>Introduction (Question and its relevance)</p></li>
-<li><p>Short literature review</p></li>
-<li><p>Theory and research design</p></li>
-<li><p>(Simple data analysis)</p></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
 </section>
 <section id="organisation-resources" class="slide level2">
 <h2>Organisation &amp; Resources</h2>
 <ul>
-<li><p>Materials will be provided via the course website (and OLAT)</p></li>
-<li><p>Communication primarily via Slack. However, make sure that you have access to the course on OLAT and that emails that are sent over OLAT are forwarded to the email account you check regularly</p></li>
-<li><p>Weekly office hours after the seminar (online!). Please make an appointment via e-mail</p></li>
-<li><p>Access to Datacamp (Online learning platform for programming languages and more)</p></li>
+<li><p>Materials will be provided via the course website (links to OLAT).</p></li>
+<li><p>Communication via OLAT: Messages and forum. Make sure that you have access to the course on OLAT and that e-mails that are sent over OLAT are forwarded to the e-mail account you check regularly</p></li>
+<li><p>Weekly office hours after the course. Please make an appointment via e-mail.</p></li>
+<li><p>Access to Datacamp (Online learning platform for programming languages and more) after the Hackathon.</p></li>
 </ul>
 </section>
-<section id="primary-readings" class="slide level2">
-<h2>Primary readings</h2>
+<section id="course-requirements" class="slide level2">
+<h2>Course requirements</h2>
 <ul>
-<li><p>Kellstedt, P. M., &amp; Whitten, G. D. (2018).&nbsp;<em>The fundamentals of political science research</em>. Cambridge University Press.</p></li>
-<li><p>King, G., Keohane, R. O., &amp; Verba, S. (1994).&nbsp;<em>Designing social inquiry: Scientific inference in qualitative research</em>. Princeton University Press.</p></li>
-<li><p>Powner, L. C. (2015). <em>Empirical Research and Writing: A Political Science Student’s Practical Guide</em>. Los Angeles: Sage.</p></li>
+<li><p><em>Active preparation and participation</em> during sessions</p></li>
+<li><p><em>3 (smaller)</em> <em>assignments</em> during the semester (20% of your grade)</p>
+<ul>
+<li><p>From 20.03.24 11:15 until 08.04.24 18:00</p></li>
+<li><p>From 10.04.24 11:15 until 15.04.24 18:00</p></li>
+<li><p>From 24.04.24 11:15 until 06.05.24 18:00</p></li>
+</ul></li>
 </ul>
-<p>I will provide you the readings via OLAT.</p>
+<!-- -->
+<ul>
+<li><p>Participation in the <em>Hackathon</em> on 08.05.24 (pass/fail)</p></li>
+<li><p><em>Final project</em> <strong>until TBD</strong> (80% of your grade)</p></li>
+</ul>
 </section>
 <section id="important" class="slide level2">
 <h2>Important!</h2>
 <div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Disabilities</a></li><li><a href="#tabset-2-2">Support</a></li></ul>
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Disabilities</a></li><li><a href="#tabset-3-2">Support</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1">
+<div id="tabset-3-1">
 <ul>
 <li><p>Please contact me or the Office of Student Affairs if you need special assistance due to disabilities or chronic illnesses.</p></li>
 <li><p>And please do this early in the semester so that we can make the appropriate arrangements immediately.</p></li>
 </ul>
 </div>
-<div id="tabset-2-2">
+<div id="tabset-3-2">
 <ul>
 <li>Of course, you can always talk directly to me if you feel comfortable with the question. It is important to note that the <a href="https://www.uibk.ac.at/gleichbehandlung/belaestigung/ansprechpersonen.html">University’s Office for Equality and Gender Studies</a> supports and advises you in cases of discrimination or sexual harassment. Further, you can rely on the <a href="https://www.studierendenberatung.at/en">psychological counseling</a> offered by the university.</li>
 </ul>
@@ -579,23 +588,27 @@ David Schweizer
 </div>
 </div>
 </section>
-<section id="motivation-for-the-seminar" class="slide level2">
-<h2>Motivation for the seminar</h2>
-<p><strong><em>From research idea to presenting results</em></strong></p>
-<p>Meeting the learning outcome means that you are on a great way</p>
+<section id="motivation" class="slide level2">
+<h2>Motivation</h2>
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;">
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" height="315" src="https://www.mentimeter.com/app/presentation/alzxymc3t116b7hjafgmase6fpbg85fp/embed" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="420">
+</iframe>
+</div>
+</section>
+<section id="motivation-1" class="slide level2">
+<h2>Motivation</h2>
 <ul>
-<li><p>to conduct (quantitative) social science research yourself,</p></li>
-<li><p>to present your research,</p></li>
-<li><p>and to understand and evaluate research from others.</p></li>
+<li><p>The course will provide students with skills in quantitative methods for investigating key political science topics and illustrate these methods with practical examples.</p></li>
+<li><p>Participants will learn to carry out empirical analyses independently using the statistical software R. No prior knowledge of R is required.</p></li>
+<li><p>Taking this course should not be an end in itself!</p></li>
 </ul>
-<p>The tools you learn this semester will set you up for success during your Bachelor (and possibly your Master)! 🚀</p>
 </section>
 <section id="why-r" class="slide level2">
 <h2>Why R?</h2>
 <div class="panel-tabset">
-<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Benefits</a></li><li><a href="#tabset-3-2">Learning</a></li><li><a href="#tabset-3-3">Reward</a></li><li><a href="#tabset-3-4">Opportunity</a></li></ul>
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Benefits</a></li><li><a href="#tabset-4-2">Learning</a></li><li><a href="#tabset-4-3">Reward</a></li><li><a href="#tabset-4-4">Opportunity</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1">
+<div id="tabset-4-1">
 <ul>
 <li><p>Versatile: Visualizations, statistical analysis, programming, incorporation of other programming languages</p></li>
 <li><p>Free and open source</p>
@@ -605,21 +618,21 @@ David Schweizer
 <li><p>Increasing popularity in academia &amp; industry</p></li>
 </ul>
 </div>
-<div id="tabset-3-2">
+<div id="tabset-4-2">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://devhumor.com/media/trying-to-learn-any-programming-language-100"><img data-src="LearningR.png"></a></p>
 </figure>
 </div>
 </div>
-<div id="tabset-3-3">
+<div id="tabset-4-3">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://bbc.github.io/rcookbook/"><img data-src="nicegraphs.png" width="1440"></a></p>
 </figure>
 </div>
 </div>
-<div id="tabset-3-4">
+<div id="tabset-4-4">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://vac-lshtm.shinyapps.io/ncov_tracker/"><img data-src="shinyapp.png" width="1699"></a></p>
@@ -628,41 +641,603 @@ David Schweizer
 </div>
 </div>
 </div>
+</section></section>
+<section id="minute-break" class="title-slide slide level1 center">
+<h1>⏸️ 15 minute break</h1>
+
+</section>
+
+<section>
+<section id="session-02-1" class="title-slide slide level1 center">
+<h1>▶️ Session 02</h1>
+
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:15%;">
+<p><img data-src="R_logo.svg.png" width="70" height="56"></p>
+</div><div class="column" style="width:85%;">
+<ul>
+<li><p><em>R is a language and environment for statistical computing and graphics.</em> <a href="https://www.r-project.org/about.html">Click here for more info</a></p></li>
+<li><p>We refer to the basic functionalities of R as <em>base R</em></p></li>
+<li><p>We can extend these installing <em>R packages</em> from <a href="https://cran.r-project.org/"><em>CRAN</em></a> <em>(The Comprehensive R Archive Network).</em> For example, the <em>tidyverse.</em> This allows us to simplify the data analysis workflow.</p></li>
+<li><p>BUT: It comes with a limited GUI (Graphical User Interface)</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="r-gui" class="slide level2">
+<h2>R GUI</h2>
+
+<img data-src="R_GUI.jpg" class="r-stretch"></section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:15%;">
+<p><img data-src="RStudio-Logo-Flat.png" width="150"></p>
+</div><div class="column" style="width:85%;">
+<ul>
+<li><p>RStudio is the most popular <em>IDE (Integretated Development Environment)</em> for R.</p>
+<ul>
+<li>IDEs enable syntax highlighting, auto-completion, or a better overview our created output.</li>
+</ul></li>
+<li><p>Beyond these general benefits, R Studio provides us with</p>
+<ul>
+<li><p>an integration of version control via <em>Git</em> and addins such as <a href="https://github.com/crsh/citr">citr</a> or <a href="https://styler.r-lib.org/"><em>styler</em></a></p></li>
+<li><p>interfaces to other programming languages (e.g., Python via the <em>reticulate</em> package)</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="r-studio-interface" class="slide level2">
+<h2>R Studio Interface</h2>
+
+<img data-src="RStudio_IDE.jpg" class="r-stretch"></section>
+<section id="r-studio---script-editor" class="slide level2">
+<h2>R Studio - Script editor</h2>
+
+<img data-src="ide1.png" class="r-stretch"></section>
+<section id="r-studio---console" class="slide level2">
+<h2>R Studio - Console</h2>
+
+<img data-src="ide3.png" class="r-stretch"></section>
+<section id="r-studio---environment" class="slide level2">
+<h2>R Studio - Environment</h2>
+
+<img data-src="ide2.png" class="r-stretch"></section>
+<section id="r-studio---files-plots-help" class="slide level2">
+<h2>R Studio - Files, Plots, Help, …</h2>
+
+<img data-src="ide4.png" class="r-stretch"></section>
+<section id="r-studio---options" class="slide level2">
+<h2>R Studio - Options</h2>
+
+<img data-src="Rstudio_global.jpg" class="r-stretch"></section></section>
+<section>
+<section id="r-basics" class="title-slide slide level1 center">
+<h1>R Basics</h1>
+
+</section>
+<section id="using-r-as-a-calculator" class="slide level2">
+<h2>Using R as a calculator</h2>
+<p>The simplest application is to use R as a calculator:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="dv">1</span> <span class="sc">/</span> <span class="dv">10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="dv">2</span> <span class="sc">*</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4</code></pre>
+</div>
+</div>
+</section>
+<section id="commenting-code" class="slide level2">
+<h2>Commenting code</h2>
+<p>We can comment our code using the <strong>#</strong>. Input thereafter will not be executed as code.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Addition</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="dv">2</span> <span class="sc">*</span> <span class="dv">2</span> <span class="co"># 2 times 2 should equal four</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4</code></pre>
+</div>
+</div>
+<p>Typically, we want to comment our code extensively for replicability and reusability.</p>
+</section>
+<section id="functions" class="slide level2">
+<h2>Functions</h2>
+<p>Functions are essential for our workflow in R. They take input(s) as argument, and produce output(s) depending on the input.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">sqrt</span>(<span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10</code></pre>
+</div>
+</div>
+</section>
+<section id="objects-i" class="slide level2">
+<h2>Objects I</h2>
+<p>R is an object-oriented programming language.</p>
+<ul>
+<li><p>Therefore, we can store single values, multiple values, character strings, etc. in an object.</p></li>
+<li><p>We can <em>assign</em> a single value to an object using the assignment operator <strong>&lt;-</strong></p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="co"># here we assign the numeric value 10 to the object x:</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>x <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a></span>
+<span id="cb13-4"><a href="#cb13-4"></a><span class="co"># we can do the same for a character string:</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a>y <span class="ot">&lt;-</span> <span class="st">"This is a character string"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="objects-ii" class="slide level2">
+<h2>Objects II</h2>
+<p>We can also store the output of functions in objects:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># here, we calculate the square root of 100 </span></span>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="co"># and store it in a object called "result"</span></span>
+<span id="cb14-3"><a href="#cb14-3"></a>result <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Further, we can also do calculations with objects:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="co"># here we add our two objects and store the result in z</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a>z <span class="ot">&lt;-</span> x <span class="sc">+</span> result</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Finally, we can print the object to the console by typing its name:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># z should print the number 20 (10 + sqrt(10))</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a>z</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 20</code></pre>
+</div>
+</div>
+</section>
+<section id="packages" class="slide level2">
+<h2>Packages</h2>
+<ul>
+<li><p>Packages allow us to go beyond <em>base R</em> functionalities.</p></li>
+<li><p>They consist of various functions that simplify tasks and provide documentation.</p></li>
+</ul>
+<!-- -->
+<ul>
+<li>We can install packages from within R via <a href="https://cran.r-project.org/"><em>CRAN</em></a><em>:</em></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="co"># we need to install packages only once:</span></span>
+<span id="cb18-2"><a href="#cb18-2"></a><span class="fu">install.packages</span>(<span class="st">"stringr"</span>)</span>
+<span id="cb18-3"><a href="#cb18-3"></a></span>
+<span id="cb18-4"><a href="#cb18-4"></a><span class="co"># however, we need to load the package every time we (re-)start R</span></span>
+<span id="cb18-5"><a href="#cb18-5"></a><span class="fu">library</span>(stringr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="example-stringr" class="slide level2">
+<h2>Example: stringr</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="co"># lets load the stringr package:</span></span>
+<span id="cb19-2"><a href="#cb19-2"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb19-3"><a href="#cb19-3"></a></span>
+<span id="cb19-4"><a href="#cb19-4"></a><span class="co"># using the help() function, we can inspect the documentation</span></span>
+<span id="cb19-5"><a href="#cb19-5"></a><span class="fu">help</span>(stringr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<p><img data-src="stringr.jpg" width="900"></p>
+</div>
+</section>
+<section id="example-stringr-1" class="slide level2">
+<h2>Example: stringr</h2>
+<p>The <em>stringr</em> package provides us with multiple functions to manipulate strings.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="co"># as an example, we create a fictitious actor ID from the Twitter API</span></span>
+<span id="cb20-2"><a href="#cb20-2"></a>string <span class="ot">&lt;-</span> <span class="st">"id:twitter.com:207584738373"</span></span>
+<span id="cb20-3"><a href="#cb20-3"></a></span>
+<span id="cb20-4"><a href="#cb20-4"></a><span class="co"># to match this ID with meta data, we only want to keep the numbers</span></span>
+<span id="cb20-5"><a href="#cb20-5"></a><span class="co"># we can make use of the function str_replace()</span></span>
+<span id="cb20-6"><a href="#cb20-6"></a><span class="co"># It needs these arguments: str_replace(string, pattern, replacement)</span></span>
+<span id="cb20-7"><a href="#cb20-7"></a>clean_ID <span class="ot">&lt;-</span> <span class="fu">str_replace</span>(string, <span class="st">"id:twitter.com:"</span>, <span class="st">""</span>)</span>
+<span id="cb20-8"><a href="#cb20-8"></a></span>
+<span id="cb20-9"><a href="#cb20-9"></a><span class="co"># let's check if it worked:</span></span>
+<span id="cb20-10"><a href="#cb20-10"></a>clean_ID</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "207584738373"</code></pre>
+</div>
+</div>
+</section>
+<section id="tidyverse" class="slide level2">
+<h2>tidyverse</h2>
+
+<img data-src="tidyverse.jpg" class="r-stretch quarto-figure-center"></section>
+<section id="tidyverse-vs.-base-r" class="slide level2">
+<h2>tidyverse vs.&nbsp;base R</h2>
+<p>The tidyverse has become very popular among R users. It provides:</p>
+<ul>
+<li><p>clean and tidy code (readability)</p></li>
+<li><p>functions for typical data science tasks</p></li>
+<li><p>a coherent “grammar”</p></li>
+</ul>
+<p>BUT: it also introduces dependencies, and packages evolve.</p>
+</section>
+<section id="develop-your-own-coding-style" class="slide level2">
+<h2>Develop your own coding style</h2>
+
+<img data-src="Bild2.png" class="r-stretch"></section></section>
+<section>
+<section id="data-types-formats" class="title-slide slide level1 center">
+<h1>Data types &amp; formats</h1>
+
+</section>
+<section id="it-all-depends-on-how" class="slide level2">
+<h2>It all depends on how</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">how &amp;</a></li><li><a href="#tabset-5-2">where data is stored</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<p>How: data types</p>
+<ul>
+<li><p>Numeric values (integers &amp; doubles)</p></li>
+<li><p>Character strings</p></li>
+<li><p>Logical values</p></li>
+<li><p>Factors</p></li>
+<li><p>…</p></li>
+</ul>
+</div>
+<div id="tabset-5-2">
+<p>Where: data formats</p>
+<ul>
+<li><p>Vectors</p></li>
+<li><p>Data frames/Tibbles</p></li>
+<li><p>Lists</p></li>
+<li><p>…</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="numeric-values" class="slide level2">
+<h2>Numeric values</h2>
+<p>There are two types in R: <em>Integers</em> (numbers without a decimal values) and <em>doubles</em> (numbers with decimal values)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="co"># We place an L behind the value to be specific that it is an integer</span></span>
+<span id="cb22-2"><a href="#cb22-2"></a>x <span class="ot">&lt;-</span> 10L</span>
+<span id="cb22-3"><a href="#cb22-3"></a></span>
+<span id="cb22-4"><a href="#cb22-4"></a><span class="co"># using the typeof() function we can check the data type</span></span>
+<span id="cb22-5"><a href="#cb22-5"></a><span class="fu">typeof</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "integer"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="co"># create a double</span></span>
+<span id="cb24-2"><a href="#cb24-2"></a>z <span class="ot">&lt;-</span> <span class="fl">10.55</span></span>
+<span id="cb24-3"><a href="#cb24-3"></a></span>
+<span id="cb24-4"><a href="#cb24-4"></a><span class="co"># check data type</span></span>
+<span id="cb24-5"><a href="#cb24-5"></a><span class="fu">typeof</span>(z)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "double"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="co"># is x numeric?</span></span>
+<span id="cb26-2"><a href="#cb26-2"></a><span class="fu">is.numeric</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+</section>
+<section id="character-strings" class="slide level2">
+<h2>Character strings</h2>
+<p>A string represents a series of characters. Numbers and/or symbols can also be part of a string.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="co"># we need to wrap the string into quotation marks</span></span>
+<span id="cb28-2"><a href="#cb28-2"></a></span>
+<span id="cb28-3"><a href="#cb28-3"></a>string <span class="ot">&lt;-</span> <span class="st">"Hello"</span></span>
+<span id="cb28-4"><a href="#cb28-4"></a></span>
+<span id="cb28-5"><a href="#cb28-5"></a><span class="co"># we can check the type using class()</span></span>
+<span id="cb28-6"><a href="#cb28-6"></a><span class="fu">class</span>(string)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="co"># an example with numbers</span></span>
+<span id="cb30-2"><a href="#cb30-2"></a>ID <span class="ot">&lt;-</span> <span class="st">"id:twitter.com:207584738373"</span></span>
+<span id="cb30-3"><a href="#cb30-3"></a></span>
+<span id="cb30-4"><a href="#cb30-4"></a><span class="co"># check again</span></span>
+<span id="cb30-5"><a href="#cb30-5"></a><span class="fu">class</span>(string)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+</div>
+</section>
+<section id="factors" class="slide level2">
+<h2>Factors</h2>
+<p>We call data types that assume that their values are not continuous and have distinct categories factors.</p>
+<p>Factors take numeric values or character strings as input and convert them into so-called levels:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="co"># let's create an factor:</span></span>
+<span id="cb32-2"><a href="#cb32-2"></a><span class="fu">factor</span>(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1
+Levels: 1</code></pre>
+</div>
+</div>
+</section>
+<section id="logical-values" class="slide level2">
+<h2>Logical values</h2>
+<p>They are either <em>TRUE</em> or <em>FALSE</em> (and also called Boolean values). We produce them by making logical requests:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="dv">1</span> <span class="sc">&gt;</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+<p>We can also store logical values is objects:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a>logical <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">&gt;</span> <span class="dv">2</span></span>
+<span id="cb36-2"><a href="#cb36-2"></a></span>
+<span id="cb36-3"><a href="#cb36-3"></a>logical</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+</section>
+<section id="logical-operators" class="slide level2">
+<h2>Logical operators</h2>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Relational</a></li><li><a href="#tabset-6-2">Logical</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<ul>
+<li><p><code>&lt;</code> less than</p></li>
+<li><p><code>&lt;=</code> less than or equal to</p></li>
+<li><p><code>&gt;</code> greater than</p></li>
+<li><p><code>&gt;=</code> greater than or equal to</p></li>
+<li><p><code>==</code> exactly equal to</p></li>
+<li><p><code>!=</code> not equal to</p></li>
+</ul>
+</div>
+<div id="tabset-6-2">
+<ul>
+<li><p>&amp; (AND)</p></li>
+<li><p>| (OR)</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="data-formats" class="slide level2">
+<h2>Data formats</h2>
+
+<img data-src="formats.jpg" class="r-stretch quarto-figure-center"></section>
+<section id="vector" class="slide level2">
+<h2>Vector</h2>
+<p>We can create vectors by combining individual objects with the function <em>c()</em> (“concatenating”):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a><span class="co"># This works for numbers</span></span>
+<span id="cb38-2"><a href="#cb38-2"></a>numeric_vector <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb38-3"><a href="#cb38-3"></a></span>
+<span id="cb38-4"><a href="#cb38-4"></a>numeric_vector</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 2 3</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a><span class="co"># ... for characters</span></span>
+<span id="cb40-2"><a href="#cb40-2"></a>character_vector <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"CDU"</span>, <span class="st">"CSU"</span>, <span class="st">"SPD"</span>)</span>
+<span id="cb40-3"><a href="#cb40-3"></a></span>
+<span id="cb40-4"><a href="#cb40-4"></a>character_vector</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "CDU" "CSU" "SPD"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1"></a><span class="co"># and for logical values</span></span>
+<span id="cb42-2"><a href="#cb42-2"></a>logical_vector <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>)</span>
+<span id="cb42-3"><a href="#cb42-3"></a></span>
+<span id="cb42-4"><a href="#cb42-4"></a>logical_vector</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  TRUE FALSE FALSE</code></pre>
+</div>
+</div>
+</section>
+<section id="data-frames" class="slide level2">
+<h2>Data frames</h2>
+<p>They are comparable to data sets as in Stata or SPSS</p>
+<ul>
+<li><p>with n rows and k columns</p></li>
+<li><p>and allow us to store variables of different classes.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1"></a><span class="co"># we create a data frame called df </span></span>
+<span id="cb44-2"><a href="#cb44-2"></a><span class="co"># using the function "data.frame()</span></span>
+<span id="cb44-3"><a href="#cb44-3"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb44-4"><a href="#cb44-4"></a>  <span class="at">party =</span> <span class="fu">c</span>(<span class="st">"CDU"</span>, <span class="st">"CSU"</span>, <span class="st">"SPD"</span>),</span>
+<span id="cb44-5"><a href="#cb44-5"></a>  <span class="at">vote_share =</span> <span class="fu">c</span>(<span class="st">"27"</span>, <span class="st">"5"</span>, <span class="st">"13"</span>)</span>
+<span id="cb44-6"><a href="#cb44-6"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  party vote_share
+1   CDU         27
+2   CSU          5
+3   SPD         13</code></pre>
+</div>
+</div>
+</section>
+<section id="data-frames-1" class="slide level2">
+<h2>Data frames</h2>
+<p>We can also check the dimensions, number of observations, and number of variables:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a><span class="co"># dimensions</span></span>
+<span id="cb47-2"><a href="#cb47-2"></a><span class="fu">dim</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3 2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1"></a><span class="co"># number of observations</span></span>
+<span id="cb49-2"><a href="#cb49-2"></a><span class="fu">nrow</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1"></a><span class="co"># number of variables</span></span>
+<span id="cb51-2"><a href="#cb51-2"></a><span class="fu">ncol</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+</section>
+<section id="lists" class="slide level2">
+<h2>Lists</h2>
+<p>We can combine any number of objects to a list:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1"></a><span class="co"># using the list() function</span></span>
+<span id="cb53-2"><a href="#cb53-2"></a>test_list <span class="ot">&lt;-</span> <span class="fu">list</span>(numeric_vector,</span>
+<span id="cb53-3"><a href="#cb53-3"></a>                  character_vector)</span>
+<span id="cb53-4"><a href="#cb53-4"></a></span>
+<span id="cb53-5"><a href="#cb53-5"></a>test_list</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+[1] 1 2 3
+
+[[2]]
+[1] "CDU" "CSU" "SPD"</code></pre>
+</div>
+</div>
+</section></section>
+<section>
+<section id="how-to-deal-with-objects" class="title-slide slide level1 center">
+<h1>How to deal with objects</h1>
+
+</section>
+<section id="accessing-and-subsetting-objects" class="slide level2">
+<h2>Accessing and subsetting objects</h2>
+<ul>
+<li><p>Typically, we are not interested in all of the data</p></li>
+<li><p>We want to access specific information</p></li>
+<li><p>This works similar across different object types (vectors, data frames, lists, …)</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1"></a><span class="co"># Let's go back to our party vector:</span></span>
+<span id="cb55-2"><a href="#cb55-2"></a>party_vector <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"CDU"</span>, <span class="st">"CSU"</span>, <span class="st">"SPD"</span>)</span>
+<span id="cb55-3"><a href="#cb55-3"></a></span>
+<span id="cb55-4"><a href="#cb55-4"></a><span class="co"># we only want to access the first element</span></span>
+<span id="cb55-5"><a href="#cb55-5"></a>party_vector[<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "CDU"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1"></a><span class="co"># we can store this in a new object:</span></span>
+<span id="cb57-2"><a href="#cb57-2"></a>CDU <span class="ot">&lt;-</span> party_vector[<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="accessing-and-subsetting-data-frames" class="slide level2">
+<h2>Accessing and subsetting data frames</h2>
+<p>We can select rows, columns, and specific elements. This follows the general logic:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1"></a>data_frame[specify_row, specify_column]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Let’s try this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1"></a><span class="co"># This is our data frame</span></span>
+<span id="cb59-2"><a href="#cb59-2"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  party vote_share
+1   CDU         27
+2   CSU          5
+3   SPD         13</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1"></a><span class="co"># Let's select only the first column</span></span>
+<span id="cb61-2"><a href="#cb61-2"></a>df[,<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "CDU" "CSU" "SPD"</code></pre>
+</div>
+</div>
+</section>
+<section id="accessing-and-subsetting-data-frames-1" class="slide level2">
+<h2>Accessing and subsetting data frames</h2>
+<p>We can also access individual variables using the $ sign:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1"></a>df<span class="sc">$</span>party</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "CDU" "CSU" "SPD"</code></pre>
+</div>
+</div>
+<p>Alternatively, we can index by variable name:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1"></a>df[<span class="st">"party"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  party
+1   CDU
+2   CSU
+3   SPD</code></pre>
+</div>
+</div>
+<p>Or variable order:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1"></a>df[<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  party
+1   CDU
+2   CSU
+3   SPD</code></pre>
+</div>
+</div>
+</section></section>
+<section>
+<section id="your-turn-1" class="title-slide slide level1 center">
+<h1>Your turn!</h1>
+
 </section>
 <section id="until-our-next-session" class="slide level2">
 <h2>Until our next session</h2>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Install &amp; Join</a></li><li><a href="#tabset-4-2">Read</a></li><li><a href="#tabset-4-3">Think</a></li></ul>
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Install</a></li><li><a href="#tabset-7-2">Read</a></li><li><a href="#tabset-7-3">Think</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1">
+<div id="tabset-7-1">
 <ul>
 <li><p>Make sure R and RStudio is installed and works</p>
 <ul>
-<li>Instructions can be found on the course website</li>
-</ul></li>
-<li><p>Join the course Slack channel!</p>
-<ul>
-<li>Invitation will follow</li>
-</ul></li>
-<li><p>Join the Datacamp team!</p>
-<ul>
-<li>Invitation will follow</li>
+<li><a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></li>
 </ul></li>
 </ul>
 </div>
-<div id="tabset-4-2">
+<div id="tabset-7-2">
 <ul>
-<li><p>Chapter 1 - King, G., Keohane, R. O., &amp; Verba, S. (1994).&nbsp;<em>Designing social inquiry: Scientific inference in qualitative research</em>. Princeton University Press.</p></li>
-<li><p>Chapter 1 - Powner, L. C. (2015). <em>Empirical Research and Writing: A Political Science Student’s Practical Guide</em>. Los Angeles: Sage.</p></li>
+<li><p>Chapter 7: Data Import in R for Data Science</p>
+<ul>
+<li><a href="https://r4ds.hadley.nz/data-import">Link to free online version</a></li>
+</ul></li>
+<li><p>Chapter 3: Data Transformation in R for Data Science</p>
+<ul>
+<li><a href="https://r4ds.hadley.nz/data-transform">Link to free online version</a></li>
+</ul></li>
 </ul>
 </div>
-<div id="tabset-4-3">
+<div id="tabset-7-3">
 <ul>
-<li><p>What characterizes good social science research?</p></li>
-<li><p>What are the components of a research design?</p></li>
-<li><p>What characterizes a good research question?</p></li>
-<li><p>How do I find a research question?</p></li>
-<li><p>What role does the existing scientific literature play?</p></li>
+<li><p>Questions to think about until our next session:</p>
+<ul>
+<li>Do you have a particular data set you would like to import into R? Let me know!</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -671,13 +1246,8 @@ David Schweizer
 <section id="any-open-questions" class="title-slide slide level1 center">
 <h1>Any open questions?</h1>
 
-</section>
-
-<section id="see-you-next-week" class="title-slide slide level1 center">
-<h1>See you next week!</h1>
-
 <div class="footer footer-default">
-<p>Applied Methods of Social Sciences | Winter semester 2023/24 | University of Innsbruck</p>
+<p>Statistics | Summer Semester 2024 | University of Innsbruck</p>
 </div>
 </section>
     </div>
@@ -891,6 +1461,44 @@ David Schweizer
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

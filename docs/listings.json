@@ -7,7 +7,9 @@
   },
   {
     "listing": "/weeks/week-01.html",
-    "items": []
+    "items": [
+      "/slides/week-01/01-IntroSession.html"
+    ]
   },
   {
     "listing": "/docs/Material.html",
@@ -15,9 +17,7 @@
   },
   {
     "listing": "/weeks/week-02.html",
-    "items": [
-      "/slides/week-02/02-Logic_RQ.html"
-    ]
+    "items": []
   },
   {
     "listing": "/weeks/week-03.html",

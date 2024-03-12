@@ -72,9 +72,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -166,6 +166,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#seminar-slides" id="toc-seminar-slides" class="nav-link active" data-scroll-target="#seminar-slides">Seminar slides</a></li>
+  <li><a href="#material" id="toc-material" class="nav-link" data-scroll-target="#material">Material</a></li>
+  <li><a href="#to-dos-before-our-session" id="toc-to-dos-before-our-session" class="nav-link" data-scroll-target="#to-dos-before-our-session">To Do’s before our session</a></li>
   </ul>
 </nav>
     </div>
@@ -215,6 +217,17 @@ Date
 </tr>
 </thead>
 <tbody class="list">
+<tr data-index="0" data-listing-date-sort="1710284400000" data-listing-file-modified-sort="1710280813556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-title-sort="Intro Session" data-listing-filename-sort="01-IntroSession.qmd">
+<td>
+<a href="../slides/week-01/01-IntroSession.html" class="title listing-title">Intro Session</a>
+</td>
+<td>
+<span class="listing-subtitle">Week 1</span>
+</td>
+<td>
+<span class="listing-date">Mar 13, 2024</span>
+</td>
+</tr>
 </tbody>
 
 </table>
@@ -222,6 +235,14 @@ Date
 No matching items
 </div>
 </div>
+</section>
+<section id="material" class="level1">
+<h1>Material</h1>
+<p>You can find the R script for today’s session <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5617582099/CourseNode/109453712367926/path%3D~~week%5F01~~week01%5Fsession02%5Fexcercises%2Er/0"><strong>here</strong></a>.</p>
+</section>
+<section id="to-dos-before-our-session" class="level1">
+<h1>To Do’s before our session</h1>
+<p>You do not need to prepare anything for our first session.</p>
 
 
 

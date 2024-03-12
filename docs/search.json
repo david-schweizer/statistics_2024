@@ -39,14 +39,14 @@
     "href": "syllabus.html",
     "title": "Syllabus: Applied Methods of Social Sciences",
     "section": "",
-    "text": "Proseminar:\nApplied Methods of Social Sciences\n\n\nTime:\nWednesday, 08:00 - 11:15 October 11 to December 06 (single sessions on October 11 and December 06)\n\n\nPlace:\nVirtual classroom\n\n\nLanguage:\nEnglish\n\n\nInstructor:\nDavid Schweizer, M.A., david.schweizer@uni-mannheim.de\n\n\nOffice hours:\nVia Zoom, Wednesday 11:15 – 12:15, please make an appointment by e-mail beforehand"
+    "text": "Seminar:\nStatistics\n\n\nTime:\nWednesday, 08:00 - 11:15 March 13 to May 15 (single session on May 15)\n\n\nPlace:\nVirtual classroom\n\n\nLanguage:\nEnglish\n\n\nInstructor:\nDavid Schweizer, M.A., david.schweizer@uni-mannheim.de\n\n\nOffice hours:\nVia Zoom, Wednesday 11:15 – 12:15, please make an appointment by e-mail beforehand"
   },
   {
     "objectID": "weeks/week-01.html",
     "href": "weeks/week-01.html",
     "title": "Intro Session",
     "section": "",
-    "text": "Seminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Seminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\nIntro Session\n\n\nWeek 1\n\n\nMar 13, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterial\nYou can find the R script for today’s session here.\n\n\nTo Do’s before our session\nYou do not need to prepare anything for our first session."
   },
   {
     "objectID": "slides/week-01/01-example.html#bullet-point-list",
@@ -121,9 +121,9 @@
   {
     "objectID": "weeks/week-02.html",
     "href": "weeks/week-02.html",
-    "title": "Social science research & Research questions",
+    "title": "Import, tidy, and transform",
     "section": "",
-    "text": "Seminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\nSocial science research & Research questions\n\n\nWeek 2\n\n\nOct 18, 2023\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nYou can find the readings here.\n\n\nTo Do’s before our session\n\nInstall & JoinReadThink\n\n\n\nMake sure R and RStudio is installed and works\n\nInstructions can be found here\n\nJoin the course Slack channel!\n\nInvitation will follow\n\nJoin the Datacamp team!\n\nInvitation will follow\n\n\n\n\n\nChapter 1 - King, G., Keohane, R. O., & Verba, S. (1994). Designing social inquiry: Scientific inference in qualitative research. Princeton University Press.\nChapter 1 - Powner, L. C. (2015). Empirical Research and Writing: A Political Science Student’s Practical Guide. Los Angeles: Sage.\n\n\n\nGuiding questions:\n\nWhat characterizes good social science research?\nWhat are the components of a research design?\nWhat characterizes a good research question?\nHow do I find a research question?\nWhat role does the existing scientific literature play?"
+    "text": "Seminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nTBD.\n\n\nUntil our next session\n\nInstallReadThink\n\n\n\nMake sure R and RStudio is installed and works\n\nhttps://posit.co/download/rstudio-desktop/\n\n\n\n\n\nChapter 7: Data Import in R for Data Science\n\nLink to free online version\n\nChapter 3: Data Transformation in R for Data Science\n\nLink to free online version\n\n\n\n\n\nQuestions to think about until our next session:\n\nDo you have a particular data set you would like to import into R? Let me know!"
   },
   {
     "objectID": "slides/week-01/01-Intro.html",
@@ -137,14 +137,14 @@
     "href": "syllabus.html#course-description",
     "title": "Syllabus: Applied Methods of Social Sciences",
     "section": "Course description",
-    "text": "Course description\nUsing a mix of lecture-style input, interactive teaching, and discussions, this course teaches the fundamentals of scientific work and good scientific practice in the subject of political science using practical examples. Topics include critical reading of scientific texts, literature review and reference management software, formulating testable hypotheses, types of data collection and analysis, presenting empirical results, and how to write term papers. Overall, students will be equipped to critically evaluate research and conduct their own research projects with a focus on quantitative methods."
+    "text": "Course description\nThe course will provide students with skills in quantitative methods for investigating key political science topics and illustrate these methods with practical examples. Participants will learn to carry out empirical analyses independently using the statistical software R. No prior knowledge of R is required. The main topics of the course are univariate, bivariate and first multivariate analysis methods as well as the graphical and tabular presentation of empirical results. Session will consist of a mixture of instructor input, applied programming, and discussion. Therefore, we will incorporate elements of the inverted classroom. This requires participants to prepare materials for the session and then apply them during the session."
   },
   {
     "objectID": "syllabus.html#course-requirements",
     "href": "syllabus.html#course-requirements",
     "title": "Syllabus: Applied Methods of Social Sciences",
     "section": "Course requirements",
-    "text": "Course requirements\nActive participation\n\nCritically engaging with the assigned readings for each session. Use Slack to post any questions or discuss with your peers if you do not understand concepts. Usually, I post questions to think about regarding the readings. Keep them in mind while reading.\nWorking on little assignments throughout the semester (e.g., think of a research question, conduct a literature search)\nActively participating in discussions and group work during our weekly meetings\n\n\nGroup presentations\n\nIn generalExpectationsGroups\n\n\n\n4 groups, 10-12 minutes of presentation, 15 minutes of discussion\nPrepare a powerpoint presentation. Send me at least an outline until November 27, 11:30 am.\nParticipate in discussion of other presentations\nTopics can include: Democratic backsliding, the political impact of radical right populist parties, cleavage politics (e.g., young vs. old, rural vs. urban, …)\n\n\n\nIn your presentation, you should demonstrate your understanding of the materials covered so far.\n\n\n\n\n\n\n\nYour presentation should cover the following:\n\nResearch question\nTheory & research design\n\nExpectation, causal mechanism, assumptions, scope?\nCan you cross the four hurdles?\nType of research design\n\nMeasurement strategy\n\nHow do you operationalize your concepts?\n\nPossible datasets / databases\n\n\n\n\n\n\n\n\nGroup 1: Jakub Bieniek, Ying-Fan Chen, Maria Michelaki\nGroup 2: Josef Galli, Elias Latta,Bernadett Neszt\nGroup 3: Daniel Saath, Daniel Schatzer\nGroup 4: Matthias Lung, Anna-Maria Egger\n\n\n\n\nShort term paper\n\n~1500 words (excluding cover page and references)\nIt should include:\n\nIntroduction (Question and its relevance)\nShort literature review\nTheory and research design\n(Simple data analysis)\n\nDeadline: 31.01.2024, 23:59."
+    "text": "Course requirements\n\nActive preparation and participation during sessions\n3 (smaller) assignments during the semester (20% of your grade)\n\nFrom 20.03.24 11:15 until 08.04.24 18:00\nFrom 10.04.24 11:15 until 15.04.24 18:00\nFrom 24.04.24 11:15 until 06.05.24 18:00\n\n\n\n\nParticipation in the Hackathon on 08.05.24 (pass/fail)\nFinal project until TBD (80% of your grade)"
   },
   {
     "objectID": "syllabus.html#recommended-readings",
@@ -2188,21 +2188,21 @@
     "href": "slides/week-01/01-IntroSession.html#plan-for-today",
     "title": "Intro Session",
     "section": "Plan for today",
-    "text": "Plan for today\n\nIntroduction round: Getting to know each other\nCourse content and schedule\nYour expectations\nMy expectations & course requirements\nMotivation for the course"
+    "text": "Plan for today\n\nSession 01BreakSession 02\n\n\n\nIntroduction round: Getting to know each other\nCourse content and schedule\nYour expectations\nMy expectations & course requirements\nMotivation for the course\n\n\n\n⏸️ 15 minute break: Get some fresh air, a coffee, …\n\n\n\nInput\n\nR, R Studio, and basics\nData types & formats\nHow to deal with objects\n\nYour turn!"
   },
   {
     "objectID": "slides/week-01/01-IntroSession.html#introduction-round",
     "href": "slides/week-01/01-IntroSession.html#introduction-round",
     "title": "Intro Session",
     "section": "Introduction round",
-    "text": "Introduction round\n\nI’ll go first. A few words about me\nYou’re next. Breakout rooms: Groups of 3-4\n\nIntroduce yourselves to your classmates\nWhat is your name? Where are you from? What do you study? Why Innsbruck? Did you pick up a new hobby recently?\n\nBack to the plenum\n\nIn a few sentences, introduce someone of your group to the plenum"
+    "text": "Introduction round\n\nI’ll go first. A few words about me\nYou’re next. Groups of 3-4\n\nIntroduce yourselves to your classmates\nWhat is your name? Where are you from? What do you study? Did you pick up a new hobby recently?\n\nPlenum\n\nIn a few sentences, present yourself to the plenum and tell the others one thing about the person you just met"
   },
   {
     "objectID": "slides/week-01/01-IntroSession.html#about-me",
     "href": "slides/week-01/01-IntroSession.html#about-me",
     "title": "Intro Session",
     "section": "About me",
-    "text": "About me\n\nPhD candidate in Political Science & research associate at the University of Mannheim\nExternal lecturer at University of Innsbruck since this semester\nFocus on party competition and intra-party politics\nAcademic Background:\n\nM.A. Political Science (LMU)\nB.Sc. Economics (Goethe University)\n\nNew hobby: mountaineering"
+    "text": "About me\n\nPhD candidate in Political Science at the CDSS and research associate at the Chair of Comparative Government since fall 2021\nFocus on party competition and intra-party politics\nAcademic Background:\n\nM.A. Political Science (LMU)\nB.Sc. Economics (Goethe University)\n\nNew hobby: mountaineering"
   },
   {
     "objectID": "slides/week-01/01-IntroSession.html#your-turn",
@@ -2258,21 +2258,21 @@
     "href": "slides/week-01/01-IntroSession.html#plan-expectations",
     "title": "Intro Session",
     "section": "Plan & expectations",
-    "text": "Plan & expectations\n\nWe are a relatively small class. Great!\nMix of lecture-style input, live coding, group exercises, and discussion.\nActive participation in class and preparation\nWillingness to invest time to learn a (new) programming language, look for solutions on your own, and keep trying"
+    "text": "Plan & expectations\n\nWe are a large group. Therefore, there might be changes to the schedule and/or content during the semester.\nMix of short lecture-style input & (group) coding\nRelying on inverted classroom elements. Requires active preparation of materials and participation during the sessions.\nWillingness to invest time to learn a (new) programming language, look for solutions on your own, and keep trying!"
   },
   {
     "objectID": "slides/week-01/01-IntroSession.html#course-requirements",
     "href": "slides/week-01/01-IntroSession.html#course-requirements",
     "title": "Intro Session",
     "section": "Course requirements",
-    "text": "Course requirements\n\nActive participationPresentationTerm paper\n\n\nBy active participation I mean:\n\nCritically engaging with the assigned readings for each session\nWorking on little assignments throughout the semester (e.g., think of a research question)\nActively participating in discussions during our weekly meetings\n\n\n\n\nYou will present in groups of 2-3 research ideas and designs towards the end of the semester. We will form groups during the semester\nEach presentation should last around 15 minutes\nWe will then actively discuss each presentation. We will assign discussants beforehand\n\n\n\n\n~1500 words (excluding cover page and references)\nIt should include:\n\nIntroduction (Question and its relevance)\nShort literature review\nTheory and research design\n(Simple data analysis)"
+    "text": "Course requirements\n\nActive preparation and participation during sessions\n3 (smaller) assignments during the semester (20% of your grade)\n\nFrom 20.03.24 11:15 until 08.04.24 18:00\nFrom 10.04.24 11:15 until 15.04.24 18:00\nFrom 24.04.24 11:15 until 06.05.24 18:00\n\n\n\n\nParticipation in the Hackathon on 08.05.24 (pass/fail)\nFinal project until TBD (80% of your grade)"
   },
   {
     "objectID": "slides/week-01/01-IntroSession.html#motivation",
     "href": "slides/week-01/01-IntroSession.html#motivation",
     "title": "Intro Session",
     "section": "Motivation",
-    "text": "Motivation\nMeeting the learning outcome means that you are on a great way\n\nto conduct (quantitative) social science research yourself,\nto present your research,\nand to understand and evaluate research from others.\n\nThe tools you learn this semester will set you up for success during your Bachelor (and possibly your Master)!"
+    "text": "Motivation"
   },
   {
     "objectID": "slides/week-01/01-IntroSession.html#why-data-visualization",
@@ -2314,14 +2314,14 @@
     "href": "slides/week-01/01-IntroSession.html#organisation-resources",
     "title": "Intro Session",
     "section": "Organisation & Resources",
-    "text": "Organisation & Resources\n\nMaterials will be provided via the course website (and OLAT)\nCommunication primarily via Slack. However, make sure that you have access to the course on OLAT and that emails that are sent over OLAT are forwarded to the email account you check regularly\nWeekly office hours after the seminar (online!). Please make an appointment via e-mail\nAccess to Datacamp (Online learning platform for programming languages and more)"
+    "text": "Organisation & Resources\n\nMaterials will be provided via the course website (links to OLAT).\nCommunication via OLAT: Messages and forum. Make sure that you have access to the course on OLAT and that e-mails that are sent over OLAT are forwarded to the e-mail account you check regularly\nWeekly office hours after the course. Please make an appointment via e-mail.\nAccess to Datacamp (Online learning platform for programming languages and more) after the Hackathon."
   },
   {
     "objectID": "slides/week-01/01-IntroSession.html#until-our-next-session",
     "href": "slides/week-01/01-IntroSession.html#until-our-next-session",
     "title": "Intro Session",
     "section": "Until our next session",
-    "text": "Until our next session\n\nInstall & JoinReadThink\n\n\n\nMake sure R and RStudio is installed and works\n\nInstructions can be found on the course website\n\nJoin the course Slack channel!\n\nInvitation will follow\n\nJoin the Datacamp team!\n\nInvitation will follow\n\n\n\n\n\nChapter 1 - King, G., Keohane, R. O., & Verba, S. (1994). Designing social inquiry: Scientific inference in qualitative research. Princeton University Press.\nChapter 1 - Powner, L. C. (2015). Empirical Research and Writing: A Political Science Student’s Practical Guide. Los Angeles: Sage.\n\n\n\n\nWhat characterizes good social science research?\nWhat are the components of a research design?\nWhat characterizes a good research question?\nHow do I find a research question?\nWhat role does the existing scientific literature play?"
+    "text": "Until our next session\n\nInstallReadThink\n\n\n\nMake sure R and RStudio is installed and works\n\nhttps://posit.co/download/rstudio-desktop/\n\n\n\n\n\nChapter 7: Data Import in R for Data Science\n\nLink to free online version\n\nChapter 3: Data Transformation in R for Data Science\n\nLink to free online version\n\n\n\n\n\nQuestions to think about until our next session:\n\nDo you have a particular data set you would like to import into R? Let me know!"
   },
   {
     "objectID": "slides/week-01/01-IntroSession.html#important",
@@ -2356,7 +2356,7 @@
     "href": "syllabus.html#course-details",
     "title": "Syllabus: Applied Methods of Social Sciences",
     "section": "",
-    "text": "Proseminar:\nApplied Methods of Social Sciences\n\n\nTime:\nWednesday, 08:00 - 11:15 October 11 to December 06 (single sessions on October 11 and December 06)\n\n\nPlace:\nVirtual classroom\n\n\nLanguage:\nEnglish\n\n\nInstructor:\nDavid Schweizer, M.A., david.schweizer@uni-mannheim.de\n\n\nOffice hours:\nVia Zoom, Wednesday 11:15 – 12:15, please make an appointment by e-mail beforehand"
+    "text": "Seminar:\nStatistics\n\n\nTime:\nWednesday, 08:00 - 11:15 March 13 to May 15 (single session on May 15)\n\n\nPlace:\nVirtual classroom\n\n\nLanguage:\nEnglish\n\n\nInstructor:\nDavid Schweizer, M.A., david.schweizer@uni-mannheim.de\n\n\nOffice hours:\nVia Zoom, Wednesday 11:15 – 12:15, please make an appointment by e-mail beforehand"
   },
   {
     "objectID": "index.html#course-details",
@@ -3371,7 +3371,7 @@
     "href": "syllabus.html#learning-outcome",
     "title": "Syllabus: Applied Methods of Social Sciences",
     "section": "Learning outcome",
-    "text": "Learning outcome\nStudents learn the most important qualitative and quantitative methods for data collection and data analysis. They are able to interpret and critically evaluate existing empirical studies. Students learn to independently formulate a research question, collect data, and analyze data."
+    "text": "Learning outcome"
   },
   {
     "objectID": "slides/week-01/01-IntroSession.html#schedule",
@@ -5115,5 +5115,278 @@
     "title": "Statistics",
     "section": "Navigating this website",
     "text": "Navigating this website\nOn this website, you can find the syllabus as well as all course materials (see Schedule, slides & materials)."
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#schedule-content",
+    "href": "slides/week-01/01-IntroSession.html#schedule-content",
+    "title": "Intro Session",
+    "section": "Schedule & Content",
+    "text": "Schedule & Content\n\nIntroBlock IBlock IIBlock III\n\n\n\nSession 01 - 13.03.2024 - Intro Session\nSession 02 - 13.03.2024 - Intro to R\n\n\n\nBlock I: Data science workflow\n\nSession 03 - 20.03.2024 - Import, tidy, and transform\nSession 04 - 20.03.2024 - Import, tidy, and transform\n\nEaster Break: No sessions on 27.03. and 03.04.2024\n\nSession 05 - 10.04.2024 - Visualize\nSession 06 - 10.04.2024 - Communicate\n\n\n\nBlock II: Descriptives & Inference\n\nSession 07 - 17.04.2024 - Descriptives\nSession 08 - 17.04.2024 - Descriptives\nSession 09 - 24.04.2024 - Inference\nSession 10- 24.04.2024 - Inference\n\nNational holiday: No session on 01.05.2024\n\n\nBlock III: Hackathon and Closing\n\nSession 11 - 08.05.2024 - Hackathon\nSession 12 - 08.05.2024 - Hackathon\nSession 13 - 15.05.2024 - Closing Session"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#motivation-1",
+    "href": "slides/week-01/01-IntroSession.html#motivation-1",
+    "title": "Intro Session",
+    "section": "Motivation",
+    "text": "Motivation\n\nThe course will provide students with skills in quantitative methods for investigating key political science topics and illustrate these methods with practical examples.\nParticipants will learn to carry out empirical analyses independently using the statistical software R. No prior knowledge of R is required.\nTaking this course should not be an end in itself!"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#r-gui",
+    "href": "slides/week-01/01-IntroSession.html#r-gui",
+    "title": "Intro Session",
+    "section": "R GUI",
+    "text": "R GUI"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#section",
+    "href": "slides/week-01/01-IntroSession.html#section",
+    "title": "Intro Session",
+    "section": "",
+    "text": "R is a language and environment for statistical computing and graphics. Click here for more info\nWe refer to the basic functionalities of R as base R\nWe can extend these installing R packages from CRAN (The Comprehensive R Archive Network). For example, the tidyverse. This allows us to simplify the data analysis workflow.\nBUT: It comes with a limited GUI (Graphical User Interface)"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#r-studio-interface",
+    "href": "slides/week-01/01-IntroSession.html#r-studio-interface",
+    "title": "Intro Session",
+    "section": "R Studio Interface",
+    "text": "R Studio Interface"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#r-studio---script-editor",
+    "href": "slides/week-01/01-IntroSession.html#r-studio---script-editor",
+    "title": "Intro Session",
+    "section": "R Studio - Script editor",
+    "text": "R Studio - Script editor"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#r-studio---console",
+    "href": "slides/week-01/01-IntroSession.html#r-studio---console",
+    "title": "Intro Session",
+    "section": "R Studio - Console",
+    "text": "R Studio - Console"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#r-studio---environment",
+    "href": "slides/week-01/01-IntroSession.html#r-studio---environment",
+    "title": "Intro Session",
+    "section": "R Studio - Environment",
+    "text": "R Studio - Environment"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#r-studio---files-plots-help",
+    "href": "slides/week-01/01-IntroSession.html#r-studio---files-plots-help",
+    "title": "Intro Session",
+    "section": "R Studio - Files, Plots, Help, …",
+    "text": "R Studio - Files, Plots, Help, …"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#r-studio---options",
+    "href": "slides/week-01/01-IntroSession.html#r-studio---options",
+    "title": "Intro Session",
+    "section": "R Studio - Options",
+    "text": "R Studio - Options"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#using-r-as-a-calculator",
+    "href": "slides/week-01/01-IntroSession.html#using-r-as-a-calculator",
+    "title": "Intro Session",
+    "section": "Using R as a calculator",
+    "text": "Using R as a calculator\nThe simplest application is to use R as a calculator:\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n1 / 10\n\n[1] 0.1\n\n\n\n\n\n2 * 2\n\n[1] 4"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#commenting-code",
+    "href": "slides/week-01/01-IntroSession.html#commenting-code",
+    "title": "Intro Session",
+    "section": "Commenting code",
+    "text": "Commenting code\nWe can comment our code using the #. Input thereafter will not be executed as code.\n\n# Addition\n1 + 1\n\n[1] 2\n\n\n\n\n\n2 * 2 # 2 times 2 should equal four\n\n[1] 4\n\n\nTypically, we want to comment our code extensively for replicability and reusability."
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#functions",
+    "href": "slides/week-01/01-IntroSession.html#functions",
+    "title": "Intro Session",
+    "section": "Functions",
+    "text": "Functions\nFunctions are essential for our workflow in R. They take input(s) as argument, and produce output(s) depending on the input.\n\nsqrt(100)\n\n[1] 10"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#objects-i",
+    "href": "slides/week-01/01-IntroSession.html#objects-i",
+    "title": "Intro Session",
+    "section": "Objects I",
+    "text": "Objects I\nR is an object-oriented programming language.\n\nTherefore, we can store single values, multiple values, character strings, etc. in an object.\nWe can assign a single value to an object using the assignment operator &lt;-\n\n\n# here we assign the numeric value 10 to the object x:\nx &lt;- 10\n\n# we can do the same for a character string:\ny &lt;- \"This is a character string\""
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#objects-ii",
+    "href": "slides/week-01/01-IntroSession.html#objects-ii",
+    "title": "Intro Session",
+    "section": "Objects II",
+    "text": "Objects II\nWe can also store the output of functions in objects:\n\n# here, we calculate the square root of 100 \n# and store it in a object called \"result\"\nresult &lt;- sqrt(100)\n\nFurther, we can also do calculations with objects:\n\n# here we add our two objects and store the result in z\nz &lt;- x + result\n\nFinally, we can print the object to the console by typing its name:\n\n# z should print the number 20 (10 + sqrt(10))\nz\n\n[1] 20"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#packages",
+    "href": "slides/week-01/01-IntroSession.html#packages",
+    "title": "Intro Session",
+    "section": "Packages",
+    "text": "Packages\n\nPackages allow us to go beyond base R functionalities.\nThey consist of various functions that simplify tasks and provide documentation.\n\n\n\nWe can install packages from within R via CRAN:\n\n\n# we need to install packages only once:\ninstall.packages(\"stringr\")\n\n# however, we need to load the package every time we (re-)start R\nlibrary(stringr)"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#example-stringr",
+    "href": "slides/week-01/01-IntroSession.html#example-stringr",
+    "title": "Intro Session",
+    "section": "Example: stringr",
+    "text": "Example: stringr\n\n# lets load the stringr package:\nlibrary(stringr)\n\n# using the help() function, we can inspect the documentation\nhelp(stringr)"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#example-stringr-1",
+    "href": "slides/week-01/01-IntroSession.html#example-stringr-1",
+    "title": "Intro Session",
+    "section": "Example: stringr",
+    "text": "Example: stringr\nThe stringr package provides us with multiple functions to manipulate strings.\n\n# as an example, we create a fictitious actor ID from the Twitter API\nstring &lt;- \"id:twitter.com:207584738373\"\n\n# to match this ID with meta data, we only want to keep the numbers\n# we can make use of the function str_replace()\n# It needs these arguments: str_replace(string, pattern, replacement)\nclean_ID &lt;- str_replace(string, \"id:twitter.com:\", \"\")\n\n# let's check if it worked:\nclean_ID\n\n[1] \"207584738373\""
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#tidyverse",
+    "href": "slides/week-01/01-IntroSession.html#tidyverse",
+    "title": "Intro Session",
+    "section": "tidyverse",
+    "text": "tidyverse"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#tidyverse-vs.-base-r",
+    "href": "slides/week-01/01-IntroSession.html#tidyverse-vs.-base-r",
+    "title": "Intro Session",
+    "section": "tidyverse vs. base R",
+    "text": "tidyverse vs. base R\nThe tidyverse has become very popular among R users. It provides:\n\nclean and tidy code (readability)\nfunctions for typical data science tasks\na coherent “grammar”\n\nBUT: it also introduces dependencies, and packages evolve."
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#develop-your-own-coding-style",
+    "href": "slides/week-01/01-IntroSession.html#develop-your-own-coding-style",
+    "title": "Intro Session",
+    "section": "Develop your own coding style",
+    "text": "Develop your own coding style"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#it-all-depends-on-how",
+    "href": "slides/week-01/01-IntroSession.html#it-all-depends-on-how",
+    "title": "Intro Session",
+    "section": "It all depends on how",
+    "text": "It all depends on how\n\nhow &where data is stored\n\n\nHow: data types\n\nNumeric values (integers & doubles)\nCharacter strings\nLogical values\nFactors\n…\n\n\n\nWhere: data formats\n\nVectors\nData frames/Tibbles\nLists\n…"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#numeric-values",
+    "href": "slides/week-01/01-IntroSession.html#numeric-values",
+    "title": "Intro Session",
+    "section": "Numeric values",
+    "text": "Numeric values\nThere are two types in R: Integers (numbers without a decimal values) and doubles (numbers with decimal values)\n\n# We place an L behind the value to be specific that it is an integer\nx &lt;- 10L\n\n# using the typeof() function we can check the data type\ntypeof(x)\n\n[1] \"integer\"\n\n\n\n# create a double\nz &lt;- 10.55\n\n# check data type\ntypeof(z)\n\n[1] \"double\"\n\n\n\n# is x numeric?\nis.numeric(x)\n\n[1] TRUE"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#character-strings",
+    "href": "slides/week-01/01-IntroSession.html#character-strings",
+    "title": "Intro Session",
+    "section": "Character strings",
+    "text": "Character strings\nA string represents a series of characters. Numbers and/or symbols can also be part of a string.\n\n# we need to wrap the string into quotation marks\n\nstring &lt;- \"Hello\"\n\n# we can check the type using class()\nclass(string)\n\n[1] \"character\"\n\n# an example with numbers\nID &lt;- \"id:twitter.com:207584738373\"\n\n# check again\nclass(string)\n\n[1] \"character\""
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#factors",
+    "href": "slides/week-01/01-IntroSession.html#factors",
+    "title": "Intro Session",
+    "section": "Factors",
+    "text": "Factors\nWe call data types that assume that their values are not continuous and have distinct categories factors.\nFactors take numeric values or character strings as input and convert them into so-called levels:\n\n# let's create an factor:\nfactor(1)\n\n[1] 1\nLevels: 1"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#logical-values",
+    "href": "slides/week-01/01-IntroSession.html#logical-values",
+    "title": "Intro Session",
+    "section": "Logical values",
+    "text": "Logical values\nThey are either TRUE or FALSE (and also called Boolean values). We produce them by making logical requests:\n\n1 &gt; 2\n\n[1] FALSE\n\n\nWe can also store logical values is objects:\n\nlogical &lt;- 1 &gt; 2\n\nlogical\n\n[1] FALSE"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#logical-operators",
+    "href": "slides/week-01/01-IntroSession.html#logical-operators",
+    "title": "Intro Session",
+    "section": "Logical operators",
+    "text": "Logical operators\n\nRelationalLogical\n\n\n\n&lt; less than\n&lt;= less than or equal to\n&gt; greater than\n&gt;= greater than or equal to\n== exactly equal to\n!= not equal to\n\n\n\n\n& (AND)\n| (OR)"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#data-formats",
+    "href": "slides/week-01/01-IntroSession.html#data-formats",
+    "title": "Intro Session",
+    "section": "Data formats",
+    "text": "Data formats"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#vector",
+    "href": "slides/week-01/01-IntroSession.html#vector",
+    "title": "Intro Session",
+    "section": "Vector",
+    "text": "Vector\nWe can create vectors by combining individual objects with the function c() (“concatenating”):\n\n# This works for numbers\nnumeric_vector &lt;- c(1,2,3)\n\nnumeric_vector\n\n[1] 1 2 3\n\n\n\n# ... for characters\ncharacter_vector &lt;- c(\"CDU\", \"CSU\", \"SPD\")\n\ncharacter_vector\n\n[1] \"CDU\" \"CSU\" \"SPD\"\n\n\n\n# and for logical values\nlogical_vector &lt;- c(TRUE, FALSE, FALSE)\n\nlogical_vector\n\n[1]  TRUE FALSE FALSE"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#data-frames",
+    "href": "slides/week-01/01-IntroSession.html#data-frames",
+    "title": "Intro Session",
+    "section": "Data frames",
+    "text": "Data frames\nThey are comparable to data sets as in Stata or SPSS\n\nwith n rows and k columns\nand allow us to store variables of different classes.\n\n\n# we create a data frame called df \n# using the function \"data.frame()\ndf &lt;- data.frame(\n  party = c(\"CDU\", \"CSU\", \"SPD\"),\n  vote_share = c(\"27\", \"5\", \"13\")\n)\n\n\ndf\n\n  party vote_share\n1   CDU         27\n2   CSU          5\n3   SPD         13"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#data-frames-1",
+    "href": "slides/week-01/01-IntroSession.html#data-frames-1",
+    "title": "Intro Session",
+    "section": "Data frames",
+    "text": "Data frames\nWe can also check the dimensions, number of observations, and number of variables:\n\n# dimensions\ndim(df)\n\n[1] 3 2\n\n# number of observations\nnrow(df)\n\n[1] 3\n\n# number of variables\nncol(df)\n\n[1] 2"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#lists",
+    "href": "slides/week-01/01-IntroSession.html#lists",
+    "title": "Intro Session",
+    "section": "Lists",
+    "text": "Lists\nWe can combine any number of objects to a list:\n\n# using the list() function\ntest_list &lt;- list(numeric_vector,\n                  character_vector)\n\ntest_list\n\n[[1]]\n[1] 1 2 3\n\n[[2]]\n[1] \"CDU\" \"CSU\" \"SPD\""
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#accessing-and-subsetting-objects",
+    "href": "slides/week-01/01-IntroSession.html#accessing-and-subsetting-objects",
+    "title": "Intro Session",
+    "section": "Accessing and subsetting objects",
+    "text": "Accessing and subsetting objects\n\nTypically, we are not interested in all of the data\nWe want to access specific information\nThis works similar across different object types (vectors, data frames, lists, …)\n\n\n# Let's go back to our party vector:\nparty_vector &lt;- c(\"CDU\", \"CSU\", \"SPD\")\n\n# we only want to access the first element\nparty_vector[1]\n\n[1] \"CDU\"\n\n\n\n# we can store this in a new object:\nCDU &lt;- party_vector[1]"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#accessing-and-subsetting-data-frames",
+    "href": "slides/week-01/01-IntroSession.html#accessing-and-subsetting-data-frames",
+    "title": "Intro Session",
+    "section": "Accessing and subsetting data frames",
+    "text": "Accessing and subsetting data frames\nWe can select rows, columns, and specific elements. This follows the general logic:\n\ndata_frame[specify_row, specify_column]\n\nLet’s try this:\n\n# This is our data frame\ndf\n\n  party vote_share\n1   CDU         27\n2   CSU          5\n3   SPD         13\n\n# Let's select only the first column\ndf[,1]\n\n[1] \"CDU\" \"CSU\" \"SPD\""
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#accessing-and-subsetting-data-frames-1",
+    "href": "slides/week-01/01-IntroSession.html#accessing-and-subsetting-data-frames-1",
+    "title": "Intro Session",
+    "section": "Accessing and subsetting data frames",
+    "text": "Accessing and subsetting data frames\nWe can also access individual variables using the $ sign:\n\ndf$party\n\n[1] \"CDU\" \"CSU\" \"SPD\"\n\n\nAlternatively, we can index by variable name:\n\ndf[\"party\"]\n\n  party\n1   CDU\n2   CSU\n3   SPD\n\n\nOr variable order:\n\ndf[1]\n\n  party\n1   CDU\n2   CSU\n3   SPD"
+  },
+  {
+    "objectID": "syllabus.html#organisation-resources",
+    "href": "syllabus.html#organisation-resources",
+    "title": "Syllabus: Applied Methods of Social Sciences",
+    "section": "Organisation & Resources",
+    "text": "Organisation & Resources\n\nMaterials will be provided via the course website (links to OLAT).\nCommunication via OLAT: Messages and forum. Make sure that you have access to the course on OLAT and that e-mails that are sent over OLAT are forwarded to the e-mail account you check regularly\nWeekly office hours after the course. Please make an appointment via e-mail.\nAccess to Datacamp (Online learning platform for programming languages and more) after the Hackathon."
+  },
+  {
+    "objectID": "syllabus.html#important",
+    "href": "syllabus.html#important",
+    "title": "Syllabus: Applied Methods of Social Sciences",
+    "section": "Important!",
+    "text": "Important!\n\nDisabilitiesSupport\n\n\n\nPlease contact me or the Office of Student Affairs if you need special assistance due to disabilities or chronic illnesses.\nAnd please do this early in the semester so that we can make the appropriate arrangements immediately.\n\n\n\n\nOf course, you can always talk directly to me if you feel comfortable with the question. It is important to note that the University’s Office for Equality and Gender Studies supports and advises you in cases of discrimination or sexual harassment. Further, you can rely on the psychological counseling offered by the university."
+  },
+  {
+    "objectID": "syllabus.html#schedule-content",
+    "href": "syllabus.html#schedule-content",
+    "title": "Syllabus: Applied Methods of Social Sciences",
+    "section": "Schedule & Content",
+    "text": "Schedule & Content\n\nIntro\n\nSession 01 - 13.03.2024 - Intro Session\nSession 02 - 13.03.2024 - Intro to R\n\n\n\nBlock I: Data science workflow\n\nSession 03 - 20.03.2024 - Import, tidy, and transform\nSession 04 - 20.03.2024 - Import, tidy, and transform\n\nEaster Break: No sessions on 27.03. and 03.04.2024\n\nSession 05 - 10.04.2024 - Visualize\nSession 06 - 10.04.2024 - Communicate\n\n\n\nBlock II: Descriptives & Inference\n\nSession 07 - 17.04.2024 - Descriptives\nSession 08 - 17.04.2024 - Descriptives\nSession 09 - 24.04.2024 - Inference\nSession 10- 24.04.2024 - Inference\n\nNational holiday: No session on 01.05.2024\n\n\nBlock III: Hackathon and Closing\n\nSession 11 - 08.05.2024 - Hackathon\nSession 12 - 08.05.2024 - Hackathon\nSession 13 - 15.05.2024 - Closing Session"
+  },
+  {
+    "objectID": "slides/week-01/01-IntroSession.html#section-1",
+    "href": "slides/week-01/01-IntroSession.html#section-1",
+    "title": "Intro Session",
+    "section": "",
+    "text": "RStudio is the most popular IDE (Integretated Development Environment) for R.\n\nIDEs enable syntax highlighting, auto-completion, or a better overview our created output.\n\nBeyond these general benefits, R Studio provides us with\n\nan integration of version control via Git and addins such as citr or styler\ninterfaces to other programming languages (e.g., Python via the reticulate package)"
   }
 ]

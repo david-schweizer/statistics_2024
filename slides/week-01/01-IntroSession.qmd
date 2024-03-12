@@ -1,0 +1,743 @@
+---
+title: "Intro Session"
+subtitle: "Week 1"
+author: "David Schweizer"
+date: "March 13, 2024"
+date-format: long
+institute: "University of Mannheim"
+format: 
+  revealjs:
+    theme: simple
+    slide-number: c/t #< collapsed/total
+    footer: "Statistics | Summer Semester 2024 | University of Innsbruck"
+editor: visual
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+```
+
+## Plan for today
+
+::: panel-tabset
+## Session 01
+
+-   Introduction round: Getting to know each other
+-   Course content and schedule
+-   Your expectations
+-   My expectations & course requirements
+-   Motivation for the course
+
+## Break
+
+⏸️ **15 minute break:** Get some fresh air, a coffee, ...
+
+
+## Session 02
+
+-   **Input**
+    -   R, R Studio, and basics
+
+    -   Data types & formats
+
+    -   How to deal with objects
+-   **Your turn**!
+:::
+
+# Session 01
+
+## Introduction round
+
+-   I'll go first. A few words about me
+
+-   You're next. Groups of 3-4
+
+    -   Introduce yourselves to your classmates
+    -   What is your name? Where are you from? What do you study? Did you pick up a new hobby recently?
+
+-   Plenum
+
+    -   In a few sentences, present yourself to the plenum and tell the others one thing about the person you just met
+
+## About me
+
+-   PhD candidate in Political Science at the CDSS and research associate at the Chair of Comparative Government since fall 2021
+
+-   Focus on party competition and intra-party politics
+
+-   Academic Background:
+
+    -   M.A. Political Science (LMU)
+    -   B.Sc. Economics (Goethe University)
+
+-   New hobby: mountaineering
+
+# Your turn
+
+## Experience & Interests
+
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/alo7jy33sb4wytua852irx92w2pcq3fs/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+
+## Schedule & Content
+
+::: panel-tabset
+## Intro
+
+-   Session 01 - 13.03.2024 - Intro Session
+-   Session 02 - 13.03.2024 - Intro to R
+
+## Block I
+
+**Block I: Data science workflow**
+
+-   Session 03 - 20.03.2024 - Import, tidy, and transform
+
+-   Session 04 - 20.03.2024 - Import, tidy, and transform
+
+*Easter Break: No sessions on 27.03. and 03.04.2024*
+
+-   Session 05 - 10.04.2024 - Visualize
+
+-   Session 06 - 10.04.2024 - Communicate
+
+## Block II
+
+**Block II: Descriptives & Inference**
+
+-   Session 07 - 17.04.2024 - Descriptives
+
+-   Session 08 - 17.04.2024 - Descriptives
+
+-   Session 09 - 24.04.2024 - Inference
+
+-   Session 10- 24.04.2024 - Inference
+
+*National holiday: No session on 01.05.2024*
+
+## Block III
+
+**Block III: Hackathon and Closing**
+
+-   Session 11 - 08.05.2024 - Hackathon
+
+-   Session 12 - 08.05.2024 - Hackathon
+
+-   Session 13 - 15.05.2024 - Closing Session
+:::
+
+## Your expectations
+
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/altwc2tk4gnet26g612gkm3ecju2evpp/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+
+## Plan & expectations
+
+-   We are a large group. Therefore, there might be changes to the schedule and/or content during the semester.
+
+-   Mix of short lecture-style input & (group) coding
+
+-   Relying on inverted classroom elements. Requires active preparation of materials and participation during the sessions.
+
+-   Willingness to invest time to learn a (new) programming language, look for solutions on your own, and keep trying!
+
+## Organisation & Resources
+
+-   Materials will be provided via the course website (links to OLAT).
+
+-   Communication via OLAT: Messages and forum. Make sure that you have access to the course on OLAT and that e-mails that are sent over OLAT are forwarded to the e-mail account you check regularly
+
+-   Weekly office hours after the course. Please make an appointment via e-mail.
+
+-   Access to Datacamp (Online learning platform for programming languages and more) after the Hackathon.
+
+## Course requirements
+
+-   *Active preparation and participation* during sessions
+
+-   *3 (smaller)* *assignments* during the semester (20% of your grade)
+
+    -   From 20.03.24 11:15 until 08.04.24 18:00
+
+    -   From 10.04.24 11:15 until 15.04.24 18:00
+
+    -   From 24.04.24 11:15 until 06.05.24 18:00
+
+```{=html}
+<!-- -->
+```
+-   Participation in the *Hackathon* on 08.05.24 (pass/fail)
+
+-   *Final project* **until TBD** (80% of your grade)
+
+## Important!
+
+::: panel-tabset
+## Disabilities
+
+-   Please contact me or the Office of Student Affairs if you need special assistance due to disabilities or chronic illnesses.
+
+-   And please do this early in the semester so that we can make the appropriate arrangements immediately.
+
+## Support
+
+-   Of course, you can always talk directly to me if you feel comfortable with the question. It is important to note that the [University's Office for Equality and Gender Studies](https://www.uibk.ac.at/gleichbehandlung/belaestigung/ansprechpersonen.html) supports and advises you in cases of discrimination or sexual harassment. Further, you can rely on the [psychological counseling](https://www.studierendenberatung.at/en) offered by the university.
+:::
+
+## Motivation
+
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/alzxymc3t116b7hjafgmase6fpbg85fp/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+
+## Motivation
+
+-   The course will provide students with skills in quantitative methods for investigating key political science topics and illustrate these methods with practical examples.
+
+-   Participants will learn to carry out empirical analyses independently using the statistical software R. No prior knowledge of R is required.
+
+-   Taking this course should not be an end in itself!
+
+## Why R?
+
+::: panel-tabset
+#### Benefits
+
+-   Versatile: Visualizations, statistical analysis, programming, incorporation of other programming languages
+
+-   Free and open source
+
+    -   Large community, there is basically an answer to every question you will have online: Stackoverflow, ChatGPT, ...
+
+-   Increasing popularity in academia & industry
+
+#### Learning
+
+[![](LearningR.png)](https://devhumor.com/media/trying-to-learn-any-programming-language-100)
+
+#### Reward
+
+[![](nicegraphs.png){width="1440"}](https://bbc.github.io/rcookbook/)
+
+#### Opportunity
+
+[![](shinyapp.png){width="1699"}](https://vac-lshtm.shinyapps.io/ncov_tracker/)
+:::
+
+# ⏸️ 15 minute break
+
+# ▶️ Session 02
+
+## 
+
+::: columns
+::: {.column width="15%"}
+![](R_logo.svg.png){width="70" height="56"}
+:::
+
+::: {.column width="85%"}
+-   *R is a language and environment for statistical computing and graphics.* [Click here for more info](https://www.r-project.org/about.html)
+
+-   We refer to the basic functionalities of R as *base R*
+
+-   We can extend these installing *R packages* from [*CRAN*](https://cran.r-project.org/) *(The Comprehensive R Archive Network).* For example, the *tidyverse.* This allows us to simplify the data analysis workflow.
+
+-   BUT: It comes with a limited GUI (Graphical User Interface)
+:::
+:::
+
+## R GUI
+
+![](R_GUI.jpg)
+
+## 
+
+::: columns
+::: {.column width="15%"}
+![](RStudio-Logo-Flat.png){width="150"}
+:::
+
+::: {.column width="85%"}
+-   RStudio is the most popular *IDE (Integretated Development Environment)* for R.
+
+    -   IDEs enable syntax highlighting, auto-completion, or a better overview our created output.
+
+-   Beyond these general benefits, R Studio provides us with
+
+    -   an integration of version control via *Git* and addins such as [citr](https://github.com/crsh/citr) or [*styler*](https://styler.r-lib.org/)
+
+    -   interfaces to other programming languages (e.g., Python via the *reticulate* package)
+:::
+:::
+
+## R Studio Interface
+
+![](RStudio_IDE.jpg)
+
+## R Studio - Script editor
+
+![](ide1.png)
+
+## R Studio - Console
+
+![](ide3.png)
+
+## R Studio - Environment
+
+![](ide2.png)
+
+## R Studio - Files, Plots, Help, ...
+
+![](ide4.png)
+
+## R Studio - Options
+
+![](Rstudio_global.jpg)
+
+# R Basics
+
+## Using R as a calculator
+
+The simplest application is to use R as a calculator:
+
+```{r, echo=TRUE}
+1 + 1
+```
+
+\
+
+```{r, echo=TRUE}
+1 / 10
+```
+
+\
+
+```{r, echo=TRUE}
+2 * 2
+```
+
+## Commenting code
+
+We can comment our code using the **\#**. Input thereafter will not be executed as code.
+
+```{r, echo=TRUE}
+# Addition
+1 + 1
+```
+
+\
+
+```{r, echo=TRUE}
+2 * 2 # 2 times 2 should equal four
+```
+
+Typically, we want to comment our code extensively for replicability and reusability.
+
+## Functions
+
+Functions are essential for our workflow in R. They take input(s) as argument, and produce output(s) depending on the input.
+
+```{r, echo=TRUE}
+sqrt(100)
+```
+
+## Objects I
+
+R is an object-oriented programming language.
+
+-   Therefore, we can store single values, multiple values, character strings, etc. in an object.
+
+-   We can *assign* a single value to an object using the assignment operator **\<-**
+
+```{r, echo=TRUE}
+# here we assign the numeric value 10 to the object x:
+x <- 10
+
+# we can do the same for a character string:
+y <- "This is a character string"
+
+```
+
+## Objects II
+
+We can also store the output of functions in objects:
+
+```{r, echo=TRUE}
+# here, we calculate the square root of 100 
+# and store it in a object called "result"
+result <- sqrt(100)
+```
+
+Further, we can also do calculations with objects:
+
+```{r, echo=TRUE}
+# here we add our two objects and store the result in z
+z <- x + result
+```
+
+Finally, we can print the object to the console by typing its name:
+
+```{r, echo=TRUE}
+# z should print the number 20 (10 + sqrt(10))
+z
+```
+
+## Packages
+
+-   Packages allow us to go beyond *base R* functionalities.
+
+-   They consist of various functions that simplify tasks and provide documentation.
+
+<!-- -->
+
+-   We can install packages from within R via [*CRAN*](https://cran.r-project.org/)*:*
+
+```{r, echo=TRUE, eval=FALSE}
+# we need to install packages only once:
+install.packages("stringr")
+
+# however, we need to load the package every time we (re-)start R
+library(stringr)
+```
+
+## Example: stringr
+
+```{r, echo=TRUE, eval=FALSE}
+# lets load the stringr package:
+library(stringr)
+
+# using the help() function, we can inspect the documentation
+help(stringr)
+```
+
+. . .
+
+![](stringr.jpg){width="900"}
+
+## Example: stringr
+
+The *stringr* package provides us with multiple functions to manipulate strings.
+
+```{r, echo=TRUE}
+# as an example, we create a fictitious actor ID from the Twitter API
+string <- "id:twitter.com:207584738373"
+
+# to match this ID with meta data, we only want to keep the numbers
+# we can make use of the function str_replace()
+# It needs these arguments: str_replace(string, pattern, replacement)
+clean_ID <- str_replace(string, "id:twitter.com:", "")
+
+# let's check if it worked:
+clean_ID
+```
+
+## tidyverse
+
+[![](tidyverse.jpg)](https://www.tidyverse.org/)
+
+## tidyverse vs. base R
+
+The tidyverse has become very popular among R users. It provides:
+
+-   clean and tidy code (readability)
+
+-   functions for typical data science tasks
+
+-   a coherent "grammar"
+
+BUT: it also introduces dependencies, and packages evolve.
+
+## Develop your own coding style
+
+![](Bild2.png)
+
+# Data types & formats
+
+## It all depends on how
+
+::: panel-tabset
+## how &
+
+How: data types
+
+-   Numeric values (integers & doubles)
+
+-   Character strings
+
+-   Logical values
+
+-   Factors
+
+-   ...
+
+## where data is stored
+
+Where: data formats
+
+-   Vectors
+
+-   Data frames/Tibbles
+
+-   Lists
+
+-   ...
+:::
+
+## Numeric values
+
+There are two types in R: *Integers* (numbers without a decimal values) and *doubles* (numbers with decimal values)
+
+```{r, echo=TRUE}
+# We place an L behind the value to be specific that it is an integer
+x <- 10L
+
+# using the typeof() function we can check the data type
+typeof(x)
+```
+
+```{r, echo=TRUE}
+# create a double
+z <- 10.55
+
+# check data type
+typeof(z)
+```
+
+```{r, echo=TRUE}
+# is x numeric?
+is.numeric(x)
+```
+
+## Character strings
+
+A string represents a series of characters. Numbers and/or symbols can also be part of a string.
+
+```{r, echo=TRUE}
+# we need to wrap the string into quotation marks
+
+string <- "Hello"
+
+# we can check the type using class()
+class(string)
+
+# an example with numbers
+ID <- "id:twitter.com:207584738373"
+
+# check again
+class(string)
+```
+
+## Factors
+
+We call data types that assume that their values are not continuous and have distinct categories factors.
+
+Factors take numeric values or character strings as input and convert them into so-called levels:
+
+```{r, echo=TRUE}
+# let's create an factor:
+factor(1)
+```
+
+## Logical values
+
+They are either *TRUE* or *FALSE* (and also called Boolean values). We produce them by making logical requests:
+
+```{r, echo=TRUE}
+1 > 2
+```
+
+We can also store logical values is objects:
+
+```{r, echo=TRUE}
+logical <- 1 > 2
+
+logical
+```
+
+## Logical operators
+
+::: panel-tabset
+## Relational
+
+-   `<` less than
+
+-   `<=` less than or equal to
+
+-   `>` greater than
+
+-   `>=` greater than or equal to
+
+-   `==` exactly equal to
+
+-   `!=` not equal to
+
+## Logical
+
+-   & (AND)
+
+-   \| (OR)
+:::
+
+## Data formats
+
+[![](formats.jpg)](https://devopedia.org/r-data-structures)
+
+## Vector
+
+We can create vectors by combining individual objects with the function *c()* ("concatenating"):
+
+```{r, echo=TRUE}
+# This works for numbers
+numeric_vector <- c(1,2,3)
+
+numeric_vector
+```
+
+```{r, echo=TRUE}
+# ... for characters
+character_vector <- c("CDU", "CSU", "SPD")
+
+character_vector
+```
+
+```{r, echo=TRUE}
+# and for logical values
+logical_vector <- c(TRUE, FALSE, FALSE)
+
+logical_vector
+```
+
+## Data frames
+
+They are comparable to data sets as in Stata or SPSS
+
+-   with n rows and k columns
+
+-   and allow us to store variables of different classes.
+
+```{r, echo=TRUE}
+# we create a data frame called df 
+# using the function "data.frame()
+df <- data.frame(
+  party = c("CDU", "CSU", "SPD"),
+  vote_share = c("27", "5", "13")
+)
+```
+
+```{r, echo=TRUE}
+df
+```
+
+## Data frames
+
+We can also check the dimensions, number of observations, and number of variables:
+
+```{r, echo=TRUE}
+# dimensions
+dim(df)
+
+# number of observations
+nrow(df)
+
+# number of variables
+ncol(df)
+```
+
+## Lists
+
+We can combine any number of objects to a list:
+
+```{r, echo=TRUE}
+# using the list() function
+test_list <- list(numeric_vector,
+                  character_vector)
+
+test_list
+```
+
+# How to deal with objects
+
+## Accessing and subsetting objects
+
+-   Typically, we are not interested in all of the data
+
+-   We want to access specific information
+
+-   This works similar across different object types (vectors, data frames, lists, ...)
+
+```{r, echo=TRUE}
+# Let's go back to our party vector:
+party_vector <- c("CDU", "CSU", "SPD")
+
+# we only want to access the first element
+party_vector[1]
+```
+
+```{r, echo=TRUE}
+# we can store this in a new object:
+CDU <- party_vector[1]
+```
+
+## Accessing and subsetting data frames
+
+We can select rows, columns, and specific elements. This follows the general logic:
+
+```{r, echo=TRUE, eval=FALSE}
+data_frame[specify_row, specify_column]
+```
+
+Let's try this:
+
+```{r, echo=TRUE}
+# This is our data frame
+df
+
+# Let's select only the first column
+df[,1]
+```
+
+## Accessing and subsetting data frames
+
+We can also access individual variables using the \$ sign:
+
+```{r, echo=TRUE}
+df$party
+```
+
+Alternatively, we can index by variable name:
+
+```{r, echo=TRUE}
+df["party"]
+```
+
+Or variable order:
+
+```{r, echo=TRUE}
+df[1]
+```
+
+# Your turn!
+
+## Until our next session
+
+::: panel-tabset
+## Install
+
+-   Make sure R and RStudio is installed and works
+
+    -   <https://posit.co/download/rstudio-desktop/>
+
+## Read
+
+-   Chapter 7: Data Import in R for Data Science
+
+    -   [Link to free online version](https://r4ds.hadley.nz/data-import)
+
+-   Chapter 3: Data Transformation in R for Data Science
+
+    -   [Link to free online version](https://r4ds.hadley.nz/data-transform)
+
+## Think
+
+-   Questions to think about until our next session:
+
+    -   Do you have a particular data set you would like to import into R? Let me know!
+:::
+
+# Any open questions?
