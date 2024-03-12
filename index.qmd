@@ -1,0 +1,13 @@
+---
+title: "Statistics"
+subtitle: "2024S402022 PS - Summer semester 2024"
+---
+
+## **Course overview**
+
+The course will provide students with skills in quantitative methods for investigating key political science topics and illustrate these methods with practical examples. Participants will learn to carry out empirical analyses independently using the statistical software R. No prior knowledge of R is required. The main topics of the course are univariate, bivariate and first multivariate analysis methods as well as the graphical and tabular presentation of empirical results. Session will consist of a mixture of instructor input, applied programming, and discussion. Therefore, we will incorporate elements of the inverted classroom. This requires participants to prepare materials for the session and then apply them during the session.
+
+
+## **Navigating this website**
+
+On this website, you can find the syllabus as well as all course materials (see Schedule, slides & materials).

@@ -1,0 +1,65 @@
+---
+title: "Measurements & Data collection"
+subtitle: "Week 06"
+description: ""
+author: ""
+date: "Nov 15, 2023"
+listing:
+  - id: slides
+    contents:
+      - ../slides/week-06/*.qmd
+    type: table
+    fields: [title, subtitle, date]
+    #date-format: "ddd, MMM DD"
+    field-display-names:
+      title: "Topic"
+      subtitle: "Session"
+      date: "Date"
+    sort: [filename]
+    sort-ui: false
+    filter-ui: false
+  # - id: assignments
+  #   contents:
+  #     - ../hw/w1-*.qmd
+  #     - ../labs/w1-*.qmd
+  #   type: table
+  #   fields: [categories, title, date]
+  #   date-format: "ddd, MMM DD"
+  #   field-display-names:
+  #     categories: "Assignment"
+  #     title: "Title"
+  #     date: "Due"
+  #   sort: [date]
+  #   sort-ui: false
+  #   filter-ui: false
+tbl-colwidths: [10,50,40]
+---
+
+# Seminar slides
+
+::: {#slides}
+:::
+
+# Materials
+
+You can find the reading for this week [here](https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2006~~Preparation%20for%20the%20session~~kellstedt%5Fwhitten%5Fchapter5%2Epdf/0).
+
+# To Do's before our session
+
+::: panel-tabset
+## Read
+
+-   Chapter 5 - Kellstedt, P. M., & Whitten, G. D. (2018). *The fundamentals of political science research*. Cambridge University Press.
+
+**Helpful reading to get started with R:**
+
+-   [R for Data Science (2e)](https://r4ds.hadley.nz/). Introduction, Data Visualization, & Workflow: Basics, Data Transformation
+
+## Think
+
+Guiding questions:
+
+-   How would you measure the concepts used in your research question?
+
+-   And where could you find suitable data to test your hypotheses?
+:::

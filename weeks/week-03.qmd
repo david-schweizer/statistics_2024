@@ -1,0 +1,88 @@
+---
+title: "Literature review & Building theory"
+subtitle: "Week 03"
+description: ""
+author: ""
+date: "Oct 25, 2023"
+listing:
+  - id: slides
+    contents:
+      - ../slides/week-03/*.qmd
+    type: table
+    fields: [title, subtitle, date]
+    #date-format: "ddd, MMM DD"
+    field-display-names:
+      title: "Topic"
+      subtitle: "Session"
+      date: "Date"
+    sort: [filename]
+    sort-ui: false
+    filter-ui: false
+  # - id: assignments
+  #   contents:
+  #     - ../hw/w1-*.qmd
+  #     - ../labs/w1-*.qmd
+  #   type: table
+  #   fields: [categories, title, date]
+  #   date-format: "ddd, MMM DD"
+  #   field-display-names:
+  #     categories: "Assignment"
+  #     title: "Title"
+  #     date: "Due"
+  #   sort: [date]
+  #   sort-ui: false
+  #   filter-ui: false
+tbl-colwidths: [10,50,40]
+---
+
+# Seminar slides
+
+::: {#slides}
+:::
+
+# Materials
+
+You can find the readings [here](https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2003~~Preparation%20for%20the%20session/0).
+
+# To Do's before our session
+
+::: panel-tabset
+
+## Mandatory exercise 
+
+-   Come up with a research question about a topic in political science that interests you. Also explain why it is relevant in 4-5 sentences.
+
+-   Hand in the research question in a PDF document via e-mail until **next Tuesday, 24.10., by noon (12:00).**
+
+-   **This is your first exercise: It is not a problem if you do any mistakes. There are no stupid questions!**
+
+::: {style="font-size: 85%;"}
+::: {.callout-tip appearance="simple"}
+Skim a few articles for inspiration, important and high-quality journals include: American Political Science Review, American Journal of Political Science, Journal of Politics, and the British Journal of Poli
+:::
+:::
+
+## Install (voluntary)
+
+-   Install [Zotero](https://www.zotero.org/). It is a free software to help you with managing your references when writing, among other things. I will give a short introduction to the program. If installed, you can click along.
+
+## Read
+
+-   Chapter 2 and chapter 3 - Powner, L. C. (2015). *Empirical Research and Writing: A Political Science Student's Practical Guide*. Los Angeles: Sage.
+
+-   Recommendation in German: Plümper, T. (2012). *Effizient schreiben: Leitfaden zum Verfassen von Qualifizierungsarbeiten und wissenschaftlichen Texten*. München: Oldenbourg Verlag.
+
+## Think
+
+Guiding questions:
+
+-   What is relevant literature?
+
+-   How do I find relevant literature?
+
+-   How do I structure a literature review?
+
+-   What are the components of good theory?
+
+-   What is a causal mechanism?
+:::

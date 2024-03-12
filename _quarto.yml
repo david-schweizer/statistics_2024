@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Statistics - Course Website"
+  page-footer:
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "Statistics | Summer semester 2024 | University of Innsbruck"  
+  sidebar:
+    background: "#f29100"
+    logo: "images/hex_sticker.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: slack
+        href: .
+        text: Slack
+      - icon: bank
+        href: .
+        text: OLAT
+      - icon: rocket
+        href: https://www.datacamp.com/
+        text: Datacamp
+    style: docked
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: syllabus.qmd
+        text: Syllabus
+      - href: material.qmd
+        text: Weekly schedule (Slides & Materials)
+        
+format:
+  html:
+    theme: 
+      - default
+      - css/theme.scss
+    css: css/custom.css
+    toc: true
+
+
+

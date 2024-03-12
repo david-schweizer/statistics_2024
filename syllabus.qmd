@@ -1,0 +1,375 @@
+---
+title: "Syllabus: Applied Methods of Social Sciences"
+subtitle: "402011 PS - Winter semester 2023/24"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## **Course details**
+
+|               |                                                                                                    |
+|------------------|------------------------------------------------------|
+| Proseminar:   | Applied Methods of Social Sciences                                                                 |
+| Time:         | Wednesday, 08:00 - 11:15 October 11 to December 06 (single sessions on October 11 and December 06) |
+| Place:        | Virtual classroom                                                                                  |
+| Language:     | English                                                                                            |
+| Instructor:   | David Schweizer, M.A., david.schweizer\@uni-mannheim.de                                            |
+| Office hours: | Via Zoom, Wednesday 11:15 -- 12:15, please make an appointment by e-mail beforehand                |
+
+## **Course description**
+
+Using a mix of lecture-style input, interactive teaching, and
+discussions, this course teaches the fundamentals of scientific work and
+good scientific practice in the subject of political science using
+practical examples. Topics include critical reading of scientific texts,
+literature review and reference management software, formulating
+testable hypotheses, types of data collection and analysis, presenting
+empirical results, and how to write term papers. Overall, students will
+be equipped to critically evaluate research and conduct their own
+research projects with a focus on quantitative methods.
+
+## **Learning outcome**
+
+Students learn the most important qualitative and quantitative methods
+for data collection and data analysis. They are able to interpret and
+critically evaluate existing empirical studies. Students learn to
+independently formulate a research question, collect data, and analyze
+data.
+
+## **Prerequisites**
+
+There are no prerequisites for this course, except the willingness to
+familiarise yourself with the programming language R.
+
+## **Course requirements**
+
+**Active participation**
+
+-   Critically engaging with the assigned readings for each session. Use
+    Slack to post any questions or discuss with your peers if you do not
+    understand concepts. Usually, I post questions to think about
+    regarding the readings. Keep them in mind while reading.
+
+-   Working on little assignments throughout the semester (e.g., think
+    of a research question, conduct a literature search)
+
+-   Actively participating in discussions and group work during our
+    weekly meetings
+
+### Group presentations
+
+::: panel-tabset
+## In general
+
+-   4 groups, 10-12 minutes of presentation, 15 minutes of discussion
+
+-   Prepare a powerpoint presentation. Send me at least an outline until
+    **November 27, 11:30 am.**
+
+-   Participate in discussion of other presentations
+
+-   Topics can include: Democratic backsliding, the political impact of
+    radical right populist parties, cleavage politics (e.g., young vs.
+    old, rural vs. urban, ...)
+
+## Expectations
+
+In your presentation, you should demonstrate your understanding of the
+materials covered so far.
+
+::: {style="font-size: 70%;"}
+::: {.callout-tip appearance="simple"}
+Your presentation should cover the following:
+
+-   Research question
+
+-   Theory & research design
+
+    -   Expectation, causal mechanism, assumptions, scope?
+
+    -   Can you cross the four hurdles?
+
+    -   Type of research design
+
+-   Measurement strategy
+
+    -   How do you operationalize your concepts?
+
+-   Possible datasets / databases
+:::
+:::
+
+## Groups
+
+-   Group 1: Jakub Bieniek, Ying-Fan Chen, Maria Michelaki
+
+-   Group 2: Josef Galli, Elias Latta,Bernadett Neszt
+
+-   Group 3: Daniel Saath, Daniel Schatzer
+
+-   Group 4: Matthias Lung, Anna-Maria Egger
+:::
+
+**Short term paper**
+
+-   \~1500 words (excluding cover page and references)
+
+-   It should include:
+
+    -   Introduction (Question and its relevance)
+
+    -   Short literature review
+
+    -   Theory and research design
+
+    -   (Simple data analysis)
+
+-   [Deadline:]{.underline} 31.01.2024, 23:59.
+
+## **Organization & Learning Resources**
+
+**Course website, Slack, and OLAT:**
+
+The plan is to use primarily the course website and Slack for providing
+the structure of the seminar and communication, respectively.
+Nevertheless, you will also receive mails via OLAT. Make sure to
+regularly check your university e-mail address.
+
+-   You can find the course website here:
+
+-   If you have contacted me with a question via any channel and you did
+    not hear back after 2 days (except over the weekend), please just
+    send me your question again!
+
+**Office hours:**
+
+-   Via Zoom, Wednesday 11:15 -- 12:15, please make an appointment by
+    e-mail beforehand
+
+-   If you have a specific question or problem (e.g., finding a research
+    question), please tell me before coming to the office hours (when
+    making the appointment). This way , I can also prepare for it and
+    thereby making our meeting more productive and constructive.
+
+**Students with disabilities or chronic illnesses:**
+
+-   Please contact me or the Office of Student Affairs if you need
+    special assistance due to disabilities or chronic illnesses.
+
+-   And please do this early in the semester so that we can make the
+    appropriate arrangements immediately.
+
+**If you need any support or face difficult situations:**
+
+Of course, you can always talk directly to me if you feel comfortable
+with the question. It is important to note that the [University's Office
+for Equality and Gender
+Studies](https://www.uibk.ac.at/gleichbehandlung/belaestigung/ansprechpersonen.html)
+supports and advises you in cases of discrimination or sexual
+harassment. Further, you can rely on the [psychological
+counseling](https://www.studierendenberatung.at/en) offered by the
+university.
+
+## **Readings**
+
+The primary readings for this seminar are chapters from the following
+books:
+
+-   Kellstedt, P. M., & Whitten, G. D. (2018). *The fundamentals of
+    political science research*. Cambridge University Press.
+
+-   King, G., Keohane, R. O., & Verba, S. (1994). *Designing social
+    inquiry: Scientific inference in qualitative research*. Princeton
+    University Press.
+
+-   Powner, L. C. (2015). *Empirical Research and Writing: A Political
+    Science Student's Practical Guide*. Los Angeles: Sage.
+
+I will provide you the readings via OLAT.
+
+## **Course Schedule**
+
+|         |            |                                                                    |
+|----------------|----------------|----------------------------------------|
+| Session | Date       | Topic                                                              |
+| 1       | 11.10.2023 | Intro Session                                                      |
+| 2       | 18.10.2023 | The logic of social science research & Finding a research question |
+| 3       | 25.10.2023 | Literature review & Building theory                                |
+| 4       | 01.11.2023 | No session due to public holiday                                   |
+| 5       | 08.11.2023 | Reading strategies & Research Design                               |
+| 6       | 15.11.2023 | Measurements & Data collection                                     |
+| 7       | 22.11.2023 | Data transformation and visulization & How to present your results |
+| 8       | 29.11.2023 | Student presentations & Writing tips                               |
+| 9       | 06.12.2023 | Closing session                                                    |
+
+## **Preliminary Overview of our Sessions**
+
+⚠️ *Depending on our progress and other circumstances the syllabus might
+change!*
+
+::: {.callout-note appearance="minimal" icon="false"}
+**Session 01 - 11.10.2023 - Intro Session**
+:::
+
+Content:
+
+-   Getting to know each other
+
+-   Expectation management
+
+-   Plan for the semester
+
+Readings:
+
+-   There are no readings for this session
+
+::: {.callout-note appearance="minimal" icon="false"}
+**Session 02 - 18.10.2023 - The logic of social science research &
+Finding a research question**
+:::
+
+Content:
+
+-   What are characteristics of (good) scientific research?
+
+-   What are characteristics of a research design?
+
+-   What characterizes a good research question?
+
+-   How do I find a research question?
+
+-   What role does the existing literature play?
+
+Readings:
+
+-   Chapter 1 - King, G., Keohane, R. O., & Verba, S. (1994). *Designing
+    social inquiry: Scientific inference in qualitative research*.
+    Princeton University Press.
+
+-   Chapter 1 - Powner, L. C. (2015). *Empirical Research and Writing: A
+    Political Science Student's Practical Guide*. Los Angeles: Sage.
+
+::: {.callout-note appearance="minimal" icon="false"}
+**Session 03 - 25.10.2023 - Literature review & Building theory**
+:::
+
+Content:
+
+-   What is relevant literature? What types of literature are there?
+
+-   How do I find relevant literature?
+
+-   How do I structure a literature report?
+
+-   What are the building blocks of a good theory?
+
+-   What is a causal mechanism?
+
+-   What are assumptions and frameworks of a theory?
+
+Readings:
+
+-   Chapter 2 - Powner, L. C. (2015). *Empirical Research and Writing: A
+    Political Science Student's Practical Guide*. Los Angeles: Sage.
+
+-   Chapter 3 - Powner, L. C. (2015). *Empirical Research and Writing: A
+    Political Science Student's Practical Guide*. Los Angeles: Sage.
+
+::: {.callout-note appearance="minimal" icon="false"}
+**Session 04 - 01.11.2023 - No session due to public holiday**
+:::
+
+::: {.callout-note appearance="minimal" icon="false"}
+**Session 05 - 08.11.2023 -** **Reading strategies &** **Research
+design**
+:::
+
+Content:
+
+-   Different types of reading?
+
+-   How can we read (more) efficiently?
+
+-   What research designs are there?
+
+-   How to evaluate a research design?
+
+Readings:
+
+-   Have a look at these [blog posts by Raul
+    Pacheco-Vega](http://www.raulpacheco.org/resources/reading-strategies/)
+    regarding reading strategies.
+
+-   Chapter 4 - Kellstedt, P. M., & Whitten, G. D. (2018). *The
+    fundamentals of political science research*. Cambridge University
+    Press.
+
+::: {.callout-note appearance="minimal" icon="false"}
+**Session 06 - 15.11.2023 - Measurements & data collection**
+:::
+
+Content:
+
+-   How to measure concepts?
+
+-   What is validity and reliability?
+
+-   Where to find data?
+
+-   Hands-on introduction to R and RStudio
+
+Readings:
+
+-   Chapter 5 - Kellstedt, P. M., & Whitten, G. D. (2018). *The
+    fundamentals of political science research*. Cambridge University
+    Press.
+
+::: {.callout-note appearance="minimal" icon="false"}
+**Session 07 - 22.11.2023 - Data transformation and visualization**
+:::
+
+Content:
+
+-   How to transform data
+-   How to visualize data
+-   How to present your results
+
+Readings:
+
+-   Chapter 6 - Kellstedt, P. M., & Whitten, G. D. (2018). *The
+    fundamentals of political science research*. Cambridge University
+    Press.
+
+-   Chapter 1 and 3 - Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G.
+    (2023). *R for data science*. O'Reilly Media, Inc. [Link to free
+    online version](https://r4ds.had.co.nz/data-visualisation.html)
+
+::: {.callout-note appearance="minimal" icon="false"}
+**Session 08 - 29.11.2023 - Student presentations**
+:::
+
+Content:
+
+-   Student presentations
+-   Writing tips for your term paper
+
+Readings:
+
+-   There are no readings for this session
+
+::: {.callout-note appearance="minimal" icon="false"}
+**Session 09 - 06.12.2023 - Closing session**
+:::
+
+Content:
+
+-   Course evaluation
+
+-   Discussion of ideas for term papers
+
+-   Open questions
+
+Readings:
+
+-   There are no readings for this session

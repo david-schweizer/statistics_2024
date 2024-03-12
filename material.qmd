@@ -1,0 +1,28 @@
+---
+title: "Schedule"
+listing:
+  - id: material
+    contents:
+      - weeks/week-01.qmd #*
+    type: table
+    fields: [subtitle, title, date]
+    field-display-names:
+      title: "Topic"
+      description: "Date"
+      subtitle: "Week"
+    date-format: "MMMM DD, YYYY"
+    sort: [filename]
+    sort-ui: false
+    filter-ui: false
+ #tbl-colwidths: [5,20,50,25]
+editor: visual
+---
+
+## **Material**
+
+You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.
+
+Just click on the topic of the respective week.
+
+::: {#material}
+:::

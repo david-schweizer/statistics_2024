@@ -1,0 +1,73 @@
+---
+title: "Reading Strategies & Research Design"
+subtitle: "Week 05"
+description: ""
+author: ""
+date: "Nov 08, 2023"
+listing:
+  - id: slides
+    contents:
+      - ../slides/week-05/*.qmd
+    type: table
+    fields: [title, subtitle, date]
+    #date-format: "ddd, MMM DD"
+    field-display-names:
+      title: "Topic"
+      subtitle: "Session"
+      date: "Date"
+    sort: [filename]
+    sort-ui: false
+    filter-ui: false
+  # - id: assignments
+  #   contents:
+  #     - ../hw/w1-*.qmd
+  #     - ../labs/w1-*.qmd
+  #   type: table
+  #   fields: [categories, title, date]
+  #   date-format: "ddd, MMM DD"
+  #   field-display-names:
+  #     categories: "Assignment"
+  #     title: "Title"
+  #     date: "Due"
+  #   sort: [date]
+  #   sort-ui: false
+  #   filter-ui: false
+tbl-colwidths: [10,50,40]
+---
+
+# Seminar slides
+
+::: {#slides}
+:::
+
+# Materials
+
+You can find the reading [here](https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2004~~Preparation%20for%20the%20session/0).
+
+# To Do's before our session
+
+::: panel-tabset
+## Mandatory exercise until 07.11.
+
+-   Conduct a literature search for your research question and describe your strategy in few sentences.
+
+-   Find 10 articles or books (chapters) that might be relevant for your research question. **Tip:** Skim the articles' abstract and/or introduction. At least 5 texts should be (peer-reviewed) published in academic journals
+
+-   Hand in a list of the articles in a PDF document via e-mail until Tuesday, 07.11., by noon (12:00).
+
+## Read
+
+-   Have a look at these [blog posts by Raul Pacheco-Vega](http://www.raulpacheco.org/resources/reading-strategies/) regarding reading strategies.
+
+-   Chapter 4 - Kellstedt, P. M., & Whitten, G. D. (2018). *The fundamentals of political science research*. Cambridge University Press.
+
+## Think
+
+Guiding questions:
+
+-   How can we read (more) efficiently?
+
+-   What research designs are there?
+
+-   How to evaluate a research design?
+:::

@@ -1,0 +1,83 @@
+---
+title: "Social science research & Research questions"
+subtitle: "Week 02"
+description: ""
+author: ""
+date: "Oct 18, 2023"
+listing:
+  - id: slides
+    contents:
+      - ../slides/week-02/*.qmd
+    type: table
+    fields: [title, subtitle, date]
+    #date-format: "ddd, MMM DD"
+    field-display-names:
+      title: "Topic"
+      subtitle: "Session"
+      date: "Date"
+    sort: [filename]
+    sort-ui: false
+    filter-ui: false
+  # - id: assignments
+  #   contents:
+  #     - ../hw/w1-*.qmd
+  #     - ../labs/w1-*.qmd
+  #   type: table
+  #   fields: [categories, title, date]
+  #   date-format: "ddd, MMM DD"
+  #   field-display-names:
+  #     categories: "Assignment"
+  #     title: "Title"
+  #     date: "Due"
+  #   sort: [date]
+  #   sort-ui: false
+  #   filter-ui: false
+tbl-colwidths: [10,50,40]
+---
+
+# Seminar slides
+
+::: {#slides}
+:::
+
+# Materials
+
+You can find the readings [here](https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2002/0).
+
+# To Do's before our session
+
+::: panel-tabset
+## Install & Join
+
+-   Make sure R and RStudio is installed and works
+
+    -   Instructions can be found [here](https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2002/0)
+
+-   Join the course Slack channel!
+
+    -   Invitation will follow
+
+-   Join the Datacamp team!
+
+    -   Invitation will follow
+
+## Read
+
+-   Chapter 1 - King, G., Keohane, R. O., & Verba, S. (1994). *Designing social inquiry: Scientific inference in qualitative research*. Princeton University Press.
+
+-   Chapter 1 - Powner, L. C. (2015). *Empirical Research and Writing: A Political Science Student's Practical Guide*. Los Angeles: Sage.
+
+## Think
+
+Guiding questions:
+
+-   What characterizes good social science research?
+
+-   What are the components of a research design?
+
+-   What characterizes a good research question?
+
+-   How do I find a research question?
+
+-   What role does the existing scientific literature play?
+:::
