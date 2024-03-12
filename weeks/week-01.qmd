@@ -35,6 +35,10 @@ listing:
 tbl-colwidths: [10,50,40]
 ---
 
+# To do's before our session
+
+You do not need to prepare anything for our first session.
+
 # Seminar slides
 
 ::: {#slides}
@@ -43,7 +47,3 @@ tbl-colwidths: [10,50,40]
 # Material
 
 You can find the R script for today's session [**here**](https://lms.uibk.ac.at/url/RepositoryEntry/5617582099/CourseNode/109453712367926/path%3D~~week%5F01~~week01%5Fsession02%5Fexcercises%2Er/0).
-
-# To Do's before our session
-
-You do not need to prepare anything for our first session.

@@ -46,7 +46,7 @@
     "href": "weeks/week-01.html",
     "title": "Intro Session",
     "section": "",
-    "text": "Seminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\nIntro Session\n\n\nWeek 1\n\n\nMar 13, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterial\nYou can find the R script for today’s session here.\n\n\nTo Do’s before our session\nYou do not need to prepare anything for our first session."
+    "text": "To do’s before our session\nYou do not need to prepare anything for our first session.\n\n\nSeminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\nIntro Session\n\n\nWeek 1\n\n\nMar 13, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterial\nYou can find the R script for today’s session here."
   },
   {
     "objectID": "slides/week-01/01-example.html#bullet-point-list",
@@ -123,7 +123,7 @@
     "href": "weeks/week-02.html",
     "title": "Import, tidy, and transform",
     "section": "",
-    "text": "Until our session\n\nInstallReadThink\n\n\n\nMake sure R and RStudio is installed and works\n\nhttps://posit.co/download/rstudio-desktop/\n\n\n\n\n\nChapter 7: Data Import in R for Data Science\n\nLink to free online version\n\nChapter 3: Data Transformation in R for Data Science\n\nLink to free online version\n\n\n\n\n\nQuestions to think about until our session:\n\nDo you have a particular data set you would like to import into R? Let me know!\n\n\n\n\n\n\n\nSeminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nTBD."
+    "text": "To do’s before our session\n\nInstallReadThink\n\n\n\nMake sure R and RStudio is installed and works\n\nhttps://posit.co/download/rstudio-desktop/\n\n\n\n\n\nChapter 7: Data Import in R for Data Science\n\nLink to free online version\n\nChapter 3: Data Transformation in R for Data Science\n\nLink to free online version\n\n\n\n\n\nQuestions to think about until our session:\n\nDo you have a particular data set you would like to import into R? Let me know!\n\n\n\n\n\n\n\nSeminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nTBD."
   },
   {
     "objectID": "slides/week-01/01-Intro.html",
