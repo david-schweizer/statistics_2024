@@ -9,7 +9,7 @@ editor:
 ## ***Course details***
 
 |               |                                                                                     |
-|--------------------|----------------------------------------------------|
+|---------------------|---------------------------------------------------|
 | Seminar:      | Statistics                                                                          |
 | Time:         | Wednesday, 08:00 - 11:15 March 13 to May 15 (single session on May 15)              |
 | Place:        | Virtual classroom                                                                   |

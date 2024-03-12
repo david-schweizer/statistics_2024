@@ -25,7 +25,7 @@
     "href": "material.html",
     "title": "Schedule",
     "section": "",
-    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html#assignments",
@@ -123,7 +123,7 @@
     "href": "weeks/week-02.html",
     "title": "Import, tidy, and transform",
     "section": "",
-    "text": "Seminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nTBD.\n\n\nUntil our next session\n\nInstallReadThink\n\n\n\nMake sure R and RStudio is installed and works\n\nhttps://posit.co/download/rstudio-desktop/\n\n\n\n\n\nChapter 7: Data Import in R for Data Science\n\nLink to free online version\n\nChapter 3: Data Transformation in R for Data Science\n\nLink to free online version\n\n\n\n\n\nQuestions to think about until our next session:\n\nDo you have a particular data set you would like to import into R? Let me know!"
+    "text": "Until our session\n\nInstallReadThink\n\n\n\nMake sure R and RStudio is installed and works\n\nhttps://posit.co/download/rstudio-desktop/\n\n\n\n\n\nChapter 7: Data Import in R for Data Science\n\nLink to free online version\n\nChapter 3: Data Transformation in R for Data Science\n\nLink to free online version\n\n\n\n\n\nQuestions to think about until our session:\n\nDo you have a particular data set you would like to import into R? Let me know!\n\n\n\n\n\n\n\nSeminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nTBD."
   },
   {
     "objectID": "slides/week-01/01-Intro.html",
@@ -2587,7 +2587,7 @@
     "href": "material.html#material",
     "title": "Schedule",
     "section": "",
-    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/week-02/02-GrammarOfGraphics.html",
