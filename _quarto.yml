@@ -13,11 +13,8 @@ website:
     pinned: true
     align: center
     tools:
-      - icon: slack
-        href: .
-        text: Slack
       - icon: bank
-        href: .
+        href: https://lms.uibk.ac.at/url/RepositoryEntry/5617582099
         text: OLAT
       - icon: rocket
         href: https://www.datacamp.com/
