@@ -3,7 +3,8 @@
     "listing": "/material.html",
     "items": [
       "/weeks/week-01.html",
-      "/weeks/week-02.html"
+      "/weeks/week-02.html",
+      "/weeks/week-03.html"
     ]
   },
   {
@@ -18,13 +19,13 @@
   },
   {
     "listing": "/weeks/week-02.html",
-    "items": []
+    "items": [
+      "/slides/week-02/import-tidy-transform.html"
+    ]
   },
   {
     "listing": "/weeks/week-03.html",
-    "items": [
-      "/slides/week-03/03-LitRev_Theory.html"
-    ]
+    "items": []
   },
   {
     "listing": "/weeks/week-04.html",

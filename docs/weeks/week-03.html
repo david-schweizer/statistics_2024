@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="">
-<meta name="dcterms.date" content="2023-10-25">
+<meta name="dcterms.date" content="2024-04-10">
 
-<title>Applied Methods of Social Sciences - Course Website - Literature review &amp; Building theory</title>
+<title>Statistics - Course Website - Visualize &amp; Communicate</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,7 +58,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -71,9 +72,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -106,10 +107,10 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Literature review &amp; Building theory</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Visualize &amp; Communicate</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -123,10 +124,9 @@ ul.task-list li input[type="checkbox"] {
       <a href="../index.html" class="sidebar-logo-link">
       <img src="../images/hex_sticker.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-      <div class="sidebar-tools-main tools-wide">
-    <a href="https://applied-methods.slack.com" title="Slack" class="quarto-navigation-tool px-1" aria-label="Slack"><i class="bi bi-slack"></i></a>
-    <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5512593691" title="OLAT" class="quarto-navigation-tool px-1" aria-label="OLAT"><i class="bi bi-bank"></i></a>
-    <a href="https://www.datacamp.com/" title="Datacamp" class="quarto-navigation-tool px-1" aria-label="Datacamp"><i class="bi bi-rocket"></i></a>
+      <div class="sidebar-tools-main">
+    <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5617582099" rel="" title="OLAT" class="quarto-navigation-tool px-1" aria-label="OLAT"><i class="bi bi-bank"></i></a>
+    <a href="https://www.datacamp.com/" rel="" title="Datacamp" class="quarto-navigation-tool px-1" aria-label="Datacamp"><i class="bi bi-rocket"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -151,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../material.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
+ <span class="menu-text">Weekly schedule (Slides &amp; Materials)</span></a>
   </div>
 </li>
     </ul>
@@ -164,9 +164,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#seminar-slides" id="toc-seminar-slides" class="nav-link active" data-scroll-target="#seminar-slides">Seminar slides</a></li>
+  <li><a href="#to-dos-before-our-session" id="toc-to-dos-before-our-session" class="nav-link active" data-scroll-target="#to-dos-before-our-session">To Do’s before our session</a></li>
+  <li><a href="#seminar-slides" id="toc-seminar-slides" class="nav-link" data-scroll-target="#seminar-slides">Seminar slides</a></li>
   <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
-  <li><a href="#to-dos-before-our-session" id="toc-to-dos-before-our-session" class="nav-link" data-scroll-target="#to-dos-before-our-session">To Do’s before our session</a></li>
   </ul>
 </nav>
     </div>
@@ -175,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Literature review &amp; Building theory</h1>
+<h1 class="title">Visualize &amp; Communicate</h1>
 <p class="subtitle lead">Week 03</p>
 </div>
 
@@ -187,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 25, 2023</p>
+      <p class="date">April 10, 2024</p>
     </div>
   </div>
   
@@ -197,6 +197,26 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="to-dos-before-our-session" class="level1">
+<h1>To Do’s before our session</h1>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Assignment 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Read</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li><p>Work on the first assignment. The deadline is <strong>08.04.2024 18:00</strong>. You should submit the assignment via e-mail. You can download the assignment and data here.</p></li>
+<li><p>Please contact me via e-mail if you have any questions or problems!</p></li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ul>
+<li>Have a look at <a href="https://r4ds.hadley.nz/data-visualize">Chapter 1: Visualize</a>. What visualizations might be appropriate for your data?</li>
+<li>Have a look at <a href="https://r4ds.hadley.nz/quarto">chapter 28</a> and <a href="https://r4ds.hadley.nz/quarto-formats">29</a> in R for Data Science.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
 <section id="seminar-slides" class="level1">
 <h1>Seminar slides</h1>
 <div id="listing-slides" class="quarto-listing quarto-listing-container-table">
@@ -216,17 +236,6 @@ Date
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-date-sort="1698184800000" data-listing-file-modified-sort="1696958546044" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Literature Review &amp; Building Theory" data-listing-filename-sort="03-LitRev_Theory.qmd">
-<td>
-<a href="../slides/week-03/03-LitRev_Theory.html" class="title listing-title">Literature Review &amp; Building Theory</a>
-</td>
-<td>
-<span class="listing-subtitle">Week 3</span>
-</td>
-<td>
-<span class="listing-date">Oct 25, 2023</span>
-</td>
-</tr>
 </tbody>
 
 </table>
@@ -237,55 +246,13 @@ No matching items
 </section>
 <section id="materials" class="level1">
 <h1>Materials</h1>
-<p>You can find the readings <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2003~~Preparation%20for%20the%20session/0">here</a>.</p>
-</section>
-<section id="to-dos-before-our-session" class="level1">
-<h1>To Do’s before our session</h1>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Mandatory exercise</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Install (voluntary)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Read</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Think</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>You can find free and great resources on data visualization here:</p>
 <ul>
-<li><p>Come up with a research question about a topic in political science that interests you. Also explain why it is relevant in 4-5 sentences.</p></li>
-<li><p>Hand in the research question in a PDF document via e-mail until <strong>next Tuesday, 24.10., by noon (12:00).</strong></p></li>
-<li><p><strong>This is your first exercise: It is not a problem if you do any mistakes. There are no stupid questions!</strong></p></li>
+<li><p><a href="https://clauswilke.com/dataviz/">Fundamentals of Data Visualization</a></p></li>
+<li><p><a href="https://socviz.co/#preface">Data Visualization: A Practical Introduction</a></p></li>
+<li><p><a href="https://www.cedricscherer.com/top/dataviz/">Cedric Scherer Blog</a></p></li>
+<li><p><a href="https://r-graph-gallery.com/">The R Graph Gallery</a></p></li>
 </ul>
-<div style="font-size: 85%;">
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Skim a few articles for inspiration, important and high-quality journals include: American Political Science Review, American Journal of Political Science, Journal of Politics, and the British Journal of Poli</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<ul>
-<li>Install <a href="https://www.zotero.org/">Zotero</a>. It is a free software to help you with managing your references when writing, among other things. I will give a short introduction to the program. If installed, you can click along.</li>
-</ul>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<ul>
-<li><p>Chapter 2 and chapter 3 - Powner, L. C. (2015). <em>Empirical Research and Writing: A Political Science Student’s Practical Guide</em>. Los Angeles: Sage.</p></li>
-<li><p>Recommendation in German: Plümper, T. (2012). <em>Effizient schreiben: Leitfaden zum Verfassen von Qualifizierungsarbeiten und wissenschaftlichen Texten</em>. München: Oldenbourg Verlag.</p></li>
-</ul>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p>Guiding questions:</p>
-<ul>
-<li><p>What is relevant literature?</p></li>
-<li><p>How do I find relevant literature?</p></li>
-<li><p>How do I structure a literature review?</p></li>
-<li><p>What are the components of good theory?</p></li>
-<li><p>What is a causal mechanism?</p></li>
-</ul>
-</div>
-</div>
-</div>
 
 
 
@@ -528,7 +495,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Applied Methods of Social Sciences | Winter semester 2023/24 | University of Innsbruck</div>   
+    <div class="nav-footer-left">Statistics | Summer semester 2024 | University of Innsbruck</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

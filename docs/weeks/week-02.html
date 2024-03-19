@@ -72,9 +72,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -166,7 +166,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#to-dos-before-our-session" id="toc-to-dos-before-our-session" class="nav-link active" data-scroll-target="#to-dos-before-our-session">To do’s before our session</a></li>
   <li><a href="#seminar-slides" id="toc-seminar-slides" class="nav-link" data-scroll-target="#seminar-slides">Seminar slides</a></li>
-  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
+  <ul class="collapse">
+  <li><a href="#session-03" id="toc-session-03" class="nav-link" data-scroll-target="#session-03">Session 03</a></li>
+  <li><a href="#session-04" id="toc-session-04" class="nav-link" data-scroll-target="#session-04">Session 04</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -252,6 +256,17 @@ Date
 </tr>
 </thead>
 <tbody class="list">
+<tr data-index="0" data-listing-date-sort="1679266800000" data-listing-file-modified-sort="1710877255849" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-title-sort="Tidyverse: Import, tidy, and transform" data-listing-filename-sort="import-tidy-transform.qmd">
+<td>
+<a href="../slides/week-02/import-tidy-transform.html" class="title listing-title">Tidyverse: Import, tidy, and transform</a>
+</td>
+<td>
+<span class="listing-subtitle">Week 2</span>
+</td>
+<td>
+<span class="listing-date">Mar 20, 2023</span>
+</td>
+</tr>
 </tbody>
 
 </table>
@@ -262,10 +277,18 @@ No matching items
 </section>
 <section id="materials" class="level1">
 <h1>Materials</h1>
-<p>TBD.</p>
+<section id="session-03" class="level2">
+<h2 class="anchored" data-anchor-id="session-03">Session 03</h2>
+<p>You can find the script <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5617582099/CourseNode/109453712367926/path%3D~~week%5F02~~session%5F03~~session3%2Er/0">here</a>.</p>
+</section>
+<section id="session-04" class="level2">
+<h2 class="anchored" data-anchor-id="session-04">Session 04</h2>
+<p>You find the R script with the coding task <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5617582099/CourseNode/109453712367926/path%3D~~week%5F02~~session%5F04~~session4%2Er/0">here</a>.</p>
+<p>You can download the original .csv files from the BundeswahlleiterIn <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5617582099/CourseNode/109453712367926/path%3D~~week%5F02~~session%5F04~~data%5Fcsv%2Ezip/0">here.</a> If you struggle with the data import, you can find the necessary data frames <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5617582099/CourseNode/109453712367926/path%3D~~week%5F02~~session%5F04~~session4%5Fdata%2Erda/0">here</a>.</p>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

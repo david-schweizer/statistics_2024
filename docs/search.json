@@ -25,7 +25,7 @@
     "href": "material.html",
     "title": "Schedule",
     "section": "",
-    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 10, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html#assignments",
@@ -123,7 +123,7 @@
     "href": "weeks/week-02.html",
     "title": "Import, tidy, and transform",
     "section": "",
-    "text": "To do’s before our session\n\nInstallReadThink\n\n\n\nMake sure R and RStudio is installed and works\n\nhttps://posit.co/download/rstudio-desktop/\n\n\n\n\n\nChapter 7: Data Import in R for Data Science\n\nLink to free online version\n\nChapter 3: Data Transformation in R for Data Science\n\nLink to free online version\n\n\n\n\n\nQuestions to think about until our session:\n\nDo you have a particular data set you would like to import into R? Let me know!\n\n\n\n\n\n\n\nSeminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nTBD."
+    "text": "InstallReadThink\n\n\n\nMake sure R and RStudio is installed and works\n\nhttps://posit.co/download/rstudio-desktop/\n\n\n\n\n\nChapter 7: Data Import in R for Data Science\n\nLink to free online version\n\nChapter 3: Data Transformation in R for Data Science\n\nLink to free online version\n\n\n\n\n\nQuestions to think about until our session:\n\nDo you have a particular data set you would like to import into R? Let me know!"
   },
   {
     "objectID": "slides/week-01/01-Intro.html",
@@ -177,9 +177,9 @@
   {
     "objectID": "weeks/week-03.html",
     "href": "weeks/week-03.html",
-    "title": "Literature review & Building theory",
+    "title": "Visualize & Communicate",
     "section": "",
-    "text": "Seminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\nLiterature Review & Building Theory\n\n\nWeek 3\n\n\nOct 25, 2023\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nYou can find the readings here.\n\n\nTo Do’s before our session\n\nMandatory exerciseInstall (voluntary)ReadThink\n\n\n\nCome up with a research question about a topic in political science that interests you. Also explain why it is relevant in 4-5 sentences.\nHand in the research question in a PDF document via e-mail until next Tuesday, 24.10., by noon (12:00).\nThis is your first exercise: It is not a problem if you do any mistakes. There are no stupid questions!\n\n\n\n\n\n\n\n\nSkim a few articles for inspiration, important and high-quality journals include: American Political Science Review, American Journal of Political Science, Journal of Politics, and the British Journal of Poli\n\n\n\n\n\n\n\nInstall Zotero. It is a free software to help you with managing your references when writing, among other things. I will give a short introduction to the program. If installed, you can click along.\n\n\n\n\nChapter 2 and chapter 3 - Powner, L. C. (2015). Empirical Research and Writing: A Political Science Student’s Practical Guide. Los Angeles: Sage.\nRecommendation in German: Plümper, T. (2012). Effizient schreiben: Leitfaden zum Verfassen von Qualifizierungsarbeiten und wissenschaftlichen Texten. München: Oldenbourg Verlag.\n\n\n\nGuiding questions:\n\nWhat is relevant literature?\nHow do I find relevant literature?\nHow do I structure a literature review?\nWhat are the components of good theory?\nWhat is a causal mechanism?"
+    "text": "To Do’s before our session\n\nAssignment 1Read\n\n\n\nWork on the first assignment. The deadline is 08.04.2024 18:00. You should submit the assignment via e-mail. You can download the assignment and data here.\nPlease contact me via e-mail if you have any questions or problems!\n\n\n\n\nHave a look at Chapter 1: Visualize. What visualizations might be appropriate for your data?\nHave a look at chapter 28 and 29 in R for Data Science.\n\n\n\n\n\n\nSeminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nYou can find free and great resources on data visualization here:\n\nFundamentals of Data Visualization\nData Visualization: A Practical Introduction\nCedric Scherer Blog\nThe R Graph Gallery"
   },
   {
     "objectID": "weeks/week-04.html",
@@ -2587,7 +2587,7 @@
     "href": "material.html#material",
     "title": "Schedule",
     "section": "",
-    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 10, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/week-02/02-GrammarOfGraphics.html",
@@ -5388,5 +5388,250 @@
     "title": "Intro Session",
     "section": "",
     "text": "RStudio is the most popular IDE (Integretated Development Environment) for R.\n\nIDEs enable syntax highlighting, auto-completion, or a better overview our created output.\n\nBeyond these general benefits, R Studio provides us with\n\nan integration of version control via Git and addins such as citr or styler\ninterfaces to other programming languages (e.g., Python via the reticulate package)"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#plan-for-today",
+    "href": "slides/week-02/import-tidy-transform.html#plan-for-today",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Plan for today",
+    "text": "Plan for today\n\nSession 03BreakSession 04\n\n\n\n\n\nData project workflow from R for Data Science\n\n\n\n\n⏸️ 15 minute break: Get some fresh air, a coffee, …\n\n\n\nInput\n\nSo far:\n\nimport, select, filter, and mutate data\n\nNow:\n\nreshape, group & summarize, join, and save data\n\n\nYour turn!"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#data-wrangling",
+    "href": "slides/week-02/import-tidy-transform.html#data-wrangling",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Data wrangling …",
+    "text": "Data wrangling …\n… includes all steps to prepare our data for visualization, modeling, and analysis:\n\nimporting data\nsubsetting (selecting) our data\nrenaming variables or recode values\ncreating new variables\n\n… will account for most of the time spent on your data project!"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#tidyverse",
+    "href": "slides/week-02/import-tidy-transform.html#tidyverse",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "tidyverse",
+    "text": "tidyverse"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#dplyr",
+    "href": "slides/week-02/import-tidy-transform.html#dplyr",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "dplyr",
+    "text": "dplyr\n\n\n\n\nThe dplyr package provides us with the verbs to wrangle our data:\n\nselect()\nfilter()\nmutate()\ngroup_by()\nsummarize()\n… and many more!"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#tidyverse-concepts",
+    "href": "slides/week-02/import-tidy-transform.html#tidyverse-concepts",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Tidyverse: Concepts",
+    "text": "Tidyverse: Concepts\nThere is much more to the tidyverse, but two important concepts that you should be familiar with, if you want to use it, are:\n\nTidy data\nPipes"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#tidy-data",
+    "href": "slides/week-02/import-tidy-transform.html#tidy-data",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Tidy data",
+    "text": "Tidy data\nTidy refers to the structure of the data.\n\nVariablesObservationsValues\n\n\nEach variable has its own column.\n\n\n\nEach observation has its own row.\n\n\n\nEach value has its own cell."
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#pipes",
+    "href": "slides/week-02/import-tidy-transform.html#pipes",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Pipes",
+    "text": "Pipes\nUsually, in R we apply functions as follows:\n\nf(x)\n\nIn the logic of pipes this function is written as:\n\nx %&gt;% f(.)\n\nHere, object x is piped into function f, becoming (by default) its first argument. We can use pipes with more than one function, too:\n\nx %&gt;%    \n  f_1() %&gt;%    \n  f_2() %&gt;%    \n  f_3()"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#pipes-1",
+    "href": "slides/week-02/import-tidy-transform.html#pipes-1",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Pipes",
+    "text": "Pipes\nThe %&gt;% pipe used in the tidyverse is part of the magrittr package which also includes other specialized types of pipes.\n\nRStudio offers a keyboard shortcut for inserting the %&gt;% pipe: Ctrl + Shift + M (Windows & Linux)/Cmd + Shift + M (Mac)\nSince version 4.1.0, base R also offers its own pipe |&gt;, which is similar to but not the same as the %&gt;% pipe"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#importing-data-manually",
+    "href": "slides/week-02/import-tidy-transform.html#importing-data-manually",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Importing data manually",
+    "text": "Importing data manually\n\nChoose file formatChoose file"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#importing-files",
+    "href": "slides/week-02/import-tidy-transform.html#importing-files",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Importing files",
+    "text": "Importing files\n\nR: use load(\"filename.RData\") or readRDS(\"filename.RDS\").\nExcel: e.g., load library(\"xlsx\") and use read.xlsx(\"filename.xlsx\").\nStata: e.g., load library(\"haven\") and use read_dta(\"filename.dta\").\n\nConsult the R documentation (e.g. type ?read.xlsx) to get an overview about options (e.g. sheetIndex or startRow).Tidy & Transform"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#import-gles-wave-25",
+    "href": "slides/week-02/import-tidy-transform.html#import-gles-wave-25",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Import GLES wave 25",
+    "text": "Import GLES wave 25\n\n# we load the haven package to import Stata files\nlibrary(haven)\n\n# we store the data in the object \"gles_25\"\ngles_25 &lt;- read_dta(\"ZA7731_sA_v1-0-0.dta\")\n\n# let's check the class of our object\ndim(gles_25)\n\n[1] 10030   201\n\n# and it's dimensions\nclass(gles_25)\n\n[1] \"tbl_df\"     \"tbl\"        \"data.frame\""
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#inspect-gles-wave-25",
+    "href": "slides/week-02/import-tidy-transform.html#inspect-gles-wave-25",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Inspect GLES wave 25",
+    "text": "Inspect GLES wave 25\n\n# let's have a look at a subset of the data\ngles_25[1:10,1:7]\n\n# A tibble: 10 × 7\n   study                       version doi   field_start field_end sample  lfdn \n   &lt;dbl+lbl&gt;                   &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;       &lt;chr&gt;     &lt;dbl+l&gt; &lt;dbl&gt;\n 1 7731 [ZA7731 GLES Panel 20… 1-0-0 … 10.4… 2023-10-11  2023-10-… 4 [Sam… 18540\n 2 7731 [ZA7731 GLES Panel 20… 1-0-0 … 10.4… 2023-10-11  2023-10-… 3 [Sam… 12587\n 3 7731 [ZA7731 GLES Panel 20… 1-0-0 … 10.4… 2023-10-11  2023-10-… 6 [Sam… 26011\n 4 7731 [ZA7731 GLES Panel 20… 1-0-0 … 10.4… 2023-10-11  2023-10-… 6 [Sam… 26012\n 5 7731 [ZA7731 GLES Panel 20… 1-0-0 … 10.4… 2023-10-11  2023-10-… 6 [Sam… 26014\n 6 7731 [ZA7731 GLES Panel 20… 1-0-0 … 10.4… 2023-10-11  2023-10-… 6 [Sam… 26018\n 7 7731 [ZA7731 GLES Panel 20… 1-0-0 … 10.4… 2023-10-11  2023-10-… 6 [Sam… 26019\n 8 7731 [ZA7731 GLES Panel 20… 1-0-0 … 10.4… 2023-10-11  2023-10-… 4 [Sam… 18556\n 9 7731 [ZA7731 GLES Panel 20… 1-0-0 … 10.4… 2023-10-11  2023-10-… 4 [Sam… 18557\n10 7731 [ZA7731 GLES Panel 20… 1-0-0 … 10.4… 2023-10-11  2023-10-… 6 [Sam… 26021"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#inspect-gles-wave-25-1",
+    "href": "slides/week-02/import-tidy-transform.html#inspect-gles-wave-25-1",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Inspect GLES wave 25",
+    "text": "Inspect GLES wave 25\n\n# let's have a look at a subset of the data\n# alternatively, you can use: names(gles_25)[1:50]\ncolnames(gles_25)[1:50] \n\n [1] \"study\"       \"version\"     \"doi\"         \"field_start\" \"field_end\"  \n [6] \"sample\"      \"lfdn\"        \"kp25_2601\"   \"kp25_010\"    \"kp25_011a\"  \n[11] \"kp25_011b\"   \"kp25_011c\"   \"kp25_170\"    \"kp25_190aa\"  \"kp25_190ab\" \n[16] \"kp25_190ba\"  \"kp25_190bb\"  \"kp25_850a\"   \"kp25_850b\"   \"kp25_870a\"  \n[21] \"kp25_870b\"   \"kp25_2880d\"  \"kp25_2880g\"  \"kp25_2880o\"  \"kp25_2880x\" \n[26] \"kp25_2880cv\" \"kp25_1090\"   \"kp25_1290\"   \"kp25_1130\"   \"kp25_1210\"  \n[31] \"kp25_020\"    \"kp25_2880p\"  \"kp25_2880t\"  \"kp25_2880u\"  \"kp25_2880y\" \n[36] \"kp25_2880al\" \"kp25_650f2\"  \"kp25_650o1\"  \"kp25_650l1\"  \"kp25_650s\"  \n[41] \"kp25_650e2\"  \"kp25_650g2\"  \"kp25_650h2\"  \"kp25_650k1\"  \"kp25_2880bg\"\n[46] \"kp25_2880bh\" \"kp25_2880bp\" \"kp25_2880bq\" \"kp25_2880bs\" \"kp25_5020\""
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#renaming",
+    "href": "slides/week-02/import-tidy-transform.html#renaming",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Renaming",
+    "text": "Renaming\n\nGeneralbase Rdplyr\n\n\nAs you have seen, not all variable names are informative or they are quite long. This complicates the coding process for us and reviewers. We want:\n\nshort,\nand informative variable names\n\n\n\n\n# we rename only column 22\ncolnames(gles_25)[22] &lt;- \"ego_state_measures_inequality\"\n\n# let's check if it worked\ncolnames(gles_25)[22:23]\n\n[1] \"ego_state_measures_inequality\" \"kp25_2880g\"                   \n\n# we can also rename multiple columns at once:\ncolnames(gles_25)[22:23] &lt;- c(\"ego_state_measures_inequality\",\n                              \"ego_state_no_economy\")\n\n# let's check if it worked\ncolnames(gles_25)[22:23]\n\n[1] \"ego_state_measures_inequality\" \"ego_state_no_economy\"         \n\n\n\n\n\ngles_25_new &lt;- gles_25 %&gt;% \n  # rename: new = old\n  rename(ego_state_measures_inequality = kp25_2880d)\n\ncolnames(gles_25)[22:23]\n\n[1] \"kp25_2880d\" \"kp25_2880g\"\n\ngles_25_new &lt;- gles_25 %&gt;% \n  # rename: new = old \n  # rename multiple variables at once\n  rename(ego_state_measures_inequality = kp25_2880d,\n         ego_state_no_economy = kp25_2880g)\n\ncolnames(gles_25)[22:23]\n\n[1] \"kp25_2880d\" \"kp25_2880g\""
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#selecting",
+    "href": "slides/week-02/import-tidy-transform.html#selecting",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Selecting",
+    "text": "Selecting\n\nGeneralbase Rdplyr\n\n\nUsually, we do not want to work with the full data set. For example, we do not need all of the 201 variables of the GLES wave 25. Therefore, we subset our data.\nThis also requires that we have engaged with the data set and the codebook (if available).\n\n\nIn base R, there are multiple ways to subset the data.\n\ngles_new &lt;- gles_25[,1:10]\n\n\n\n\n# we can subset the data using the select() verb\n\ngles_select &lt;- gles_25 %&gt;% \n  select(study:kp25_011a)"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#select-and-rename-in-one-step",
+    "href": "slides/week-02/import-tidy-transform.html#select-and-rename-in-one-step",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Select and Rename in one step",
+    "text": "Select and Rename in one step\n\ngles &lt;- gles_25 %&gt;% \n  # select(new_nam = old_name)\n  select(pol_interest_country = kp25_011a,\n         pol_interest_state = kp25_011b)"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#filtering",
+    "href": "slides/week-02/import-tidy-transform.html#filtering",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Filtering",
+    "text": "Filtering\n\nGeneralbase Rdplyr\n\n\nFiltering refers to rows instead of columns. We want to only include (or exclude) a specific set of observations.\nTherefore, we need to use comparison or logical operators (e.g, ==, &, …).\n\n\n\ngles_filter &lt;- gles[gles$pol_interest_state == 5,]\n\ndim(gles_filter)\n\n[1] 616   2\n\n\n\n\n\n# we can use the filter() verb\ngles_filter &lt;- gles %&gt;% \n  filter(pol_interest_state == 5)\n\ndim(gles_filter)\n\n[1] 616   2"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#adding-logical-operators",
+    "href": "slides/week-02/import-tidy-transform.html#adding-logical-operators",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Adding logical operators",
+    "text": "Adding logical operators\n\n# now, we want to filter depending on political interest on the state and country level\n\ngles_filter &lt;- gles %&gt;% \n  filter(pol_interest_state == 5 & pol_interest_country == 5 )\n\ndim(gles_filter)\n\n[1] 569   2"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#mutating---class",
+    "href": "slides/week-02/import-tidy-transform.html#mutating---class",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Mutating - Class",
+    "text": "Mutating - Class\n\nGeneralbase Rdplyr\n\n\nOftentimes, we want to transform the class of our variables. E.g., transform a character variable (“2024”) to a numeric one (“2024).\nIn base R, there is: as.numeric(), as.character(), as.factor(), and as.logical()\n\n\n\n# Let's test this:\nclass(gles$pol_interest_state)\n\n[1] \"haven_labelled\" \"vctrs_vctr\"     \"double\"        \n\n# what values are there?\ntable(gles$pol_interest_state)\n\n\n -99  -93    1    2    3    4    5 \n  82   46 1728 3346 3246  966  616 \n\n# change them to character\ngles$character_test &lt;- as.character(gles$pol_interest_state)\n\nclass(gles$character_test)\n\n[1] \"character\"\n\n\n\n\n\n# We can do the same using mutate() in dpylr:\ngles &lt;- gles %&gt;% \n  mutate(character_test = as.character(pol_interest_state))\n\n# let's check it\nclass(gles$character_test)\n\n[1] \"character\""
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#recoding",
+    "href": "slides/week-02/import-tidy-transform.html#recoding",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Recoding",
+    "text": "Recoding\n\nGeneralGet labelsdplyr\n\n\nSometimes, we might want to recode specific values. For example, we do not want to display numeric values but their labels. We can solve this using the recode() verb. But as always, we have multiple possibilities to do so.\n\n\n\n# get value labels\ntable(gles_25$kp25_050k)\n\n\n -99  -93    1    2    3    4    5 \n  37  246  329  618 3200 3778 1822 \n\n\n\n\n\n# Now we can recode (some of) the values\ngles_25_recode &lt;- gles_25 %&gt;% \n  mutate(new = case_when(kp25_050k == -99 ~ NA,\n                         TRUE ~ kp25_050k))\n\ntable(gles_25_recode$new)\n\n\n -93    1    2    3    4    5 \n 246  329  618 3200 3778 1822"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#our-workflow-so-far",
+    "href": "slides/week-02/import-tidy-transform.html#our-workflow-so-far",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Our workflow so far…",
+    "text": "Our workflow so far…\n\nImportSelect & RenameFilterMutate\n\n\n\n# 2021 German federal election data (.csv)\n\nelection &lt;- readr::read_delim(\"w-btw21_kerg2.csv\", \n                       delim = \";\", \n                       escape_double = FALSE, \n                       locale = locale(decimal_mark = \",\"), \n                       trim_ws = TRUE, \n                       skip = 9)\n\nstr(election) # and/or dim(), head(), names(), ...\n\nspc_tbl_ [18,818 × 18] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ Wahlart           : chr [1:18818] \"BT\" \"BT\" \"BT\" \"BT\" ...\n $ Wahltag           : num [1:18818] 26092021 26092021 26092021 26092021 26092021 ...\n $ Gebietsart        : chr [1:18818] \"Bund\" \"Bund\" \"Bund\" \"Bund\" ...\n $ Gebietsnummer     : chr [1:18818] \"99\" \"99\" \"99\" \"99\" ...\n $ Gebietsname       : chr [1:18818] \"Bundesgebiet\" \"Bundesgebiet\" \"Bundesgebiet\" \"Bundesgebiet\" ...\n $ UegGebietsart     : chr [1:18818] NA NA NA NA ...\n $ UegGebietsnummer  : chr [1:18818] NA NA NA NA ...\n $ Gruppenart        : chr [1:18818] \"System-Gruppe\" \"System-Gruppe\" \"System-Gruppe\" \"System-Gruppe\" ...\n $ Gruppenname       : chr [1:18818] \"Wahlberechtigte\" \"Wählende\" \"Ungültige\" \"Ungültige\" ...\n $ Gruppenreihenfolge: num [1:18818] -4 -3 -2 -2 -1 -1 1 1 2 2 ...\n $ Stimme            : num [1:18818] NA NA 1 2 1 2 1 2 1 2 ...\n $ Anzahl            : num [1:18818] 61172771 46707343 488483 408956 46218860 ...\n $ Prozent           : num [1:18818] NA 76.353 1.046 0.876 98.954 ...\n $ VorpAnzahl        : num [1:18818] 61688485 46976341 586726 460849 46389615 ...\n $ VorpProzent       : num [1:18818] NA 76.151 1.249 0.981 98.751 ...\n $ DiffProzent       : num [1:18818] -0.836 -0.573 -16.744 -11.26 -0.368 ...\n $ DiffProzentPkt    : num [1:18818] NA 0.202 -0.203 -0.105 0.203 ...\n $ Bemerkung         : chr [1:18818] \"Ergebnis der Wiederholungswahl in Teilen Berlins am 11.02.2024.\" \"Ergebnis der Wiederholungswahl in Teilen Berlins am 11.02.2024.\" \"Ergebnis der Wiederholungswahl in Teilen Berlins am 11.02.2024.\" \"Ergebnis der Wiederholungswahl in Teilen Berlins am 11.02.2024.\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   Wahlart = col_character(),\n  ..   Wahltag = col_number(),\n  ..   Gebietsart = col_character(),\n  ..   Gebietsnummer = col_character(),\n  ..   Gebietsname = col_character(),\n  ..   UegGebietsart = col_character(),\n  ..   UegGebietsnummer = col_character(),\n  ..   Gruppenart = col_character(),\n  ..   Gruppenname = col_character(),\n  ..   Gruppenreihenfolge = col_double(),\n  ..   Stimme = col_double(),\n  ..   Anzahl = col_double(),\n  ..   Prozent = col_double(),\n  ..   VorpAnzahl = col_double(),\n  ..   VorpProzent = col_double(),\n  ..   DiffProzent = col_double(),\n  ..   DiffProzentPkt = col_double(),\n  ..   Bemerkung = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt; \n\n\n\n\n\nelection &lt;- election %&gt;% \n  dplyr::select(area_no = Gebietsnummer,\n                area_type = Gebietsart,\n                area_name = Gebietsname,\n                group_type = Gruppenart,\n                group_name = Gruppenname,\n                vote = Stimme,\n                vote_share = Prozent)\n\nnames(election)\n\n[1] \"area_no\"    \"area_type\"  \"area_name\"  \"group_type\" \"group_name\"\n[6] \"vote\"       \"vote_share\"\n\n\n\n\n\n# keep vote shares of the AfD on the district level\nafd &lt;- election %&gt;% \n  filter(area_type == \"Wahlkreis\") %&gt;% \n  filter(group_name == \"AfD\")\n\n# we can achieve the same in one line\nafd &lt;- election %&gt;% \n  filter(area_type == \"Wahlkreis\" & group_name == \"AfD\")\n\n\n\n\n# calculate the difference between the first and second vote\nafd_diff &lt;- afd %&gt;%\n  pivot_wider(names_from = \"vote\", \n              values_from = \"vote_share\") %&gt;% \n  mutate(diff = `1` - `2`) %&gt;% \n  pivot_longer(cols = !c(area_no:group_name), \n               names_to = \"vote\", \n               values_to = \"vote_share\")"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#exkurs-reshape-data",
+    "href": "slides/week-02/import-tidy-transform.html#exkurs-reshape-data",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Exkurs: Reshape data",
+    "text": "Exkurs: Reshape data\n\nOverviewTo wideTo longCompared\n\n\n\n\n\n\n\n\n\n\nhead(gapminder_example)\n\n# A tibble: 6 × 3\n  country  year gdpPercap\n  &lt;fct&gt;   &lt;int&gt;     &lt;dbl&gt;\n1 France   1997    25890.\n2 France   2002    28926.\n3 France   2007    30470.\n4 Germany  1997    27789.\n5 Germany  2002    30036.\n6 Germany  2007    32170.\n\ngapminder_wide &lt;- gapminder_example %&gt;% \n  pivot_wider(names_from = year,\n              names_prefix = \"year_\",\n              values_from = gdpPercap)\n\n\n\n\nhead(gapminder_wide)\n\n# A tibble: 3 × 4\n  country        year_1997 year_2002 year_2007\n  &lt;fct&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 France            25890.    28926.    30470.\n2 Germany           27789.    30036.    32170.\n3 United Kingdom    26075.    29479.    33203.\n\ngapminder_long &lt;- gapminder_wide %&gt;% \n  pivot_longer(cols = year_1997:year_2007,\n               names_to = \"year\",\n               names_prefix = \"_year\",\n               values_to = \"gdpPercap\")\n\n\n\n\nhead(gapminder_long)\n\n# A tibble: 6 × 3\n  country year      gdpPercap\n  &lt;fct&gt;   &lt;chr&gt;         &lt;dbl&gt;\n1 France  year_1997    25890.\n2 France  year_2002    28926.\n3 France  year_2007    30470.\n4 Germany year_1997    27789.\n5 Germany year_2002    30036.\n6 Germany year_2007    32170.\n\nhead(gapminder_wide)\n\n# A tibble: 3 × 4\n  country        year_1997 year_2002 year_2007\n  &lt;fct&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 France            25890.    28926.    30470.\n2 Germany           27789.    30036.    32170.\n3 United Kingdom    26075.    29479.    33203."
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#next-group-summarize",
+    "href": "slides/week-02/import-tidy-transform.html#next-group-summarize",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Next: Group & summarize",
+    "text": "Next: Group & summarize\nSo far:\n\nWe can generate new variables using mutate() keeping the structure of the data the same\n\nWith summarize():\n\nwe change the structure of our data frame;\nany computations using summarize() collapses rows to summary statistics (e.g., mean, standard deviation);\nand removes all variables irrelevant for computing the summary statistics."
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#example-summary-statistics---mutate",
+    "href": "slides/week-02/import-tidy-transform.html#example-summary-statistics---mutate",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Example: Summary statistics - mutate()",
+    "text": "Example: Summary statistics - mutate()\n\nafd_mean &lt;- afd %&gt;% \n  filter(vote == 2) %&gt;% \n  mutate(mean = mean(vote_share))\n\ndim(afd)\n\n[1] 598   7\n\ndim(afd_mean)\n\n[1] 299   8"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#summarize",
+    "href": "slides/week-02/import-tidy-transform.html#summarize",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Summarize()",
+    "text": "Summarize()\n\nafd_mean &lt;- afd %&gt;% \n  filter(vote == 2) %&gt;% \n  summarize(mean = mean(vote_share)) # option: \"na.rm = TRUE\"\n\nafd_mean\n\n# A tibble: 1 × 1\n   mean\n  &lt;dbl&gt;\n1  10.6"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#summarize-1",
+    "href": "slides/week-02/import-tidy-transform.html#summarize-1",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Summarize()",
+    "text": "Summarize()\n\nafd_statistics &lt;- afd %&gt;% \n  filter(vote == 2) %&gt;% \n  summarize(mean = mean(vote_share),      # option: \"na.rm = TRUE\"\n            median = median(vote_share),\n            minimum = min(vote_share),\n            maximum = max(vote_share),\n            sd = sd(vote_share)) \n\nafd_statistics\n\n# A tibble: 1 × 5\n   mean median minimum maximum    sd\n  &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;\n1  10.6   8.86    2.87    32.5  5.88"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#group-and-summarize",
+    "href": "slides/week-02/import-tidy-transform.html#group-and-summarize",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Group and summarize",
+    "text": "Group and summarize\nWe can use group_by() to calculate summary statistics for different groups:\n\nstatistics_group &lt;- election %&gt;% \n  filter(area_type == \"Wahlkreis\") %&gt;% \n  filter(vote == 2) %&gt;% \n  filter(group_name %in% c(\"SPD\", \"CDU\")) %&gt;% \n  group_by(group_name) %&gt;%  # do not forget to ungroup()\n  summarize(mean = mean(vote_share,\n                        na.rm = TRUE))\n\nstatistics_group\n\n# A tibble: 2 × 2\n  group_name  mean\n  &lt;chr&gt;      &lt;dbl&gt;\n1 CDU         22.6\n2 SPD         25.9"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#join-data",
+    "href": "slides/week-02/import-tidy-transform.html#join-data",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Join data",
+    "text": "Join data\nIn applied research, we oftentimes need to combine multiple data sets (e.g., multiple survey waves, election statistics, …).\n\nWe can use bind_cols() if two (or more) data frames have different variables (columns) but same cases (rows).\nWe can use bind_rows() if two (or more) data frames have the same variables (columns) but different cases (rows).\n\nWe can also use join operators from the dplyr package. These allow us to combine data frames based on a (shared) key."
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#binding-columns",
+    "href": "slides/week-02/import-tidy-transform.html#binding-columns",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Binding columns",
+    "text": "Binding columns\n\nData 1Data 2bind_cols\n\n\n\n# Let's use our gapminder_example data\nhead(gapminder_example)\n\n# A tibble: 6 × 3\n  country  year gdpPercap\n  &lt;fct&gt;   &lt;int&gt;     &lt;dbl&gt;\n1 France   1997    25890.\n2 France   2002    28926.\n3 France   2007    30470.\n4 Germany  1997    27789.\n5 Germany  2002    30036.\n6 Germany  2007    32170.\n\n\n\n\n\n# and add this dataframe\nrandom &lt;- data.frame(r1 = c(1:9))\n\nrandom\n\n  r1\n1  1\n2  2\n3  3\n4  4\n5  5\n6  6\n7  7\n8  8\n9  9\n\n\n\n\n\n# now we can just join these two dataframes\nnew &lt;- bind_cols(gapminder_example, random)\n\nnew\n\n# A tibble: 9 × 4\n  country         year gdpPercap    r1\n  &lt;fct&gt;          &lt;int&gt;     &lt;dbl&gt; &lt;int&gt;\n1 France          1997    25890.     1\n2 France          2002    28926.     2\n3 France          2007    30470.     3\n4 Germany         1997    27789.     4\n5 Germany         2002    30036.     5\n6 Germany         2007    32170.     6\n7 United Kingdom  1997    26075.     7\n8 United Kingdom  2002    29479.     8\n9 United Kingdom  2007    33203.     9"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#binding-rows",
+    "href": "slides/week-02/import-tidy-transform.html#binding-rows",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Binding rows",
+    "text": "Binding rows\n\nData 1Data 2bind_rows\n\n\n\n# Let's use our gapminder_example data\nhead(gapminder_example)\n\n# A tibble: 6 × 3\n  country  year gdpPercap\n  &lt;fct&gt;   &lt;int&gt;     &lt;dbl&gt;\n1 France   1997    25890.\n2 France   2002    28926.\n3 France   2007    30470.\n4 Germany  1997    27789.\n5 Germany  2002    30036.\n6 Germany  2007    32170.\n\n\n\n\n\n# and add this dataframe\nmore_info &lt;- data.frame(country = \"Austria\",\n                        year = 2007,\n                        gdpPercap = NA)\n\nmore_info\n\n  country year gdpPercap\n1 Austria 2007        NA\n\n\n\n\n\n# now we can just join these two dataframes\ngapminder_added &lt;- bind_rows(gapminder_example, more_info)\n\ngapminder_added\n\n# A tibble: 10 × 3\n   country         year gdpPercap\n   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;\n 1 France          1997    25890.\n 2 France          2002    28926.\n 3 France          2007    30470.\n 4 Germany         1997    27789.\n 5 Germany         2002    30036.\n 6 Germany         2007    32170.\n 7 United Kingdom  1997    26075.\n 8 United Kingdom  2002    29479.\n 9 United Kingdom  2007    33203.\n10 Austria         2007       NA"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#join-data-frames-left_join",
+    "href": "slides/week-02/import-tidy-transform.html#join-data-frames-left_join",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Join data frames: left_join()",
+    "text": "Join data frames: left_join()\nOther joins: https://github.com/gadenbuie/tidyexplain"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#example-left_join",
+    "href": "slides/week-02/import-tidy-transform.html#example-left_join",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Example: left_join()",
+    "text": "Example: left_join()\n\nElectionStructuralJoin\n\n\n\nelection &lt;- readr::read_delim(\"w-btw21_kerg2.csv\", \n                       delim = \";\", escape_double = FALSE, \n                       locale = locale(decimal_mark = \",\"), \n                       trim_ws = TRUE, skip = 9) %&gt;% \n  dplyr::select(area_no = Gebietsnummer,\n                area_type = Gebietsart,\n                area_name = Gebietsname,\n                group_type = Gruppenart,\n                group_name = Gruppenname,\n                vote = Stimme,\n                vote_share = Prozent) %&gt;% \n  filter(area_type == \"Wahlkreis\" & group_name == \"AfD\" & vote == 2)\n\n\n\n\nstructural &lt;- readr::read_delim(\"btw21_strukturdaten.csv\", \n                                delim = \";\", escape_double = FALSE,\n                                locale = locale(decimal_mark = \",\"),\n                                trim_ws = TRUE, skip = 8) %&gt;% \n  dplyr::select(area_no = `Wahlkreis-Nr.`,\n                unemployment_rate = `Arbeitslosenquote Februar 2021 - insgesamt`) %&gt;% \n  filter(area_no &lt;= 299)\n\n\n\n\nelection_structural &lt;- election %&gt;% \n  left_join(structural, by = \"area_no\") %&gt;% \n  select(area_no, area_name, vote_share, unemployment_rate)\n\nhead(election_structural)\n\n# A tibble: 6 × 4\n  area_no area_name                         vote_share unemployment_rate\n  &lt;chr&gt;   &lt;chr&gt;                                  &lt;dbl&gt;             &lt;dbl&gt;\n1 001     Flensburg – Schleswig                   5.78               7  \n2 002     Nordfriesland – Dithmarschen Nord       6.10               6.5\n3 003     Steinburg – Dithmarschen Süd            8.37               6.4\n4 004     Rendsburg-Eckernförde                   6.56               4.8\n5 005     Kiel                                    4.94               8.4\n6 006     Plön – Neumünster                       7.35               6.7"
+  },
+  {
+    "objectID": "slides/week-02/import-tidy-transform.html#save-your-data",
+    "href": "slides/week-02/import-tidy-transform.html#save-your-data",
+    "title": "Tidyverse: Import, tidy, and transform",
+    "section": "Save your data",
+    "text": "Save your data\nWe can easily save our data frame:\n\nsave(election_structural,\n     file=\"election_structural.Rda\")\n\nAnd load it again:\n\n# make sure that you are in the right working directory!\n# Session -&gt; Set working directory\nload(\"election_structural.Rda\")"
+  },
+  {
+    "objectID": "weeks/week-02.html#session-03",
+    "href": "weeks/week-02.html#session-03",
+    "title": "Import, tidy, and transform",
+    "section": "Session 03",
+    "text": "Session 03\nYou can find the script here."
+  },
+  {
+    "objectID": "weeks/week-02.html#session-04",
+    "href": "weeks/week-02.html#session-04",
+    "title": "Import, tidy, and transform",
+    "section": "Session 04",
+    "text": "Session 04\nYou find the R script with the coding task here.\nYou can download the original .csv files from the BundeswahlleiterIn here. If you struggle with the data import, you can find the necessary data frames here."
   }
 ]

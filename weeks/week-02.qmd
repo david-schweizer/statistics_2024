@@ -34,6 +34,7 @@ listing:
   #   filter-ui: false
 tbl-colwidths: [10,50,40]
 ---
+
 # To do's before our session
 
 ::: panel-tabset
@@ -67,4 +68,12 @@ tbl-colwidths: [10,50,40]
 
 # Materials
 
-TBD.
+## Session 03
+
+You can find the script [here](https://lms.uibk.ac.at/url/RepositoryEntry/5617582099/CourseNode/109453712367926/path%3D~~week%5F02~~session%5F03~~session3%2Er/0).
+
+## Session 04
+
+You find the R script with the coding task [here](https://lms.uibk.ac.at/url/RepositoryEntry/5617582099/CourseNode/109453712367926/path%3D~~week%5F02~~session%5F04~~session4%2Er/0).
+
+You can download the original .csv files from the BundeswahlleiterIn [here.](https://lms.uibk.ac.at/url/RepositoryEntry/5617582099/CourseNode/109453712367926/path%3D~~week%5F02~~session%5F04~~data%5Fcsv%2Ezip/0) If you struggle with the data import, you can find the necessary data frames [here](https://lms.uibk.ac.at/url/RepositoryEntry/5617582099/CourseNode/109453712367926/path%3D~~week%5F02~~session%5F04~~session4%5Fdata%2Erda/0).
