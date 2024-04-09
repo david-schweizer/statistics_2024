@@ -5633,5 +5633,516 @@
     "title": "Import, tidy, and transform",
     "section": "Session 04",
     "text": "Session 04\nYou find the R script with the coding task here.\nYou can download the original .csv files from the BundeswahlleiterIn here. If you struggle with the data import, you can find the necessary data frames here."
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#plan-for-today",
+    "href": "slides/week-03/visualize_communciate.html#plan-for-today",
+    "title": "Visualize & Communicate",
+    "section": "Plan for today",
+    "text": "Plan for today\n\nData project workflow from R for Data Science"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#plan-for-today-1",
+    "href": "slides/week-03/visualize_communciate.html#plan-for-today-1",
+    "title": "Visualize & Communicate",
+    "section": "Plan for today",
+    "text": "Plan for today\n\nSession 05BreakSession 06\n\n\nInput:\n\nWhy do we need visualizations? What makes a great visualization?\nBuilding a (gg)plot step by step\nMaps\n\nCoding:\n\nYour very first plot\n\n\n\n⏸️ 15 minute break: Get some fresh air, a coffee, …\n\n\n\nInput\n\nReproducibility\nR Markdown & Quarto\n\nCoding:\n\nDrafting your first Quarto documents"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#look-at-your-data",
+    "href": "slides/week-03/visualize_communciate.html#look-at-your-data",
+    "title": "Visualize & Communicate",
+    "section": "Look at your data!",
+    "text": "Look at your data!\n\nThe dataSummary statisticsVisual inspection\n\n\n\n# Have a look at the first 10 data points:\nhead(data, n = 10)\n\n        V1      V2\n1  55.3846 97.1795\n2  51.5385 96.0256\n3  46.1538 94.4872\n4  42.8205 91.4103\n5  40.7692 88.3333\n6  38.7179 84.8718\n7  35.6410 79.8718\n8  33.0769 77.5641\n9  28.9744 74.4872\n10 26.1538 71.4103\n\n\nFor a deep dive, have a look at this blog post by Autodesk, this post by Alberto Cairo, or this R package.\n\n\n\n# Inspect mean of V1\nmean(data$V1)\n\n[1] 54.26327\n\n# Inspect mean of V2\nmean(data$V2)\n\n[1] 47.83225\n\n# Inspect the correlation between V1 and V2\ncor(data$V1, data$V2)\n\n[1] -0.06447185"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#the-datasaurus-dozen",
+    "href": "slides/week-03/visualize_communciate.html#the-datasaurus-dozen",
+    "title": "Visualize & Communicate",
+    "section": "The datasaurus dozen",
+    "text": "The datasaurus dozen"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#what-makes-a-great-visualization",
+    "href": "slides/week-03/visualize_communciate.html#what-makes-a-great-visualization",
+    "title": "Visualize & Communicate",
+    "section": "What makes a great visualization?",
+    "text": "What makes a great visualization?\nFive qualities of a great visualization according to Cairo:\n\n\nTruthful - Based on thorough and honest research\n\n\n\n\nFunctional - Accurate depiction of the data\n\n\n\n\nBeautiful - Aesthetically pleasing for its intended audience\n\n\n\n\nInsightful - Communicate new evidence\n\n\n\n\nEnlightening - Change your audience’s mind"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#what-makes-a-great-visualization-1",
+    "href": "slides/week-03/visualize_communciate.html#what-makes-a-great-visualization-1",
+    "title": "Visualize & Communicate",
+    "section": "What makes a great visualization?",
+    "text": "What makes a great visualization?\nQualities of a great visualization according to Hiely:\n\nAestheticsSubstancePerceptionHonesty"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#how-about-this",
+    "href": "slides/week-03/visualize_communciate.html#how-about-this",
+    "title": "Visualize & Communicate",
+    "section": "How about this?",
+    "text": "How about this?"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#and-this",
+    "href": "slides/week-03/visualize_communciate.html#and-this",
+    "title": "Visualize & Communicate",
+    "section": "And this?",
+    "text": "And this?"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#what-makes-a-great-visualization-2",
+    "href": "slides/week-03/visualize_communciate.html#what-makes-a-great-visualization-2",
+    "title": "Visualize & Communicate",
+    "section": "What makes a great visualization?",
+    "text": "What makes a great visualization?\nGraphical excellence is the well-designed presentation of interesting data—a matter of substance, of statistics, and of design … [It] consists of complex ideas communicated with clarity, precision, and efficiency. … [It] is that which gives to the viewer the greatest number of ideas in the shortest time with the least ink in the smallest space … [It] is nearly always multivariate … And graphical excellence requires telling the truth about the data. \n\nEdward Tufte (1983). The Visual Display of Quantitative Information, p. 51."
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#maximize-data-ink-ratio",
+    "href": "slides/week-03/visualize_communciate.html#maximize-data-ink-ratio",
+    "title": "Visualize & Communicate",
+    "section": "Maximize Data-Ink Ratio",
+    "text": "Maximize Data-Ink Ratio\n\nBray, Tim. http://www.tbray.org/ongoing/data-ink/di1"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#remove-grid",
+    "href": "slides/week-03/visualize_communciate.html#remove-grid",
+    "title": "Visualize & Communicate",
+    "section": "Remove Grid",
+    "text": "Remove Grid\n\nBray, Tim. http://www.tbray.org/ongoing/data-ink/di2"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#remove-background",
+    "href": "slides/week-03/visualize_communciate.html#remove-background",
+    "title": "Visualize & Communicate",
+    "section": "Remove Background",
+    "text": "Remove Background\n\nBray, Tim. http://www.tbray.org/ongoing/data-ink/di3"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#remove-box",
+    "href": "slides/week-03/visualize_communciate.html#remove-box",
+    "title": "Visualize & Communicate",
+    "section": "Remove Box",
+    "text": "Remove Box\n\nBray, Tim. http://www.tbray.org/ongoing/data-ink/di4"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#add-horizontal-line",
+    "href": "slides/week-03/visualize_communciate.html#add-horizontal-line",
+    "title": "Visualize & Communicate",
+    "section": "Add horizontal “line”",
+    "text": "Add horizontal “line”\n\nBray, Tim. http://www.tbray.org/ongoing/data-ink/di5"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#remove-axis-line-and-ticks",
+    "href": "slides/week-03/visualize_communciate.html#remove-axis-line-and-ticks",
+    "title": "Visualize & Communicate",
+    "section": "Remove axis line and ticks",
+    "text": "Remove axis line and ticks\n\nBray, Tim. http://www.tbray.org/ongoing/data-ink/di6"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#design-prinicples",
+    "href": "slides/week-03/visualize_communciate.html#design-prinicples",
+    "title": "Visualize & Communicate",
+    "section": "Design prinicples",
+    "text": "Design prinicples\nWhy would we care about design principles? What is our goal?\n\n\nCommunicating our data in different forms to specific audiences.\nFollowing design principles, we can fulfill the criteria of great visualizations."
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#crap",
+    "href": "slides/week-03/visualize_communciate.html#crap",
+    "title": "Visualize & Communicate",
+    "section": "CRAP",
+    "text": "CRAP\n\n\n\nContrast\nRepetition\nAlignment\nProximity\n\nThese design principles apply in all areas of life: Art, architecture, …, and graphs."
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#contrast",
+    "href": "slides/week-03/visualize_communciate.html#contrast",
+    "title": "Visualize & Communicate",
+    "section": "Contrast",
+    "text": "Contrast\n\n\nWe want to contrast various elements to get a reader’s attention.\n\nIt creates a hierarchy among different elements of your graph making it more interesting.\nHowever, contrast must be strong!"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#repetition",
+    "href": "slides/week-03/visualize_communciate.html#repetition",
+    "title": "Visualize & Communicate",
+    "section": "Repetition",
+    "text": "Repetition\n\n\nWe want to repeat design aspects throughout the graph for consistency.\n\nElements might include bullet points, typefaces, lines, colors, …\nRepetition makes it easier for a reader to recognize patterns and capture the graph’s message."
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#alignment",
+    "href": "slides/week-03/visualize_communciate.html#alignment",
+    "title": "Visualize & Communicate",
+    "section": "Alignment",
+    "text": "Alignment\n\n\nWe want to align the elements of our graph.\n\nTo keep our graph consistent, align every object with an edge of any other object.\nStrong alignments allow you to break them occasionally to make a point without making it look like a mistake."
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#proximity",
+    "href": "slides/week-03/visualize_communciate.html#proximity",
+    "title": "Visualize & Communicate",
+    "section": "Proximity",
+    "text": "Proximity\n\n\nWe want to group together related elements of our graph.\n\nGroup elements into closer proximity if they are related.\nSeparate elements that are not directly related.\nVary space between groups and elements."
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#grammatical-layers",
+    "href": "slides/week-03/visualize_communciate.html#grammatical-layers",
+    "title": "Visualize & Communicate",
+    "section": "Grammatical Layers",
+    "text": "Grammatical Layers\n\nFoundationalCodeAdditional\n\n\n\n\n\n\nggplot(data = gapminder,\n       mapping = aes(x = gdpPercap,\n                           y = lifeExp,\n                           color = continent)) +\n  geom_point()"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#building-a-ggplot-step-by-step",
+    "href": "slides/week-03/visualize_communciate.html#building-a-ggplot-step-by-step",
+    "title": "Visualize & Communicate",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nPackagesCodePlot\n\n\nPackages to reproduce the plots:\n\n# library(tidyverse)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(gapminder)\n\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, \n      y = lifeExp,\n  color = continent))"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#adding-a-geometry-geom_point",
+    "href": "slides/week-03/visualize_communciate.html#adding-a-geometry-geom_point",
+    "title": "Visualize & Communicate",
+    "section": "Adding a geometry: geom_point()",
+    "text": "Adding a geometry: geom_point()\n\nCodePlot\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, \n      y = lifeExp,\n  color = continent)) +\n  geom_point()"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#adding-a-scale",
+    "href": "slides/week-03/visualize_communciate.html#adding-a-scale",
+    "title": "Visualize & Communicate",
+    "section": "Adding a scale",
+    "text": "Adding a scale\n\nCodePlot\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, y = lifeExp,\n  color = continent)) +\n  geom_point() +\n  scale_x_log10()"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#adding-further-geometries",
+    "href": "slides/week-03/visualize_communciate.html#adding-further-geometries",
+    "title": "Visualize & Communicate",
+    "section": "Adding further geometries",
+    "text": "Adding further geometries\n\nCodePlot\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, y = lifeExp,\n  color = continent)) +\n  geom_point() +\n  scale_x_log10() +\n  geom_smooth(method = \"lm\")"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#add-different-color-scale",
+    "href": "slides/week-03/visualize_communciate.html#add-different-color-scale",
+    "title": "Visualize & Communicate",
+    "section": "Add different color scale",
+    "text": "Add different color scale\n\nCodePlot\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, \n      y = lifeExp,\n  color = continent)) +\n  geom_point() +\n  scale_x_log10() +\n  geom_smooth(method = \"lm\") +\n  scale_color_viridis_d()"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#use-facets",
+    "href": "slides/week-03/visualize_communciate.html#use-facets",
+    "title": "Visualize & Communicate",
+    "section": "Use facets",
+    "text": "Use facets\n\nCodePlot\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, \n      y = lifeExp,\n  color = continent)) +\n  geom_point() +\n  scale_x_log10() +\n  geom_smooth(method = \"lm\") +\n  scale_color_viridis_d() +\n  facet_wrap(vars(continent), ncol = 2)"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#add-titles-subtitles-etc.",
+    "href": "slides/week-03/visualize_communciate.html#add-titles-subtitles-etc.",
+    "title": "Visualize & Communicate",
+    "section": "Add titles, subtitles, etc.",
+    "text": "Add titles, subtitles, etc.\n\nCodePlot\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, \n      y = lifeExp,\n  color = continent)) +\n  geom_point() +\n  scale_x_log10() +\n  geom_smooth(method = \"lm\") +\n  scale_color_viridis_d() +\n  facet_wrap(vars(continent), ncol = 2) +\n  labs(x = \"GDP per capita\", \n       y = \"Life expectancy\",\n       color = \"Continent\",\n       title = \"Wealth = Health?\",\n       subtitle = \"gdpPercap/lifeExp\",\n       caption = \"Gapminder dataset\")"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#more-geometries",
+    "href": "slides/week-03/visualize_communciate.html#more-geometries",
+    "title": "Visualize & Communicate",
+    "section": "More geometries",
+    "text": "More geometries\n\nCodePlot\n\n\n\nggplot(data = filter(gapminder, year %in% c(2007)),\naes(x = lifeExp,\nfill = continent)) +\ngeom_histogram(binwidth = 5,\n               color = \"grey\") +\nscale_fill_viridis_d() +\nfacet_wrap(vars(continent), ncol = 2) +\nguides(fill = \"none\")"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#more-geometries-1",
+    "href": "slides/week-03/visualize_communciate.html#more-geometries-1",
+    "title": "Visualize & Communicate",
+    "section": "More geometries",
+    "text": "More geometries\n\nCodePlot\n\n\n\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"blue\")\n\nggplot(data = filter(gapminder, year %in% c(2007)),\n  aes(x = continent,\n      y = lifeExp,\n      fill = continent)) +\n  geom_boxplot(alpha = 0.5) +\n  scale_fill_manual(values = colors) +\n  guides(fill = \"none\")"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#more-geometries-2",
+    "href": "slides/week-03/visualize_communciate.html#more-geometries-2",
+    "title": "Visualize & Communicate",
+    "section": "More geometries",
+    "text": "More geometries\n\nCodePlot\n\n\n\nggplot(gapminder, aes(x = year, \n                      y = lifeExp,\n                      group = country)) +\n  geom_line(alpha = 0.2, color=\"grey\") +\n  geom_line(data = gapminder %&gt;% filter(country %in% c(\n    \"Germany\",\n    \"India\",\n    \"Rwanda\")),\n    lwd = 1) + # thicker line"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#crap-and-ggplot",
+    "href": "slides/week-03/visualize_communciate.html#crap-and-ggplot",
+    "title": "Visualize & Communicate",
+    "section": "CRAP and ggplot?",
+    "text": "CRAP and ggplot?\n\n\nContrast, Repetition, Alignment, Proximity\nFollowing CRAP principles makes it easy to improve our plots!\nWe can apply these principles in ggplot using the theme() function\nYou can find great examples in Wilke’s book in chapter 17-22: Part II: Principles of Figure Design"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#themes",
+    "href": "slides/week-03/visualize_communciate.html#themes",
+    "title": "Visualize & Communicate",
+    "section": "Themes",
+    "text": "Themes\nMake use of existing themes:\n\nhrbrthemes\nggthemes\n…\n\nThere are many more! And you can even create your own theme!"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#hrbrthemes",
+    "href": "slides/week-03/visualize_communciate.html#hrbrthemes",
+    "title": "Visualize & Communicate",
+    "section": "hrbrthemes",
+    "text": "hrbrthemes\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, y = lifeExp, color = continent)) +\n  geom_point() +\n  hrbrthemes::theme_ipsum_ps()"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#hrbrthemes-1",
+    "href": "slides/week-03/visualize_communciate.html#hrbrthemes-1",
+    "title": "Visualize & Communicate",
+    "section": "hrbrthemes",
+    "text": "hrbrthemes\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, y = lifeExp, color = continent)) +\n  geom_point() +\n  hrbrthemes::theme_modern_rc()"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#ggthemes",
+    "href": "slides/week-03/visualize_communciate.html#ggthemes",
+    "title": "Visualize & Communicate",
+    "section": "ggthemes",
+    "text": "ggthemes\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, y = lifeExp, color = continent)) +\n  geom_point() +\n  ggthemes::theme_economist()"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#theme",
+    "href": "slides/week-03/visualize_communciate.html#theme",
+    "title": "Visualize & Communicate",
+    "section": "theme()",
+    "text": "theme()"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#how-to-learn-theme-arguments",
+    "href": "slides/week-03/visualize_communciate.html#how-to-learn-theme-arguments",
+    "title": "Visualize & Communicate",
+    "section": "How to learn theme() arguments?",
+    "text": "How to learn theme() arguments?\n\nThere are 94 possible arguments for the theme() function\nMany of them are very specific. E.g., axis.ticks.length.x.top\nBest way: Trial and error. Practice makes (almost) perfect\nTry the ggThemeAssist package\nDocumentation: Modify components of a theme and ggplot complete themes"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#ways-to-visualize-data-with-maps",
+    "href": "slides/week-03/visualize_communciate.html#ways-to-visualize-data-with-maps",
+    "title": "Visualize & Communicate",
+    "section": "Ways to visualize data with maps",
+    "text": "Ways to visualize data with maps\nThere are multiple ways to encode data on maps:\n\npoints\nlines\nareas\nshapes\n…"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#maps-points",
+    "href": "slides/week-03/visualize_communciate.html#maps-points",
+    "title": "Visualize & Communicate",
+    "section": "Maps + points",
+    "text": "Maps + points"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#maps-proportional-symbols",
+    "href": "slides/week-03/visualize_communciate.html#maps-proportional-symbols",
+    "title": "Visualize & Communicate",
+    "section": "Maps + proportional symbols",
+    "text": "Maps + proportional symbols"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#maps-lines",
+    "href": "slides/week-03/visualize_communciate.html#maps-lines",
+    "title": "Visualize & Communicate",
+    "section": "Maps + lines",
+    "text": "Maps + lines"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#choropleth-maps",
+    "href": "slides/week-03/visualize_communciate.html#choropleth-maps",
+    "title": "Visualize & Communicate",
+    "section": "Choropleth maps",
+    "text": "Choropleth maps"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#shapefiles-1",
+    "href": "slides/week-03/visualize_communciate.html#shapefiles-1",
+    "title": "Visualize & Communicate",
+    "section": "Shapefiles",
+    "text": "Shapefiles\n\nIn generalStructureFinding shapefiles\n\n\n\n\n\nGeographic information is shared as shapefiles\nThey are not the same as regular CSV files\nNormally, you download them as zipped files (the .shp ending indicates the relevant file)\n\n\n\n\n\n\n\n\nlibrary(sf)\nconstituency_shapes &lt;- read_sf(\"btw17_geometrie_wahlkreise_geo_shp/Geometrie_Wahlkreise_19DBT_geo.shp\")\nconstituency_shapes\n\nSimple feature collection with 299 features and 4 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 5.866479 ymin: 47.27011 xmax: 15.03828 ymax: 55.05838\nGeodetic CRS:  WGS 84\n# A tibble: 299 × 5\n   WKR_NR LAND_NR LAND_NAME          WKR_NAME                           geometry\n    &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;              &lt;chr&gt;                    &lt;MULTIPOLYGON [°]&gt;\n 1      1 01      Schleswig-Holstein Flensburg – Schl… (((9.676908 54.83785, 9.…\n 2      2 01      Schleswig-Holstein Nordfriesland – … (((8.630545 54.48889, 8.…\n 3      3 01      Schleswig-Holstein Steinburg – Dith… (((8.689466 54.0485, 8.6…\n 4      4 01      Schleswig-Holstein Rendsburg-Eckern… (((9.961349 54.50129, 9.…\n 5      5 01      Schleswig-Holstein Kiel              (((10.18877 54.41108, 10…\n 6      6 01      Schleswig-Holstein Plön – Neumünster (((10.64299 54.34371, 10…\n 7      7 01      Schleswig-Holstein Pinneberg         (((9.751445 53.89304, 9.…\n 8      8 01      Schleswig-Holstein Segeberg – Storm… (((10.37568 54.07279, 10…\n 9      9 01      Schleswig-Holstein Ostholstein – St… (((11.11089 54.39639, 11…\n10     10 01      Schleswig-Holstein Herzogtum Lauenb… (((10.86189 53.70238, 10…\n# ℹ 289 more rows\n\n\n\n\n\nNatural Earth for international maps\nUS Census Bureau for US maps\nEurostat for EU maps\nGOOGLE: shapefiles for …\n\ne.g., shapefiles for german election districts"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#geometry-column-geom_sf",
+    "href": "slides/week-03/visualize_communciate.html#geometry-column-geom_sf",
+    "title": "Visualize & Communicate",
+    "section": "Geometry column & geom_sf()",
+    "text": "Geometry column & geom_sf()\n\nCodePlot - 2017 constituencies\n\n\nIf we have a geometry column, all we need to do is use geom_sf():\n\nggplot(data = constituency_shapes) +\n  geom_sf()"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#making-a-choropleth-map",
+    "href": "slides/week-03/visualize_communciate.html#making-a-choropleth-map",
+    "title": "Visualize & Communicate",
+    "section": "Making a choropleth map",
+    "text": "Making a choropleth map\n\nAnd now?CodePlot\n\n\n\nFrom here, it is easy to create a choropleth map.\nWe just have to add data to our constituency_shapes dataframe.\n\nRemember the election and structural data from the German federal election officer?\n\nAnd we can use all typical ggplot functions!\n\n\n\n\nconstituency_shapes_vote &lt;- constituency_shapes %&gt;% \n  # here, we can use our \"btw17_election\" data from earlier sessions!\n  left_join(btw17_election, by = c(\"WKR_NR\" = \"constituency_number\")) %&gt;% \n  filter(party == \"AfD\")\n\nggplot(data = constituency_shapes_vote,\n       aes(fill = vote_share)) +  \n  geom_sf() + \n  scale_fill_gradient(low = \"lightblue\", high = \"darkblue\") +\n  labs(fill = \"AfD vote share\") +\n  theme_void()"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#but-sf-is-more-than-drawing-maps",
+    "href": "slides/week-03/visualize_communciate.html#but-sf-is-more-than-drawing-maps",
+    "title": "Visualize & Communicate",
+    "section": "But sf is more than drawing maps",
+    "text": "But sf is more than drawing maps"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#reproducibility-why-r",
+    "href": "slides/week-03/visualize_communciate.html#reproducibility-why-r",
+    "title": "Visualize & Communicate",
+    "section": "Reproducibility ⟶ Why R?",
+    "text": "Reproducibility ⟶ Why R?\n… and not just Excel? R …\n\n… can deal with more data faster.\n… is open-source and free.\n… allows us to reproduce results and understand data processing steps."
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#but-what-could-go-wrong",
+    "href": "slides/week-03/visualize_communciate.html#but-what-could-go-wrong",
+    "title": "Visualize & Communicate",
+    "section": "But what could go wrong?",
+    "text": "But what could go wrong?"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#a-lot",
+    "href": "slides/week-03/visualize_communciate.html#a-lot",
+    "title": "Visualize & Communicate",
+    "section": "… a lot!",
+    "text": "… a lot!"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#and-there-is-more",
+    "href": "slides/week-03/visualize_communciate.html#and-there-is-more",
+    "title": "Visualize & Communicate",
+    "section": "… and there is more …",
+    "text": "… and there is more …\n\n\nResult: Economic growth slows when a country’s debt is higher than 90% of GDP\nImplication: e.g., cited by Republican Paul Ryan in his proposed 2013 budget: The Path to Prosperity: A Blueprint for American Renewal"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#wrong-basis-for-policy-decisions",
+    "href": "slides/week-03/visualize_communciate.html#wrong-basis-for-policy-decisions",
+    "title": "Visualize & Communicate",
+    "section": "… wrong basis for policy decisions",
+    "text": "… wrong basis for policy decisions"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#how-can-we-avoid-this",
+    "href": "slides/week-03/visualize_communciate.html#how-can-we-avoid-this",
+    "title": "Visualize & Communicate",
+    "section": "How can we avoid this?",
+    "text": "How can we avoid this?\n\nDo not change the raw data!\n\nIf there is no other way, document and explain what you did extensively.\n\nUse open formats\n\ne.g., .csv and not .xlsx\n\nUse reproducible code\n\nR Markdown & Quarto"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#r-markdown",
+    "href": "slides/week-03/visualize_communciate.html#r-markdown",
+    "title": "Visualize & Communicate",
+    "section": "R Markdown",
+    "text": "R Markdown\nR Markdown provides an unified authoring framework for data science, combining your code, its results, and your prose commentary. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more.\nR for Data Science"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#why-should-we-use-r-markdown",
+    "href": "slides/week-03/visualize_communciate.html#why-should-we-use-r-markdown",
+    "title": "Visualize & Communicate",
+    "section": "Why should we use R Markdown?",
+    "text": "Why should we use R Markdown?\n\nCommunication of our analysis with a focus on conclusions and not on the code.\nCollaboration with other researchers who want to understand your data analysis and your code.\nAnnotation of the codes and thoughts regarding the coding and data analysis can be stored in the same document.\n\nR for Data Science"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#r-markdown---airbnb",
+    "href": "slides/week-03/visualize_communciate.html#r-markdown---airbnb",
+    "title": "Visualize & Communicate",
+    "section": "R Markdown - AirBnb",
+    "text": "R Markdown - AirBnb"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#r-markdown---uk-government",
+    "href": "slides/week-03/visualize_communciate.html#r-markdown---uk-government",
+    "title": "Visualize & Communicate",
+    "section": "R Markdown - UK Government",
+    "text": "R Markdown - UK Government\nFormerly, a typical statistics production process in government agencies in the UK:\n\n\nProne to errors & time-consuming ⟶ Development to a reproducible analytical pipeline:"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#moving-to-quarto",
+    "href": "slides/week-03/visualize_communciate.html#moving-to-quarto",
+    "title": "Visualize & Communicate",
+    "section": "Moving to Quarto",
+    "text": "Moving to Quarto\n\nQuarto is not an R package as R Markdown, but an command line interface tool.\nIt gives you the same functionality as R Markdown as well as other packages.\nIt extends R Markdown through native support for other programming languages such as Python.\nThe “new” way to produce articles & reports, presentations, interactive documents, websites or books.\n\nR for Data Science"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#create-a-quarto-document",
+    "href": "slides/week-03/visualize_communciate.html#create-a-quarto-document",
+    "title": "Visualize & Communicate",
+    "section": "Create a Quarto Document",
+    "text": "Create a Quarto Document"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#create-a-quarto-document-1",
+    "href": "slides/week-03/visualize_communciate.html#create-a-quarto-document-1",
+    "title": "Visualize & Communicate",
+    "section": "Create a Quarto Document",
+    "text": "Create a Quarto Document"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#create-a-quarto-document-2",
+    "href": "slides/week-03/visualize_communciate.html#create-a-quarto-document-2",
+    "title": "Visualize & Communicate",
+    "section": "Create a Quarto Document",
+    "text": "Create a Quarto Document"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#create-a-quarto-document-3",
+    "href": "slides/week-03/visualize_communciate.html#create-a-quarto-document-3",
+    "title": "Visualize & Communicate",
+    "section": "Create a Quarto Document",
+    "text": "Create a Quarto Document"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#create-a-quarto-document-4",
+    "href": "slides/week-03/visualize_communciate.html#create-a-quarto-document-4",
+    "title": "Visualize & Communicate",
+    "section": "Create a Quarto Document",
+    "text": "Create a Quarto Document"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#yaml-header",
+    "href": "slides/week-03/visualize_communciate.html#yaml-header",
+    "title": "Visualize & Communicate",
+    "section": "YAML header",
+    "text": "YAML header\n\n---\ntitle: \"Explore Gapminder Data\"\nauthor: \"David Schweizer\"\nformat: \n  html: default\neditor: visual\n---"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#code-chunks---data",
+    "href": "slides/week-03/visualize_communciate.html#code-chunks---data",
+    "title": "Visualize & Communicate",
+    "section": "Code chunks - Data",
+    "text": "Code chunks - Data\nWe make use of the Gapminder data.\n\n# #| label: load-packages-and-data\n# #| include: false\n\nlibrary(tidyverse)\nlibrary(gapminder)\n\ngapminder &lt;- gapminder"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#code-chunks---wrangle",
+    "href": "slides/week-03/visualize_communciate.html#code-chunks---wrangle",
+    "title": "Visualize & Communicate",
+    "section": "Code chunks - Wrangle",
+    "text": "Code chunks - Wrangle\n\n# #| label: wrangle-data\n# #| echo: true\n# #| results: hide\n\ngapminder_2007_europe &lt;- gapminder %&gt;% \n  filter(year == 2007 & continent == \"Europe\") %&gt;% \n  select(-c(year,continent,pop))\n\nhead(gapminder_2007_europe, n = 5)"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#code-chunks---visualize",
+    "href": "slides/week-03/visualize_communciate.html#code-chunks---visualize",
+    "title": "Visualize & Communicate",
+    "section": "Code chunks - Visualize",
+    "text": "Code chunks - Visualize\n\n# #| label: visualize-data\n# #| echo: false\n# #| message: false\n# #| fig-cap: \"GDP per capita and life expectancy in Europe in 2007\"\n\n\nGDP per capita and life expectancy in Europe in 2007"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#output",
+    "href": "slides/week-03/visualize_communciate.html#output",
+    "title": "Visualize & Communicate",
+    "section": "Output",
+    "text": "Output"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#code-chunk-options",
+    "href": "slides/week-03/visualize_communciate.html#code-chunk-options",
+    "title": "Visualize & Communicate",
+    "section": "Code chunk options",
+    "text": "Code chunk options"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#render-to-different-formats",
+    "href": "slides/week-03/visualize_communciate.html#render-to-different-formats",
+    "title": "Visualize & Communicate",
+    "section": "Render to different formats",
+    "text": "Render to different formats\nQuarto offers many output formats. You can find a complete overview here.\nInteresting for us so far:\n\nHTML\nPDF\nWord"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#adjust-the-yaml-header",
+    "href": "slides/week-03/visualize_communciate.html#adjust-the-yaml-header",
+    "title": "Visualize & Communicate",
+    "section": "Adjust the YAML header",
+    "text": "Adjust the YAML header\n\nHTMLPDFWord\n\n\n\n---\ntitle: \"Explore Gapminder Data\"\nauthor: \"David Schweizer\"\nformat: \n  html: default\n\neditor: visual\n---\n\n\n\n\n---\ntitle: \"Explore Gapminder Data\"\nauthor: \"David Schweizer\"\nformat: \n  pdf: default\n\neditor: visual\n---\n\n\n\n\n---\ntitle: \"Explore Gapminder Data\"\nauthor: \"David Schweizer\"\nformat: \n  docx: default\n\neditor: visual\n---"
+  },
+  {
+    "objectID": "slides/week-03/visualize_communciate.html#next-steps",
+    "href": "slides/week-03/visualize_communciate.html#next-steps",
+    "title": "Visualize & Communicate",
+    "section": "Next steps",
+    "text": "Next steps\nWe have covered the basics. Now, it is your turn to practice and explore Quarto:\n\nGet Started: Quarto\nWriting a reproducible paper with RStudio and Quarto\nGallery: Quarto\nR for Data Science"
   }
 ]

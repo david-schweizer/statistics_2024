@@ -1,0 +1,1155 @@
+---
+title: "Visualize & Communicate"
+subtitle: "Week 3"
+author: "David Schweizer"
+date: "April 10, 2023"
+date-format: long
+institute: "University of Mannheim"
+format: 
+  revealjs:
+    theme: simple
+    slide-number: c/t #< collapsed/total
+    footer: "Statistics | Summer Semester 2024 | University of Innsbruck"
+editor: visual
+---
+
+```{r packages, include=FALSE}
+pacman::p_load(
+  "tidyverse",
+  "ggplot2",
+  "gapminder",
+  "viridis",
+  "hrbrthemes",
+  "ggthemes",
+  "ggtech",
+  "sf"
+)
+```
+
+## Plan for today
+
+![Data project workflow from R for Data Science](workflow.png)
+
+## Plan for today
+
+::: panel-tabset
+## Session 05
+
+Input:
+
+-   Why do we need visualizations? What makes a great visualization?
+-   Building a (gg)plot step by step
+-   Maps
+
+Coding:
+
+-   Your very first plot
+
+## Break
+
+⏸️ **15 minute break:** Get some fresh air, a coffee, ...
+
+## Session 06
+
+-   Input
+    -   Reproducibility
+    -   R Markdown & Quarto
+-   Coding:
+    -   Drafting your first Quarto documents
+:::
+
+# Session 05
+
+## Look at your data!
+
+::: panel-tabset
+## The data
+
+```{r, include=FALSE}
+data <- read.csv("Datasaurus_data.csv", header=FALSE)
+
+```
+
+```{r, echo=TRUE}
+# Have a look at the first 10 data points:
+head(data, n = 10)
+```
+
+For a deep dive, have a look at [this blog post by Autodesk](https://www.research.autodesk.com/publications/same-stats-different-graphs/), [this post by Alberto Cairo](http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html), or [this R package](https://cran.r-project.org/web/packages/datasauRus/vignettes/Datasaurus.html).
+
+## Summary statistics
+
+```{r, echo=TRUE}
+# Inspect mean of V1
+mean(data$V1)
+
+# Inspect mean of V2
+mean(data$V2)
+
+# Inspect the correlation between V1 and V2
+cor(data$V1, data$V2)
+
+```
+
+## Visual inspection
+
+[![](datasaurus.png){width="695"}](http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html)
+:::
+
+## The datasaurus dozen
+
+[![](DinoSequentialSmaller.gif)](https://www.research.autodesk.com/publications/same-stats-different-graphs/)
+
+## What makes a great visualization?
+
+Five qualities of a great visualization according to Cairo:
+
+. . .
+
+-   Truthful - Based on thorough and honest research
+
+. . .
+
+-   Functional - Accurate depiction of the data
+
+. . .
+
+-   Beautiful - Aesthetically pleasing for its intended audience
+
+. . .
+
+-   Insightful - Communicate new evidence
+
+. . .
+
+-   Enlightening - Change your audience's mind
+
+## What makes a great visualization?
+
+Qualities of a great visualization according to Hiely:
+
+::: panel-tabset
+## Aesthetics
+
+![](hiely1.png){fig-align="center" width="533"}
+
+## Substance
+
+![](hiely2.png){fig-align="center" width="666"}
+
+## Perception
+
+![](hiely3.png){fig-align="center" width="801"}
+
+## Honesty
+
+::: columns
+::: {.column width="50%"}
+![](hiely4.png){fig-align="center" width="495"}
+:::
+
+::: {.column width="50%"}
+![](hiely5.png){fig-align="center" width="495"}
+:::
+:::
+:::
+
+## How about this?
+
+[![](trump.jfif)](https://twitter.com/IvankaTrump/status/1179480507505168384?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1179480507505168384%7Ctwgr%5Ea87fac9329dfb548428a034205e2269d7eceaace%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.washingtonpost.com%2Fbusiness%2F2019%2F10%2F14%2Fyouve-been-reading-charts-wrong-heres-how-pro-does-it%2F)
+
+## And this?
+
+[![](flatten-the-curve-1536x589-1.jpg){fig-align="center"}](https://flattenthecurve.com/)
+
+## What makes a great visualization?
+
+Graphical excellence is the **well-designed presentation** of **interesting data**---a matter of substance, of statistics, and of design ... \[It\] consists of complex ideas communicated with clarity, precision, and efficiency. ... \[It\] is that which gives to the viewer the **greatest number of ideas in the shortest time with the least ink in the smallest space** ... \[It\] is nearly always multivariate ... And graphical excellence requires **telling the truth** about the data. 
+
+\
+Edward Tufte (1983). *The Visual Display of Quantitative Information*, p. 51.
+
+## Maximize Data-Ink Ratio
+
+![Bray, Tim. http://www.tbray.org/ongoing/data-ink/di1](ink1.png)
+
+## Remove Grid
+
+![Bray, Tim. http://www.tbray.org/ongoing/data-ink/di2](ink2.png)
+
+## Remove Background
+
+![Bray, Tim. http://www.tbray.org/ongoing/data-ink/di3](ink3.png)
+
+## Remove Box
+
+![Bray, Tim. http://www.tbray.org/ongoing/data-ink/di4](ink4.png)
+
+## Add horizontal "line"
+
+![Bray, Tim. http://www.tbray.org/ongoing/data-ink/di5](ink5.png)
+
+## Remove axis line and ticks
+
+![Bray, Tim. http://www.tbray.org/ongoing/data-ink/di6](ink6.png)
+
+## Design prinicples
+
+Why would we care about design principles? What is our goal?
+
+. . .
+
+-   Communicating our data in different forms to specific audiences.
+
+-   Following design principles, we can fulfill the criteria of great visualizations.
+
+## CRAP
+
+::: columns
+::: {.column width="50%"}
+-   **C**ontrast
+
+-   **R**epetition
+
+-   **A**lignment
+
+-   **P**roximity
+
+These design principles apply in all areas of life: Art, architecture, ..., and graphs.
+:::
+
+::: {.column width="50%"}
+![](Bild0.png){fig-align="center"}
+:::
+:::
+
+## Contrast
+
+::: columns
+::: {.column width="50%"}
+We want to **contras**t various elements to get a reader's attention.
+
+-   It creates a hierarchy among different elements of your graph making it more interesting.
+
+-   However, **contrast must be strong**!
+:::
+
+::: {.column width="50%"}
+[![](Bild1.png){width="398"}](https://alumni.sae.edu/2016/01/25/good-design-is-a-c-r-a-p/)
+
+[![](Bild2.png){width="425"}](https://alumni.sae.edu/2016/01/25/good-design-is-a-c-r-a-p/)
+:::
+:::
+
+## Repetition
+
+::: columns
+::: {.column width="50%"}
+We want to **repeat** design aspects throughout the graph for consistency.
+
+-   Elements might include bullet points, typefaces, lines, colors, ...
+
+-   Repetition makes it easier for a reader to recognize patterns and capture the graph's message.
+:::
+
+::: {.column width="50%"}
+[![](Bild3.png){width="326"}](https://alumni.sae.edu/2016/01/25/good-design-is-a-c-r-a-p/)
+
+[![](Bild4.png){width="311"}](https://alumni.sae.edu/2016/01/25/good-design-is-a-c-r-a-p/)
+:::
+:::
+
+## Alignment
+
+::: columns
+::: {.column width="50%"}
+We want to **align** the elements of our graph.
+
+-   To keep our graph consistent, align every object with an edge of any other object.
+
+-   Strong alignments allow you to break them occasionally to make a point without making it look like a mistake.
+:::
+
+::: {.column width="50%"}
+[![](Bild5.png){width="294"}](https://alumni.sae.edu/2016/01/25/good-design-is-a-c-r-a-p/)
+
+[![](Bild6.png){width="332"}](https://alumni.sae.edu/2016/01/25/good-design-is-a-c-r-a-p/)
+:::
+:::
+
+## Proximity
+
+::: columns
+::: {.column width="50%"}
+We want to **group together** related elements of our graph.
+
+-   Group elements into closer proximity if they are related.
+
+-   Separate elements that are not directly related.
+
+-   Vary space between groups and elements.
+:::
+
+::: {.column width="50%"}
+[![](Bild7.png){width="365"}](https://alumni.sae.edu/2016/01/25/good-design-is-a-c-r-a-p/)
+
+[![](Bild8.png){width="354"}](https://alumni.sae.edu/2016/01/25/good-design-is-a-c-r-a-p/)
+:::
+:::
+
+# Grammar of graphics
+
+## Grammatical Layers
+
+::: panel-tabset
+## Foundational
+
+![](ggplot-layers-short@4x.png){width="798"}
+
+## Code
+
+```{r, echo=TRUE, eval=FALSE}
+ggplot(data = gapminder,
+       mapping = aes(x = gdpPercap,
+                           y = lifeExp,
+                           color = continent)) +
+  geom_point()
+```
+
+## Additional
+
+![](ggplot-layers@4x.png){width="425"}
+:::
+
+## Building a ggplot step-by-step
+
+::: panel-tabset
+## Packages
+
+Packages to reproduce the plots:
+
+```{r, echo=T, eval=F}
+# library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(gapminder)
+```
+
+## Code
+
+```{r, echo=T, eval=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, 
+      y = lifeExp,
+  color = continent))
+```
+
+## Plot
+
+```{r, echo=FALSE}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, 
+      y = lifeExp,
+  color = continent))
+```
+:::
+
+## Adding a geometry: geom_point()
+
+::: panel-tabset
+## Code
+
+```{r, echo=T, eval=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, 
+      y = lifeExp,
+  color = continent)) +
+  geom_point()
+```
+
+## Plot
+
+```{r, echo=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, 
+      y = lifeExp,
+  color = continent)) +
+  geom_point()
+```
+:::
+
+## Adding a scale
+
+::: panel-tabset
+## Code
+
+```{r, echo=T, eval=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, y = lifeExp,
+  color = continent)) +
+  geom_point() +
+  scale_x_log10()
+```
+
+## Plot
+
+```{r, echo=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, y = lifeExp,
+  color = continent)) +
+  geom_point() +
+  scale_x_log10()
+```
+:::
+
+## Adding further geometries
+
+::: panel-tabset
+## Code
+
+```{r, echo=T, eval=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, y = lifeExp,
+  color = continent)) +
+  geom_point() +
+  scale_x_log10() +
+  geom_smooth(method = "lm")
+```
+
+## Plot
+
+```{r, echo=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, y = lifeExp,
+  color = continent)) +
+  geom_point() +
+  scale_x_log10() +
+  geom_smooth(method = "lm")
+```
+:::
+
+## Add different color scale
+
+::: panel-tabset
+## Code
+
+```{r, echo=T, eval=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, 
+      y = lifeExp,
+  color = continent)) +
+  geom_point() +
+  scale_x_log10() +
+  geom_smooth(method = "lm") +
+  scale_color_viridis_d()
+```
+
+## Plot
+
+```{r, echo=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, 
+      y = lifeExp,
+  color = continent)) +
+  geom_point() +
+  scale_x_log10() +
+  geom_smooth(method = "lm") +
+  scale_color_viridis_d()
+```
+:::
+
+## Use facets
+
+::: panel-tabset
+## Code
+
+```{r, echo=T, eval=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, 
+      y = lifeExp,
+  color = continent)) +
+  geom_point() +
+  scale_x_log10() +
+  geom_smooth(method = "lm") +
+  scale_color_viridis_d() +
+  facet_wrap(vars(continent), ncol = 2)
+```
+
+## Plot
+
+```{r, echo=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, 
+      y = lifeExp,
+  color = continent)) +
+  geom_point() +
+  scale_x_log10() +
+  geom_smooth(method = "lm") +
+  scale_color_viridis_d() +
+  facet_wrap(vars(continent), ncol = 2)
+```
+:::
+
+## Add titles, subtitles, etc.
+
+::: panel-tabset
+## Code
+
+```{r, echo=T, eval=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, 
+      y = lifeExp,
+  color = continent)) +
+  geom_point() +
+  scale_x_log10() +
+  geom_smooth(method = "lm") +
+  scale_color_viridis_d() +
+  facet_wrap(vars(continent), ncol = 2) +
+  labs(x = "GDP per capita", 
+       y = "Life expectancy",
+       color = "Continent",
+       title = "Wealth = Health?",
+       subtitle = "gdpPercap/lifeExp",
+       caption = "Gapminder dataset")
+```
+
+## Plot
+
+```{r, echo=F}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, 
+      y = lifeExp,
+  color = continent)) +
+  geom_point() +
+  scale_x_log10() +
+  geom_smooth(method = "lm") +
+  scale_color_viridis_d() +
+  facet_wrap(vars(continent), ncol = 2) +
+  labs(x = "GDP per capita", 
+       y = "Life expectancy",
+       color = "Continent",
+       title = "Wealth = Health?",
+       subtitle = "gdpPercap/lifeExp",
+       caption = "Gapminder dataset")
+```
+:::
+
+## More geometries
+
+::: panel-tabset
+## Code
+
+```{r, echo=T, eval=F}
+ggplot(data = filter(gapminder, year %in% c(2007)),
+aes(x = lifeExp,
+fill = continent)) +
+geom_histogram(binwidth = 5,
+               color = "grey") +
+scale_fill_viridis_d() +
+facet_wrap(vars(continent), ncol = 2) +
+guides(fill = "none") 
+```
+
+## Plot
+
+```{r, echo=F}
+ggplot(data = filter(gapminder, year %in% c(2007)),
+aes(x = lifeExp,
+fill = continent)) +
+geom_histogram(binwidth = 5,
+               color = "grey") +
+scale_fill_viridis_d() +
+facet_wrap(vars(continent), ncol = 2) +
+guides(fill = "none") 
+```
+:::
+
+## More geometries
+
+::: panel-tabset
+## Code
+
+```{r, echo=T, eval=F}
+colors <- c("red", "orange", "yellow", "green", "blue")
+
+ggplot(data = filter(gapminder, year %in% c(2007)),
+  aes(x = continent,
+      y = lifeExp,
+      fill = continent)) +
+  geom_boxplot(alpha = 0.5) +
+  scale_fill_manual(values = colors) +
+  guides(fill = "none")
+```
+
+## Plot
+
+```{r, echo=F}
+colors <- c("red", "orange", "yellow", "green", "blue")
+
+ggplot(data = filter(gapminder, year %in% c(2007)),
+  aes(x = continent,
+      y = lifeExp,
+      fill = continent)) +
+  geom_boxplot(alpha = 0.5) +
+  scale_fill_manual(values = colors) +
+  guides(fill = "none")
+```
+:::
+
+## More geometries
+
+::: panel-tabset
+## Code
+
+```{r, echo=T, eval=F}
+ggplot(gapminder, aes(x = year, 
+                      y = lifeExp,
+                      group = country)) +
+  geom_line(alpha = 0.2, color="grey") +
+  geom_line(data = gapminder %>% filter(country %in% c(
+    "Germany",
+    "India",
+    "Rwanda")),
+    lwd = 1) + # thicker line
+```
+
+## Plot
+
+```{r, echo=F}
+ggplot(gapminder, aes(x = year, y = lifeExp,
+  group = country)) +
+  geom_line(alpha = 0.2, color="grey") +
+  geom_line(data = gapminder %>%
+    filter(country %in% c(
+    "Germany",
+    "India",
+    "Rwanda")),
+    lwd = 1) # thicker line
+```
+:::
+
+## CRAP and ggplot?
+
+. . .
+
+-   Contrast, Repetition, Alignment, Proximity
+
+-   Following CRAP principles makes it easy to improve our plots!
+
+-   We can apply these principles in ggplot using the *theme()* function
+
+-   You can find great examples in [Wilke's book in chapter 17-22](https://clauswilke.com/dataviz/proportional-ink.html): *Part II: Principles of Figure Design*
+
+## Themes
+
+Make use of existing themes:
+
+-   [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)
+
+-   [ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
+
+-   ...
+
+There are many more! And you can even create your own theme!
+
+## hrbrthemes
+
+```{r, eval=FALSE, echo=TRUE}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, y = lifeExp, color = continent)) +
+  geom_point() +
+  hrbrthemes::theme_ipsum_ps()
+```
+
+```{r, echo=FALSE, fig.align='center'}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, y = lifeExp, color = continent)) +
+  geom_point() +
+  hrbrthemes::theme_ipsum_ps()
+```
+
+## hrbrthemes
+
+```{r, eval=FALSE, echo=TRUE}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, y = lifeExp, color = continent)) +
+  geom_point() +
+  hrbrthemes::theme_modern_rc()
+```
+
+```{r, echo=FALSE, fig.align='center'}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, y = lifeExp, color = continent)) +
+  geom_point() +
+  hrbrthemes::theme_modern_rc()
+```
+
+## ggthemes
+
+```{r, eval=FALSE, echo=TRUE}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, y = lifeExp, color = continent)) +
+  geom_point() +
+  ggthemes::theme_economist()
+```
+
+```{r, echo=FALSE, fig.align='center'}
+ggplot(data = gapminder %>% filter(year==2007),
+  aes(x = gdpPercap, y = lifeExp, color = continent)) +
+  geom_point() +
+  ggthemes::theme_economist()
+```
+
+## theme()
+
+[![](theme_elements.png)](https://henrywang.nl/ggplot2-theme-elements-demonstration/)
+
+## How to learn theme() arguments?
+
+-   There are **94** possible arguments for the *theme()* function
+
+-   Many of them are very specific. E.g., *axis.ticks.length.x.top*
+
+-   Best way: Trial and error. Practice makes (almost) perfect
+
+-   Try the **ggThemeAssist** **package**
+
+-   Documentation: [Modify components of a theme](https://ggplot2.tidyverse.org/reference/theme.html) and [ggplot complete themes](https://ggplot2.tidyverse.org/reference/ggtheme.html)
+
+# Maps
+
+## Ways to visualize data with maps
+
+There are multiple ways to encode data on maps:
+
+-   points
+
+-   lines
+
+-   areas
+
+-   shapes
+
+-   ...
+
+## Maps + points
+
+![](baltimore.jpg)
+
+## Maps + proportional symbols
+
+[![](measles.jpg)](https://www.nytimes.com/interactive/2015/02/06/us/california-measles-vaccines-map.html)
+
+## Maps + lines
+
+[![](hiely.jpg)](https://kieranhealy.org/prints/rivers/)
+
+## Choropleth maps
+
+![](10fig35.jpg)
+
+# Shapefiles
+
+## Shapefiles
+
+::: panel-tabset
+## In general
+
+::: columns
+::: {.column width="50%"}
+-   Geographic information is shared as shapefiles
+
+-   They are not the same as regular CSV files
+
+-   Normally, you download them as zipped files (the .shp ending indicates the relevant file)
+:::
+
+::: {.column width="50%"}
+![](shp.jpg)
+:::
+:::
+
+## Structure
+
+```{r, echo=T}
+library(sf)
+constituency_shapes <- read_sf("btw17_geometrie_wahlkreise_geo_shp/Geometrie_Wahlkreise_19DBT_geo.shp")
+constituency_shapes
+```
+
+## Finding shapefiles
+
+-   [Natural Earth](https://www.naturalearthdata.com/) for international maps
+
+-   [US Census Bureau](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html) for US maps
+
+-   [Eurostat](https://ec.europa.eu/eurostat/web/gisco) for EU maps
+
+-   GOOGLE: *shapefiles for ...*
+
+    -   e.g., *shapefiles for german election districts*
+:::
+
+# geom_sf()
+
+## Geometry column & geom_sf()
+
+::: panel-tabset
+## Code
+
+If we have a geometry column, all we need to do is use *geom_sf():*
+
+```{r, eval=F, echo=T}
+ggplot(data = constituency_shapes) +
+  geom_sf()
+```
+
+## Plot - 2017 constituencies
+
+```{r, echo=F}
+ggplot(data = constituency_shapes) +
+  geom_sf()
+```
+:::
+
+## Making a choropleth map
+
+::: panel-tabset
+## And now?
+
+-   From here, it is easy to create a choropleth map.
+
+-   We just have to add data to our *constituency_shapes* dataframe.
+
+    -   Remember the election and structural data from the German federal election officer?
+
+-   And we can use all typical ggplot functions!
+
+## Code
+
+```{r load-election-data_2017, include=F}
+# You can find the data to download also here: https://www.bundeswahlleiterin.de/bundestagswahlen/2021/ergebnisse.html
+btw17_kerg2 <- read_delim("btw17_kerg2.csv", # you have to adapt the file path
+     delim = ";",  # set semicolon as delimiter,
+     locale = locale(decimal_mark = ","), # decimal mark used in the csv file is "," and not "."
+     escape_double = FALSE, 
+     trim_ws = TRUE, 
+     skip = 9) # skip the first 9 rows
+```
+
+```{r transform-election-data-2017, include=F}
+btw17_election <- btw17_kerg2 %>% 
+  # we want to get rid of all rows regarding the federal and regional level, and keep the constituency level.
+  filter(Gebietsart == "Wahlkreis") %>% 
+  # in additiom, we are interested in the "Zweitstimme"
+  filter(Stimme == 2) %>% 
+  # next, we are primarily interested in party name and the relative share. We directly rename the variables while selecting. Further, we need the constituency number to merge the election results with structural data provided by the Federal Returning Officer.
+  select(constituency_number = Gebietsnummer, 
+         party = Gruppenname,
+         vote_share = Prozent) %>% 
+  mutate(constituency_number = as.numeric(constituency_number))
+```
+
+```{r, eval=F, echo=T}
+constituency_shapes_vote <- constituency_shapes %>% 
+  # here, we can use our "btw17_election" data from earlier sessions!
+  left_join(btw17_election, by = c("WKR_NR" = "constituency_number")) %>% 
+  filter(party == "AfD")
+
+ggplot(data = constituency_shapes_vote,
+       aes(fill = vote_share)) +  
+  geom_sf() + 
+  scale_fill_gradient(low = "lightblue", high = "darkblue") +
+  labs(fill = "AfD vote share") +
+  theme_void()
+```
+
+## Plot
+
+```{r, echo=F}
+constituency_shapes_vote <- constituency_shapes %>% 
+  # here, we can use our "btw17_election" data from earlier sessions!
+  left_join(btw17_election, by = c("WKR_NR" = "constituency_number")) %>% 
+  filter(party == "AfD")
+
+ggplot(data = constituency_shapes_vote,
+       aes(fill = vote_share)) +  
+  geom_sf() + 
+  scale_fill_gradient(low = "lightblue", high = "darkblue") +
+  labs(fill = "AfD vote share") +
+  theme_void()
+```
+:::
+
+## But sf is more than drawing maps
+
+[![](sf.jpg)](https://github.com/rstudio/cheatsheets/blob/main/sf.pdf)
+
+# Your turn!
+
+# ⏸️ 15 minute break
+
+# ▶️ Session 06
+
+# Reproducibility
+
+## Reproducibility ⟶ Why R?
+
+... and not just Excel? R ...
+
+-   ... can deal with more data faster.
+
+-   ... is open-source and free.
+
+-   ... allows us to reproduce results and understand data processing steps.
+
+## But what could go wrong?
+
+![](genes.png)
+
+## ... a lot!
+
+![](genes2.png){width="632"}
+
+## ... and there is more ...
+
+![](budget1.png)
+
+-   **Result:** Economic growth slows when a country's debt is higher than 90% of GDP
+
+-   **Implication:** e.g., cited by Republican Paul Ryan in his [proposed 2013 budge](http://budget.house.gov/prosperity/fy2013.htm)t: *The Path to Prosperity: A Blueprint for American Renewal*
+
+## ... wrong basis for policy decisions
+
+![](budget3.png){fig-align="center"}
+
+## How can we avoid this?
+
+-   Do not change the raw data!
+
+    -   If there is no other way, document and explain what you did extensively.
+
+-   Use open formats
+
+    -   e.g., .csv and not .xlsx
+
+-   Use reproducible code
+
+    -   **R Markdown & Quarto**
+
+## R Markdown
+
+*R Markdown provides an **unified authoring framework** for data science, **combining your code, its results, and your prose commentary.** R Markdown documents are **fully reproducible** and support dozens of output formats, like PDFs, Word files, slideshows, and more.*
+
+[R for Data Science](https://r4ds.had.co.nz/r-markdown.html#r-markdown)
+
+## Why should we use R Markdown?
+
+1.  Communication of our analysis with a focus on conclusions and not on the code.
+
+2.  Collaboration with other researchers who want to understand your data analysis and your code.
+
+3.  Annotation of the codes and thoughts regarding the coding and data analysis can be stored in the same document.
+
+[R for Data Science](https://r4ds.had.co.nz/r-markdown.html#r-markdown)
+
+## R Markdown - AirBnb
+
+![](airbnb.png)
+
+## R Markdown - UK Government
+
+Formerly, a typical statistics production process in government agencies in the UK:
+
+![](govuk2.png){width="1348"}
+
+. . .
+
+Prone to errors & time-consuming ⟶ Development to a reproducible analytical pipeline:
+
+![](govuk.png){width="443"}
+
+## Moving to Quarto
+
+-   Quarto is not an R package as R Markdown, but an command line interface tool.
+
+-   It gives you the s**ame functionality as R Markdown** as well as other packages.
+
+-   It **extends R Markdown** through native support for other programming languages such as Python.
+
+-   The "new" way to produce articles & reports, presentations, interactive documents, websites or books.
+
+[R for Data Science](https://r4ds.hadley.nz/quarto.html#introduction)
+
+## 
+
+[![](quarto.jpg)](https://quarto.org/)
+
+## Create a Quarto Document
+
+![](quarto1.jpg)
+
+## Create a Quarto Document
+
+![](quarto2.jpg)
+
+## Create a Quarto Document
+
+![](quarto3.jpg)
+
+## Create a Quarto Document
+
+![](quarto4.jpg)
+
+## Create a Quarto Document
+
+![](quarto5.jpg)
+
+# Gapminder example
+
+## YAML header
+
+```{r, eval=FALSE, echo=TRUE}
+---
+title: "Explore Gapminder Data"
+author: "David Schweizer"
+format: 
+  html: default
+editor: visual
+---
+```
+
+## Code chunks - Data
+
+We make use of the Gapminder data.
+
+```{r, echo=TRUE, results='hide', message=FALSE, warning=FALSE}
+# #| label: load-packages-and-data
+# #| include: false
+
+library(tidyverse)
+library(gapminder)
+
+gapminder <- gapminder
+```
+
+## Code chunks - Wrangle
+
+```{r, echo=TRUE, results='hide'}
+# #| label: wrangle-data
+# #| echo: true
+# #| results: hide
+
+gapminder_2007_europe <- gapminder %>% 
+  filter(year == 2007 & continent == "Europe") %>% 
+  select(-c(year,continent,pop))
+
+head(gapminder_2007_europe, n = 5)
+```
+
+## Code chunks - Visualize
+
+```{r, echo=TRUE}
+# #| label: visualize-data
+# #| echo: false
+# #| message: false
+# #| fig-cap: "GDP per capita and life expectancy in Europe in 2007"
+```
+
+```{r, echo=FALSE, results='asis', fig.cap="GDP per capita and life expectancy in Europe in 2007"}
+# #| label: visualize-data
+# #| echo: false
+# #| message: false
+# #| fig-cap: "GDP per capita and life expectancy in Europe in 2007"
+
+ggplot(gapminder_2007_europe, 
+       aes(x = gdpPercap,
+           y = lifeExp)) +
+  geom_point() +
+  geom_smooth() +
+  theme_minimal()
+```
+
+## Output
+
+![](output.jpg)
+
+## Code chunk options
+
+[![](code.jpg)](https://r4ds.hadley.nz/quarto#code-chunks)
+
+## Render to different formats
+
+Quarto offers many output formats. You can find a complete overview [here](https://quarto.org/docs/output-formats/all-formats.html).
+
+Interesting for us so far:
+
+-   HTML
+
+-   PDF
+
+-   Word
+
+## Adjust the YAML header
+
+::: panel-tabset
+## HTML
+
+```{r, eval=FALSE, echo=TRUE}
+---
+title: "Explore Gapminder Data"
+author: "David Schweizer"
+format: 
+  html: default
+
+editor: visual
+---
+
+```
+
+## PDF
+
+```{r, echo=TRUE, eval=FALSE}
+---
+title: "Explore Gapminder Data"
+author: "David Schweizer"
+format: 
+  pdf: default
+
+editor: visual
+---
+```
+
+## Word
+
+```{r, echo=TRUE, eval=FALSE}
+---
+title: "Explore Gapminder Data"
+author: "David Schweizer"
+format: 
+  docx: default
+
+editor: visual
+---
+```
+:::
+
+## Next steps
+
+We have covered the basics. Now, it is your turn to practice and explore Quarto:
+
+-   [Get Started: Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)
+
+-   [Writing a reproducible paper with RStudio and Quarto](https://osf.io/preprints/osf/ur4xn)
+
+-   [Gallery: Quarto](https://quarto.org/docs/gallery/)
+
+-   [R for Data Science](https://r4ds.hadley.nz/quarto)
+
+# Your turn
+
+-   We will work with the [ParlGov data](https://www.parlgov.org/data-info/). Download under "Main tables" *Parties* and *Elections.*
+
+-   Goal for today: Show the development of vote shares by party family over time in European elections. You can choose what type of visualization you want to produce. You can also zoom in on specific countries if you want to.
+
+-   Create a Quarto document and render to HTML. Give it a title and include your name as author. Do not show the code, but only the final plot. Give the plot a caption and describe it with a few sentences.
