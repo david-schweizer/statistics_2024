@@ -25,7 +25,9 @@
   },
   {
     "listing": "/weeks/week-03.html",
-    "items": []
+    "items": [
+      "/slides/week-03/visualize_communciate.html"
+    ]
   },
   {
     "listing": "/weeks/week-04.html",
