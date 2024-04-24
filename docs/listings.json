@@ -4,7 +4,8 @@
     "items": [
       "/weeks/week-01.html",
       "/weeks/week-02.html",
-      "/weeks/week-03.html"
+      "/weeks/week-03.html",
+      "/weeks/week-04.html"
     ]
   },
   {
@@ -32,7 +33,7 @@
   {
     "listing": "/weeks/week-04.html",
     "items": [
-      "/slides/week-04/04-nosession.html"
+      "/slides/week-04/descriptives.html"
     ]
   },
   {

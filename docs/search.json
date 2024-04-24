@@ -25,7 +25,7 @@
     "href": "material.html",
     "title": "Schedule",
     "section": "",
-    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 10, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 10, 2024\n\n\n\n\nWeek 04\n\n\nDescriptives\n\n\nApril 24, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html#assignments",
@@ -184,9 +184,9 @@
   {
     "objectID": "weeks/week-04.html",
     "href": "weeks/week-04.html",
-    "title": "No session due to public holiday",
+    "title": "Descriptives",
     "section": "",
-    "text": "No session\ndue to public holiday\n\n\n\n\n\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\nNo Session\n\n\nWeek 4\n\n\nNov 1, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Work on the second assignment. You should submit the assignment via e-mail.\nPlease contact me via e-mail if you have any questions or problems!"
   },
   {
     "objectID": "weeks/week-05.html",
@@ -2587,7 +2587,7 @@
     "href": "material.html#material",
     "title": "Schedule",
     "section": "",
-    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 10, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 10, 2024\n\n\n\n\nWeek 04\n\n\nDescriptives\n\n\nApril 24, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/week-02/02-GrammarOfGraphics.html",
@@ -6144,5 +6144,215 @@
     "title": "Visualize & Communicate",
     "section": "Next steps",
     "text": "Next steps\nWe have covered the basics. Now, it is your turn to practice and explore Quarto:\n\nGet Started: Quarto\nWriting a reproducible paper with RStudio and Quarto\nGallery: Quarto\nR for Data Science"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#plan-for-today",
+    "href": "slides/week-04/descriptives.html#plan-for-today",
+    "title": "Descriptives",
+    "section": "Plan for today",
+    "text": "Plan for today\n\nSession 06BreakSession 07\n\n\n\nInput: Descriptive statistics - Understanding our data with\n\nsummary statistics (for numeric variables)\nfrequencies & proportions (for categorical variables)\ncross-tabulations\n\nCoding: In groups or on your own.\n\n\n\n⏸️ 15 minute break: Get some fresh air, a coffee, …\n\n\n\nInput: Let’s continue with descriptives!\nCoding: Again, in groups or on your own."
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#r-packages-for-descriptives",
+    "href": "slides/week-04/descriptives.html#r-packages-for-descriptives",
+    "title": "Descriptives",
+    "section": "R packages for descriptives",
+    "text": "R packages for descriptives\n\nBesides base R and tidyverse function, we will have a look at various packages suited for descriptive statistics. These packages differ in e.g., the output they produce, ease-of-use, and flexibility.\nChoose the package which fits best to your (research) goals: quickly get an overview? Create a report? Produce publication-ready output (e.g., tables, …)?\n\n\n\n\n\n\n\n\nDon’t worry: No need to remember all of the options and differences right away.\nAlso, in R, there is usually more than one package to perform the same task"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#so-far",
+    "href": "slides/week-04/descriptives.html#so-far",
+    "title": "Descriptives",
+    "section": "So far:",
+    "text": "So far:\nWe already got to know functions which provide us with a first overview of our data:\n\ndim()\nhead()\nstr()\nview()\n\nHowever, we need to dive deeper into our data!"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#summary-statistics",
+    "href": "slides/week-04/descriptives.html#summary-statistics",
+    "title": "Descriptives",
+    "section": "Summary statistics",
+    "text": "Summary statistics\nIn order to understand quantitative data, we can reduce them to single values. For this purpose, we can use summarizing function of:\n\nlocation (e.g., mean)\nspread (e.g., standard deviation, variance)\nshape of the distribution (e.g., skewness)\nrelation between variables"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#summary",
+    "href": "slides/week-04/descriptives.html#summary",
+    "title": "Descriptives",
+    "section": "summary()",
+    "text": "summary()\nThe base R function summary() allows us to check some summary statistics of our data. It can be applied to single variables …\n\nsummary(gapminder$gdpPercap)\n\n    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. \n   241.2   1202.1   3531.8   7215.3   9325.5 113523.1"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#summary-1",
+    "href": "slides/week-04/descriptives.html#summary-1",
+    "title": "Descriptives",
+    "section": "summary()",
+    "text": "summary()\n.. or to a full dataframe:\n\nsummary(gapminder)\n\n        country        continent        year         lifeExp     \n Afghanistan:  12   Africa  :624   Min.   :1952   Min.   :23.60  \n Albania    :  12   Americas:300   1st Qu.:1966   1st Qu.:48.20  \n Algeria    :  12   Asia    :396   Median :1980   Median :60.71  \n Angola     :  12   Europe  :360   Mean   :1980   Mean   :59.47  \n Argentina  :  12   Oceania : 24   3rd Qu.:1993   3rd Qu.:70.85  \n Australia  :  12                  Max.   :2007   Max.   :82.60  \n (Other)    :1632                                                \n      pop              gdpPercap       \n Min.   :6.001e+04   Min.   :   241.2  \n 1st Qu.:2.794e+06   1st Qu.:  1202.1  \n Median :7.024e+06   Median :  3531.8  \n Mean   :2.960e+07   Mean   :  7215.3  \n 3rd Qu.:1.959e+07   3rd Qu.:  9325.5  \n Max.   :1.319e+09   Max.   :113523.1"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#psychdescribe",
+    "href": "slides/week-04/descriptives.html#psychdescribe",
+    "title": "Descriptives",
+    "section": "psych::describe()",
+    "text": "psych::describe()\nThe psych package’s describe() function can be used for more detailed summary statistics of numeric varibales:\n\nlibrary(psych)\n\npsych::describe(gapminder)\n\n           vars    n        mean           sd     median     trimmed        mad\ncountry*      1 1704       71.50        41.00      71.50       71.50      52.63\ncontinent*    2 1704        2.33         1.21       2.00        2.27       1.48\nyear          3 1704     1979.50        17.27    1979.50     1979.50      22.24\nlifeExp       4 1704       59.47        12.92      60.71       59.92      16.10\npop           5 1704 29601212.32 106157896.74 7023595.50 11399459.45 7841473.62\ngdpPercap     6 1704     7215.33      9857.45    3531.85     5221.44    4007.61\n                min          max      range  skew kurtosis         se\ncountry*       1.00        142.0        141  0.00    -1.20       0.99\ncontinent*     1.00          5.0          4  0.25    -1.34       0.03\nyear        1952.00       2007.0         55  0.00    -1.22       0.42\nlifeExp       23.60         82.6         59 -0.25    -1.13       0.31\npop        60011.00 1318683096.0 1318623085  8.33    77.62 2571683.45\ngdpPercap    241.17     113523.1     113282  3.84    27.40     238.80"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#summarytoolsdescr",
+    "href": "slides/week-04/descriptives.html#summarytoolsdescr",
+    "title": "Descriptives",
+    "section": "summarytools::descr()",
+    "text": "summarytools::descr()\nThe summarytools package provides the descr() function for summary statistics, which also gives us quite a few options for customizing the output.\n\nlibrary(summarytools)\n\nsummarytools::descr(gapminder, stats = \"common\")\n\nDescriptive Statistics  \ngapminder  \nN: 1704  \n\n                  gdpPercap   lifeExp             pop      year\n--------------- ----------- --------- --------------- ---------\n           Mean     7215.33     59.47     29601212.32   1979.50\n        Std.Dev     9857.45     12.92    106157896.74     17.27\n            Min      241.17     23.60        60011.00   1952.00\n         Median     3531.85     60.71      7023595.50   1979.50\n            Max   113523.13     82.60   1318683096.00   2007.00\n        N.Valid     1704.00   1704.00         1704.00   1704.00\n      Pct.Valid      100.00    100.00          100.00    100.00"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#datawizard",
+    "href": "slides/week-04/descriptives.html#datawizard",
+    "title": "Descriptives",
+    "section": "datawizard",
+    "text": "datawizard\nThe datawizard package not only provides an alternative to data wrangling but also a function for summary statistics (with several options for customizing the output):\n\nlibrary(datawizard)\n\ndatawizard::describe_distribution(gapminder, quartiles = TRUE)\n\nVariable  |     Mean |       SD |      IQR |                Range |          Quartiles | Skewness | Kurtosis |    n | n_Missing\n-------------------------------------------------------------------------------------------------------------------------------\nyear      |  1979.50 |    17.27 |    32.50 |   [1952.00, 2007.00] |   1965.75, 1993.25 |     0.00 |    -1.22 | 1704 |         0\nlifeExp   |    59.47 |    12.92 |    22.67 |       [23.60, 82.60] |       48.20, 70.85 |    -0.25 |    -1.13 | 1704 |         0\npop       | 2.96e+07 | 1.06e+08 | 1.68e+07 | [60011.00, 1.32e+09] | 2.79e+06, 1.96e+07 |     8.34 |    77.95 | 1704 |         0\ngdpPercap |  7215.33 |  9857.45 |  8124.47 |   [241.17, 1.14e+05] |   1202.06, 9325.46 |     3.85 |    27.52 | 1704 |         0"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#summary-statistics-with-dplyr",
+    "href": "slides/week-04/descriptives.html#summary-statistics-with-dplyr",
+    "title": "Descriptives",
+    "section": "Summary statistics with dplyr",
+    "text": "Summary statistics with dplyr\n\nOf course, the dplyr packages also provides functions for summary statistics: summarize()\nsummarize() can be used to create summary satstics using the following functions: mean(), sd(), min(), max()\nsummarize() requires us to write more code. However, it is also the most flexible option! In addition, it produces a tibble, which can easily be used for creating plots or tables."
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#summary-statistics-with-dplyr-1",
+    "href": "slides/week-04/descriptives.html#summary-statistics-with-dplyr-1",
+    "title": "Descriptives",
+    "section": "Summary statistics with dplyr",
+    "text": "Summary statistics with dplyr\n\ngapminder %&gt;% \n  summarize(mean_gdp = mean(gdpPercap, na.rm = TRUE),\n            sd_gdp = sd(gdpPercap, na.rm = TRUE),\n            var_gdp = var(gdpPercap, na.rm = TRUE),\n            min_gdp = min(gdpPercap, na.rm = TRUE),\n            max_gdp = max(gdpPercap, na.rm = TRUE)\n)\n\n# A tibble: 1 × 5\n  mean_gdp sd_gdp   var_gdp min_gdp max_gdp\n     &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;\n1    7215.  9857. 97169410.    241. 113523."
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#summary-statistics-with-dplyr-2",
+    "href": "slides/week-04/descriptives.html#summary-statistics-with-dplyr-2",
+    "title": "Descriptives",
+    "section": "Summary statistics with dplyr",
+    "text": "Summary statistics with dplyr\nWe can also make use of group_by() to calculate summary statistics per group.\n\ngapminder %&gt;%\n  group_by(continent) %&gt;% \n  summarize(mean_gdp = mean(gdpPercap, na.rm = TRUE),\n            sd_gdp = sd(gdpPercap, na.rm = TRUE),\n            var_gdp = var(gdpPercap, na.rm = TRUE),\n            min_gdp = min(gdpPercap, na.rm = TRUE),\n            max_gdp = max(gdpPercap, na.rm = TRUE)\n)\n\n# A tibble: 5 × 6\n  continent mean_gdp sd_gdp    var_gdp min_gdp max_gdp\n  &lt;fct&gt;        &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;\n1 Africa       2194.  2828.   7997187.    241.  21951.\n2 Americas     7136.  6397.  40918591.   1202.  42952.\n3 Asia         7902. 14045. 197272506.    331  113523.\n4 Europe      14469.  9355.  87520020.    974.  49357.\n5 Oceania     18622.  6359.  40436669.  10040.  34435."
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#summary-statistics-with-dplyr-3",
+    "href": "slides/week-04/descriptives.html#summary-statistics-with-dplyr-3",
+    "title": "Descriptives",
+    "section": "Summary statistics with dplyr",
+    "text": "Summary statistics with dplyr\nUsing the across() function, we can produce grouped summary statistics for multiple variables:\n\ngapminder %&gt;%\n  filter(country == \"Austria\") %&gt;%\n  summarize(\n    across(\n      c(lifeExp:gdpPercap), # select variables\n      list(mean = ~ mean(., na.rm = TRUE), # list functions\n           sd = ~ sd(., na.rm = TRUE)),\n      .names = \"{col}_{fn}\" # new variable names based on column and function\n      )\n    )\n\n# A tibble: 1 × 6\n  lifeExp_mean lifeExp_sd pop_mean  pop_sd gdpPercap_mean gdpPercap_sd\n         &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;          &lt;dbl&gt;        &lt;dbl&gt;\n1         73.1       4.38 7583298. 437660.         20412.        9655."
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#data",
+    "href": "slides/week-04/descriptives.html#data",
+    "title": "Descriptives",
+    "section": "Data",
+    "text": "Data\n\ngapminder2007 &lt;- gapminder %&gt;%\n  filter(year == 2007)\nsummary(gapminder2007$gdpPercap)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  277.6  1624.8  6124.4 11680.1 18008.8 49357.2 \n\n\n\ngapminder_cat &lt;- gapminder2007 %&gt;%\n  mutate(wealth = case_when(\n    gdpPercap &lt;= 1625 ~ \"poor\",\n    gdpPercap &gt; 1625 & gdpPercap &lt; mean(gdpPercap) ~ \"below_mean\",\n    gdpPercap &gt; mean(gdpPercap) & gdpPercap &lt; 18009 ~ \"above_mean\", \n    gdpPercap &gt;= 18009 ~ \"rich\")) \n\ngapminder_cat %&gt;% \n  sample_n(2)\n\n# A tibble: 2 × 7\n  country continent  year lifeExp      pop gdpPercap wealth    \n  &lt;fct&gt;   &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt; &lt;chr&gt;     \n1 Canada  Americas   2007    80.7 33390141    36319. rich      \n2 Gabon   Africa     2007    56.7  1454867    13206. above_mean"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#table-for-frequencies",
+    "href": "slides/week-04/descriptives.html#table-for-frequencies",
+    "title": "Descriptives",
+    "section": "table() for frequencies",
+    "text": "table() for frequencies\nThe base R function table() is an easy and simple way for looking at frequencies (e.g., of categorial variables)\n\ntable(gapminder_cat$wealth)\n\n\nabove_mean below_mean       poor       rich \n        12         59         36         35 \n\n\nBy specifying the argument useNA = “always” , we can also include NA:\n\ntable(gapminder_cat$wealth, useNA = \"always\")\n\n\nabove_mean below_mean       poor       rich       &lt;NA&gt; \n        12         59         36         35          0"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#prop.table-for-proportions",
+    "href": "slides/week-04/descriptives.html#prop.table-for-proportions",
+    "title": "Descriptives",
+    "section": "prop.table() for proportions",
+    "text": "prop.table() for proportions\nTo get proportions, we can use the base R function prop.table() . Note: This function requires output produced by table()!\n\nprop.table(table(gapminder_cat$wealth))\n\n\nabove_mean below_mean       poor       rich \n0.08450704 0.41549296 0.25352113 0.24647887"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#prop.table-for-proportions-1",
+    "href": "slides/week-04/descriptives.html#prop.table-for-proportions-1",
+    "title": "Descriptives",
+    "section": "prop.table() for proportions",
+    "text": "prop.table() for proportions\nWe can specify the number of decimals by wrapping our functions in the round() function:\n\n# rounded to 2 decimal places\nround(prop.table(table(gapminder_cat$wealth)), 2)\n\n\nabove_mean below_mean       poor       rich \n      0.08       0.42       0.25       0.25 \n\n\nMultiplying with 100 we get percentages:\n\n# rounded to 2 decimal places\nround((prop.table(table(gapminder_cat$wealth)) * 100 ), 2)\n\n\nabove_mean below_mean       poor       rich \n      8.45      41.55      25.35      24.65"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#summarytoolsfreq",
+    "href": "slides/week-04/descriptives.html#summarytoolsfreq",
+    "title": "Descriptives",
+    "section": "summarytools::freq",
+    "text": "summarytools::freq\nsummarytools includes also the function freq() for frequency and proportion tables:\n\nsummarytools::freq(gapminder_cat$wealth)\n\nFrequencies  \ngapminder_cat$wealth  \nType: Character  \n\n                   Freq   % Valid   % Valid Cum.   % Total   % Total Cum.\n---------------- ------ --------- -------------- --------- --------------\n      above_mean     12      8.45           8.45      8.45           8.45\n      below_mean     59     41.55          50.00     41.55          50.00\n            poor     36     25.35          75.35     25.35          75.35\n            rich     35     24.65         100.00     24.65         100.00\n            &lt;NA&gt;      0                               0.00         100.00\n           Total    142    100.00         100.00    100.00         100.00"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#frequencies-and-proportions-with-dplyr",
+    "href": "slides/week-04/descriptives.html#frequencies-and-proportions-with-dplyr",
+    "title": "Descriptives",
+    "section": "Frequencies and proportions with dplyr",
+    "text": "Frequencies and proportions with dplyr\nUsing group_by() and summarize(), we can also calculate frequencies and proportions:\n\ngapminder_cat %&gt;%\n  filter(!is.na(wealth)) %&gt;% # filter missings\n  group_by(wealth) %&gt;%\n  summarize(n = n()) %&gt;% # new variable: number of observations per group\n  mutate(proportion = n/sum(n))\n\n# A tibble: 4 × 3\n  wealth         n proportion\n  &lt;chr&gt;      &lt;int&gt;      &lt;dbl&gt;\n1 above_mean    12     0.0845\n2 below_mean    59     0.415 \n3 poor          36     0.254 \n4 rich          35     0.246"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#frequencies-and-proportions-with-dplyr-1",
+    "href": "slides/week-04/descriptives.html#frequencies-and-proportions-with-dplyr-1",
+    "title": "Descriptives",
+    "section": "Frequencies and proportions with dplyr",
+    "text": "Frequencies and proportions with dplyr\nWe can also use count() as a short cut:\n\ngapminder_cat %&gt;%\n  filter(!is.na(wealth)) %&gt;% # filter missings\n  count(wealth) %&gt;% # creates a new variable: number of observations per group\n  mutate(proportion = n/sum(n))\n\n# A tibble: 4 × 3\n  wealth         n proportion\n  &lt;chr&gt;      &lt;int&gt;      &lt;dbl&gt;\n1 above_mean    12     0.0845\n2 below_mean    59     0.415 \n3 poor          36     0.254 \n4 rich          35     0.246"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#relationships-between-variables",
+    "href": "slides/week-04/descriptives.html#relationships-between-variables",
+    "title": "Descriptives",
+    "section": "Relationships between variables",
+    "text": "Relationships between variables\n\nBesides inspecting summary statistics, we might also want to check relationships between certain variables as part of the exploratory data analysis.\nThe appropriate choice of method depends on the data types you want to explore.\nToday, we will discuss two options for exploring relationships between variables: crosstabulation (categorial variables) and correlations (numeric and / or binary variables)"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#data-1",
+    "href": "slides/week-04/descriptives.html#data-1",
+    "title": "Descriptives",
+    "section": "Data",
+    "text": "Data\n\ngapminder_cat2 &lt;- gapminder_cat %&gt;%\n  mutate(life = case_when(\n    lifeExp &gt; mean(lifeExp) ~ \"above average\",\n    lifeExp &lt; mean(lifeExp) ~ \"below average\")\n  )\n\ngapminder_cat2 %&gt;%\n  select(country, wealth, life) %&gt;% \n  sample_n(2)\n\n# A tibble: 2 × 3\n  country  wealth     life         \n  &lt;fct&gt;    &lt;chr&gt;      &lt;chr&gt;        \n1 Iceland  rich       above average\n2 Bulgaria below_mean above average"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#crosstabulations",
+    "href": "slides/week-04/descriptives.html#crosstabulations",
+    "title": "Descriptives",
+    "section": "Crosstabulations",
+    "text": "Crosstabulations\nWe can use the base R functions table() as well as prop.table() for creating crosstabs:\n\ntable(gapminder_cat2$life, gapminder_cat2$wealth) # rows, columns\n\n               \n                above_mean below_mean poor rich\n  above average          9         40    1   35\n  below average          3         19   35    0\n\n\n\nround(prop.table(table(gapminder_cat2$life, \n                       gapminder_cat2$wealth)) * 100, 2) # rows, columns\n\n               \n                above_mean below_mean  poor  rich\n  above average       6.34      28.17  0.70 24.65\n  below average       2.11      13.38 24.65  0.00"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#crosstabulations-1",
+    "href": "slides/week-04/descriptives.html#crosstabulations-1",
+    "title": "Descriptives",
+    "section": "Crosstabulations",
+    "text": "Crosstabulations\nUsing these functions, we can also calculate row or column percentages:\n\nround(prop.table(table(gapminder_cat2$life, \n                       gapminder_cat2$wealth), 1)*100, 2) # row\n\n               \n                above_mean below_mean  poor  rich\n  above average      10.59      47.06  1.18 41.18\n  below average       5.26      33.33 61.40  0.00\n\n\n\nround(prop.table(table(gapminder_cat2$life, \n                       gapminder_cat2$wealth), 2)*100, 2) # column\n\n               \n                above_mean below_mean   poor   rich\n  above average      75.00      67.80   2.78 100.00\n  below average      25.00      32.20  97.22   0.00"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#crosstabulations-with-dplyr",
+    "href": "slides/week-04/descriptives.html#crosstabulations-with-dplyr",
+    "title": "Descriptives",
+    "section": "Crosstabulations with dplyr",
+    "text": "Crosstabulations with dplyr\nUsing the functions count() and pivot_wider() we can create crosstabs including frequencies:\n\ngapminder_cat2 %&gt;%\n  filter(!is.na(wealth)) %&gt;% # if there are missings\n  count(life, wealth) %&gt;%\n  pivot_wider(names_from = wealth, # pivot wider changes the data format from long to wide\n              values_from = n)\n\n# A tibble: 2 × 5\n  life          above_mean below_mean  poor  rich\n  &lt;chr&gt;              &lt;int&gt;      &lt;int&gt; &lt;int&gt; &lt;int&gt;\n1 above average          9         40     1    35\n2 below average          3         19    35    NA"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#crosstabulations-with-dplyr-1",
+    "href": "slides/week-04/descriptives.html#crosstabulations-with-dplyr-1",
+    "title": "Descriptives",
+    "section": "Crosstabulations with dplyr",
+    "text": "Crosstabulations with dplyr\nWe can also create crosstabs including percentages:\n\ngapminder_cat2 %&gt;% \n  count(life, wealth) %&gt;% \n  mutate(proportion = n/sum(n)*100) %&gt;% \n  select(-n) %&gt;% \n  pivot_wider(names_from = wealth,\n              values_from = proportion)\n\n# A tibble: 2 × 5\n  life          above_mean below_mean   poor  rich\n  &lt;chr&gt;              &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;\n1 above average       6.34       28.2  0.704  24.6\n2 below average       2.11       13.4 24.6    NA"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#section",
+    "href": "slides/week-04/descriptives.html#section",
+    "title": "Descriptives",
+    "section": "",
+    "text": "Statistics | Summer Semester 2024 | University of Innsbruck"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#your-turn-1",
+    "href": "slides/week-04/descriptives.html#your-turn-1",
+    "title": "Descriptives",
+    "section": "Your turn",
+    "text": "Your turn\n\nWork with a subset of the V-Dem data or a data set of your choice and try out the different functions and packages.\nCan you think of a research question that you might want to answer? How can these descriptives help you answering them? Or do they help with coming up with a RQ?"
+  },
+  {
+    "objectID": "slides/week-04/descriptives.html#your-turn-3",
+    "href": "slides/week-04/descriptives.html#your-turn-3",
+    "title": "Descriptives",
+    "section": "Your turn",
+    "text": "Your turn\n\nContinue with the coding from the session 6!\nAdd the new functions. Can you also build meaningful categories?\n\n\n\nStatistics | Summer Semester 2024 | University of Innsbruck"
+  },
+  {
+    "objectID": "weeks/week-04.html#assignment-2",
+    "href": "weeks/week-04.html#assignment-2",
+    "title": "Descriptives",
+    "section": "",
+    "text": "Work on the second assignment. You should submit the assignment via e-mail.\nPlease contact me via e-mail if you have any questions or problems!"
   }
 ]

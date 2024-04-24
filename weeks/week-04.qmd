@@ -1,9 +1,9 @@
 ---
-title: "No session due to public holiday"
+title: "Descriptives"
 subtitle: "Week 04"
 description: ""
 author: ""
-date: "Nov 01, 2023"
+date: "Apr 24, 2024"
 listing:
   - id: slides
     contents:
@@ -35,6 +35,19 @@ listing:
 tbl-colwidths: [10,50,40]
 ---
 
-# No session
+# To Do's before our session
 
-*due to public holiday*
+## Assignment 2
+
+-   Work on the second assignment. You should submit the assignment via e-mail. 
+
+-   Please contact me via e-mail if you have any questions or problems!
+
+# Seminar slides
+
+::: {#slides}
+:::
+
+# Materials
+
+There are no materials for today.

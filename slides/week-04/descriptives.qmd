@@ -1,0 +1,379 @@
+---
+title: "Descriptives"
+subtitle: "Week 4"
+author: "David Schweizer"
+date: "April 24, 2023"
+date-format: long
+institute: "University of Mannheim"
+format: 
+  revealjs:
+    theme: simple
+    slide-number: c/t #< collapsed/total
+    footer: "Statistics | Summer Semester 2024 | University of Innsbruck"
+editor: visual
+---
+
+```{r packages, include=FALSE}
+pacman::p_load(
+    "knitr",
+    "tidyverse",
+    "gapminder",
+    "psych",
+    "summarytools",
+    "datawizard",
+    "stargazer",
+    "gtsummary",
+    "flextable",
+    "corrr",
+    "correlation"
+    )
+
+gapminder <- gapminder
+```
+
+## Plan for today
+
+::: panel-tabset
+## Session 06
+
+-   Input: Descriptive statistics - Understanding our data with
+
+    -   summary statistics (for numeric variables)
+    -   frequencies & proportions (for categorical variables)
+    -   cross-tabulations
+
+-   Coding: In groups or on your own.
+
+## Break
+
+⏸️ **15 minute break:** Get some fresh air, a coffee, ...
+
+## Session 07
+
+-   Input: Let's continue with descriptives!
+
+-   Coding: Again, in groups or on your own.
+:::
+
+# Session 06
+
+## R packages for descriptives
+
+-   Besides base R and tidyverse function, we will have a look at various packages suited for descriptive statistics. These packages differ in e.g., the output they produce, ease-of-use, and flexibility.
+
+-   Choose the package which fits best to your (research) goals: quickly get an overview? Create a report? Produce publication-ready output (e.g., tables, ...)?
+
+::: {.callout-tip appearance="simple"}
+-   Don't worry: No need to remember all of the options and differences right away.
+
+-   Also, in R, there is usually more than one package to perform the same task
+:::
+
+## So far:
+
+We already got to know functions which provide us with a first overview of our data:
+
+-   dim()
+
+-   head()
+
+-   str()
+
+-   view()
+
+However, we need to dive deeper into our data!
+
+## Summary statistics
+
+In order to understand quantitative data, we can reduce them to single values. For this purpose, we can use summarizing function of:
+
+-   location (e.g., mean)
+
+-   spread (e.g., standard deviation, variance)
+
+-   shape of the distribution (e.g., skewness)
+
+-   relation between variables
+
+## summary()
+
+The base R function summary() allows us to check some summary statistics of our data. It can be applied to single variables ...
+
+```{r, echo=TRUE}
+summary(gapminder$gdpPercap)
+```
+
+## summary()
+
+.. or to a full dataframe:
+
+```{r, echo=TRUE}
+summary(gapminder)
+```
+
+## psych::describe()
+
+The *psych* package's *describe()* function can be used for more detailed summary statistics of numeric varibales:
+
+```{r, echo=TRUE}
+library(psych)
+
+psych::describe(gapminder)
+```
+
+## summarytools::descr()
+
+The *summarytools* package provides the *descr()* function for summary statistics, which also gives us quite a few options for customizing the output.
+
+```{r, echo=TRUE}
+library(summarytools)
+
+summarytools::descr(gapminder, stats = "common")
+```
+
+## datawizard
+
+The *datawizard* package not only provides an alternative to data wrangling but also a function for summary statistics (with several options for customizing the output):
+
+```{r, echo=TRUE}
+library(datawizard)
+
+datawizard::describe_distribution(gapminder, quartiles = TRUE)
+```
+
+## Summary statistics with dplyr
+
+-   Of course, the dplyr packages also provides functions for summary statistics: *summarize()*
+
+-   *summarize()* can be used to create summary satstics using the following functions: *mean(), sd(), min(), max()*
+
+-   *summarize()* requires us to write more code. However, it is also the most flexible option! In addition, it produces a tibble, which can easily be used for creating plots or tables.
+
+## Summary statistics with dplyr
+
+```{r, echo=TRUE}
+gapminder %>% 
+  summarize(mean_gdp = mean(gdpPercap, na.rm = TRUE),
+            sd_gdp = sd(gdpPercap, na.rm = TRUE),
+            var_gdp = var(gdpPercap, na.rm = TRUE),
+            min_gdp = min(gdpPercap, na.rm = TRUE),
+            max_gdp = max(gdpPercap, na.rm = TRUE)
+)
+```
+
+## Summary statistics with dplyr
+
+We can also make use of *group_by()* to calculate summary statistics per group.
+
+```{r, echo=TRUE}
+gapminder %>%
+  group_by(continent) %>% 
+  summarize(mean_gdp = mean(gdpPercap, na.rm = TRUE),
+            sd_gdp = sd(gdpPercap, na.rm = TRUE),
+            var_gdp = var(gdpPercap, na.rm = TRUE),
+            min_gdp = min(gdpPercap, na.rm = TRUE),
+            max_gdp = max(gdpPercap, na.rm = TRUE)
+)
+```
+
+## Summary statistics with dplyr
+
+Using the *across()* function, we can produce grouped summary statistics for multiple variables:
+
+```{r, echo=TRUE}
+gapminder %>%
+  filter(country == "Austria") %>%
+  summarize(
+    across(
+      c(lifeExp:gdpPercap), # select variables
+      list(mean = ~ mean(., na.rm = TRUE), # list functions
+           sd = ~ sd(., na.rm = TRUE)),
+      .names = "{col}_{fn}" # new variable names based on column and function
+      )
+    )
+```
+
+# Frequencies & proportions
+
+## Data
+
+```{r, echo=TRUE}
+gapminder2007 <- gapminder %>%
+  filter(year == 2007)
+summary(gapminder2007$gdpPercap)
+```
+
+```{r,echo=TRUE}
+gapminder_cat <- gapminder2007 %>%
+  mutate(wealth = case_when(
+    gdpPercap <= 1625 ~ "poor",
+    gdpPercap > 1625 & gdpPercap < mean(gdpPercap) ~ "below_mean",
+    gdpPercap > mean(gdpPercap) & gdpPercap < 18009 ~ "above_mean", 
+    gdpPercap >= 18009 ~ "rich")) 
+
+gapminder_cat %>% 
+  sample_n(2)
+```
+
+## table() for frequencies
+
+The base R function table() is an easy and simple way for looking at frequencies (e.g., of categorial variables)
+
+```{r, echo=TRUE}
+table(gapminder_cat$wealth)
+```
+
+By specifying the argument *useNA = "always"* , we can also include *NA*:
+
+```{r, echo=TRUE}
+table(gapminder_cat$wealth, useNA = "always")
+```
+
+## prop.table() for proportions
+
+To get proportions, we can use the base R function *prop.table()* . Note: This function requires output produced by *table()!*
+
+```{r, echo=TRUE}
+prop.table(table(gapminder_cat$wealth))
+```
+
+## prop.table() for proportions
+
+We can specify the number of decimals by wrapping our functions in the *round()* function:
+
+```{r, echo=TRUE}
+# rounded to 2 decimal places
+round(prop.table(table(gapminder_cat$wealth)), 2)
+```
+
+Multiplying with 100 we get percentages:
+
+```{r, echo=TRUE}
+# rounded to 2 decimal places
+round((prop.table(table(gapminder_cat$wealth)) * 100 ), 2)
+```
+
+## summarytools::freq
+
+summarytools includes also the function *freq()* for frequency and proportion tables:
+
+```{r, echo=TRUE}
+summarytools::freq(gapminder_cat$wealth)
+```
+
+## Frequencies and proportions with dplyr
+
+Using *group_by()* and *summarize()*, we can also calculate frequencies and proportions:
+
+```{r, echo=TRUE}
+gapminder_cat %>%
+  filter(!is.na(wealth)) %>% # filter missings
+  group_by(wealth) %>%
+  summarize(n = n()) %>% # new variable: number of observations per group
+  mutate(proportion = n/sum(n))
+```
+
+## Frequencies and proportions with dplyr
+
+We can also use *count()* as a short cut:
+
+```{r, echo=TRUE}
+gapminder_cat %>%
+  filter(!is.na(wealth)) %>% # filter missings
+  count(wealth) %>% # creates a new variable: number of observations per group
+  mutate(proportion = n/sum(n))
+```
+
+# *Your turn!*
+
+## Your turn
+
+-   Work with a subset of the V-Dem data or a data set of your choice and try out the different functions and packages.
+
+-   Can you think of a research question that you might want to answer? How can these descriptives help you answering them? Or do they help with coming up with a RQ?
+
+# ⏸️ 15 minute break
+
+# ▶️ Session 07
+
+## Relationships between variables
+
+-   Besides inspecting summary statistics, we might also want to check relationships between certain variables as part of the exploratory data analysis.
+
+-   The appropriate choice of method depends on the data types you want to explore.
+
+-   Today, we will discuss two options for exploring relationships between variables: crosstabulation (categorial variables) and correlations (numeric and / or binary variables)
+
+## Data
+
+```{r, echo=TRUE}
+gapminder_cat2 <- gapminder_cat %>%
+  mutate(life = case_when(
+    lifeExp > mean(lifeExp) ~ "above average",
+    lifeExp < mean(lifeExp) ~ "below average")
+  )
+
+gapminder_cat2 %>%
+  select(country, wealth, life) %>% 
+  sample_n(2)
+```
+
+## Crosstabulations
+
+We can use the base R functions *table()* as well as *prop.table()* for creating crosstabs:
+
+```{r, echo=TRUE}
+table(gapminder_cat2$life, gapminder_cat2$wealth) # rows, columns
+```
+
+```{r, echo=TRUE}
+round(prop.table(table(gapminder_cat2$life, 
+                       gapminder_cat2$wealth)) * 100, 2) # rows, columns
+```
+
+## Crosstabulations
+
+Using these functions, we can also calculate row or column percentages:
+
+```{r, echo=TRUE}
+round(prop.table(table(gapminder_cat2$life, 
+                       gapminder_cat2$wealth), 1)*100, 2) # row
+```
+
+```{r, echo=TRUE}
+round(prop.table(table(gapminder_cat2$life, 
+                       gapminder_cat2$wealth), 2)*100, 2) # column
+```
+
+## Crosstabulations with dplyr
+
+Using the functions *count()* and *pivot_wider()* we can create crosstabs including frequencies:
+
+```{r, echo=TRUE}
+gapminder_cat2 %>%
+  filter(!is.na(wealth)) %>% # if there are missings
+  count(life, wealth) %>%
+  pivot_wider(names_from = wealth, # pivot wider changes the data format from long to wide
+              values_from = n)
+```
+
+## Crosstabulations with dplyr
+
+We can also create crosstabs including percentages:
+
+```{r, echo=TRUE}
+gapminder_cat2 %>% 
+  count(life, wealth) %>% 
+  mutate(proportion = n/sum(n)*100) %>% 
+  select(-n) %>% 
+  pivot_wider(names_from = wealth,
+              values_from = proportion)
+```
+
+# Your turn!
+
+## Your turn
+
+-   Continue with the coding from the session 6!
+
+-   Add the new functions. Can you also build meaningful categories?
