@@ -683,10 +683,10 @@ gdpPercap |  7215.33 |  9857.45 |  8124.47 |   [241.17, 1.14e+05] |   1202.06, 9
 <span id="cb19-9"><a href="#cb19-9"></a>  <span class="fu">sample_n</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 7
-  country continent  year lifeExp      pop gdpPercap wealth    
-  &lt;fct&gt;   &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt; &lt;chr&gt;     
-1 Canada  Americas   2007    80.7 33390141    36319. rich      
-2 Gabon   Africa     2007    56.7  1454867    13206. above_mean</code></pre>
+  country continent  year lifeExp     pop gdpPercap wealth
+  &lt;fct&gt;   &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;   &lt;int&gt;     &lt;dbl&gt; &lt;chr&gt; 
+1 Comoros Africa     2007    65.2  710960      986. poor  
+2 Norway  Europe     2007    80.2 4627926    49357. rich  </code></pre>
 </div>
 </div>
 </section>
@@ -850,10 +850,10 @@ Type: Character
 <span id="cb37-9"><a href="#cb37-9"></a>  <span class="fu">sample_n</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 3
-  country  wealth     life         
-  &lt;fct&gt;    &lt;chr&gt;      &lt;chr&gt;        
-1 Iceland  rich       above average
-2 Bulgaria below_mean above average</code></pre>
+  country  wealth life         
+  &lt;fct&gt;    &lt;chr&gt;  &lt;chr&gt;        
+1 Denmark  rich   above average
+2 Ethiopia poor   below average</code></pre>
 </div>
 </div>
 </section>
@@ -950,7 +950,10 @@ Type: Character
 <h2>Your turn</h2>
 <ul>
 <li><p>Continue with the coding from the session 6!</p></li>
-<li><p>Add the new functions. Can you also build meaningful categories?</p></li>
+<li><p>Add the new functions. Can you also build meaningful categories?</p>
+<ul>
+<li>With the Gapminder data: Try to create population categories similar to the life and GDP categories! Do you find interesting patterns?</li>
+</ul></li>
 </ul>
 
 <div class="footer footer-default">

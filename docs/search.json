@@ -6241,7 +6241,7 @@
     "href": "slides/week-04/descriptives.html#data",
     "title": "Descriptives",
     "section": "Data",
-    "text": "Data\n\ngapminder2007 &lt;- gapminder %&gt;%\n  filter(year == 2007)\nsummary(gapminder2007$gdpPercap)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  277.6  1624.8  6124.4 11680.1 18008.8 49357.2 \n\n\n\ngapminder_cat &lt;- gapminder2007 %&gt;%\n  mutate(wealth = case_when(\n    gdpPercap &lt;= 1625 ~ \"poor\",\n    gdpPercap &gt; 1625 & gdpPercap &lt; mean(gdpPercap) ~ \"below_mean\",\n    gdpPercap &gt; mean(gdpPercap) & gdpPercap &lt; 18009 ~ \"above_mean\", \n    gdpPercap &gt;= 18009 ~ \"rich\")) \n\ngapminder_cat %&gt;% \n  sample_n(2)\n\n# A tibble: 2 × 7\n  country continent  year lifeExp      pop gdpPercap wealth    \n  &lt;fct&gt;   &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt; &lt;chr&gt;     \n1 Canada  Americas   2007    80.7 33390141    36319. rich      \n2 Gabon   Africa     2007    56.7  1454867    13206. above_mean"
+    "text": "Data\n\ngapminder2007 &lt;- gapminder %&gt;%\n  filter(year == 2007)\nsummary(gapminder2007$gdpPercap)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  277.6  1624.8  6124.4 11680.1 18008.8 49357.2 \n\n\n\ngapminder_cat &lt;- gapminder2007 %&gt;%\n  mutate(wealth = case_when(\n    gdpPercap &lt;= 1625 ~ \"poor\",\n    gdpPercap &gt; 1625 & gdpPercap &lt; mean(gdpPercap) ~ \"below_mean\",\n    gdpPercap &gt; mean(gdpPercap) & gdpPercap &lt; 18009 ~ \"above_mean\", \n    gdpPercap &gt;= 18009 ~ \"rich\")) \n\ngapminder_cat %&gt;% \n  sample_n(2)\n\n# A tibble: 2 × 7\n  country continent  year lifeExp     pop gdpPercap wealth\n  &lt;fct&gt;   &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;   &lt;int&gt;     &lt;dbl&gt; &lt;chr&gt; \n1 Comoros Africa     2007    65.2  710960      986. poor  \n2 Norway  Europe     2007    80.2 4627926    49357. rich"
   },
   {
     "objectID": "slides/week-04/descriptives.html#table-for-frequencies",
@@ -6297,7 +6297,7 @@
     "href": "slides/week-04/descriptives.html#data-1",
     "title": "Descriptives",
     "section": "Data",
-    "text": "Data\n\ngapminder_cat2 &lt;- gapminder_cat %&gt;%\n  mutate(life = case_when(\n    lifeExp &gt; mean(lifeExp) ~ \"above average\",\n    lifeExp &lt; mean(lifeExp) ~ \"below average\")\n  )\n\ngapminder_cat2 %&gt;%\n  select(country, wealth, life) %&gt;% \n  sample_n(2)\n\n# A tibble: 2 × 3\n  country  wealth     life         \n  &lt;fct&gt;    &lt;chr&gt;      &lt;chr&gt;        \n1 Iceland  rich       above average\n2 Bulgaria below_mean above average"
+    "text": "Data\n\ngapminder_cat2 &lt;- gapminder_cat %&gt;%\n  mutate(life = case_when(\n    lifeExp &gt; mean(lifeExp) ~ \"above average\",\n    lifeExp &lt; mean(lifeExp) ~ \"below average\")\n  )\n\ngapminder_cat2 %&gt;%\n  select(country, wealth, life) %&gt;% \n  sample_n(2)\n\n# A tibble: 2 × 3\n  country  wealth life         \n  &lt;fct&gt;    &lt;chr&gt;  &lt;chr&gt;        \n1 Denmark  rich   above average\n2 Ethiopia poor   below average"
   },
   {
     "objectID": "slides/week-04/descriptives.html#crosstabulations",
@@ -6346,7 +6346,7 @@
     "href": "slides/week-04/descriptives.html#your-turn-3",
     "title": "Descriptives",
     "section": "Your turn",
-    "text": "Your turn\n\nContinue with the coding from the session 6!\nAdd the new functions. Can you also build meaningful categories?\n\n\n\nStatistics | Summer Semester 2024 | University of Innsbruck"
+    "text": "Your turn\n\nContinue with the coding from the session 6!\nAdd the new functions. Can you also build meaningful categories?\n\nWith the Gapminder data: Try to create population categories similar to the life and GDP categories! Do you find interesting patterns?\n\n\n\n\nStatistics | Summer Semester 2024 | University of Innsbruck"
   },
   {
     "objectID": "weeks/week-04.html#assignment-2",

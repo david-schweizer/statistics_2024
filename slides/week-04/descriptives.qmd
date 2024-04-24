@@ -377,3 +377,5 @@ gapminder_cat2 %>%
 -   Continue with the coding from the session 6!
 
 -   Add the new functions. Can you also build meaningful categories?
+
+    -   With the Gapminder data: Try to create population categories similar to the life and GDP categories! Do you find interesting patterns?
