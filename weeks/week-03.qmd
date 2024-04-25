@@ -3,7 +3,7 @@ title: "Visualize & Communicate"
 subtitle: "Week 03"
 description: ""
 author: ""
-date: "April 10, 2024"
+date: "April 17, 2024"
 listing:
   - id: slides
     contents:

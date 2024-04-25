@@ -2,7 +2,7 @@
 title: "Visualize & Communicate"
 subtitle: "Week 3"
 author: "David Schweizer"
-date: "April 10, 2023"
+date: "April 17, 2023"
 date-format: long
 institute: "University of Mannheim"
 format: 
