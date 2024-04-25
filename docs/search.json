@@ -144,7 +144,7 @@
     "href": "syllabus.html#course-requirements",
     "title": "Syllabus: Applied Methods of Social Sciences",
     "section": "Course requirements",
-    "text": "Course requirements\n\nActive preparation and participation during sessions\n3 (smaller) assignments during the semester (20% of your grade)\n\nFrom 20.03.24 11:15 until 08.04.24 18:00\nFrom 10.04.24 11:15 until 15.04.24 18:00\nFrom 24.04.24 11:15 until 06.05.24 18:00\n\n\n\n\nParticipation in the Hackathon on 08.05.24 (pass/fail)\nFinal project until TBD (80% of your grade)"
+    "text": "Course requirements\n\nActive preparation and participation during sessions\n3 (smaller) assignments during the semester (20% of your grade)\n\nFrom 20.03.24 11:15 until 08.04.24 18:00\nFrom 17.04.24 11:15 until 22.04.24 18:00\nFrom 08.05.24 11:15 until 13.05.24 18:00\n\n\n\n\nParticipation in the Hackathon on 15.05.24 (pass/fail)\nFinal project until TBD (80% of your grade)"
   },
   {
     "objectID": "syllabus.html#recommended-readings",
@@ -5380,7 +5380,7 @@
     "href": "syllabus.html#schedule-content",
     "title": "Syllabus: Applied Methods of Social Sciences",
     "section": "Schedule & Content",
-    "text": "Schedule & Content\n\nIntro\n\nSession 01 - 13.03.2024 - Intro Session\nSession 02 - 13.03.2024 - Intro to R\n\n\n\nBlock I: Data science workflow\n\nSession 03 - 20.03.2024 - Import, tidy, and transform\nSession 04 - 20.03.2024 - Import, tidy, and transform\n\nEaster Break: No sessions on 27.03. and 03.04.2024\n\nSession 05 - 10.04.2024 - Visualize\nSession 06 - 10.04.2024 - Communicate\n\n\n\nBlock II: Descriptives & Inference\n\nSession 07 - 17.04.2024 - Descriptives\nSession 08 - 17.04.2024 - Descriptives\nSession 09 - 24.04.2024 - Inference\nSession 10- 24.04.2024 - Inference\n\nNational holiday: No session on 01.05.2024\n\n\nBlock III: Hackathon and Closing\n\nSession 11 - 08.05.2024 - Hackathon\nSession 12 - 08.05.2024 - Hackathon\nSession 13 - 15.05.2024 - Closing Session"
+    "text": "Schedule & Content\n\nIntro\n\nSession 01 - 13.03.2024 - Intro Session\nSession 02 - 13.03.2024 - Intro to R\n\n\n\nBlock I: Data science workflow\n\nSession 03 - 20.03.2024 - Import, tidy, and transform\nSession 04 - 20.03.2024 - Import, tidy, and transform\n\nEaster Break: No sessions on 27.03. and 03.04.2024\nNo session on 10.04.2024\n\nSession 05 - 17.04.2024 - Visualize\nSession 06 - 17.04.2024 - Communicate\n\n\n\nBlock II: Descriptives & Inference\n\nSession 07 - 24.04.2024 - Descriptives\nSession 08 - 24.04.2024 - Descriptives\n\nNational holiday: No session on 01.05.2024\n\nSession 09 - 08.05.2024 - Inference\nSession 10 - 08.05.2024 - Inference\n\n\n\nBlock III: Hackathon and Closing\n\nSession 11 - 15.05.2024 - Hackathon\nSession 12 - 15.05.2024 - Hackathon\nSession 13 - 22.05.2024 - Closing Session"
   },
   {
     "objectID": "slides/week-01/01-IntroSession.html#section-1",

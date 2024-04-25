@@ -9,7 +9,7 @@ editor:
 ## ***Course details***
 
 |               |                                                                                     |
-|---------------------|---------------------------------------------------|
+|----------------------|--------------------------------------------------|
 | Seminar:      | Statistics                                                                          |
 | Time:         | Wednesday, 08:00 - 11:15 March 13 to May 15 (single session on May 15)              |
 | Place:        | Virtual classroom                                                                   |
@@ -44,13 +44,13 @@ familiarise yourself with the programming language R.
 
     -   From 20.03.24 11:15 until 08.04.24 18:00
 
-    -   From 10.04.24 11:15 until 15.04.24 18:00
+    -   From 17.04.24 11:15 until 22.04.24 18:00
 
-    -   From 24.04.24 11:15 until 06.05.24 18:00
+    -   From 08.05.24 11:15 until 13.05.24 18:00
 
 <!-- -->
 
--   Participation in the *Hackathon* on 08.05.24 (pass/fail)
+-   Participation in the *Hackathon* on 15.05.24 (pass/fail)
 
 -   *Final project* **until TBD** (80% of your grade)
 
@@ -106,26 +106,28 @@ familiarise yourself with the programming language R.
 
 *Easter Break: No sessions on 27.03. and 03.04.2024*
 
--   Session 05 - 10.04.2024 - Visualize
+*No session on 10.04.2024*
 
--   Session 06 - 10.04.2024 - Communicate
+-   Session 05 - 17.04.2024 - Visualize
+
+-   Session 06 - 17.04.2024 - Communicate
 
 ### ***Block II: Descriptives & Inference***
 
--   Session 07 - 17.04.2024 - Descriptives
+-   Session 07 - 24.04.2024 - Descriptives
 
--   Session 08 - 17.04.2024 - Descriptives
-
--   Session 09 - 24.04.2024 - Inference
-
--   Session 10- 24.04.2024 - Inference
+-   Session 08 - 24.04.2024 - Descriptives
 
 *National holiday: No session on 01.05.2024*
 
+-   Session 09 - 08.05.2024 - Inference
+
+-   Session 10 - 08.05.2024 - Inference
+
 ### ***Block III: Hackathon and Closing***
 
--   Session 11 - 08.05.2024 - Hackathon
+-   Session 11 - 15.05.2024 - Hackathon
 
--   Session 12 - 08.05.2024 - Hackathon
+-   Session 12 - 15.05.2024 - Hackathon
 
--   Session 13 - 15.05.2024 - Closing Session
+-   Session 13 - 22.05.2024 - Closing Session
