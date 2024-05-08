@@ -1,0 +1,128 @@
+---
+title: "More Description & Relationships"
+subtitle: "Week 5"
+author: "David Schweizer"
+date: "May 08, 2024"
+date-format: long
+institute: "University of Mannheim"
+format: 
+  revealjs:
+    theme: simple
+    slide-number: c/t #< collapsed/total
+    footer: "Statistics | Summer Semester 2024 | University of Innsbruck"
+editor: visual
+---
+
+```{r packages, include=FALSE}
+pacman::p_load(
+  "tidyverse"
+    )
+```
+
+## Plan for today
+
+::: panel-tabset
+## Orga
+
+## Session 08
+
+-   Input: European Social Survey (ESS)
+
+    -   Presenting descriptives
+
+    -   Tables & Graphs
+
+    -   Relationships?
+
+## Break
+
+⏸️ **15 minute break:** Get some fresh air, a coffee, ...
+
+## Session 09
+
+-   Coding: Follow-along
+
+-   Coding: Apply the code on your own to a different research question
+:::
+
+# Orga
+
+# Session 08
+
+## The ESS
+
+[![](ess.jpg)](https://www.europeansocialsurvey.org/data-portal)
+
+## Using ESS data for research
+
+-   The ESS data allows us to conduct empirical research
+
+-   We can study political phenomena
+
+    -   at specific points in time or biannually over multiple years (2002 - 2020)
+
+    -   in single countries or across multiple European countries and beyond (39 countries have participated at least once)
+
+-   However, it is difficult to make causal claims as this is not a panel data set!
+
+## Using ESS data for research
+
+The ESS includes regular survey items (party affiliation, political interest, ...), and multiple rotating modules in each survey wave. For example:
+
+-   Round 10: Democracy
+
+-   Round 8: Climate change
+
+-   Round 7: Immigration
+
+## Understandings of democracy
+
+-   Let us investigate how citizens across Europe view democracy using ESS Round 10.
+
+-   First, we start by mapping views on democracy in Austria:
+
+    -   **dfprtal:** How important you think it is for democracy in general... ...that different political parties offer clear alternatives to one another?
+
+    -   **dfprtalc:** Please indicate to what extent you think each of the following statements applies in *\[Country\]*. Different political parties in *\[Country\]* offer clear alternatives to one another.
+
+-   *Scales range from 0 -10; higher values indicate higher importance/agreement*
+
+## Understandings of democracy in Austria
+
+```{r, echo=TRUE}
+load("ess_10_austria.rda")
+
+# Let's inspect our dataframe
+str(ess_10_austria)
+```
+
+## Understandings of democracy in Austria
+
+```{r, echo=TRUE}
+summary(ess_10_austria$dfprtal)
+
+# Remove values: 77 (Refusal), 88 (Don't know), 99 (No answer)
+ess_10_austria <- ess_10_austria %>% 
+  filter(dfprtal <= 10) %>% 
+  filter(dfprtalc <= 10)
+```
+
+## Understandings of democracy in Austria 
+
+```{r, echo=TRUE}
+ggplot(ess_10_austria, aes(x = dfprtal)) +
+         geom_histogram() +
+  theme_minimal()
+```
+
+## Understandings of democracy in Austria 
+
+```{r, echo=TRUE}
+ggplot(ess_10_austria, aes(x = dfprtal)) +
+         geom_histogram() +
+  theme_minimal()
+```
+
+# ⏸️ 15 minute break
+
+# ▶️ Session 09

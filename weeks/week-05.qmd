@@ -1,23 +1,23 @@
 ---
-title: "Reading Strategies & Research Design"
+title: " Asynchronous session: ESS Data"
 subtitle: "Week 05"
 description: ""
 author: ""
-date: "Nov 08, 2023"
-listing:
-  - id: slides
-    contents:
-      - ../slides/week-05/*.qmd
-    type: table
-    fields: [title, subtitle, date]
-    #date-format: "ddd, MMM DD"
-    field-display-names:
-      title: "Topic"
-      subtitle: "Session"
-      date: "Date"
-    sort: [filename]
-    sort-ui: false
-    filter-ui: false
+date: "May 08, 2024"
+# listing:
+#   - id: slides
+#     contents:
+#       - ../slides/week-05/*.qmd
+#     type: table
+#     fields: [title, subtitle, date]
+#     #date-format: "ddd, MMM DD"
+#     field-display-names:
+#       title: "Topic"
+#       subtitle: "Session"
+#       date: "Date"
+#     sort: [filename]
+#     sort-ui: false
+#     filter-ui: false
   # - id: assignments
   #   contents:
   #     - ../hw/w1-*.qmd
@@ -32,42 +32,117 @@ listing:
   #   sort: [date]
   #   sort-ui: false
   #   filter-ui: false
-tbl-colwidths: [10,50,40]
+#tbl-colwidths: [10,50,40]
 ---
 
-# Seminar slides
+In this asynchronous session, you can follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions (descriptives & visualizations). In order to run the following code, you need only the *tidyverse*:
 
-::: {#slides}
-:::
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+pacman::p_load(
+  "tidyverse"
+    )
+```
 
-# Materials
+## The [ESS](https://www.europeansocialsurvey.org/)
 
-You can find the reading [here](https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2004~~Preparation%20for%20the%20session/0).
+[![](ess.jpg)](https://www.europeansocialsurvey.org/data-portal)
 
-# To Do's before our session
+## Using ESS data for research
 
-::: panel-tabset
-## Mandatory exercise until 07.11.
+-   The ESS data allows us to conduct empirical research
 
--   Conduct a literature search for your research question and describe your strategy in few sentences.
+-   We can study political phenomena
 
--   Find 10 articles or books (chapters) that might be relevant for your research question. **Tip:** Skim the articles' abstract and/or introduction. At least 5 texts should be (peer-reviewed) published in academic journals
+    -   at specific points in time or biannually over multiple years (2002 - 2020)
 
--   Hand in a list of the articles in a PDF document via e-mail until Tuesday, 07.11., by noon (12:00).
+    -   in single countries or across multiple European countries and beyond (39 countries have participated at least once)
 
-## Read
+-   However, it is difficult to make causal claims as this is not a panel data set!
 
--   Have a look at these [blog posts by Raul Pacheco-Vega](http://www.raulpacheco.org/resources/reading-strategies/) regarding reading strategies.
+## Using ESS data for research
 
--   Chapter 4 - Kellstedt, P. M., & Whitten, G. D. (2018). *The fundamentals of political science research*. Cambridge University Press.
+The ESS includes regular survey items (party affiliation, political interest, ...), and multiple rotating modules in each survey wave. For example:
 
-## Think
+-   Round 10: Democracy
 
-Guiding questions:
+-   Round 8: Climate change
 
--   How can we read (more) efficiently?
+-   Round 7: Immigration
 
--   What research designs are there?
+Take some time to look at the [ESS website](https://www.europeansocialsurvey.org/). Especially, at the Data (Portal). Can you find any interesting variables for your own research ideas?
 
--   How to evaluate a research design?
-:::
+## Understandings of democracy in Austria
+
+-   Let us investigate how citizens across Europe view democracy using ESS Round 10.
+
+-   First, we start by mapping views on democracy in Austria:
+
+    -   **dfprtal:** How important you think it is for democracy in general... ...that different political parties offer clear alternatives to one another?
+
+    -   **dfprtalc:** Please indicate to what extent you think each of the following statements applies in *\[Country\]*. Different political parties in *\[Country\]* offer clear alternatives to one another.
+
+-   *Scales range from 0 -10; higher values indicate higher importance/agreement. It is IMPORTANT to look at the codebook!*
+
+## Understandings of democracy in Austria
+
+You can find the full data set for round 10 on *OLAT -\> Folder -\> Week 5 -\> ESS10_ESS10SC*. Data for only Austria is stored in *ess_10_austria.rda*.
+
+```{r, echo=TRUE}
+# You can find the .rda file on OLAT. This loads the dataframe "ess_10_austria"
+load("ess_10_austria.rda")
+
+# Let's inspect our dataframe
+# str(ess_10_austria)
+```
+
+```{r, echo=TRUE, eval=FALSE}
+# Alternatively, if you work with the full dataset from round 10, you can use this code to filter only for Austrian respondents:
+ess_10_austria <- ESS10_ESS10SC %>% 
+  filter(cntry == "AT")
+```
+
+## Understandings of democracy in Austria
+
+Having inspected the codebook, we know that respondents can give no answer to question, refuse to answer them, or say that they do not know. We want to exclude these respondents from the analysis.
+
+```{r, echo=TRUE}
+# Check unique values:
+unique(ess_10_austria$dfprtal)
+
+# Remove values: 77 (Refusal), 88 (Don't know), 99 (No answer)
+ess_10_austria <- ess_10_austria %>% 
+  filter(dfprtal <= 10) %>% 
+  filter(dfprtalc <= 10)
+```
+
+## Understandings of democracy in Austria
+
+Let's turn to the first overview of the data. We want to compare the answers to *How important you think it is for democracy in general... ...that different political parties offer clear alternatives to one another?* and *Please indicate to what extent you think each of the following statements applies in \[Country\]. Different political parties in \[Country\] offer clear alternatives to one another.*
+
+This way, we could study if there is a mismatch between citizens' opinions and their perception. A mismatch could possibly contribute to democratic dissatisfaction.
+
+```{r, echo=TRUE}
+ggplot(ess_10_austria, aes(x = dfprtal)) +
+         geom_histogram(binwidth = 1, boundary = 0) +
+  labs(x = "Importance that political parties offer clear alternatives") +
+  theme_minimal()
+```
+
+```{r, echo=TRUE}
+ggplot(ess_10_austria, aes(x = dfprtalc)) +
+         geom_histogram(binwidth = 1, boundary = 0) +
+  labs(x = "Perception that political parties offer clear alternatives") +
+  theme_minimal()
+```
+
+## Your turn!
+
+-   The histogram displays the number of respondents for each value. What graph could you produce that shows the distribution in a different way? Can you show proportions instead of counts?
+
+-   Identify the variables from the rotating module *Understandings and evaluation of different elements of democracy.* Contrast the perceptions and the respondents' opinions on these variables. For example: "The media in \[country\] are free to criticise the government".
+
+-   Are people with the highest mismatch also those who are least satisfied with the way democracy works? You can find this variable also in round 10!
+
+-   Can you present basic summary statistics for this satisfaction with democracy variable?
+
+-   Can you find the same patterns in Germany?

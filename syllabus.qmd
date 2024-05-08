@@ -9,7 +9,7 @@ editor:
 ## ***Course details***
 
 |               |                                                                                     |
-|----------------------|--------------------------------------------------|
+|-----------------------|-------------------------------------------------|
 | Seminar:      | Statistics                                                                          |
 | Time:         | Wednesday, 08:00 - 11:15 March 13 to May 15 (single session on May 15)              |
 | Place:        | Virtual classroom                                                                   |
@@ -46,11 +46,11 @@ familiarise yourself with the programming language R.
 
     -   From 17.04.24 11:15 until 22.04.24 18:00
 
-    -   From 08.05.24 11:15 until 13.05.24 18:00
+    -   From 15.05.24 11:15 until 20.05.24 18:00
 
 <!-- -->
 
--   Participation in the *Hackathon* on 15.05.24 (pass/fail)
+-   ~~Participation in the *Hackathon* on 15.05.24 (pass/fail)~~
 
 -   *Final project* **until TBD** (80% of your grade)
 
@@ -66,7 +66,7 @@ familiarise yourself with the programming language R.
     e-mail.
 
 -   Access to Datacamp (Online learning platform for programming
-    languages and more) after the Hackathon.
+    languages and more) after the last asynchronous session.
 
 ## ***Important!***
 
@@ -95,39 +95,41 @@ familiarise yourself with the programming language R.
 
 ### ***Intro***
 
--   Session 01 - 13.03.2024 - Intro Session
--   Session 02 - 13.03.2024 - Intro to R
+-   Week 01 - Session 01 - 13.03.2024 - Intro Session: 90min
+-   Week 01 - Session 02 - 13.03.2024 - Intro to R: 90min
 
 ### ***Block I: Data science workflow***
 
--   Session 03 - 20.03.2024 - Import, tidy, and transform
+-   Week 02 - Session 03 - 20.03.2024 - Import, tidy, and transform:
+    90min
 
--   Session 04 - 20.03.2024 - Import, tidy, and transform
+-   Week 02 - Session 04 - 20.03.2024 - Import, tidy, and transform:
+    90min
 
 *Easter Break: No sessions on 27.03. and 03.04.2024*
 
 *No session on 10.04.2024*
 
--   Session 05 - 17.04.2024 - Visualize
+-   Week 03 - Session 05 - 17.04.2024 - Visualize: 90min
 
--   Session 06 - 17.04.2024 - Communicate
+-   Week 03 - Session 06 - 17.04.2024 - Communicate: 90min
 
 ### ***Block II: Descriptives & Inference***
 
--   Session 07 - 24.04.2024 - Descriptives
+-   Week 04 - Session 07 - 24.04.2024 - Descriptives: 90min
 
--   Session 08 - 24.04.2024 - Descriptives
+-   Week 04 - Session 08 - 24.04.2024 - Descriptives: 90min
 
 *National holiday: No session on 01.05.2024*
 
--   Session 09 - 08.05.2024 - Inference
+-   Week 05 - Session 09 - 08.05.2024 - Asynchronous session: 90min
 
--   Session 10 - 08.05.2024 - Inference
+-   Week 06 - Session 10 - 15.05.2024 - Inference: 90min
 
-### ***Block III: Hackathon and Closing***
+-   Week 06 - Session 11 - 15.05.2024 - Inference: 90min
 
--   Session 11 - 15.05.2024 - Hackathon
+-   Week 07 - Session 12 - 22.05.2024 - Asynchronous session: 90min
 
--   Session 12 - 15.05.2024 - Hackathon
+### ***Closing***
 
--   Session 13 - 22.05.2024 - Closing Session
+-   Week 08 - Session 13 - 29.05.2024 - Closing Session: 90min

@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="">
-<meta name="dcterms.date" content="2023-11-08">
+<meta name="dcterms.date" content="2024-05-08">
 
-<title>Applied Methods of Social Sciences - Course Website - Reading Strategies &amp; Research Design</title>
+<title>Statistics - Course Website - Asynchronous session: ESS Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -31,8 +65,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -58,41 +90,11 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-slides .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-slides'] = new List('listing-slides', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../css/custom.css">
 </head>
@@ -106,10 +108,10 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Reading Strategies &amp; Research Design</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Asynchronous session: ESS Data</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -123,10 +125,9 @@ ul.task-list li input[type="checkbox"] {
       <a href="../index.html" class="sidebar-logo-link">
       <img src="../images/hex_sticker.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-      <div class="sidebar-tools-main tools-wide">
-    <a href="https://applied-methods.slack.com" title="Slack" class="quarto-navigation-tool px-1" aria-label="Slack"><i class="bi bi-slack"></i></a>
-    <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5512593691" title="OLAT" class="quarto-navigation-tool px-1" aria-label="OLAT"><i class="bi bi-bank"></i></a>
-    <a href="https://www.datacamp.com/" title="Datacamp" class="quarto-navigation-tool px-1" aria-label="Datacamp"><i class="bi bi-rocket"></i></a>
+      <div class="sidebar-tools-main">
+    <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5617582099" rel="" title="OLAT" class="quarto-navigation-tool px-1" aria-label="OLAT"><i class="bi bi-bank"></i></a>
+    <a href="https://www.datacamp.com/" rel="" title="Datacamp" class="quarto-navigation-tool px-1" aria-label="Datacamp"><i class="bi bi-rocket"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -151,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../material.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
+ <span class="menu-text">Weekly schedule (Slides &amp; Materials)</span></a>
   </div>
 </li>
     </ul>
@@ -164,9 +165,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#seminar-slides" id="toc-seminar-slides" class="nav-link active" data-scroll-target="#seminar-slides">Seminar slides</a></li>
-  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
-  <li><a href="#to-dos-before-our-session" id="toc-to-dos-before-our-session" class="nav-link" data-scroll-target="#to-dos-before-our-session">To Do’s before our session</a></li>
+  <li><a href="#the-ess" id="toc-the-ess" class="nav-link active" data-scroll-target="#the-ess">The ESS</a></li>
+  <li><a href="#using-ess-data-for-research" id="toc-using-ess-data-for-research" class="nav-link" data-scroll-target="#using-ess-data-for-research">Using ESS data for research</a></li>
+  <li><a href="#using-ess-data-for-research-1" id="toc-using-ess-data-for-research-1" class="nav-link" data-scroll-target="#using-ess-data-for-research-1">Using ESS data for research</a></li>
+  <li><a href="#understandings-of-democracy-in-austria" id="toc-understandings-of-democracy-in-austria" class="nav-link" data-scroll-target="#understandings-of-democracy-in-austria">Understandings of democracy in Austria</a></li>
+  <li><a href="#understandings-of-democracy-in-austria-1" id="toc-understandings-of-democracy-in-austria-1" class="nav-link" data-scroll-target="#understandings-of-democracy-in-austria-1">Understandings of democracy in Austria</a></li>
+  <li><a href="#understandings-of-democracy-in-austria-2" id="toc-understandings-of-democracy-in-austria-2" class="nav-link" data-scroll-target="#understandings-of-democracy-in-austria-2">Understandings of democracy in Austria</a></li>
+  <li><a href="#understandings-of-democracy-in-austria-3" id="toc-understandings-of-democracy-in-austria-3" class="nav-link" data-scroll-target="#understandings-of-democracy-in-austria-3">Understandings of democracy in Austria</a></li>
+  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">Your turn!</a></li>
   </ul>
 </nav>
     </div>
@@ -175,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reading Strategies &amp; Research Design</h1>
+<h1 class="title">Asynchronous session: ESS Data</h1>
 <p class="subtitle lead">Week 05</p>
 </div>
 
@@ -187,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 8, 2023</p>
+      <p class="date">May 8, 2024</p>
     </div>
   </div>
   
@@ -197,77 +203,117 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="seminar-slides" class="level1">
-<h1>Seminar slides</h1>
-<div id="listing-slides" class="quarto-listing quarto-listing-container-table">
-
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Topic
-</th>
-<th>
-Session
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1699398000000" data-listing-file-modified-sort="1698165853669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Reading Strategies &amp; Research Design" data-listing-filename-sort="05-ResearchDesign.qmd">
-<td>
-<a href="../slides/week-05/05-ResearchDesign.html" class="title listing-title">Reading Strategies &amp; Research Design</a>
-</td>
-<td>
-<span class="listing-subtitle">Week 5</span>
-</td>
-<td>
-<span class="listing-date">Nov 8, 2023</span>
-</td>
-</tr>
-</tbody>
-
-</table>
-<div class="listing-no-matching d-none">
-No matching items
+<p>In this asynchronous session, you can follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions (descriptives &amp; visualizations). In order to run the following code, you need only the <em>tidyverse</em>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="the-ess" class="level2">
+<h2 class="anchored" data-anchor-id="the-ess">The <a href="https://www.europeansocialsurvey.org/">ESS</a></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.europeansocialsurvey.org/data-portal"><img src="ess.jpg" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</section>
+<section id="using-ess-data-for-research" class="level2">
+<h2 class="anchored" data-anchor-id="using-ess-data-for-research">Using ESS data for research</h2>
+<ul>
+<li><p>The ESS data allows us to conduct empirical research</p></li>
+<li><p>We can study political phenomena</p>
+<ul>
+<li><p>at specific points in time or biannually over multiple years&nbsp;(2002 - 2020)</p></li>
+<li><p>in single countries or across multiple European countries and beyond (39 countries have participated at least once)</p></li>
+</ul></li>
+<li><p>However, it is difficult to make causal claims as this is not a panel data set!</p></li>
+</ul>
+</section>
+<section id="using-ess-data-for-research-1" class="level2">
+<h2 class="anchored" data-anchor-id="using-ess-data-for-research-1">Using ESS data for research</h2>
+<p>The ESS includes regular survey items (party affiliation, political interest, …), and multiple rotating modules in each survey wave. For example:</p>
+<ul>
+<li><p>Round 10: Democracy</p></li>
+<li><p>Round 8: Climate change</p></li>
+<li><p>Round 7: Immigration</p></li>
+</ul>
+<p>Take some time to look at the <a href="https://www.europeansocialsurvey.org/">ESS website</a>. Especially, at the Data (Portal). Can you find any interesting variables for your own research ideas?</p>
+</section>
+<section id="understandings-of-democracy-in-austria" class="level2">
+<h2 class="anchored" data-anchor-id="understandings-of-democracy-in-austria">Understandings of democracy in Austria</h2>
+<ul>
+<li><p>Let us investigate how citizens across Europe view democracy using ESS Round 10.</p></li>
+<li><p>First, we start by mapping views on democracy in Austria:</p>
+<ul>
+<li><p><strong>dfprtal:</strong> How important you think it is for democracy in general… …that different political parties offer clear alternatives to one another?</p></li>
+<li><p><strong>dfprtalc:</strong> Please indicate to what extent you think each of the following statements applies in <em>[Country]</em>. Different political parties in <em>[Country]</em> offer clear alternatives to one another.</p></li>
+</ul></li>
+<li><p><em>Scales range from 0 -10; higher values indicate higher importance/agreement. It is IMPORTANT to look at the codebook!</em></p></li>
+</ul>
+</section>
+<section id="understandings-of-democracy-in-austria-1" class="level2">
+<h2 class="anchored" data-anchor-id="understandings-of-democracy-in-austria-1">Understandings of democracy in Austria</h2>
+<p>You can find the full data set for round 10 on <em>OLAT -&gt; Folder -&gt; Week 5 -&gt; ESS10_ESS10SC</em>. Data for only Austria is stored in <em>ess_10_austria.rda</em>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You can find the .rda file on OLAT. This loads the dataframe "ess_10_austria"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"ess_10_austria.rda"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's inspect our dataframe</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># str(ess_10_austria)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternatively, if you work with the full dataset from round 10, you can use this code to filter only for Austrian respondents:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>ess_10_austria <span class="ot">&lt;-</span> ESS10_ESS10SC <span class="sc">%&gt;%</span> </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(cntry <span class="sc">==</span> <span class="st">"AT"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="understandings-of-democracy-in-austria-2" class="level2">
+<h2 class="anchored" data-anchor-id="understandings-of-democracy-in-austria-2">Understandings of democracy in Austria</h2>
+<p>Having inspected the codebook, we know that respondents can give no answer to question, refuse to answer them, or say that they do not know. We want to exclude these respondents from the analysis.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check unique values:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(ess_10_austria<span class="sc">$</span>dfprtal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 10  7  5  8 99  3  2  4  9  0  1  6</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove values: 77 (Refusal), 88 (Don't know), 99 (No answer)</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>ess_10_austria <span class="ot">&lt;-</span> ess_10_austria <span class="sc">%&gt;%</span> </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(dfprtal <span class="sc">&lt;=</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(dfprtalc <span class="sc">&lt;=</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="understandings-of-democracy-in-austria-3" class="level2">
+<h2 class="anchored" data-anchor-id="understandings-of-democracy-in-austria-3">Understandings of democracy in Austria</h2>
+<p>Let’s turn to the first overview of the data. We want to compare the answers to <em>How important you think it is for democracy in general… …that different political parties offer clear alternatives to one another?</em> and <em>Please indicate to what extent you think each of the following statements applies in [Country]. Different political parties in [Country] offer clear alternatives to one another.</em></p>
+<p>This way, we could study if there is a mismatch between citizens’ opinions and their perception. A mismatch could possibly contribute to democratic dissatisfaction.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(ess_10_austria, <span class="fu">aes</span>(<span class="at">x =</span> dfprtal)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">1</span>, <span class="at">boundary =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Importance that political parties offer clear alternatives"</span>) <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="week-05_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(ess_10_austria, <span class="fu">aes</span>(<span class="at">x =</span> dfprtalc)) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">1</span>, <span class="at">boundary =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Perception that political parties offer clear alternatives"</span>) <span class="sc">+</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="week-05_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
-<section id="materials" class="level1">
-<h1>Materials</h1>
-<p>You can find the reading <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2004~~Preparation%20for%20the%20session/0">here</a>.</p>
-</section>
-<section id="to-dos-before-our-session" class="level1">
-<h1>To Do’s before our session</h1>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Mandatory exercise until 07.11.</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Read</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Think</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="your-turn" class="level2">
+<h2 class="anchored" data-anchor-id="your-turn">Your turn!</h2>
 <ul>
-<li><p>Conduct a literature search for your research question and describe your strategy in few sentences.</p></li>
-<li><p>Find 10 articles or books (chapters) that might be relevant for your research question. <strong>Tip:</strong> Skim the articles’ abstract and/or introduction. At least 5 texts should be (peer-reviewed) published in academic journals</p></li>
-<li><p>Hand in a list of the articles in a PDF document via e-mail until Tuesday, 07.11., by noon (12:00).</p></li>
+<li><p>The histogram displays the number of respondents for each value. What graph could you produce that shows the distribution in a different way? Can you show proportions instead of counts?</p></li>
+<li><p>Identify the variables from the rotating module <em>Understandings and evaluation of different elements of democracy.</em> Contrast the perceptions and the respondents’ opinions on these variables. For example: “The media in [country] are free to criticise the government”.</p></li>
+<li><p>Are people with the highest mismatch also those who are least satisfied with the way democracy works? You can find this variable also in round 10!</p></li>
+<li><p>Can you present basic summary statistics for this satisfaction with democracy variable?</p></li>
+<li><p>Can you find the same patterns in Germany?</p></li>
 </ul>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<ul>
-<li><p>Have a look at these <a href="http://www.raulpacheco.org/resources/reading-strategies/">blog posts by Raul Pacheco-Vega</a> regarding reading strategies.</p></li>
-<li><p>Chapter 4 - Kellstedt, P. M., &amp; Whitten, G. D. (2018).&nbsp;<em>The fundamentals of political science research</em>. Cambridge University Press.</p></li>
-</ul>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Guiding questions:</p>
-<ul>
-<li><p>How can we read (more) efficiently?</p></li>
-<li><p>What research designs are there?</p></li>
-<li><p>How to evaluate a research design?</p></li>
-</ul>
-</div>
-</div>
-</div>
-
 
 
 </section>
@@ -509,7 +555,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Applied Methods of Social Sciences | Winter semester 2023/24 | University of Innsbruck</div>   
+    <div class="nav-footer-left">Statistics | Summer semester 2024 | University of Innsbruck</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

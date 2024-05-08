@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.3.450">
+
+  <meta name="author" content="David Schweizer">
+  <meta name="dcterms.date" content="2024-05-08">
+  <title>Statistics - Course Website - More Description &amp; Relationships</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">More Description &amp; Relationships</h1>
+  <p class="subtitle">Week 5</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+David Schweizer 
+</div>
+        <p class="quarto-title-affiliation">
+            University of Mannheim
+          </p>
+    </div>
+</div>
+
+  <p class="date">May 8, 2024</p>
+</section>
+<section id="plan-for-today" class="slide level2">
+<h2>Plan for today</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Orga</a></li><li><a href="#tabset-1-2">Session 08</a></li><li><a href="#tabset-1-3">Break</a></li><li><a href="#tabset-1-4">Session 09</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+
+</div>
+<div id="tabset-1-2">
+<ul>
+<li><p>Input: European Social Survey (ESS)</p>
+<ul>
+<li><p>Presenting descriptives</p></li>
+<li><p>Tables &amp; Graphs</p></li>
+<li><p>Relationships?</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-1-3">
+<p>⏸️ <strong>15 minute break:</strong> Get some fresh air, a coffee, …</p>
+</div>
+<div id="tabset-1-4">
+<ul>
+<li><p>Coding: Follow-along</p></li>
+<li><p>Coding: Apply the code on your own to a different research question</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="orga-1" class="title-slide slide level1 center">
+<h1>Orga</h1>
+
+</section>
+
+<section>
+<section id="session-08-1" class="title-slide slide level1 center">
+<h1>Session 08</h1>
+
+</section>
+<section id="the-ess" class="slide level2">
+<h2>The ESS</h2>
+
+<img data-src="ess.jpg" class="r-stretch quarto-figure-center"></section>
+<section id="using-ess-data-for-research" class="slide level2">
+<h2>Using ESS data for research</h2>
+<ul>
+<li><p>The ESS data allows us to conduct empirical research</p></li>
+<li><p>We can study political phenomena</p>
+<ul>
+<li><p>at specific points in time or biannually over multiple years&nbsp;(2002 - 2020)</p></li>
+<li><p>in single countries or across multiple European countries and beyond (39 countries have participated at least once)</p></li>
+</ul></li>
+<li><p>However, it is difficult to make causal claims as this is not a panel data set!</p></li>
+</ul>
+</section>
+<section id="using-ess-data-for-research-1" class="slide level2">
+<h2>Using ESS data for research</h2>
+<p>The ESS includes regular survey items (party affiliation, political interest, …), and multiple rotating modules in each survey wave. For example:</p>
+<ul>
+<li><p>Round 10: Democracy</p></li>
+<li><p>Round 8: Climate change</p></li>
+<li><p>Round 7: Immigration</p></li>
+</ul>
+</section>
+<section id="understandings-of-democracy" class="slide level2">
+<h2>Understandings of democracy</h2>
+<ul>
+<li><p>Let us investigate how citizens across Europe view democracy using ESS Round 10.</p></li>
+<li><p>First, we start by mapping views on democracy in Austria:</p>
+<ul>
+<li><p><strong>dfprtal:</strong> How important you think it is for democracy in general… …that different political parties offer clear alternatives to one another?</p></li>
+<li><p><strong>dfprtalc:</strong> Please indicate to what extent you think each of the following statements applies in <em>[Country]</em>. Different political parties in <em>[Country]</em> offer clear alternatives to one another.</p></li>
+</ul></li>
+<li><p><em>Scales range from 0 -10; higher values indicate higher importance/agreement</em></p></li>
+</ul>
+</section>
+<section id="understandings-of-democracy-in-austria" class="slide level2">
+<h2>Understandings of democracy in Austria</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">load</span>(<span class="st">"ess_10_austria.rda"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># Let's inspect our dataframe</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">str</span>(ess_10_austria)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>spc_tbl_ [2,003 × 706] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+ $ name     : chr [1:2003] "ESS10SCe03_1" "ESS10SCe03_1" "ESS10SCe03_1" "ESS10SCe03_1" ...
+ $ essround : num [1:2003] 10 10 10 10 10 10 10 10 10 10 ...
+ $ edition  : num [1:2003] 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1 ...
+ $ proddate : chr [1:2003] "02.11.2023" "02.11.2023" "02.11.2023" "02.11.2023" ...
+ $ idno     : num [1:2003] 10009 10034 10048 10058 10066 ...
+ $ cntry    : chr [1:2003] "AT" "AT" "AT" "AT" ...
+ $ dweight  : num [1:2003] 0.749 0.999 1.511 2.979 0.757 ...
+ $ pspwght  : num [1:2003] 3.302 0.918 0.664 2.978 1.57 ...
+ $ pweight  : num [1:2003] 0.382 0.382 0.382 0.382 0.382 ...
+ $ anweight : num [1:2003] 1.261 0.35 0.253 1.137 0.599 ...
+ $ prob     : num [1:2003] 0.000914 0.000684 0.000453 0.00023 0.000903 ...
+ $ stratum  : num [1:2003] 24 105 97 34 7 61 8 3 39 82 ...
+ $ psu      : num [1:2003] 1477 1831 1503 697 378 ...
+ $ netusoft : num [1:2003] 4 5 4 5 5 2 5 5 3 5 ...
+ $ netustm  : num [1:2003] 60 300 40 240 180 ...
+ $ nwspol   : num [1:2003] 60 15 90 25 60 120 120 180 10 10 ...
+ $ pplfair  : num [1:2003] 0 1 7 7 7 5 8 7 4 3 ...
+ $ pplhlp   : num [1:2003] 0 7 7 8 7 7 8 5 5 2 ...
+ $ ppltrst  : num [1:2003] 0 2 7 7 5 7 8 8 3 2 ...
+ $ actrolga : num [1:2003] 1 3 3 3 3 1 3 3 1 3 ...
+ $ badge    : num [1:2003] 2 2 2 2 2 2 2 2 1 2 ...
+ $ bctprd   : num [1:2003] 1 2 1 2 1 2 2 2 2 1 ...
+ $ clsprty  : num [1:2003] 2 1 1 1 1 2 1 1 1 1 ...
+ $ contplt  : num [1:2003] 2 2 1 1 2 2 2 2 1 2 ...
+ $ cptppola : num [1:2003] 3 4 4 3 4 3 3 3 2 2 ...
+ $ euftf    : num [1:2003] 5 0 8 8 10 7 8 9 4 5 ...
+ $ freehms  : num [1:2003] 3 1 2 1 1 2 1 2 3 2 ...
+ $ gincdif  : num [1:2003] 1 2 1 2 1 3 2 2 2 3 ...
+ $ hmsacld  : num [1:2003] 3 1 3 1 1 4 2 4 3 2 ...
+ $ hmsfmlsh : num [1:2003] 3 4 3 5 5 3 5 3 4 5 ...
+ $ lrscale  : num [1:2003] 5 5 2 2 2 5 3 6 5 5 ...
+ $ polintr  : num [1:2003] 1 4 1 2 1 3 2 1 2 3 ...
+ $ prtdgcl  : num [1:2003] 6 2 2 2 2 6 2 2 2 3 ...
+ $ psppipla : num [1:2003] 1 4 4 3 3 1 3 3 3 2 ...
+ $ psppsgva : num [1:2003] 1 3 3 3 4 3 3 3 3 2 ...
+ $ pstplonl : num [1:2003] 2 2 1 1 2 2 2 2 2 2 ...
+ $ sgnptit  : num [1:2003] 2 2 1 1 1 2 2 1 1 2 ...
+ $ stfdem   : num [1:2003] 2 7 7 6 6 5 7 7 7 5 ...
+ $ stfeco   : num [1:2003] 7 5 8 7 5 10 7 10 3 4 ...
+ $ stfedu   : num [1:2003] 0 6 7 7 2 7 4 8 4 0 ...
+ $ stfgov   : num [1:2003] 0 6 6 5 0 2 5 8 5 3 ...
+ $ stfhlth  : num [1:2003] 10 8 8 8 6 8 7 9 6 0 ...
+ $ stflife  : num [1:2003] 7 3 8 9 9 10 8 10 5 4 ...
+ $ trstep   : num [1:2003] 0 7 7 7 10 4 7 8 4 7 ...
+ $ trstlgl  : num [1:2003] 8 7 9 8 10 8 8 9 6 6 ...
+ $ trstplc  : num [1:2003] 5 8 7 6 7 8 8 10 3 8 ...
+ $ trstplt  : num [1:2003] 0 5 7 5 7 1 4 5 4 3 ...
+ $ trstprl  : num [1:2003] 2 9 8 6 9 7 8 8 4 5 ...
+ $ trstprt  : num [1:2003] 0 3 8 5 5 1 3 6 5 3 ...
+ $ trstun   : num [1:2003] 0 4 8 7 9 6 7 7 4 8 ...
+ $ vote     : num [1:2003] 1 3 1 3 1 1 1 1 1 1 ...
+ $ imsmetn  : num [1:2003] 2 3 2 2 9 3 2 1 3 2 ...
+ $ imdfetn  : num [1:2003] 3 3 2 2 9 3 2 1 2 2 ...
+ $ impcntr  : num [1:2003] 2 4 2 2 1 2 2 2 3 2 ...
+ $ imbgeco  : num [1:2003] 5 1 8 8 10 7 7 8 5 5 ...
+ $ imueclt  : num [1:2003] 1 6 7 8 10 7 7 4 4 5 ...
+ $ imwbcnt  : num [1:2003] 0 1 7 8 10 6 8 5 6 5 ...
+ $ prtvtcat : num [1:2003] 99 66 1 66 5 99 6 2 2 7 ...
+ $ prtvtecz : num [1:2003] NA NA NA NA NA NA NA NA NA NA ...
+ $ prtvtalv : num [1:2003] NA NA NA NA NA NA NA NA NA NA ...
+ $ prtvtbno : num [1:2003] NA NA NA NA NA NA NA NA NA NA ...
+ $ prtvtfsi : num [1:2003] NA NA NA NA NA NA NA NA NA NA ...
+ $ prtcldat : num [1:2003] 66 1 1 5 5 66 5 2 2 7 ...
+ $ prtclecz : num [1:2003] NA NA NA NA NA NA NA NA NA NA ...
+ $ prtclffr : num [1:2003] NA NA NA NA NA NA NA NA NA NA ...
+ $ prtclalv : num [1:2003] NA NA NA NA NA NA NA NA NA NA ...
+ $ prtclbno : num [1:2003] NA NA NA NA NA NA NA NA NA NA ...
+ $ prtclfsi : num [1:2003] NA NA NA NA NA NA NA NA NA NA ...
+ $ aesfdrk  : num [1:2003] 3 4 2 1 1 1 1 1 2 3 ...
+ $ atchctr  : num [1:2003] 10 8 8 5 5 10 7 10 9 8 ...
+ $ atcherp  : num [1:2003] 5 10 7 7 10 10 7 10 5 8 ...
+ $ brncntr  : num [1:2003] 1 1 1 2 1 1 1 1 2 1 ...
+ $ cntbrthd : chr [1:2003] "6666" "6666" "6666" "DE" ...
+ $ crmvct   : num [1:2003] 2 2 2 2 2 2 2 1 9 2 ...
+ $ ctzcntr  : num [1:2003] 1 1 1 2 1 9 1 1 1 1 ...
+ $ dscrage  : num [1:2003] 0 0 0 0 0 0 0 0 0 0 ...
+ $ dscrdk   : num [1:2003] NA NA NA NA NA NA NA NA NA NA ...
+ $ dscrdsb  : num [1:2003] 0 0 0 0 0 0 0 0 0 0 ...
+ $ dscretn  : num [1:2003] 0 0 0 0 0 0 0 0 0 0 ...
+ $ dscrgnd  : num [1:2003] 0 0 0 0 0 0 0 0 0 0 ...
+ $ dscrgrp  : num [1:2003] 2 2 2 2 2 2 2 2 1 2 ...
+ $ dscrlng  : num [1:2003] 0 0 0 0 0 0 0 0 0 0 ...
+ $ dscrna   : num [1:2003] 0 0 0 0 0 0 0 0 0 0 ...
+ $ dscrnap  : num [1:2003] 1 1 1 1 1 1 1 1 0 1 ...
+ $ dscrntn  : num [1:2003] 0 0 0 0 0 0 0 0 1 0 ...
+ $ dscroth  : num [1:2003] 0 0 0 0 0 0 0 0 0 0 ...
+ $ dscrrce  : num [1:2003] 0 0 0 0 0 0 0 0 0 0 ...
+ $ dscrref  : num [1:2003] NA NA NA NA NA NA NA NA NA NA ...
+ $ dscrrlg  : num [1:2003] 0 0 0 0 0 0 0 0 1 0 ...
+ $ dscrsex  : num [1:2003] 0 0 0 0 0 0 0 0 0 0 ...
+ $ facntr   : num [1:2003] 1 1 1 2 1 1 1 1 9 1 ...
+ $ fbrncntc : chr [1:2003] "6666" "6666" "6666" "DE" ...
+ $ happy    : num [1:2003] 8 8 8 9 8 8 8 10 6 5 ...
+ $ health   : num [1:2003] 2 2 3 1 2 1 2 1 3 3 ...
+ $ hlthhmp  : num [1:2003] 2 3 2 3 3 3 3 3 2 3 ...
+ $ inprdsc  : num [1:2003] 1 5 3 5 3 1 2 1 0 3 ...
+ $ livecnta : num [1:2003] 6666 6666 6666 2017 6666 ...
+ $ lnghom1  : chr [1:2003] "GER" "GER" "GER" "GER" ...
+ $ lnghom2  : chr [1:2003] "000" "000" "000" "000" ...
+  [list output truncated]
+ - attr(*, "spec")=
+  .. cols(
+  ..   name = col_character(),
+  ..   essround = col_double(),
+  ..   edition = col_double(),
+  ..   proddate = col_character(),
+  ..   idno = col_double(),
+  ..   cntry = col_character(),
+  ..   dweight = col_double(),
+  ..   pspwght = col_double(),
+  ..   pweight = col_double(),
+  ..   anweight = col_double(),
+  ..   prob = col_double(),
+  ..   stratum = col_double(),
+  ..   psu = col_double(),
+  ..   netusoft = col_double(),
+  ..   netustm = col_double(),
+  ..   nwspol = col_double(),
+  ..   pplfair = col_double(),
+  ..   pplhlp = col_double(),
+  ..   ppltrst = col_double(),
+  ..   actrolga = col_double(),
+  ..   badge = col_double(),
+  ..   bctprd = col_double(),
+  ..   clsprty = col_double(),
+  ..   contplt = col_double(),
+  ..   cptppola = col_double(),
+  ..   euftf = col_double(),
+  ..   freehms = col_double(),
+  ..   gincdif = col_double(),
+  ..   hmsacld = col_double(),
+  ..   hmsfmlsh = col_double(),
+  ..   lrscale = col_double(),
+  ..   polintr = col_double(),
+  ..   prtdgcl = col_double(),
+  ..   psppipla = col_double(),
+  ..   psppsgva = col_double(),
+  ..   pstplonl = col_double(),
+  ..   sgnptit = col_double(),
+  ..   stfdem = col_double(),
+  ..   stfeco = col_double(),
+  ..   stfedu = col_double(),
+  ..   stfgov = col_double(),
+  ..   stfhlth = col_double(),
+  ..   stflife = col_double(),
+  ..   trstep = col_double(),
+  ..   trstlgl = col_double(),
+  ..   trstplc = col_double(),
+  ..   trstplt = col_double(),
+  ..   trstprl = col_double(),
+  ..   trstprt = col_double(),
+  ..   trstun = col_double(),
+  ..   vote = col_double(),
+  ..   imsmetn = col_double(),
+  ..   imdfetn = col_double(),
+  ..   impcntr = col_double(),
+  ..   imbgeco = col_double(),
+  ..   imueclt = col_double(),
+  ..   imwbcnt = col_double(),
+  ..   prtvtcat = col_double(),
+  ..   prtvtecz = col_double(),
+  ..   prtvtalv = col_double(),
+  ..   prtvtbno = col_double(),
+  ..   prtvtfsi = col_double(),
+  ..   prtcldat = col_double(),
+  ..   prtclecz = col_double(),
+  ..   prtclffr = col_double(),
+  ..   prtclalv = col_double(),
+  ..   prtclbno = col_double(),
+  ..   prtclfsi = col_double(),
+  ..   aesfdrk = col_double(),
+  ..   atchctr = col_double(),
+  ..   atcherp = col_double(),
+  ..   brncntr = col_double(),
+  ..   cntbrthd = col_character(),
+  ..   crmvct = col_double(),
+  ..   ctzcntr = col_double(),
+  ..   dscrage = col_double(),
+  ..   dscrdk = col_double(),
+  ..   dscrdsb = col_double(),
+  ..   dscretn = col_double(),
+  ..   dscrgnd = col_double(),
+  ..   dscrgrp = col_double(),
+  ..   dscrlng = col_double(),
+  ..   dscrna = col_double(),
+  ..   dscrnap = col_double(),
+  ..   dscrntn = col_double(),
+  ..   dscroth = col_double(),
+  ..   dscrrce = col_double(),
+  ..   dscrref = col_double(),
+  ..   dscrrlg = col_double(),
+  ..   dscrsex = col_double(),
+  ..   facntr = col_double(),
+  ..   fbrncntc = col_character(),
+  ..   happy = col_double(),
+  ..   health = col_double(),
+  ..   hlthhmp = col_double(),
+  ..   inprdsc = col_double(),
+  ..   livecnta = col_double(),
+  ..   lnghom1 = col_character(),
+  ..   lnghom2 = col_character(),
+  ..   mbrncntc = col_character(),
+  ..   mocntr = col_double(),
+  ..   pray = col_double(),
+  ..   rlgatnd = col_double(),
+  ..   rlgblg = col_double(),
+  ..   rlgblge = col_double(),
+  ..   rlgdgr = col_double(),
+  ..   rlgdnm = col_double(),
+  ..   rlgdnme = col_double(),
+  ..   sclact = col_double(),
+  ..   sclmeet = col_double(),
+  ..   vteurmmb = col_double(),
+  ..   vteubcmb = col_double(),
+  ..   rlgdnach = col_double(),
+  ..   rlgdnade = col_double(),
+  ..   rlgdnafi = col_double(),
+  ..   rlgdngb = col_double(),
+  ..   rlgdnagr = col_double(),
+  ..   rlgdnhu = col_double(),
+  ..   rlgdnie = col_double(),
+  ..   rlgdnais = col_double(),
+  ..   rlgdnlt = col_double(),
+  ..   rlgdnlv = col_double(),
+  ..   rlgdnno = col_double(),
+  ..   rlgdnase = col_double(),
+  ..   rlgdnrs = col_double(),
+  ..   rlgdme = col_double(),
+  ..   rlgdeach = col_double(),
+  ..   rlgdeade = col_double(),
+  ..   rlgdeafi = col_double(),
+  ..   rlgdegb = col_double(),
+  ..   rlgdeagr = col_double(),
+  ..   rlgdehu = col_double(),
+  ..   rlgdeie = col_double(),
+  ..   rlgdeais = col_double(),
+  ..   rlgdelt = col_double(),
+  ..   rlgdelv = col_double(),
+  ..   rlgdeno = col_double(),
+  ..   rlgdease = col_double(),
+  ..   rlgdeme = col_double(),
+  ..   hhmmb = col_double(),
+  ..   gndr = col_double(),
+  ..   gndr2 = col_double(),
+  ..   gndr3 = col_double(),
+  ..   gndr4 = col_double(),
+  ..   gndr5 = col_double(),
+  ..   gndr6 = col_double(),
+  ..   gndr7 = col_double(),
+  ..   gndr8 = col_double(),
+  ..   gndr9 = col_double(),
+  ..   gndr10 = col_double(),
+  ..   gndr11 = col_double(),
+  ..   gndr12 = col_double(),
+  ..   gndr13 = col_double(),
+  ..   gndr14 = col_double(),
+  ..   gndr15 = col_double(),
+  ..   rshipa2 = col_double(),
+  ..   rshipa3 = col_double(),
+  ..   rshipa4 = col_double(),
+  ..   rshipa5 = col_double(),
+  ..   rshipa6 = col_double(),
+  ..   rshipa7 = col_double(),
+  ..   rshipa8 = col_double(),
+  ..   rshipa9 = col_double(),
+  ..   rshipa10 = col_double(),
+  ..   rshipa11 = col_double(),
+  ..   rshipa12 = col_double(),
+  ..   rshipa13 = col_double(),
+  ..   rshipa14 = col_double(),
+  ..   rshipa15 = col_double(),
+  ..   yrbrn = col_double(),
+  ..   yrbrn2 = col_double(),
+  ..   yrbrn3 = col_double(),
+  ..   yrbrn4 = col_double(),
+  ..   yrbrn5 = col_double(),
+  ..   yrbrn6 = col_double(),
+  ..   yrbrn7 = col_double(),
+  ..   yrbrn8 = col_double(),
+  ..   yrbrn9 = col_double(),
+  ..   yrbrn10 = col_double(),
+  ..   yrbrn11 = col_double(),
+  ..   yrbrn12 = col_double(),
+  ..   yrbrn13 = col_double(),
+  ..   yrbrn14 = col_double(),
+  ..   yrbrn15 = col_double(),
+  ..   agea = col_double(),
+  ..   anctry1 = col_double(),
+  ..   anctry2 = col_double(),
+  ..   atncrse = col_double(),
+  ..   chldhhe = col_double(),
+  ..   cmsrv = col_double(),
+  ..   cmsrvp = col_double(),
+  ..   crpdwk = col_double(),
+  ..   crpdwkp = col_double(),
+  ..   dngdk = col_double(),
+  ..   dngdkp = col_double(),
+  ..   dngna = col_double(),
+  ..   dngnap = col_double(),
+  ..   dngnapp = col_double(),
+  ..   dngoth = col_double(),
+  ..   dngothp = col_double(),
+  ..   dngref = col_double(),
+  ..   dngrefp = col_double(),
+  ..   domicil = col_double(),
+  ..   dsbld = col_double(),
+  ..   dsbldp = col_double(),
+  ..   dvrcdeva = col_double(),
+  ..   edctn = col_double(),
+  ..   edctnp = col_double(),
+  ..   edulvlb = col_double(),
+  ..   edulvlfb = col_double(),
+  ..   edulvlmb = col_double(),
+  ..   edulvlpb = col_double(),
+  ..   eduyrs = col_double(),
+  ..   eisced = col_double(),
+  ..   eiscedf = col_double(),
+  ..   eiscedm = col_double(),
+  ..   eiscedp = col_double(),
+  ..   emplno = col_double(),
+  ..   emplrel = col_double(),
+  ..   emprelp = col_double(),
+  ..   emprf14 = col_double(),
+  ..   emprm14 = col_double(),
+  ..   estsz = col_double(),
+  ..   hincfel = col_double(),
+  ..   hincsrca = col_double(),
+  ..   hinctnta = col_double(),
+  ..   hswrk = col_double(),
+  ..   hswrkp = col_double(),
+  ..   iorgact = col_double(),
+  ..   isco08 = col_double(),
+  ..   isco08p = col_double(),
+  ..   jbspv = col_double(),
+  ..   lvgptnea = col_double(),
+  ..   mainact = col_double(),
+  ..   maritalb = col_double(),
+  ..   marsts = col_double(),
+  ..   mbtru = col_double(),
+  ..   mnactic = col_double(),
+  ..   mnactp = col_double(),
+  ..   njbspv = col_double(),
+  ..   occf14b = col_double(),
+  ..   occm14b = col_double(),
+  ..   pdjobev = col_double(),
+  ..   pdjobyr = col_double(),
+  ..   pdwrk = col_double(),
+  ..   pdwrkp = col_double(),
+  ..   rshpsts = col_double(),
+  ..   rtrd = col_double(),
+  ..   rtrdp = col_double(),
+  ..   tporgwk = col_double(),
+  ..   uemp12m = col_double(),
+  ..   uemp3m = col_double(),
+  ..   uemp5yr = col_double(),
+  ..   uempla = col_double(),
+  ..   uemplap = col_double(),
+  ..   uempli = col_double(),
+  ..   uemplip = col_double(),
+  ..   wkhtot = col_double(),
+  ..   wkhtotp = col_double(),
+  ..   wrkac6m = col_double(),
+  ..   wrkctra = col_double(),
+  ..   wkdcorga = col_double(),
+  ..   nacer2 = col_double(),
+  ..   edagegb = col_double(),
+  ..   edlvebe = col_double(),
+  ..   edlvebg = col_double(),
+  ..   edlvdch = col_double(),
+  ..   edlvgcy = col_double(),
+  ..   edlvdcz = col_double(),
+  ..   edlvdfi = col_double(),
+  ..   edlvdis = col_double(),
+  ..   edlvdee = col_double(),
+  ..   edlvdfr = col_double(),
+  ..   edlvehr = col_double(),
+  ..   edlvdie = col_double(),
+  ..   edubil1 = col_double(),
+  ..   edlveit = col_double(),
+  ..   edlvdlt = col_double(),
+  ..   edlvenl = col_double(),
+  ..   edlvdpt = col_double(),
+  ..   edlvdse = col_double(),
+  ..   edlvesi = col_double(),
+  ..   edlvdsk = col_double(),
+  ..   edubgb2 = col_double(),
+  ..   eduail2 = col_double(),
+  ..   educgb1 = col_double(),
+  ..   edlvdrs = col_double(),
+  ..   edlvdme = col_double(),
+  ..   edagepgb = col_double(),
+  ..   edlvpebe = col_double(),
+  ..   edlvpdch = col_double(),
+  ..   edlvpgcy = col_double(),
+  ..   edlvpdcz = col_double(),
+  ..   edlvpebg = col_double(),
+  ..   edlvpdfi = col_double(),
+  ..   edlvpdis = col_double(),
+  ..   edlvpeit = col_double(),
+  ..   edlvpdee = col_double(),
+  ..   edlvpdfr = col_double(),
+  ..   edlvpehr = col_double(),
+  ..   edlvpdie = col_double(),
+  ..   edupbil1 = col_double(),
+  ..   edlvpdlt = col_double(),
+  ..   edlvpenl = col_double(),
+  ..   edlvpdpt = col_double(),
+  ..   edlvpdse = col_double(),
+  ..   edlvpesi = col_double(),
+  ..   edlvpdsk = col_double(),
+  ..   edupbgb2 = col_double(),
+  ..   edupcgb1 = col_double(),
+  ..   edlvpdrs = col_double(),
+  ..   edlvpdme = col_double(),
+  ..   edlvfebe = col_double(),
+  ..   edlvfebg = col_double(),
+  ..   edlvfehr = col_double(),
+  ..   edlvfdcz = col_double(),
+  ..   edlvfdee = col_double(),
+  ..   edlvfdfi = col_double(),
+  ..   edlvfdfr = col_double(),
+  ..   edlvfdis = col_double(),
+  ..   edlvfdie = col_double(),
+  ..   edlvfeit = col_double(),
+  ..   edlvfdlt = col_double(),
+  ..   edlvfenl = col_double(),
+  ..   edlvfdpt = col_double(),
+  ..   edlvfdsk = col_double(),
+  ..   edlvfesi = col_double(),
+  ..   edlvfdch = col_double(),
+  ..   edufcgb1 = col_double(),
+  ..   edufbgb2 = col_double(),
+  ..   edagefgb = col_double(),
+  ..   edlvfdme = col_double(),
+  ..   edagemgb = col_double(),
+  ..   edlvmebe = col_double(),
+  ..   edlvmdch = col_double(),
+  ..   edlvmdcz = col_double(),
+  ..   edlvmdfi = col_double(),
+  ..   edlvmdis = col_double(),
+  ..   edlvmeit = col_double(),
+  ..   edlvmdee = col_double(),
+  ..   edlvmdfr = col_double(),
+  ..   edlvmehr = col_double(),
+  ..   edlvmdie = col_double(),
+  ..   edlvmdlt = col_double(),
+  ..   edlvmenl = col_double(),
+  ..   edlvmdpt = col_double(),
+  ..   edlvmesi = col_double(),
+  ..   edlvmdsk = col_double(),
+  ..   edumcgb1 = col_double(),
+  ..   edumbgb2 = col_double(),
+  ..   edlvmebg = col_double(),
+  ..   edlvmdme = col_double(),
+  ..   marstgb = col_double(),
+  ..   rshpsgb = col_double(),
+  ..   impdiff = col_double(),
+  ..   impenv = col_double(),
+  ..   impfree = col_double(),
+  ..   impfun = col_double(),
+  ..   imprich = col_double(),
+  ..   impsafe = col_double(),
+  ..   imptrad = col_double(),
+  ..   ipadvnt = col_double(),
+  ..   ipbhprp = col_double(),
+  ..   ipcrtiv = col_double(),
+  ..   ipeqopt = col_double(),
+  ..   ipfrule = col_double(),
+  ..   ipgdtim = col_double(),
+  ..   iphlppl = col_double(),
+  ..   iplylfr = col_double(),
+  ..   ipmodst = col_double(),
+  ..   iprspot = col_double(),
+  ..   ipshabt = col_double(),
+  ..   ipstrgv = col_double(),
+  ..   ipsuces = col_double(),
+  ..   ipudrst = col_double(),
+  ..   region = col_character(),
+  ..   regunit = col_double(),
+  ..   inwtm = col_double(),
+  ..   intewde = col_double(),
+  ..   chpldm = col_double(),
+  ..   chpldmc = col_double(),
+  ..   chpldmi = col_double(),
+  ..   cttresa = col_double(),
+  ..   cttresac = col_double(),
+  ..   dfprtal = col_double(),
+  ..   dfprtalc = col_double(),
+  ..   fairelc = col_double(),
+  ..   fairelcc = col_double(),
+  ..   gptpelc = col_double(),
+  ..   gptpelcc = col_double(),
+  ..   grdfinc = col_double(),
+  ..   grdfincc = col_double(),
+  ..   gvctzpv = col_double(),
+  ..   gvctzpvc = col_double(),
+  ..   medcrgv = col_double(),
+  ..   medcrgvc = col_double(),
+  ..   rghmgpr = col_double(),
+  ..   rghmgprc = col_double(),
+  ..   stpldmc = col_double(),
+  ..   stpldmi = col_double(),
+  ..   votedir = col_double(),
+  ..   votedirc = col_double(),
+  ..   stfmjob = col_double(),
+  ..   trdawrk = col_double(),
+  ..   jbprtfp = col_double(),
+  ..   pfmfdjba = col_double(),
+  ..   implvdm = col_double(),
+  ..   ccrdprs = col_double(),
+  ..   ccnthum = col_double(),
+  ..   wrclmch = col_double(),
+  ..   trstsci = col_double(),
+  ..   prtvtebe = col_double(),
+  ..   prtvtebg = col_double(),
+  ..   prtvthch = col_double(),
+  ..   prtvtbhr = col_double(),
+  ..   prtvthee = col_double(),
+  ..   prtvtefi = col_double(),
+  ..   prtvtefr = col_double(),
+  ..   prtvtdgr = col_double(),
+  ..   prtvtghu = col_double(),
+  ..   prtvtdis = col_double(),
+  ..   prtvtdie = col_double(),
+  ..   prtvtdit = col_double(),
+  ..   prtvclt1 = col_double(),
+  ..   prtvclt2 = col_double(),
+  ..   prtvclt3 = col_double(),
+  ..   prtvtame = col_double(),
+  ..   prtvthnl = col_double(),
+  ..   prtvtmk = col_double(),
+  ..   prtvtdpt = col_double(),
+  ..   prtvtesk = col_double(),
+  ..   prtvtdgb = col_double(),
+  ..   donprty = col_double(),
+  ..   pbldmna = col_double(),
+  ..   volunfp = col_double(),
+  ..   prtclebe = col_double(),
+  ..   prtclebg = col_double(),
+  ..   prtclhch = col_double(),
+  ..   prtclbhr = col_double(),
+  ..   prtclhee = col_double(),
+  ..   prtclffi = col_double(),
+  ..   prtcldgr = col_double(),
+  ..   prtclhhu = col_double(),
+  ..   prtcldis = col_double(),
+  ..   prtclfie = col_double(),
+  ..   prtcleit = col_double(),
+  ..   prtclclt = col_double(),
+  ..   prtclame = col_double(),
+  ..   prtclgnl = col_double(),
+  ..   prtclmk = col_double(),
+  ..   prtclfpt = col_double(),
+  ..   prtclesk = col_double(),
+  ..   prtcldgb = col_double(),
+  ..   lrnobed = col_double(),
+  ..   loylead = col_double(),
+  ..   rlgdnanl = col_double(),
+  ..   rlgdnmk = col_double(),
+  ..   rlgdnbsk = col_double(),
+  ..   rlgdeanl = col_double(),
+  ..   rlgdemk = col_double(),
+  ..   rlgdebsk = col_double(),
+  ..   feethngr = col_double(),
+  ..   admrclc = col_double(),
+  ..   testic34 = col_double(),
+  ..   testic35 = col_double(),
+  ..   testic36 = col_double(),
+  ..   testic37 = col_double(),
+  ..   testic38 = col_double(),
+  ..   testic39 = col_double(),
+  ..   testic40 = col_double(),
+  ..   testic41 = col_double(),
+  ..   testic42 = col_double(),
+  ..   viepol = col_double(),
+  ..   wpestop = col_double(),
+  ..   keydec = col_double(),
+  ..   viepolc = col_double(),
+  ..   wpestopc = col_double(),
+  ..   keydecc = col_double(),
+  ..   admit = col_double(),
+  ..   showcv = col_double(),
+  ..   impdema = col_double(),
+  ..   impdemb = col_double(),
+  ..   impdemc = col_double(),
+  ..   impdemd = col_double(),
+  ..   impdeme = col_double(),
+  ..   accalaw = col_double(),
+  ..   rshpsmk = col_double(),
+  ..   marstmk = col_double(),
+  ..   edlvegr = col_double(),
+  ..   edlvdahu = col_double(),
+  ..   edlvdmk = col_double(),
+  ..   edlveno = col_double(),
+  ..   wkhct = col_double(),
+  ..   edlvpegr = col_double(),
+  ..   edlvpdahu = col_double(),
+  ..   edlvpdmk = col_double(),
+  ..   edlvpeno = col_double(),
+  ..   edlvfegr = col_double(),
+  ..   edlvfdahu = col_double(),
+  ..   edlvfdmk = col_double(),
+  ..   edlvfeno = col_double(),
+  ..   edlvmegr = col_double(),
+  ..   edlvmdahu = col_double(),
+  ..   edlvmdmk = col_double(),
+  ..   edlvmeno = col_double(),
+  ..   acchome = col_double(),
+  ..   accwrk = col_double(),
+  ..   accmove = col_double(),
+  ..   accoth = col_double(),
+  ..   accnone = col_double(),
+  ..   accref = col_double(),
+  ..   accdk = col_double(),
+  ..   accna = col_double(),
+  ..   fampref = col_double(),
+  ..   famadvs = col_double(),
+  ..   fampdf = col_double(),
+  ..   mcclose = col_double(),
+  ..   mcinter = col_double(),
+  ..   mccoord = col_double(),
+  ..   mcpriv = col_double(),
+  ..   mcmsinf = col_double(),
+  ..   chldo12 = col_double(),
+  ..   gndro12a = col_double(),
+  ..   gndro12b = col_double(),
+  ..   ageo12 = col_double(),
+  ..   hhlio12 = col_double(),
+  ..   closeo12 = col_double(),
+  ..   ttmino12 = col_double(),
+  ..   speako12 = col_double(),
+  ..   scrno12 = col_double(),
+  ..   phoneo12 = col_double(),
+  ..   como12 = col_double(),
+  ..   c19spo12 = col_double(),
+  ..   c19mco12 = col_double(),
+  ..   livpnt = col_double(),
+  ..   pntmofa = col_double(),
+  ..   agepnt = col_double(),
+  ..   hhlipnt = col_double(),
+  ..   closepnt = col_double(),
+  ..   ttminpnt = col_double(),
+  ..   speakpnt = col_double(),
+  ..   scrnpnt = col_double(),
+  ..   phonepnt = col_double(),
+  ..   compnt = col_double(),
+  ..   c19sppnt = col_double(),
+  ..   c19mcpnt = col_double(),
+  ..   dcsfwrka = col_double(),
+  ..   wrkhome = col_double(),
+  ..   c19whome = col_double(),
+  ..   c19wplch = col_double(),
+  ..   wrklong = col_double(),
+  ..   wrkresp = col_double(),
+  ..   c19whacc = col_double(),
+  ..   mansupp = col_double(),
+  ..   manhlp = col_double(),
+  ..   manwrkpl = col_double(),
+  ..   manspeak = col_double(),
+  ..   manscrn = col_double(),
+  ..   manphone = col_double(),
+  ..   mancom = col_double(),
+  ..   teamfeel = col_double(),
+  ..   wrkextra = col_double(),
+  ..   colprop = col_double(),
+  ..   colhlp = col_double(),
+  ..   colspeak = col_double(),
+  ..   colscrn = col_double(),
+  ..   colphone = col_double(),
+  ..   colcom = col_double(),
+  ..   c19spwrk = col_double(),
+  ..   c19mcwrk = col_double(),
+  ..   mcwrkhom = col_double(),
+  ..   testii1 = col_double(),
+  ..   testii2 = col_double(),
+  ..   testii3 = col_double(),
+  ..   testii4 = col_double(),
+  ..   testii5 = col_double(),
+  ..   testii6 = col_double(),
+  ..   testii7 = col_double(),
+  ..   testii8 = col_double(),
+  ..   testii9 = col_double(),
+  ..   secgrdec = col_double(),
+  ..   scidecpb = col_double(),
+  ..   admc19 = col_double(),
+  ..   panpriph = col_double(),
+  ..   panmonpb = col_double(),
+  ..   govpriph = col_double(),
+  ..   govmonpb = col_double(),
+  ..   panfolru = col_double(),
+  ..   panclobo = col_double(),
+  ..   panresmo = col_double(),
+  ..   gvhanc19 = col_double(),
+  ..   gvjobc19 = col_double(),
+  ..   gveldc19 = col_double(),
+  ..   gvfamc19 = col_double(),
+  ..   hscopc19 = col_double(),
+  ..   gvbalc19 = col_double(),
+  ..   gvimpc19 = col_double(),
+  ..   gvconc19 = col_double(),
+  ..   respc19 = col_double(),
+  ..   reshhc19 = col_double(),
+  ..   hapljc19 = col_double(),
+  ..   hapirc19 = col_double(),
+  ..   hapwrc19 = col_double(),
+  ..   hapfuc19 = col_double(),
+  ..   hapfoc19 = col_double(),
+  ..   hapnoc19 = col_double(),
+  ..   hapnwc19 = col_double(),
+  ..   hapnpc19 = col_double(),
+  ..   haprec19 = col_double(),
+  ..   hapdkc19 = col_double(),
+  ..   hapnac19 = col_double(),
+  ..   icvacc19 = col_double(),
+  ..   getavc19 = col_double(),
+  ..   getnvc19 = col_double(),
+  ..   vdcond = col_double(),
+  ..   vdovexre = col_double(),
+  ..   vdtype = col_double(),
+  ..   vdtpsvre = col_double(),
+  ..   vdtpitre = col_double(),
+  ..   vdtpscre = col_double(),
+  ..   vdtpaure = col_double(),
+  ..   vdtpvire = col_double(),
+  ..   vdtpoire = col_double(),
+  ..   vdtpntre = col_double(),
+  ..   vdtpapre = col_double(),
+  ..   vdtprere = col_double(),
+  ..   vdtpdkre = col_double(),
+  ..   vdtpnare = col_double(),
+  ..   inwds = col_datetime(format = ""),
+  ..   ainws = col_datetime(format = ""),
+  ..   ainwe = col_datetime(format = ""),
+  ..   binwe = col_datetime(format = ""),
+  ..   cinwe = col_datetime(format = ""),
+  ..   dinwe = col_datetime(format = ""),
+  ..   finwe = col_datetime(format = ""),
+  ..   ginwe = col_datetime(format = ""),
+  ..   hinwe = col_datetime(format = ""),
+  ..   iinwe = col_datetime(format = ""),
+  ..   kinwe = col_datetime(format = ""),
+  ..   vinwe = col_datetime(format = ""),
+  ..   inwde = col_datetime(format = ""),
+  ..   jinws = col_datetime(format = ""),
+  ..   jinwe = col_datetime(format = ""),
+  ..   mode = col_double(),
+  ..   domain = col_double(),
+  ..   prtvtccy = col_double(),
+  ..   prtvfde1 = col_double(),
+  ..   prtvfde2 = col_double(),
+  ..   prtvtdil = col_double(),
+  ..   prtvtepl = col_double(),
+  ..   prtvtars = col_double(),
+  ..   prtvtfes = col_double(),
+  ..   prtvtdse = col_double(),
+  ..   prtclccy = col_double(),
+  ..   prtclfde = col_double(),
+  ..   prtcleil = col_double(),
+  ..   prtclipl = col_double(),
+  ..   prtclars = col_double(),
+  ..   prtclges = col_double(),
+  ..   prtcldse = col_double(),
+  ..   scrlgblg = col_double(),
+  ..   rlgdnacy = col_double(),
+  ..   rlgdnbpl = col_double(),
+  ..   rlgdeacy = col_double(),
+  ..   rlgdebpl = col_double(),
+  ..   rlgders = col_double(),
+  ..   scchpldm = col_double(),
+  ..   eduat1 = col_double(),
+  ..   eduat2 = col_double(),
+  ..   educde1 = col_double(),
+  ..   edubde2 = col_double(),
+  ..   edlvelv = col_double(),
+  ..   edlvhpl = col_double(),
+  ..   edlvhes = col_double(),
+  ..   scwflt = col_double(),
+  ..   edlvpfat = col_double(),
+  ..   edupcde1 = col_double(),
+  ..   edupbde2 = col_double(),
+  ..   edlvpelv = col_double(),
+  ..   edlvpgpl = col_double(),
+  ..   edlvpges = col_double(),
+  ..   scrhlm = col_double(),
+  ..   sclmsup = col_double(),
+  ..   scrwiat = col_double(),
+  ..   sctmfeel = col_double(),
+  ..   scrwwc = col_double(),
+  ..   scclprp = col_double(),
+  ..   scwsds = col_datetime(format = ""),
+  ..   scwass = col_datetime(format = ""),
+  ..   scwa5se = col_datetime(format = ""),
+  ..   scwa11se = col_datetime(format = ""),
+  ..   scwa59se = col_datetime(format = ""),
+  ..   scwa89se = col_datetime(format = ""),
+  ..   scwb30se = col_datetime(format = ""),
+  ..   scwc55se = col_datetime(format = ""),
+  ..   scwd62se = col_datetime(format = ""),
+  ..   scwd78se = col_datetime(format = ""),
+  ..   scwrecse = col_datetime(format = ""),
+  ..   scwtype = col_double(),
+  ..   uagent = col_character(),
+  ..   smplresp = col_double(),
+  ..   questcmp = col_datetime(format = ""),
+  ..   intagea = col_double(),
+  ..   intgndr = col_double(),
+  ..   intnum = col_double(),
+  ..   intlnga = col_character()
+  .. )
+ - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
+</div>
+</div>
+</section>
+<section id="understandings-of-democracy-in-austria-1" class="slide level2">
+<h2>Understandings of democracy in Austria</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">summary</span>(ess_10_austria<span class="sc">$</span>dfprtal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   5.000   7.000   9.217   9.000  99.000 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Remove values: 77 (Refusal), 88 (Don't know), 99 (No answer)</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>ess_10_austria <span class="ot">&lt;-</span> ess_10_austria <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">filter</span>(dfprtal <span class="sc">&lt;=</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-4"><a href="#cb5-4"></a>  <span class="fu">filter</span>(dfprtalc <span class="sc">&lt;=</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="understandings-of-democracy-in-austria-2" class="slide level2">
+<h2>Understandings of democracy in Austria</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">ggplot</span>(ess_10_austria, <span class="fu">aes</span>(<span class="at">x =</span> dfprtal)) <span class="sc">+</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>         <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="more-descriptives_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="understandings-of-democracy-in-austria-3" class="slide level2">
+<h2>Understandings of democracy in Austria</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">ggplot</span>(ess_10_austria, <span class="fu">aes</span>(<span class="at">x =</span> dfprtal)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>         <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="more-descriptives_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section></section>
+<section id="minute-break" class="title-slide slide level1 center">
+<h1>⏸️ 15 minute break</h1>
+
+</section>
+
+<section id="session-09-1" class="title-slide slide level1 center">
+<h1>▶️ Session 09</h1>
+
+<div class="footer footer-default">
+<p>Statistics | Summer Semester 2024 | University of Innsbruck</p>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
