@@ -9,7 +9,7 @@ editor:
 ## ***Course details***
 
 |               |                                                                                     |
-|-----------------------|-------------------------------------------------|
+|-----------------------|------------------------------------------------|
 | Seminar:      | Statistics                                                                          |
 | Time:         | Wednesday, 08:00 - 11:15 March 13 to May 15 (single session on May 15)              |
 | Place:        | Virtual classroom                                                                   |
@@ -40,13 +40,13 @@ familiarise yourself with the programming language R.
 
 -   *Active preparation and participation* during sessions
 
--   *3 (smaller)* *assignments* during the semester (20% of your grade)
+-   *2 (smaller)* *assignments* during the semester (20% of your grade)
 
     -   From 20.03.24 11:15 until 08.04.24 18:00
 
     -   From 17.04.24 11:15 until 22.04.24 18:00
 
-    -   From 15.05.24 11:15 until 20.05.24 18:00
+    -   ~~From 15.05.24 11:15 until 20.05.24 18:00~~
 
 <!-- -->
 
