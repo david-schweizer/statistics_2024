@@ -34,7 +34,7 @@ gapminder <- gapminder
 ## Plan for today
 
 ::: panel-tabset
-## Session 06
+## Session 07
 
 -   Input: Descriptive statistics - Understanding our data with
 
@@ -48,14 +48,14 @@ gapminder <- gapminder
 
 ⏸️ **15 minute break:** Get some fresh air, a coffee, ...
 
-## Session 07
+## Session 08
 
 -   Input: Let's continue with descriptives!
 
 -   Coding: Again, in groups or on your own.
 :::
 
-# Session 06
+# Session 07
 
 ## R packages for descriptives
 
@@ -294,7 +294,7 @@ gapminder_cat %>%
 
 # ⏸️ 15 minute break
 
-# ▶️ Session 07
+# ▶️ Session 08
 
 ## Relationships between variables
 

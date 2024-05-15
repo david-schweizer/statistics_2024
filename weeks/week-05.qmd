@@ -35,6 +35,8 @@ date: "May 08, 2024"
 #tbl-colwidths: [10,50,40]
 ---
 
+## Session 09
+
 In this asynchronous session, you can follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions (descriptives & visualizations). In order to run the following code, you need only the *tidyverse*:
 
 ```{r, echo=TRUE, message=FALSE, warning=FALSE}

@@ -1,9 +1,9 @@
 ---
-title: "Measurements & Data collection"
+title: "Inference"
 subtitle: "Week 06"
 description: ""
 author: ""
-date: "Nov 15, 2023"
+date: "May 15, 2024"
 listing:
   - id: slides
     contents:
@@ -42,24 +42,5 @@ tbl-colwidths: [10,50,40]
 
 # Materials
 
-You can find the reading for this week [here](https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2006~~Preparation%20for%20the%20session~~kellstedt%5Fwhitten%5Fchapter5%2Epdf/0).
+You can find the materials on OLAT.
 
-# To Do's before our session
-
-::: panel-tabset
-## Read
-
--   Chapter 5 - Kellstedt, P. M., & Whitten, G. D. (2018). *The fundamentals of political science research*. Cambridge University Press.
-
-**Helpful reading to get started with R:**
-
--   [R for Data Science (2e)](https://r4ds.hadley.nz/). Introduction, Data Visualization, & Workflow: Basics, Data Transformation
-
-## Think
-
-Guiding questions:
-
--   How would you measure the concepts used in your research question?
-
--   And where could you find suitable data to test your hypotheses?
-:::

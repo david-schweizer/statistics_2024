@@ -1,0 +1,60 @@
+---
+title: "Applied example"
+editor: visual
+---
+
+# Packages
+
+We always start by loading the necessary packages:
+
+```{r, echo=TRUE}
+# The pacman package allows us to load the specified packages with the p_load() function. 
+# In case the package is not installed, p_load() installs the package automatically.
+# You might need to install the pacman package first:
+
+# install.packages("pacman")
+
+pacman::p_load(
+  "tidyverse" # includes dplyr (data transformation and pipe operator)
+    )
+```
+
+# Data
+
+We work with data from the 2021 federal election in Germany. I have already processed the data. Below, you can find the code for the pre-processing steps.
+
+We end up with a dataset with the following variables:
+
+```{r, echo=TRUE}
+
+```
+
+# Linear regression
+
+We want to see if there is a statistical relationship between the vote share of the AfD and unemployment rate at the election district level. Our theoretical expectation is that the higher the unemployment rate, the higher the vote share of the AfD.
+
+Our regression model would look like this:
+
+$VoteShareAfD_i = \beta_0 + \beta_1unemploymentRate_i + \epsilon_i$
+
+# Multiple regression & statistical controls
+
+Can you think of another variable that might influence both the vote share of the AfD and the unemployment rate in election districts?
+
+**East-West divide:** Election districts in East Germany are both more likely to have higher unemployment rates due to structural reasons and higher vote shares of the AfD due to demographics/political attitudes that differ systematically between East and West Germany.
+
+Therefore, we should control for the fact that some observations (vote share for the AfD at a specific district) are located in East Germany. Our regression model would look like this:
+
+$VoteShareAfD_i = \beta_0 + \beta_1unemploymentRate_i + \beta2East_i + \epsilon_i$
+
+# Logit regression
+
+Let's turn to binary outcomes as dependent variable. To demonstrate this, we create a binary variable with 1 = district won by the CDU/CSU and 0 = district not won by the CDU/CSU. The CDU/CSU has been one of the parties in government (besides the SPD). It was the senior coalition partner. Following a economic voting hypothesis (not well operationalized!), we could test, if the higher the GDP per capita in a election district, the higher the probability that the CDU/CSU wins this district.
+
+Again, we might theorize that there are systematic differences between East and West Germany. Therefore, we can include this variable directly in our model:
+
+# Presenting results
+
+## Tables
+
+## Graphs

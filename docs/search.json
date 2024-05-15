@@ -25,7 +25,7 @@
     "href": "material.html",
     "title": "Schedule",
     "section": "",
-    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 17, 2024\n\n\n\n\nWeek 04\n\n\nDescriptives\n\n\nApril 24, 2024\n\n\n\n\nWeek 05\n\n\nAsynchronous session: ESS Data\n\n\nMay 08, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 17, 2024\n\n\n\n\nWeek 04\n\n\nDescriptives\n\n\nApril 24, 2024\n\n\n\n\nWeek 05\n\n\nAsynchronous session: ESS Data\n\n\nMay 08, 2024\n\n\n\n\nWeek 06\n\n\nInference\n\n\nMay 15, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html#assignments",
@@ -193,14 +193,14 @@
     "href": "weeks/week-05.html",
     "title": "Asynchronous session: ESS Data",
     "section": "",
-    "text": "In this asynchronous session, you can follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions (descriptives & visualizations). In order to run the following code, you need only the tidyverse:\npacman::p_load(\n  \"tidyverse\"\n    )"
+    "text": "In this asynchronous session, you can follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions (descriptives & visualizations). In order to run the following code, you need only the tidyverse:\n\npacman::p_load(\n  \"tidyverse\"\n    )"
   },
   {
     "objectID": "weeks/week-06.html",
     "href": "weeks/week-06.html",
-    "title": "Measurements & Data collection",
+    "title": "Inference",
     "section": "",
-    "text": "Seminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\nMeasurement & Data Collection\n\n\nWeek 6\n\n\nNov 15, 2023\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nYou can find the reading for this week here.\n\n\nTo Do’s before our session\n\nReadThink\n\n\n\nChapter 5 - Kellstedt, P. M., & Whitten, G. D. (2018). The fundamentals of political science research. Cambridge University Press.\n\nHelpful reading to get started with R:\n\nR for Data Science (2e). Introduction, Data Visualization, & Workflow: Basics, Data Transformation\n\n\n\nGuiding questions:\n\nHow would you measure the concepts used in your research question?\nAnd where could you find suitable data to test your hypotheses?"
+    "text": "Seminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\nInference\n\n\nWeek 6\n\n\nMay 15, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nYou can find the materials on OLAT."
   },
   {
     "objectID": "weeks/week-07.html",
@@ -2587,7 +2587,7 @@
     "href": "material.html#material",
     "title": "Schedule",
     "section": "",
-    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 17, 2024\n\n\n\n\nWeek 04\n\n\nDescriptives\n\n\nApril 24, 2024\n\n\n\n\nWeek 05\n\n\nAsynchronous session: ESS Data\n\n\nMay 08, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 17, 2024\n\n\n\n\nWeek 04\n\n\nDescriptives\n\n\nApril 24, 2024\n\n\n\n\nWeek 05\n\n\nAsynchronous session: ESS Data\n\n\nMay 08, 2024\n\n\n\n\nWeek 06\n\n\nInference\n\n\nMay 15, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/week-02/02-GrammarOfGraphics.html",
@@ -6150,7 +6150,7 @@
     "href": "slides/week-04/descriptives.html#plan-for-today",
     "title": "Descriptives",
     "section": "Plan for today",
-    "text": "Plan for today\n\nSession 06BreakSession 07\n\n\n\nInput: Descriptive statistics - Understanding our data with\n\nsummary statistics (for numeric variables)\nfrequencies & proportions (for categorical variables)\ncross-tabulations\n\nCoding: In groups or on your own.\n\n\n\n⏸️ 15 minute break: Get some fresh air, a coffee, …\n\n\n\nInput: Let’s continue with descriptives!\nCoding: Again, in groups or on your own."
+    "text": "Plan for today\n\nSession 07BreakSession 08\n\n\n\nInput: Descriptive statistics - Understanding our data with\n\nsummary statistics (for numeric variables)\nfrequencies & proportions (for categorical variables)\ncross-tabulations\n\nCoding: In groups or on your own.\n\n\n\n⏸️ 15 minute break: Get some fresh air, a coffee, …\n\n\n\nInput: Let’s continue with descriptives!\nCoding: Again, in groups or on your own."
   },
   {
     "objectID": "slides/week-04/descriptives.html#r-packages-for-descriptives",
@@ -6241,7 +6241,7 @@
     "href": "slides/week-04/descriptives.html#data",
     "title": "Descriptives",
     "section": "Data",
-    "text": "Data\n\ngapminder2007 &lt;- gapminder %&gt;%\n  filter(year == 2007)\nsummary(gapminder2007$gdpPercap)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  277.6  1624.8  6124.4 11680.1 18008.8 49357.2 \n\n\n\ngapminder_cat &lt;- gapminder2007 %&gt;%\n  mutate(wealth = case_when(\n    gdpPercap &lt;= 1625 ~ \"poor\",\n    gdpPercap &gt; 1625 & gdpPercap &lt; mean(gdpPercap) ~ \"below_mean\",\n    gdpPercap &gt; mean(gdpPercap) & gdpPercap &lt; 18009 ~ \"above_mean\", \n    gdpPercap &gt;= 18009 ~ \"rich\")) \n\ngapminder_cat %&gt;% \n  sample_n(2)\n\n# A tibble: 2 × 7\n  country continent  year lifeExp     pop gdpPercap wealth\n  &lt;fct&gt;   &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;   &lt;int&gt;     &lt;dbl&gt; &lt;chr&gt; \n1 Comoros Africa     2007    65.2  710960      986. poor  \n2 Norway  Europe     2007    80.2 4627926    49357. rich"
+    "text": "Data\n\ngapminder2007 &lt;- gapminder %&gt;%\n  filter(year == 2007)\nsummary(gapminder2007$gdpPercap)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  277.6  1624.8  6124.4 11680.1 18008.8 49357.2 \n\n\n\ngapminder_cat &lt;- gapminder2007 %&gt;%\n  mutate(wealth = case_when(\n    gdpPercap &lt;= 1625 ~ \"poor\",\n    gdpPercap &gt; 1625 & gdpPercap &lt; mean(gdpPercap) ~ \"below_mean\",\n    gdpPercap &gt; mean(gdpPercap) & gdpPercap &lt; 18009 ~ \"above_mean\", \n    gdpPercap &gt;= 18009 ~ \"rich\")) \n\ngapminder_cat %&gt;% \n  sample_n(2)\n\n# A tibble: 2 × 7\n  country     continent  year lifeExp      pop gdpPercap wealth\n  &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt; &lt;chr&gt; \n1 Guinea      Africa     2007    56.0  9947814      943. poor  \n2 Korea, Rep. Asia       2007    78.6 49044790    23348. rich"
   },
   {
     "objectID": "slides/week-04/descriptives.html#table-for-frequencies",
@@ -6297,7 +6297,7 @@
     "href": "slides/week-04/descriptives.html#data-1",
     "title": "Descriptives",
     "section": "Data",
-    "text": "Data\n\ngapminder_cat2 &lt;- gapminder_cat %&gt;%\n  mutate(life = case_when(\n    lifeExp &gt; mean(lifeExp) ~ \"above average\",\n    lifeExp &lt; mean(lifeExp) ~ \"below average\")\n  )\n\ngapminder_cat2 %&gt;%\n  select(country, wealth, life) %&gt;% \n  sample_n(2)\n\n# A tibble: 2 × 3\n  country  wealth life         \n  &lt;fct&gt;    &lt;chr&gt;  &lt;chr&gt;        \n1 Denmark  rich   above average\n2 Ethiopia poor   below average"
+    "text": "Data\n\ngapminder_cat2 &lt;- gapminder_cat %&gt;%\n  mutate(life = case_when(\n    lifeExp &gt; mean(lifeExp) ~ \"above average\",\n    lifeExp &lt; mean(lifeExp) ~ \"below average\")\n  )\n\ngapminder_cat2 %&gt;%\n  select(country, wealth, life) %&gt;% \n  sample_n(2)\n\n# A tibble: 2 × 3\n  country wealth     life         \n  &lt;fct&gt;   &lt;chr&gt;      &lt;chr&gt;        \n1 Sudan   below_mean below average\n2 Italy   rich       above average"
   },
   {
     "objectID": "slides/week-04/descriptives.html#crosstabulations",
@@ -6494,5 +6494,306 @@
     "title": "Asynchronous session: ESS Data",
     "section": "Your turn!",
     "text": "Your turn!\n\nThe histogram displays the number of respondents for each value. What graph could you produce that shows the distribution in a different way? Can you show proportions instead of counts?\nIdentify the variables from the rotating module Understandings and evaluation of different elements of democracy. Contrast the perceptions and the respondents’ opinions on these variables. For example: “The media in [country] are free to criticise the government”.\nAre people with the highest mismatch also those who are least satisfied with the way democracy works? You can find this variable also in round 10!\nCan you present basic summary statistics for this satisfaction with democracy variable?\nCan you find the same patterns in Germany?"
+  },
+  {
+    "objectID": "weeks/week-05.html#session-09",
+    "href": "weeks/week-05.html#session-09",
+    "title": "Asynchronous session: ESS Data",
+    "section": "",
+    "text": "In this asynchronous session, you can follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions (descriptives & visualizations). In order to run the following code, you need only the tidyverse:\n\npacman::p_load(\n  \"tidyverse\"\n    )"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#plan-for-today",
+    "href": "slides/week-06/inference.html#plan-for-today",
+    "title": "Inference",
+    "section": "Plan for today",
+    "text": "Plan for today\n\nSession 10BreakSession 11\n\n\n\nInput: Inference - Intuition and interpretation\n\nLinear regression\nMultiple regression, causality, and statistical significance\nHow to deal with binary dependent variables\n\n\n\n\n⏸️ 15 minute break: Get some fresh air, a coffee, …\n\n\n\nInput: Coding example: Follow-along possible\n\nRun regressions\nPresent results\n\nIf time allows: Try out the code yourself. Look at different parties, different IVs."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#regression-analysis",
+    "href": "slides/week-06/inference.html#regression-analysis",
+    "title": "Inference",
+    "section": "Regression analysis",
+    "text": "Regression analysis\n\nRegression analysis examines the relationship between a dependent variable, \\(Y\\), and one or more independent variables, \\(X_1\\)., …, \\(X_k\\).\nThe dependent variable (DV) is the quantity we want to explain.\nThe independent variable (IV) is the quantity that we use to explain variation in the dependent variable.\n\n\n\n\n\n\n\nExamples DV: vote choice, level of corruption, income, democratization\nExamples IV: Economic, political, institutional, or demographic variables"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#linear-model",
+    "href": "slides/week-06/inference.html#linear-model",
+    "title": "Inference",
+    "section": "Linear Model",
+    "text": "Linear Model\n\nLinear model: \\(Y = a + bX\\)\n\n\\(a\\) is the intercept: value of \\(Y\\) when \\(X\\) is zero.\n\\(b\\) is the slope: change in \\(Y\\) for a one-unit increase in \\(X\\)\n\nThis model implies a perfect linear relationship.\nIn actual research, this is never the case, so we need to add an error term: \\(Y = \\beta_0 + \\beta_1X + \\epsilon\\)\nThe error term (or disturbance), \\(\\epsilon\\), represents unobserved factors other than \\(X\\) that affect \\(Y\\)"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#example-growth-and-incumbent-vote-share",
+    "href": "slides/week-06/inference.html#example-growth-and-incumbent-vote-share",
+    "title": "Inference",
+    "section": "Example: Growth and incumbent vote share",
+    "text": "Example: Growth and incumbent vote share\n\nLet’s re-examine the relationship between economic growth prior to an election and the vote share received by the incumbent presidential party in the US\nLet \\(i = 1, ..., n\\) denote observations with total sample size \\(n\\).\nFor each observation \\(i\\), we can write: \\(VoteShare_i= \\beta_0 + \\beta_1Growth_i + \\epsilon_i\\)"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#relationship-growth-vote-share",
+    "href": "slides/week-06/inference.html#relationship-growth-vote-share",
+    "title": "Inference",
+    "section": "Relationship: Growth & vote share",
+    "text": "Relationship: Growth & vote share\n\\(VoteShare_i= \\beta_0 + \\beta_1Growth_i + \\epsilon_i\\)"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#how-goodbad-is-the-prediction",
+    "href": "slides/week-06/inference.html#how-goodbad-is-the-prediction",
+    "title": "Inference",
+    "section": "How good/bad is the prediction?",
+    "text": "How good/bad is the prediction?\n\\(Residual = Actual- Predicted\\)"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#ols-picking-the-best-line",
+    "href": "slides/week-06/inference.html#ols-picking-the-best-line",
+    "title": "Inference",
+    "section": "OLS: Picking the best line",
+    "text": "OLS: Picking the best line\n\nOLS is short for “Ordinary Least Squares”.\nThe best line is the line that minimizes the sum of squared residuals (SSR).\nResiduals are vertical deviations from the line (the observed fitting errors)\n\n\\(e_i = y_i - (\\hat\\beta_0 + \\hat\\beta_1x_i)\\)\n\\(e_i = y_i - (\\hat y_i)\\)\n\nConceptually, we minimize:\n\n\\(e_i^2 = \\sum_{i = 1}^n(Actual_i - Predicted_i)^2 = \\sum_{i = 1}^n(Residual_i)^2\\)"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#ols-picking-the-best-line-1",
+    "href": "slides/week-06/inference.html#ols-picking-the-best-line-1",
+    "title": "Inference",
+    "section": "OLS: Picking the best line",
+    "text": "OLS: Picking the best line\nMinimizing the sum of squared residuals:"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#ols-picking-the-best-line-2",
+    "href": "slides/week-06/inference.html#ols-picking-the-best-line-2",
+    "title": "Inference",
+    "section": "OLS: Picking the best line",
+    "text": "OLS: Picking the best line\nMinimizing the sum of squared residuals:"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#ols-picking-the-best-line-3",
+    "href": "slides/week-06/inference.html#ols-picking-the-best-line-3",
+    "title": "Inference",
+    "section": "OLS: Picking the best line",
+    "text": "OLS: Picking the best line\nMinimizing the sum of squared residuals:"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#ols-picking-the-best-line-4",
+    "href": "slides/week-06/inference.html#ols-picking-the-best-line-4",
+    "title": "Inference",
+    "section": "OLS: Picking the best line",
+    "text": "OLS: Picking the best line\nMinimizing the sum of squared residuals:"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#ols-interpretation",
+    "href": "slides/week-06/inference.html#ols-interpretation",
+    "title": "Inference",
+    "section": "OLS interpretation",
+    "text": "OLS interpretation\n\nOur regression line: \\(\\hat Y = \\hat\\beta_0 + \\hat\\beta_1X\\)\nInterpreting the slope coefficient \\(\\hat\\beta_1\\): On average, a one-unit increase in \\(X\\) is associated with a \\(\\hat\\beta_1\\) unit increase in \\(Y\\).\nThe predicted value for \\(X\\) is \\(\\hat Y\\).\nInterpreting the intercept coefficient: When X is zero, the predicted value for \\(\\hat Y\\) is \\(\\hat\\beta_0\\). Not necessarily a meaningful quantity!"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#ols-interpretation-1",
+    "href": "slides/week-06/inference.html#ols-interpretation-1",
+    "title": "Inference",
+    "section": "OLS interpretation",
+    "text": "OLS interpretation\nEstimation: \\(\\hat{VoteShare_i} = 49.699 + 1.127 * Growth_i\\)"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#residual-analysis",
+    "href": "slides/week-06/inference.html#residual-analysis",
+    "title": "Inference",
+    "section": "Residual analysis",
+    "text": "Residual analysis\n\nA residual plot is a scatterplot of the regression residuals against the explanatory variable \\(X\\) or the predicted values \\(\\hat Y\\).\nThe residual plot is a diagnostic plot as it helps us to detect patterns in the residuals.\nResidual patterns diagnose model shortcomings (e.g., systematic influences on \\(Y\\) still have not been captured).\nIdeally, residuals plots should look as if the pattern was generated by pure chance"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#residual-analysis-1",
+    "href": "slides/week-06/inference.html#residual-analysis-1",
+    "title": "Inference",
+    "section": "Residual analysis",
+    "text": "Residual analysis"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#goodness-of-fit",
+    "href": "slides/week-06/inference.html#goodness-of-fit",
+    "title": "Inference",
+    "section": "Goodness-of-Fit",
+    "text": "Goodness-of-Fit\n\nHow well does our model explain the variation in the dependent variable?\n\n\\({Explained Variance}/{Total Variance} =\\)\n\\(1- {UnexplainedVariance}/{TotalVariance} =\\)\n\\(R^2\\)\n\nInterpretation: Proportion of the total variance explained by the fitted model\nThe goodness-of-fit measure is bounded: \\(0 ≤ R^2 ≤ 1\\)\n\\(R^2\\) is not resistant to outliers and increases with more IVs!"
+  },
+  {
+    "objectID": "applied_example.html",
+    "href": "applied_example.html",
+    "title": "Applied example",
+    "section": "",
+    "text": "We always start by loading the necessary packages:\n\n# The pacman package allows us to load the specified packages with the p_load() function. \n# In case the package is not installed, p_load() installs the package automatically.\n# You might need to install the pacman package first:\n\n# install.packages(\"pacman\")\n\npacman::p_load(\n  \"tidyverse\" # includes dplyr (data transformation and pipe operator)\n    )"
+  },
+  {
+    "objectID": "applied_example.html#tables",
+    "href": "applied_example.html#tables",
+    "title": "Applied example",
+    "section": "Tables",
+    "text": "Tables"
+  },
+  {
+    "objectID": "applied_example.html#graphs",
+    "href": "applied_example.html#graphs",
+    "title": "Applied example",
+    "section": "Graphs",
+    "text": "Graphs"
+  },
+  {
+    "objectID": "slides/week-06/inference.html",
+    "href": "slides/week-06/inference.html",
+    "title": "Inference",
+    "section": "",
+    "text": "Session 10BreakSession 11\n\n\n\nInput: Inference - Intuition and interpretation\n\nLinear regression\nMultiple regression, causality, and statistical significance\nHow to deal with binary dependent variables\n\n\n\n\n⏸️ 15 minute break: Get some fresh air, a coffee, …\n\n\n\nInput: Applications in R\n\nRun regressions\nPresent results\n\nCoding example: Follow-along possible"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#goodness-of-fit-1",
+    "href": "slides/week-06/inference.html#goodness-of-fit-1",
+    "title": "Inference",
+    "section": "Goodness-of-Fit",
+    "text": "Goodness-of-Fit\n\n0.2880.00210.664"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#goodness-of-fit-2",
+    "href": "slides/week-06/inference.html#goodness-of-fit-2",
+    "title": "Inference",
+    "section": "Goodness-of-Fit",
+    "text": "Goodness-of-Fit\n\n\\(R^2\\) increases the more explanatory variables we add.\nThe adjusted \\(R^2\\), therefore, imposes a penalty for adding independent variables.\nWhile the regular \\(R^2\\) is bounded in [0, 1], the adjusted \\(R^2\\) even can become negative. This indicates a bad model fit."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#multiple-regression-analysis",
+    "href": "slides/week-06/inference.html#multiple-regression-analysis",
+    "title": "Inference",
+    "section": "Multiple regression analysis …",
+    "text": "Multiple regression analysis …\n… allows us to add covariates to our regression:\n\\(Y = \\beta_0 + \\beta_1X_1 + \\beta_2X_2 + ... + \\epsilon\\)\nWhy? Increase prediction or causal explanation.\nEstimation is the same for both purposes. However, the rationale differs."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#causality-statistical-control",
+    "href": "slides/week-06/inference.html#causality-statistical-control",
+    "title": "Inference",
+    "section": "Causality & statistical control",
+    "text": "Causality & statistical control\n\nCausal questions focus on the effect of a presumed cause X: “Does exposure to ‘fake news’ increase beliefs in false claims?”\nCausal questions typically imply comparisons of factual and unobservable counterfactual states for each observation: What would i believe had they (not) been exposed to fake news?\nThe statistical solution: Compare average beliefs between those exposed and those not exposed to fake news.\nProblem: Structural differences between those exposed and those not exposed to fake news."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#causality-statistical-control-1",
+    "href": "slides/week-06/inference.html#causality-statistical-control-1",
+    "title": "Inference",
+    "section": "Causality & statistical control",
+    "text": "Causality & statistical control\n\nDesign-based inference uses randomization; it puts the manipulation of X (exposure to ‘fake news’) into the hands of the researcher.\nModel-based inference uses theoretical models about the relationship between variables → need to accurately translate the assumed theoretical model into a statistical model!"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#causal-graphs-dags",
+    "href": "slides/week-06/inference.html#causal-graphs-dags",
+    "title": "Inference",
+    "section": "Causal graphs (DAGs)",
+    "text": "Causal graphs (DAGs)\nDirected acyclical graphs (DAGs) allow us to express theoretical assumptions about causal relationships between (potentially correlated) variables given a theoretical model."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#omitted-variable-bias",
+    "href": "slides/week-06/inference.html#omitted-variable-bias",
+    "title": "Inference",
+    "section": "Omitted variable bias",
+    "text": "Omitted variable bias\nWe can speak of omitted variable bias when our model fails to account for confounders:"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#example-income-education-gender",
+    "href": "slides/week-06/inference.html#example-income-education-gender",
+    "title": "Inference",
+    "section": "Example: Income, education & gender",
+    "text": "Example: Income, education & gender"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#example-income-education-gender-1",
+    "href": "slides/week-06/inference.html#example-income-education-gender-1",
+    "title": "Inference",
+    "section": "Example: Income, education & gender",
+    "text": "Example: Income, education & gender"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#example-income-education-gender-2",
+    "href": "slides/week-06/inference.html#example-income-education-gender-2",
+    "title": "Inference",
+    "section": "Example: Income, education & gender",
+    "text": "Example: Income, education & gender\n\nGender and education are related. If we regress income on education alone, we arrive at a biased assessment of the effect of education on income because of an omitted variable, i.e., gender.\nGender is a confounder and causes omitted variable bias\nSince education and gender are correlated, and because gender is omitted from the first model, part of the effect of gender on income is mistakenly attributed to education."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#interpretation-of-binary-or-categorial-ivs",
+    "href": "slides/week-06/inference.html#interpretation-of-binary-or-categorial-ivs",
+    "title": "Inference",
+    "section": "Interpretation of binary or categorial IVs",
+    "text": "Interpretation of binary or categorial IVs\n\nIn political science, variables are often binary or categorical.\nWe can easily include binary information as independent variables in our regression model.\n\n\n\n\n\n\n\nExamples for qualitative data are:\n\nVote choice (Did vote or did not vote).\nGender (Is male or female).\nRegime type (Is a democracy or an autocracy).\nMembership status (Is a EU member state or not)."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#hypothesis-test-statistical-significance",
+    "href": "slides/week-06/inference.html#hypothesis-test-statistical-significance",
+    "title": "Inference",
+    "section": "Hypothesis test & statistical significance",
+    "text": "Hypothesis test & statistical significance\n\nIn testing statistical significance of a regression coefficient, we usually want to know if our estimated coefficient \\(\\hat\\beta_j\\) is different from zero.\nWe test the null hypothesis about the true population parameter, \\(\\beta_j\\) , against the (two-sided) alternative hypothesis:\n\n\\(H_0: \\beta_j = 0\\)\n\\(H_A: \\beta_j \\neq 0\\)\n\nWe reject the null hypothesis at a specific significance level."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#significance-levels-confidence-intervals",
+    "href": "slides/week-06/inference.html#significance-levels-confidence-intervals",
+    "title": "Inference",
+    "section": "Significance levels & confidence intervals",
+    "text": "Significance levels & confidence intervals\n\nA conventional significance level is at 5%.\nThis translates to so-called 95% confidence intervals. Confidence intervals allow us to assess uncertainty around our estimates.\nA 95% confidence interval means that under repeated experiments, the given interval includes the true parameter, \\(\\beta\\), 95 out of 100 times.\nIf \\(H_0\\) is true, we falsely reject it 5 times out of 100 (false positive, type I error)."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#type-i-and-ii-errors",
+    "href": "slides/week-06/inference.html#type-i-and-ii-errors",
+    "title": "Inference",
+    "section": "Type I and II errors",
+    "text": "Type I and II errors\n\nConsider the errors for a case in which the hypotheses are “\\(H_0\\) No disease” and “\\(H_A\\) Disease”. Which error would you “prefer”?"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#type-i-and-ii-errors-1",
+    "href": "slides/week-06/inference.html#type-i-and-ii-errors-1",
+    "title": "Inference",
+    "section": "Type I and II errors",
+    "text": "Type I and II errors"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#section-4",
+    "href": "slides/week-06/inference.html#section-4",
+    "title": "Inference",
+    "section": "",
+    "text": "Assuming \\(H_0\\) is that a patient has no disease:\n\nType I error: Patient is told that the test is positive, but falsely so.\nType II error: Patient is told that the test is negative, but falsely so."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#p-values",
+    "href": "slides/week-06/inference.html#p-values",
+    "title": "Inference",
+    "section": "p-values",
+    "text": "p-values\nIn general:\n\nCan take values between 0 and 1.\nSmall p−values are evidence against the null, large p-values provide little evidence against the null.\np-value &lt; 0.05: “Statistically significant at the 5% level.\np-value &lt; 0.01: “Statistically significant at the 1% level."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#motivation",
+    "href": "slides/week-06/inference.html#motivation",
+    "title": "Inference",
+    "section": "Motivation",
+    "text": "Motivation\nOften our dependent variable is not continuous but binary. There are many examples in the social sciences:\n\nA voter’s choice to go to the polls.\nA politician’s choice to vote “yes” or “no” in legislation (roll call data).\nA government’s decision to implement an EU directive or not.\nThe basic problem is: How do we estimate regression models when our dependent variable is a dummy (takes values: 0 or 1)?"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#intuition",
+    "href": "slides/week-06/inference.html#intuition",
+    "title": "Inference",
+    "section": "Intuition",
+    "text": "Intuition"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#section-5",
+    "href": "slides/week-06/inference.html#section-5",
+    "title": "Inference",
+    "section": "",
+    "text": "The Logit model\n\nWe calculate the following formula:\n\n\\(\\pi_i = P(y_i = 1) = {exp(X_i\\beta)}/{1+exp(X_i\\beta)}\\)\n\nThis model is referred to as logit model.\nUnfortunately, the interpretation is not straightforward. We cannot make linear statements, but talk in so-called log odds and odds ratios (higher likelihood that something happens or not)."
+  },
+  {
+    "objectID": "slides/week-06/inference.html#your-turn",
+    "href": "slides/week-06/inference.html#your-turn",
+    "title": "Inference",
+    "section": "Your turn!",
+    "text": "Your turn!\n\nTry out the code yourself.\nLook at different parties (not the AfD)\nHave a look at the structural data. Can you think if other useful controls or main independent variables that you want to use?\n\n\n\nStatistics | Summer Semester 2024 | University of Innsbruck"
+  },
+  {
+    "objectID": "slides/week-06/inference.html#the-logit-model",
+    "href": "slides/week-06/inference.html#the-logit-model",
+    "title": "Inference",
+    "section": "The Logit model",
+    "text": "The Logit model\n\nWe calculate the following formula:\n\n\\(\\pi_i = P(y_i = 1) = {exp(X_i\\beta)}/{1+exp(X_i\\beta)}\\)\n\nThis model is referred to as logit model.\nUnfortunately, the interpretation is not straightforward. We cannot make linear statements, but talk in so-called log odds and odds ratios (higher likelihood that something happens or not)."
   }
 ]
