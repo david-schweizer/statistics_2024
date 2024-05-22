@@ -78,7 +78,7 @@ The ESS includes regular survey items (party affiliation, political interest, ..
 
 Take some time to look at the [ESS website](https://www.europeansocialsurvey.org/). Especially, at the Data (Portal). Can you find any interesting variables for your own research ideas?
 
-## Understandings of democracy (in Austria)
+## Understandings of democracy
 
 -   **Last week**, we had a descriptive look at various understandings of democracy in Austria.
 
