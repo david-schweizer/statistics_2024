@@ -210,13 +210,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="session-12" class="level1">
 <h1>Session 12</h1>
-<p>In our second asynchronous session, you can again follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions on inference. In order to run the following code, you need only the tidyverse:</p>
+<p>In our second asynchronous session, you can again follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions on inference. In order to run the following code, you need only the tidyverse and the estimatr package:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>,</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"estimatr"</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>You can find the data as well as the articles, their appendix, and the questionnaire on <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5617582099/CourseNode/109453712367926/path%3D~~week%5F07/0">OLAT via Folder - week_07</a>. However, you can also get the data yourself via Google Scholar and/or the University library (articles and appendix) and the data as well as the questionnaire via the <a href="https://ess.sikt.no/en/?tab=overview">ESS data portal</a>. Selecting the right countries in the data portal requires some reading of the articles or rather the appendix (Hint: Have a look at the note of table A1 in the appendix of the EJPR (European Journal of Political Research) paper)! <strong>I recommend to try it out yourself.</strong> This is good practice!</p>
 </section>
 <section id="recap" class="level1">
 <h1>Recap</h1>
@@ -367,6 +368,7 @@ F-statistic (proj. model): 88.42 on 1 and 14 DF,  p-value: 1.991e-07</code></pre
 <p>Now, we have some code running and it is your part to take over:</p>
 <ul>
 <li><p>First, check if the nativist index that we have created indeed is the same as in the paper. Compare the mean and standard deviation to the value in table A7 in the appendix.</p></li>
+<li><p>Can you make a nicer looking regression table than just using <em>summary()</em>?</p></li>
 <li><p>Next: How would you interpret the results? You can also read up on this in the paper. Keep in mind that: &nbsp;“<em>In the analyses we follow Gelman (<a href="https://ejpr.onlinelibrary.wiley.com/doi/full/10.1111/1475-6765.12551#ejpr12551-bib-0012">2008</a>) and standardize these indexes (and all control variables, except for dummy variables), by dividing them with two standard deviations. This means that the coefficient of nativism (and the other independent variables) should be interpreted as the change that takes place when moving from one standard deviation below the mean of nativism to one standard deviation above the mean. In the discussion of the results, we speak of this as the difference between strong nativists and strong non-nativists.”</em></p></li>
 <li><p>Can you extend the replication and run the regressions for model 1-6 displayed in table A1 in the appendix?</p>
 <ul>

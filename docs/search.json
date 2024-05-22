@@ -207,7 +207,7 @@
     "href": "weeks/week-07.html",
     "title": "Asynchronous session: Inference & more ESS data",
     "section": "",
-    "text": "In our second asynchronous session, you can again follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions on inference. In order to run the following code, you need only the tidyverse:\n\npacman::p_load(\n  \"tidyverse\",\n  \"estimatr\"\n    )"
+    "text": "In our second asynchronous session, you can again follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions on inference. In order to run the following code, you need only the tidyverse and the estimatr package:\n\npacman::p_load(\n  \"tidyverse\",\n  \"estimatr\"\n    )\n\nYou can find the data as well as the articles, their appendix, and the questionnaire on OLAT via Folder - week_07. However, you can also get the data yourself via Google Scholar and/or the University library (articles and appendix) and the data as well as the questionnaire via the ESS data portal. Selecting the right countries in the data portal requires some reading of the articles or rather the appendix (Hint: Have a look at the note of table A1 in the appendix of the EJPR (European Journal of Political Research) paper)! I recommend to try it out yourself. This is good practice!"
   },
   {
     "objectID": "weeks/week-09.html",
