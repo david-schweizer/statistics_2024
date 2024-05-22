@@ -112,6 +112,8 @@ So let's start with creating the nativist index.
 
 -   Further, the authors state that they recode the variable so that higher scores denote stronger anti-immigration sentiments. By substracting the variables from 10 we achieve this recoding. **Check:** Do you understand why?
 
+-   The authors standardize indexes (and all control variables, except for dummy (binary) variables), by dividing them with two standard deviations!
+
 ```{r, echo=TRUE}
 load("data_Kokonnen_Linde_EJPR.Rdata")
 

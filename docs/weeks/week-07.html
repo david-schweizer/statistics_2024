@@ -281,6 +281,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><p>Again, when <strong>inspecting the data and the codebook</strong> you would see that there are some responses that take values higher than 10. These values we want to disregard, as they indicate answers like “Don’t know”.</p></li>
 <li><p>Further, the authors state that they recode the variable so that higher scores denote stronger anti-immigration sentiments. By substracting the variables from 10 we achieve this recoding. <strong>Check:</strong> Do you understand why?</p></li>
+<li><p>The authors standardize indexes (and all control variables, except for dummy (binary) variables), by dividing them with two standard deviations!</p></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"data_Kokonnen_Linde_EJPR.Rdata"</span>)</span>
