@@ -1,23 +1,23 @@
 ---
-title: "Data transformation and visualization"
+title: "Asynchronous session: Inference & more ESS data"
 subtitle: "Week 07"
 description: ""
 author: ""
-date: "Nov 22, 2023"
-listing:
-  - id: slides
-    contents:
-      - ../slides/week-07/*.qmd
-    type: table
-    fields: [title, subtitle, date]
-    #date-format: "ddd, MMM DD"
-    field-display-names:
-      title: "Topic"
-      subtitle: "Session"
-      date: "Date"
-    sort: [filename]
-    sort-ui: false
-    filter-ui: false
+date: "May 22, 2024"
+# listing:
+#   - id: slides
+#     contents:
+#       - ../slides/week-07/*.qmd
+#     type: table
+#     fields: [title, subtitle, date]
+#     #date-format: "ddd, MMM DD"
+#     field-display-names:
+#       title: "Topic"
+#       subtitle: "Session"
+#       date: "Date"
+#     sort: [filename]
+#     sort-ui: false
+#     filter-ui: false
   # - id: assignments
   #   contents:
   #     - ../hw/w1-*.qmd
@@ -32,33 +32,150 @@ listing:
   #   sort: [date]
   #   sort-ui: false
   #   filter-ui: false
-tbl-colwidths: [10,50,40]
+#tbl-colwidths: [10,50,40]
 ---
 
-# Seminar slides
+# Session 12
 
-::: {#slides}
-:::
+In our second asynchronous session, you can again follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions on inference. In order to run the following code, you need only the tidyverse:
 
-# Materials
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+pacman::p_load(
+  "tidyverse",
+  "estimatr"
+    )
+```
 
-You can find the reading for this week [here](https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2006~~Preparation%20for%20the%20session~~kellstedt%5Fwhitten%5Fchapter5%2Epdf/0).
+# Recap
 
-**Short tutorials**:
+## The [ESS](https://www.europeansocialsurvey.org/)
 
-You can find tutorial 1 from the slides [here](https://davidschweizer.shinyapps.io/Data-Import-And-Transformation/#section-data-transformation). Tutorial 2 is [here](https://davidschweizer.shinyapps.io/Data-Transformation-II/). And the third tutorial is [here](https://davidschweizer.shinyapps.io/Data-Visualization/).
+[![](ess.jpg)](https://www.europeansocialsurvey.org/data-portal)
 
-# To Do's before our session
+## Using ESS data for research
 
-::: panel-tabset
-## Read
+-   The ESS data allows us to conduct empirical research
 
--   Chapter 6 - Kellstedt, P. M., & Whitten, G. D. (2018). *The fundamentals of political science research*. Cambridge University Press.
--   Chapter 1 & 3 - Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). *R for data science (2e)*. O'Reilly Media, Inc. [Link to free online version](https://r4ds.hadley.nz/data-transform)
+-   We can study political phenomena
 
-## Think
+    -   at specific points in time or biannually over multiple years (2002 - 2020)
 
-Guiding questions:
+    -   in single countries or across multiple European countries and beyond (39 countries have participated at least once)
 
--   What type of variables do you use to measure your concept of interest? Is it categorial or continuous?
-:::
+-   However, it is difficult to make causal claims as this is not a panel data set!
+
+## Using ESS data for research
+
+The ESS includes regular survey items (party affiliation, political interest, ...), and multiple rotating modules in each survey wave. For example:
+
+-   Round 10: Democracy
+
+-   Round 8: Climate change
+
+-   Round 7: Immigration
+
+Take some time to look at the [ESS website](https://www.europeansocialsurvey.org/). Especially, at the Data (Portal). Can you find any interesting variables for your own research ideas?
+
+## Understandings of democracy (in Austria)
+
+-   **Last week**, we had a descriptive look at various understandings of democracy in Austria.
+
+-   **Now**, we want to investigate drivers of democratic perceptions and attitudes.
+
+-   In particular, we will replicate some of the findings from *Kokkonen, A., & Linde, J. (2023). A nativist divide? Anti‐immigration attitudes and diffuse support for democracy in Western Europe. European Journal of Political Research, 62(3), 977-988.* and *Kokkonen, A., & Linde, J. (2023). Nativist attitudes and opportunistic support for democracy. West European Politics, 46(1), 49-72.*
+
+    -   You can use Google Scholar to find these articles and then get access the via the University library.
+
+    -   Specifically, the supplemental material is interesting to us as it describes the (construction of the) variables in more detail.
+
+-   Their main point is that citizens with a nativist attitude differ in their perception of democracy and their democratic attitudes. In short, according to the authors, nativists are citizens who are strongly concerned about immigration (for more information on the concept of nativism, have a look at their articles!).
+
+-   We start with *Kokkonen, A., & Linde, J. (2023). A nativist divide? Anti‐immigration attitudes and diffuse support for democracy in Western Europe. European Journal of Political Research, 62(3), 977-988.*. You can try to replicate *Kokkonen, A., & Linde, J. (2023). Nativist attitudes and opportunistic support for democracy. West European Politics, 46(1), 49-72.* as well. The data and variables are quite similiar!
+
+# Nativism & democracy
+
+## Constructing the nativism variable
+
+First, we need to construct the nativism variable used by Kokkonen and Linde. They describe this in the appendix of their paper. You can find the appendix [here](https://ndownloader.figstatic.com/files/31716716). In general, such information is provided via supplemental materials (e.g., an (online) appendix or in the main text.) Specifically, they use these three items of the ESS:
+
+1.  ‘Would you say it is generally bad or good for \[country’s\] economy that people come to live here from other countries?’ (0=bad, 10=good);
+2.  ‘Would you say that \[country’s\] cultural life is generally undermined or enriched by people coming to live here from other countries?’ (0=undermined, 10=enriched)
+3.  ‘Is \[country\] made a worse or a better place to live by people coming to live here from other countries?’ (0=worse, 10=better).
+
+The scales are recoded so that higher scores denote stronger anti-immigration sentiments. The resulting index varies from 0 to 10.
+
+So let's start with creating the nativist index.
+
+-   Again, when **inspecting the data and the codebook** you would see that there are some responses that take values higher than 10. These values we want to disregard, as they indicate answers like "Don't know".
+
+-   Further, the authors state that they recode the variable so that higher scores denote stronger anti-immigration sentiments. By substracting the variables from 10 we achieve this recoding. **Check:** Do you understand why?
+
+```{r, echo=TRUE}
+load("data_Kokonnen_Linde_EJPR.Rdata")
+
+data <- data_Kokonnen_Linde_EJPR %>% 
+mutate(imbgeco_clean = if_else(imbgeco > 10, NA, imbgeco),
+         imbgeco_recoded = 10 - imbgeco_clean,
+         imueclt_clean = if_else(imueclt > 10, NA, imueclt),
+         imueclt_recoded = 10 - imueclt_clean,
+         imwbcnt_clean = if_else(imwbcnt > 10, NA, imwbcnt),
+         imwbcnt_recoded = 10 - imwbcnt_clean) %>% 
+  # to generate the index, we take the mean of the three variable. 
+  rowwise() %>% 
+  mutate(nativist = mean(c(imbgeco_recoded, imueclt_recoded, imwbcnt_recoded), na.rm = TRUE)) %>% 
+  ungroup() %>% 
+  # the authors use a standardized measure of nativism in their regression analysis
+  mutate(nativist_std = nativist / (2*sd(nativist, na.rm = TRUE)))
+```
+
+The main dependent variables in their analysis describe how important it is for respondents to live in democratically governed countries and how democratic they think their country is overall. Again, we need to make sure to exclude values higher than 10.
+
+```{r, echo=TRUE}
+data <- data %>% 
+  mutate(implvdm = if_else(implvdm > 10, NA, implvdm),
+         dmcntov = if_else(dmcntov > 10, NA, dmcntov))
+```
+
+Great! Now, we can already replicate model 1 and 4 in their appendix table A1. Here, we need to make use of the *lm_robust* function of the *estimatr* package. It extends the *lm()* function. This allows us to include so-called clustered standard errors. [Here](https://evalf21.classes.andrewheiss.com/example/standard-errors/#estimatr-and-lm_robust) is a great blog post on this. Let's start with model 1:
+
+```{r, echo=TRUE}
+ols_1 <- lm_robust(dmcntov ~ nativist_std,
+           # this is equivalent to including country dummies as controls (not shown in the output)
+           fixed_effects = ~ cntry,
+           # the code below allows us to include clustered standard errors at the country level
+           se_type = "stata",
+           clusters = cntry,
+           data = data)
+
+summary(ols_1)
+```
+
+And now, model 4:
+
+```{r, echo=TRUE}
+ols_4 <- lm_robust(implvdm ~ nativist_std,
+           # this is equivalent to including country dummies as controls (not shown in the output)
+           fixed_effects = ~ cntry,
+           # the code below allows us to include clustered standard errors at the country level
+           se_type = "stata",
+           clusters = cntry,
+           data = data)
+
+summary(ols_4)
+```
+
+# Your turn!
+
+Now, we have some code running and it is your part to take over:
+
+-   First, check if the nativist index that we have created indeed is the same as in the paper. Compare the mean and standard deviation to the value in table A7 in the appendix.
+
+-   Next: How would you interpret the results? You can also read up on this in the paper. Keep in mind that:  "*In the analyses we follow Gelman ([2008](https://ejpr.onlinelibrary.wiley.com/doi/full/10.1111/1475-6765.12551#ejpr12551-bib-0012)) and standardize these indexes (and all control variables, except for dummy variables), by dividing them with two standard deviations. This means that the coefficient of nativism (and the other independent variables) should be interpreted as the change that takes place when moving from one standard deviation below the mean of nativism to one standard deviation above the mean. In the discussion of the results, we speak of this as the difference between strong nativists and strong non-nativists."*
+
+-   Can you extend the replication and run the regressions for model 1-6 displayed in table A1 in the appendix?
+
+    -   This requires you to do some data transformation first! You can find the description of the variables (and wording) at the end of the appendix. With this, you can search the variables in the ESS' data portal: <https://ess.sikt.no/en/?tab=overview>
+
+-   If this works, try also to replicate the coefficient plot of the left hand side of figure 1
+
+-   Can you do the same for *Kokkonen, A., & Linde, J. (2023). Nativist attitudes and opportunistic support for democracy. West European Politics, 46(1), 49-72?*

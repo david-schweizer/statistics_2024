@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="">
-<meta name="dcterms.date" content="2023-11-22">
+<meta name="dcterms.date" content="2024-05-22">
 
-<title>Applied Methods of Social Sciences - Course Website - Data transformation and visualization</title>
+<title>Statistics - Course Website - Asynchronous session: Inference &amp; more ESS data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -31,8 +65,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -58,41 +90,11 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-slides .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-slides'] = new List('listing-slides', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../css/custom.css">
 </head>
@@ -106,10 +108,10 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data transformation and visualization</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Asynchronous session: Inference &amp; more ESS data</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -123,10 +125,9 @@ ul.task-list li input[type="checkbox"] {
       <a href="../index.html" class="sidebar-logo-link">
       <img src="../images/hex_sticker.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-      <div class="sidebar-tools-main tools-wide">
-    <a href="https://applied-methods.slack.com" title="Slack" class="quarto-navigation-tool px-1" aria-label="Slack"><i class="bi bi-slack"></i></a>
-    <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5512593691" title="OLAT" class="quarto-navigation-tool px-1" aria-label="OLAT"><i class="bi bi-bank"></i></a>
-    <a href="https://www.datacamp.com/" title="Datacamp" class="quarto-navigation-tool px-1" aria-label="Datacamp"><i class="bi bi-rocket"></i></a>
+      <div class="sidebar-tools-main">
+    <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5617582099" rel="" title="OLAT" class="quarto-navigation-tool px-1" aria-label="OLAT"><i class="bi bi-bank"></i></a>
+    <a href="https://www.datacamp.com/" rel="" title="Datacamp" class="quarto-navigation-tool px-1" aria-label="Datacamp"><i class="bi bi-rocket"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -164,9 +165,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#seminar-slides" id="toc-seminar-slides" class="nav-link active" data-scroll-target="#seminar-slides">Seminar slides</a></li>
-  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
-  <li><a href="#to-dos-before-our-session" id="toc-to-dos-before-our-session" class="nav-link" data-scroll-target="#to-dos-before-our-session">To Do’s before our session</a></li>
+  <li><a href="#session-12" id="toc-session-12" class="nav-link active" data-scroll-target="#session-12">Session 12</a></li>
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap">Recap</a>
+  <ul class="collapse">
+  <li><a href="#the-ess" id="toc-the-ess" class="nav-link" data-scroll-target="#the-ess">The ESS</a></li>
+  <li><a href="#using-ess-data-for-research" id="toc-using-ess-data-for-research" class="nav-link" data-scroll-target="#using-ess-data-for-research">Using ESS data for research</a></li>
+  <li><a href="#using-ess-data-for-research-1" id="toc-using-ess-data-for-research-1" class="nav-link" data-scroll-target="#using-ess-data-for-research-1">Using ESS data for research</a></li>
+  <li><a href="#understandings-of-democracy-in-austria" id="toc-understandings-of-democracy-in-austria" class="nav-link" data-scroll-target="#understandings-of-democracy-in-austria">Understandings of democracy (in Austria)</a></li>
+  </ul></li>
+  <li><a href="#nativism-democracy" id="toc-nativism-democracy" class="nav-link" data-scroll-target="#nativism-democracy">Nativism &amp; democracy</a>
+  <ul class="collapse">
+  <li><a href="#constructing-the-nativism-variable" id="toc-constructing-the-nativism-variable" class="nav-link" data-scroll-target="#constructing-the-nativism-variable">Constructing the nativism variable</a></li>
+  </ul></li>
+  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">Your turn!</a></li>
   </ul>
 </nav>
     </div>
@@ -175,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data transformation and visualization</h1>
+<h1 class="title">Asynchronous session: Inference &amp; more ESS data</h1>
 <p class="subtitle lead">Week 07</p>
 </div>
 
@@ -187,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 22, 2023</p>
+      <p class="date">May 22, 2024</p>
     </div>
   </div>
   
@@ -197,70 +208,173 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="seminar-slides" class="level1">
-<h1>Seminar slides</h1>
-<div id="listing-slides" class="quarto-listing quarto-listing-container-table">
+<section id="session-12" class="level1">
+<h1>Session 12</h1>
+<p>In our second asynchronous session, you can again follow along the code first and then extend it in your own RStudio. The goal is to apply and thus practice learnings from our last sessions on inference. In order to run the following code, you need only the tidyverse:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"estimatr"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="recap" class="level1">
+<h1>Recap</h1>
+<section id="the-ess" class="level2">
+<h2 class="anchored" data-anchor-id="the-ess">The <a href="https://www.europeansocialsurvey.org/">ESS</a></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.europeansocialsurvey.org/data-portal"><img src="ess.jpg" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</section>
+<section id="using-ess-data-for-research" class="level2">
+<h2 class="anchored" data-anchor-id="using-ess-data-for-research">Using ESS data for research</h2>
+<ul>
+<li><p>The ESS data allows us to conduct empirical research</p></li>
+<li><p>We can study political phenomena</p>
+<ul>
+<li><p>at specific points in time or biannually over multiple years&nbsp;(2002 - 2020)</p></li>
+<li><p>in single countries or across multiple European countries and beyond (39 countries have participated at least once)</p></li>
+</ul></li>
+<li><p>However, it is difficult to make causal claims as this is not a panel data set!</p></li>
+</ul>
+</section>
+<section id="using-ess-data-for-research-1" class="level2">
+<h2 class="anchored" data-anchor-id="using-ess-data-for-research-1">Using ESS data for research</h2>
+<p>The ESS includes regular survey items (party affiliation, political interest, …), and multiple rotating modules in each survey wave. For example:</p>
+<ul>
+<li><p>Round 10: Democracy</p></li>
+<li><p>Round 8: Climate change</p></li>
+<li><p>Round 7: Immigration</p></li>
+</ul>
+<p>Take some time to look at the <a href="https://www.europeansocialsurvey.org/">ESS website</a>. Especially, at the Data (Portal). Can you find any interesting variables for your own research ideas?</p>
+</section>
+<section id="understandings-of-democracy-in-austria" class="level2">
+<h2 class="anchored" data-anchor-id="understandings-of-democracy-in-austria">Understandings of democracy (in Austria)</h2>
+<ul>
+<li><p><strong>Last week</strong>, we had a descriptive look at various understandings of democracy in Austria.</p></li>
+<li><p><strong>Now</strong>, we want to investigate drivers of democratic perceptions and attitudes.</p></li>
+<li><p>In particular, we will replicate some of the findings from <em>Kokkonen, A., &amp; Linde, J. (2023). A nativist divide? Anti‐immigration attitudes and diffuse support for democracy in Western Europe. European Journal of Political Research, 62(3), 977-988.</em> and <em>Kokkonen, A., &amp; Linde, J. (2023). Nativist attitudes and opportunistic support for democracy. West European Politics, 46(1), 49-72.</em></p>
+<ul>
+<li><p>You can use Google Scholar to find these articles and then get access the via the University library.</p></li>
+<li><p>Specifically, the supplemental material is interesting to us as it describes the (construction of the) variables in more detail.</p></li>
+</ul></li>
+<li><p>Their main point is that citizens with a nativist attitude differ in their perception of democracy and their democratic attitudes. In short, according to the authors, nativists are citizens who are strongly concerned about immigration (for more information on the concept of nativism, have a look at their articles!).</p></li>
+<li><p>We start with <em>Kokkonen, A., &amp; Linde, J. (2023). A nativist divide? Anti‐immigration attitudes and diffuse support for democracy in Western Europe. European Journal of Political Research, 62(3), 977-988.</em>. You can try to replicate <em>Kokkonen, A., &amp; Linde, J. (2023). Nativist attitudes and opportunistic support for democracy. West European Politics, 46(1), 49-72.</em> as well. The data and variables are quite similiar!</p></li>
+</ul>
+</section>
+</section>
+<section id="nativism-democracy" class="level1">
+<h1>Nativism &amp; democracy</h1>
+<section id="constructing-the-nativism-variable" class="level2">
+<h2 class="anchored" data-anchor-id="constructing-the-nativism-variable">Constructing the nativism variable</h2>
+<p>First, we need to construct the nativism variable used by Kokkonen and Linde. They describe this in the appendix of their paper. You can find the appendix <a href="https://ndownloader.figstatic.com/files/31716716">here</a>. In general, such information is provided via supplemental materials (e.g., an (online) appendix or in the main text.) Specifically, they use these three items of the ESS:</p>
+<ol type="1">
+<li>‘Would you say it is generally bad or good for [country’s] economy that people come to live here from other countries?’ (0=bad, 10=good);</li>
+<li>‘Would you say that [country’s] cultural life is generally undermined or enriched by people coming to live here from other countries?’ (0=undermined, 10=enriched)</li>
+<li>‘Is [country] made a worse or a better place to live by people coming to live here from other countries?’ (0=worse, 10=better).</li>
+</ol>
+<p>The scales are recoded so that higher scores denote stronger anti-immigration sentiments. The resulting index varies from 0 to 10.</p>
+<p>So let’s start with creating the nativist index.</p>
+<ul>
+<li><p>Again, when <strong>inspecting the data and the codebook</strong> you would see that there are some responses that take values higher than 10. These values we want to disregard, as they indicate answers like “Don’t know”.</p></li>
+<li><p>Further, the authors state that they recode the variable so that higher scores denote stronger anti-immigration sentiments. By substracting the variables from 10 we achieve this recoding. <strong>Check:</strong> Do you understand why?</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"data_Kokonnen_Linde_EJPR.Rdata"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data_Kokonnen_Linde_EJPR <span class="sc">%&gt;%</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mutate</span>(<span class="at">imbgeco_clean =</span> <span class="fu">if_else</span>(imbgeco <span class="sc">&gt;</span> <span class="dv">10</span>, <span class="cn">NA</span>, imbgeco),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">imbgeco_recoded =</span> <span class="dv">10</span> <span class="sc">-</span> imbgeco_clean,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">imueclt_clean =</span> <span class="fu">if_else</span>(imueclt <span class="sc">&gt;</span> <span class="dv">10</span>, <span class="cn">NA</span>, imueclt),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">imueclt_recoded =</span> <span class="dv">10</span> <span class="sc">-</span> imueclt_clean,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">imwbcnt_clean =</span> <span class="fu">if_else</span>(imwbcnt <span class="sc">&gt;</span> <span class="dv">10</span>, <span class="cn">NA</span>, imwbcnt),</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">imwbcnt_recoded =</span> <span class="dv">10</span> <span class="sc">-</span> imwbcnt_clean) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># to generate the index, we take the mean of the three variable. </span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">nativist =</span> <span class="fu">mean</span>(<span class="fu">c</span>(imbgeco_recoded, imueclt_recoded, imwbcnt_recoded), <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># the authors use a standardized measure of nativism in their regression analysis</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">nativist_std =</span> nativist <span class="sc">/</span> (<span class="dv">2</span><span class="sc">*</span><span class="fu">sd</span>(nativist, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The main dependent variables in their analysis describe how important it is for respondents to live in democratically governed countries and how democratic they think their country is overall. Again, we need to make sure to exclude values higher than 10.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">implvdm =</span> <span class="fu">if_else</span>(implvdm <span class="sc">&gt;</span> <span class="dv">10</span>, <span class="cn">NA</span>, implvdm),</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">dmcntov =</span> <span class="fu">if_else</span>(dmcntov <span class="sc">&gt;</span> <span class="dv">10</span>, <span class="cn">NA</span>, dmcntov))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Great! Now, we can already replicate model 1 and 4 in their appendix table A1. Here, we need to make use of the <em>lm_robust</em> function of the <em>estimatr</em> package. It extends the <em>lm()</em> function. This allows us to include so-called clustered standard errors. <a href="https://evalf21.classes.andrewheiss.com/example/standard-errors/#estimatr-and-lm_robust">Here</a> is a great blog post on this. Let’s start with model 1:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>ols_1 <span class="ot">&lt;-</span> <span class="fu">lm_robust</span>(dmcntov <span class="sc">~</span> nativist_std,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>           <span class="co"># this is equivalent to including country dummies as controls (not shown in the output)</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">fixed_effects =</span> <span class="sc">~</span> cntry,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>           <span class="co"># the code below allows us to include clustered standard errors at the country level</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">se_type =</span> <span class="st">"stata"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>           <span class="at">clusters =</span> cntry,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>           <span class="at">data =</span> data)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(ols_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm_robust(formula = dmcntov ~ nativist_std, data = data, clusters = cntry, 
+    fixed_effects = ~cntry, se_type = "stata")
 
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Topic
-</th>
-<th>
-Session
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1700607600000" data-listing-file-modified-sort="1700584095480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-title-sort="Data transformation &amp; visualization" data-listing-filename-sort="07-datatransform_dataviz.qmd">
-<td>
-<a href="../slides/week-07/07-datatransform_dataviz.html" class="title listing-title">Data transformation &amp; visualization</a>
-</td>
-<td>
-<span class="listing-subtitle">Week 7</span>
-</td>
-<td>
-<span class="listing-date">Nov 22, 2023</span>
-</td>
-</tr>
-</tbody>
+Standard error type:  stata 
 
-</table>
-<div class="listing-no-matching d-none">
-No matching items
+Coefficients:
+             Estimate Std. Error t value  Pr(&gt;|t|) CI Lower CI Upper DF
+nativist_std   -1.091     0.1258  -8.675 5.267e-07   -1.361  -0.8214 14
+
+Multiple R-squared:  0.1866 ,   Adjusted R-squared:  0.1862
+Multiple R-squared (proj. model):  0.06697 ,    Adjusted R-squared (proj. model):  0.06646 
+F-statistic (proj. model): 75.26 on 1 and 14 DF,  p-value: 5.267e-07</code></pre>
+</div>
+</div>
+<p>And now, model 4:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ols_4 <span class="ot">&lt;-</span> <span class="fu">lm_robust</span>(implvdm <span class="sc">~</span> nativist_std,</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>           <span class="co"># this is equivalent to including country dummies as controls (not shown in the output)</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">fixed_effects =</span> <span class="sc">~</span> cntry,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>           <span class="co"># the code below allows us to include clustered standard errors at the country level</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">se_type =</span> <span class="st">"stata"</span>,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>           <span class="at">clusters =</span> cntry,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>           <span class="at">data =</span> data)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(ols_4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm_robust(formula = implvdm ~ nativist_std, data = data, clusters = cntry, 
+    fixed_effects = ~cntry, se_type = "stata")
+
+Standard error type:  stata 
+
+Coefficients:
+             Estimate Std. Error t value  Pr(&gt;|t|) CI Lower CI Upper DF
+nativist_std  -0.9044    0.09618  -9.403 1.991e-07   -1.111  -0.6981 14
+
+Multiple R-squared:  0.1106 ,   Adjusted R-squared:  0.1102
+Multiple R-squared (proj. model):  0.05899 ,    Adjusted R-squared (proj. model):  0.05848 
+F-statistic (proj. model): 88.42 on 1 and 14 DF,  p-value: 1.991e-07</code></pre>
 </div>
 </div>
 </section>
-<section id="materials" class="level1">
-<h1>Materials</h1>
-<p>You can find the reading for this week <a href="https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2006~~Preparation%20for%20the%20session~~kellstedt%5Fwhitten%5Fchapter5%2Epdf/0">here</a>.</p>
-<p><strong>Short tutorials</strong>:</p>
-<p>You can find tutorial 1 from the slides <a href="https://davidschweizer.shinyapps.io/Data-Import-And-Transformation/#section-data-transformation">here</a>. Tutorial 2 is <a href="https://davidschweizer.shinyapps.io/Data-Transformation-II/">here</a>. And the third tutorial is <a href="https://davidschweizer.shinyapps.io/Data-Visualization/">here</a>.</p>
 </section>
-<section id="to-dos-before-our-session" class="level1">
-<h1>To Do’s before our session</h1>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Read</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Think</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="your-turn" class="level1">
+<h1>Your turn!</h1>
+<p>Now, we have some code running and it is your part to take over:</p>
 <ul>
-<li>Chapter 6 - Kellstedt, P. M., &amp; Whitten, G. D. (2018).&nbsp;<em>The fundamentals of political science research</em>. Cambridge University Press.</li>
-<li>Chapter 1 &amp; 3 - Wickham, H., Çetinkaya-Rundel, M., &amp; Grolemund, G. (2023).&nbsp;<em>R for data science (2e)</em>. O’Reilly Media, Inc.&nbsp;<a href="https://r4ds.hadley.nz/data-transform">Link to free online version</a></li>
-</ul>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Guiding questions:</p>
+<li><p>First, check if the nativist index that we have created indeed is the same as in the paper. Compare the mean and standard deviation to the value in table A7 in the appendix.</p></li>
+<li><p>Next: How would you interpret the results? You can also read up on this in the paper. Keep in mind that: &nbsp;“<em>In the analyses we follow Gelman (<a href="https://ejpr.onlinelibrary.wiley.com/doi/full/10.1111/1475-6765.12551#ejpr12551-bib-0012">2008</a>) and standardize these indexes (and all control variables, except for dummy variables), by dividing them with two standard deviations. This means that the coefficient of nativism (and the other independent variables) should be interpreted as the change that takes place when moving from one standard deviation below the mean of nativism to one standard deviation above the mean. In the discussion of the results, we speak of this as the difference between strong nativists and strong non-nativists.”</em></p></li>
+<li><p>Can you extend the replication and run the regressions for model 1-6 displayed in table A1 in the appendix?</p>
 <ul>
-<li>What type of variables do you use to measure your concept of interest? Is it categorial or continuous?</li>
+<li>This requires you to do some data transformation first! You can find the description of the variables (and wording) at the end of the appendix. With this, you can search the variables in the ESS’ data portal: <a href="https://ess.sikt.no/en/?tab=overview" class="uri">https://ess.sikt.no/en/?tab=overview</a></li>
+</ul></li>
+<li><p>If this works, try also to replicate the coefficient plot of the left hand side of figure 1</p></li>
+<li><p>Can you do the same for <em>Kokkonen, A., &amp; Linde, J. (2023). Nativist attitudes and opportunistic support for democracy. West European Politics, 46(1), 49-72?</em></p></li>
 </ul>
-</div>
-</div>
-</div>
-
 
 
 </section>
@@ -502,7 +616,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Applied Methods of Social Sciences | Winter semester 2023/24 | University of Innsbruck</div>   
+    <div class="nav-footer-left">Statistics | Summer semester 2024 | University of Innsbruck</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
