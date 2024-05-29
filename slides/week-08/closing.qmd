@@ -1,0 +1,78 @@
+---
+title: "Closing Session"
+subtitle: "Week 08"
+author: "David Schweizer"
+date: "May 29, 2024"
+date-format: long
+institute: "University of Mannheim"
+format: 
+  revealjs:
+    theme: simple
+    slide-number: c/t #< collapsed/total
+    footer: "Statistics | Summer Semester 2024 | University of Innsbruck"
+editor: visual
+---
+
+## Plan for today
+
+-   Recap - Content
+
+-   Final project
+
+-   Outlook
+
+-   Recap - (Your) Feedback
+
+## Recap - Content
+
+![](workflow.png)
+
+**AND:** Reproducibility
+
+## Data project
+
+*In a nutshell: Ask a question you’re curious about, collect relevant data and visualize them with regard to your question.*
+
+## Data project
+
+-   Data import
+
+-   Tidy and transform the data
+
+-   Answering the research question with descriptives (this includes visualizations) and investigate the question using linear or logistic regression
+
+-   Present your analysis in a quarto document.
+
+## Data project
+
+Let's have a look at the [syllabus](https://statistics-innsbruck-2024.netlify.app/syllabus) for details.
+
+AND: I recommend discussing your project with me individually at least once via e-mail or office hours!
+
+## Outlook: What now?
+
+Practice and deep dive:
+
+-   Access to Datacamp!
+
+Apply, apply, apply!
+
+-   Seminars, term papers, thesis
+
+-   [CorrelAid - Data 4 Good](https://www.correlaid.org/)
+
+## Recap - Feedback
+
+-   Organizational
+
+-   Structure
+
+-   Participation
+
+-   Learning
+
+## Your Feedback
+
+1.  "Open round"
+
+2.  Please take some time to fill out the survey by the institute. This is both valuable for me professionally but also for further iterations of this seminar!

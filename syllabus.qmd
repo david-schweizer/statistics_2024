@@ -9,7 +9,7 @@ editor:
 ## ***Course details***
 
 |               |                                                                                     |
-|-----------------------|------------------------------------------------|
+|------------------------|------------------------------------------------|
 | Seminar:      | Statistics                                                                          |
 | Time:         | Wednesday, 08:00 - 11:15 March 13 to May 15 (single session on May 15)              |
 | Place:        | Virtual classroom                                                                   |
@@ -52,7 +52,250 @@ familiarise yourself with the programming language R.
 
 -   ~~Participation in the *Hackathon* on 15.05.24 (pass/fail)~~
 
--   *Final project* **until TBD** (80% of your grade)
+-   *Final project* **24.07.2024 23:59** (80% of your grade)
+
+## Final project
+
+***In a nutshell: Ask a question you’re curious about, collect relevant
+data and visualize them with regard to your question.***
+
+Instead of a typical term paper, the project for this class will consist
+of analysis on a dataset of your own choosing (*OPTION A*) or you can
+conduct a more guided data analysis (*OPTION B*). Again, in this final
+assignment, you need to demonstrate you understanding of the
+concepts/code covered during the semester. In short, project should
+include the following:
+
+-   Data import
+
+-   Tidy and transform the data
+
+-   Answering the research question with descriptives (this includes
+    visualizations) and investigate the question using linear or
+    logistic regression
+
+-   Present your analysis in a quarto document.
+
+#### **In more detail:**
+
+There are two options. In any case, I recommend to **discuss your
+approach and ideas either via e-mail or during office hours!**
+
+***OPTION A: Your own project***
+
+You can choose the data based on your own interest. The goal of this
+project is for you to demonstrate proficiency in the techniques we have
+covered in this seminar (and beyond, if you like) and apply them in a
+meaningful way.
+
+The goal is not to do an exhaustive data analysis/visualization, i.e.,
+do not calculate every statistic, visualize the same data with lots of
+different graphs, but rather let me know that you are proficient at
+asking a meaningful question and providing answers to this question;
+that you are proficient in using R, and that you work in a reproducible
+way.
+
+Therefore, the project is very open ended. There is no limit on what
+tools or packages you may use but sticking to packages we learned in
+class is recommended. But also keep in mind that you do not need to
+visualize all of the data at once. For example, a single high-quality
+visualization will receive a much higher grade than a large number of
+poor-quality visualizations.
+
+The scope of your project should be comparable to *OPTION B*. Again,
+please discuss your idea and outline with me via e-mail or during office
+hours.
+
+***OPTION B: European Social Survey & (Perception of) democracy***
+
+Alternatively, you can work on a guided project. Some of the main steps
+in the workflow are roughly defined (i.e., research question and data),
+still you need to make your own decisions when it comes to presenting
+and analyzing the data. Here, we would be interested in the influence of
+a perceived democratic deficit and satisfaction with democracy. We can
+investigate this using data from the European Social Survey (ESS) -
+Round 10.
+
+Our expectation would be that a higher perceived democratic deficit is
+associated with a lower satisfaction with democracy. In addition, we can
+think of various factors with the potential to affect both the perceived
+democratic deficit and satisfaction with democracy (possible omitted
+variable bias!): efficacy that is the belief that one can participate in
+politics and/or has the possibility to influence politics. Further,
+trust in political actors and/or institutions might confound the
+relationship we are interested in. Please inspect the documentation
+(e.g., source questionnaire) of ESS round 10, this is necessary to
+identify the relevant variables.
+
+Hence, this project would include the following:
+
+**Importing data**
+
+You can get the data using the [ESS Datafile
+Builder](https://ess.sikt.no/en/data-builder/?tab=round_country). Select
+all countries from round 10 (also 10SC - self-completion) and download
+all variables.
+
+**Data transformation**
+
+-   Our first goal is to create a variable called "democratic_deficit"
+    that is the difference between the perceived state of democracy and
+    the respondents' opinion how democracy should look like. To do so,
+    we need to determine first what variables we want to use to measure
+    respondents' view of democracy. In this project, we want to focus on
+    the statements that national elections are free and fair, that the
+    media are free to criticise the government, that the rights of
+    minority groups are protected, and the courts treat everyone the
+    same. Let's create our variables regarding the perceived state of
+    democracy and the respondents' opinion how democracy should look
+    like by calculating the mean to the aforementioned statements:
+
+    -   Identify the relevant variables
+
+    -   Drop values from the data set that indicate that respondent's
+        "Don't know" or "Refuse" to answer the question.
+
+    -   Calculate the means. *Hint: Think about how to deal with missing
+        values.* Now you can create the democratic deficit variable.
+
+-   Further, identify the possible confounding variables as well as the
+    dependent variable.
+
+    -   Again, keep in mind to drop "Don't know" or "Refuse" from the
+        dataset.
+
+    -   Then, for the variables related to efficacy, we are
+
+        -   1\) interested in a battery of items asking respondents if
+            they have done a list of things that might improve things in
+            their country or prevent things from going wrong. The first
+            item in this battery asks respondents' if they have
+            contacted a politician, government or local government
+            official in the last 12 months. These eight questions are
+            binary: Respondents can answer "Yes" or "no". Based on these
+            questions, calculate an additive index ranging from 0 to 8.
+            A respondent should get the value 8 if he or she answered
+            each question with "Yes".
+
+        -   2\) interested in the question how much respondents would
+            you say that the political system in their country allows
+            people like themselves to have an influence on politics.
+
+    -   For trust in political actors and/or institutions, we want to to
+        focus on the trust in their countries parliament (feel free to
+        choose another actor/institution or calculate an average for
+        multiple actors/institutions).
+
+    -   Finally, for the dependent variable, select the question that
+        asks respondents "And on the whole, how satisfied are you with
+        the way democracy works in \[country\]?
+
+-   Now, just *select* the relevant variables (drop the other variables)
+    and filter the dataset so that you only keep respondents from
+    Austria, Germany, and Switzerland.
+
+**Descriptives & Visualization**
+
+-   Create a table with summary statistics for all remaining variables
+    (minimum, maximum, mean, standard deviation). Do this separately for
+    respondents from Austria, Germany, and Switzerland.
+
+-   Produce two plots differentiating by country: 1) show the
+    distribution of the dependent variable, and 2) show the distribution
+    of the main independent variable, i.e., the perceived democratic
+    deficit.
+
+-   Describe the plots. Can you detect any descriptive evidence for our
+    research question?
+
+-   Produce a plot that highlights the relationship between the
+    dependent and main independent variable.
+
+**Inference & Visualization**
+
+-   Let's start by focusing on the case of Austria only. Run a bivariate
+    regression with satisfaction with democracy as dependent variable
+    and the perceived democratic deficit as independent variable. Is a
+    OLS regression or a logit regression the better approach? Report the
+    results in a table. Interpret the regression coefficient
+    (statistical significance, direction, and effect size).
+
+-   Let's add the possible confounding variables to the regression
+    model. Estimate separate, bivariate models for each confounding
+    variable. Finally estimate a multivariate regression that includes
+    all confounding variables at once. Report the results of these
+    regression models in *one* table. Interpret the coefficients.
+
+-   Based on the multivariate regression, create a coefficient plot.
+
+-   Finally, let's have a look at all three countries. However, include
+    the country variable as a factor variable in the regression. Report
+    the results in a table. Interpret the country coefficients.
+
+**Reporting with a Quarto document**
+
+Put it all together in one quarto document:
+
+-   Give it a suitable title, include your name, and the date of
+    submission.
+
+-   Show both the code as well as the output of the code in the
+    document. However, hide messages and warnings.
+
+-   Structure the document with headings.
+
+-   Remember our session on data visualization. Your graphs and figures
+    should have informative captions, axes labels, a theme, etc.
+
+#### **Grading of the project will take into account the following:**
+
+-   Correctness - Are data import, transformation, and statistical
+    procedures carried out and explained correctly?
+
+-   Writing  - What is the quality of the statistical/descriptive
+    presentation, writing, and explanations? You should write a few
+    sentences for each task, explaining your steps and thinking. Give an
+    interpretation if asked for.
+
+-   Reproducibility: Can the quarto document and possibly other scripts
+    for data pre-processing be executed on another device without error?
+    Annotate your code extensively (Describe the steps you are doing).
+
+-   *BONUS: Creativity and Critical Thought - Is the project carefully
+    thought out? How well is the project documented? Does it appear that
+    time and effort went into the planning and implementation of the
+    project? (More BONUS points possible for Option A)*
+
+**A general breakdown of scoring is as follows:**
+
+-   *1,0: Outstanding effort.* Student understands how to apply all
+    statistical concepts, can put the results into a cogent argument,
+    can identify weaknesses in the argument, and can clearly communicate
+    the results to others.
+
+-   *1,3 - 2,0: Good effort.* Student understands most of the concepts,
+    puts together an adequate argument, identifies some weaknesses of
+    their argument, and communicates most results clearly to others.
+
+-   *2,3 - 3,0: Good/Passing effort.* Student has misunderstanding of
+    concepts in several areas, has some trouble putting results together
+    in a cogent argument, and communication of results is sometimes
+    unclear.
+
+-   *3,3 - 4,0: Struggling effort.* Student is making some effort, but
+    has misunderstanding of many concepts and is unable to put together
+    a cogent argument. Communication of results is unclear.
+
+-   *Fail*: Student is not making a sufficient effort.
+
+#### **Submission**
+
+**In case of any questions or problems, please get in touch with me as
+early as possible.** Late submission will result in grade deductions.
+
+-   Submission via OLAT.
+
+-   **Deadline:** **24.07.2024 23:59**
 
 ## ***Organisation & Resources***
 

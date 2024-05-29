@@ -25,7 +25,7 @@
     "href": "material.html",
     "title": "Schedule",
     "section": "",
-    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 17, 2024\n\n\n\n\nWeek 04\n\n\nDescriptives\n\n\nApril 24, 2024\n\n\n\n\nWeek 05\n\n\nAsynchronous session: ESS Data\n\n\nMay 08, 2024\n\n\n\n\nWeek 06\n\n\nInference\n\n\nMay 15, 2024\n\n\n\n\nWeek 07\n\n\nAsynchronous session: Inference & more ESS data\n\n\nMay 22, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 17, 2024\n\n\n\n\nWeek 04\n\n\nDescriptives\n\n\nApril 24, 2024\n\n\n\n\nWeek 05\n\n\nAsynchronous session: ESS Data\n\n\nMay 08, 2024\n\n\n\n\nWeek 06\n\n\nInference\n\n\nMay 15, 2024\n\n\n\n\nWeek 07\n\n\nAsynchronous session: Inference & more ESS data\n\n\nMay 22, 2024\n\n\n\n\nWeek 08\n\n\nClosing session\n\n\nMay 29, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html#assignments",
@@ -144,7 +144,7 @@
     "href": "syllabus.html#course-requirements",
     "title": "Syllabus: Applied Methods of Social Sciences",
     "section": "Course requirements",
-    "text": "Course requirements\n\nActive preparation and participation during sessions\n2 (smaller) assignments during the semester (20% of your grade)\n\nFrom 20.03.24 11:15 until 08.04.24 18:00\nFrom 17.04.24 11:15 until 22.04.24 18:00\nFrom 15.05.24 11:15 until 20.05.24 18:00\n\n\n\n\nParticipation in the Hackathon on 15.05.24 (pass/fail)\nFinal project until TBD (80% of your grade)"
+    "text": "Course requirements\n\nActive preparation and participation during sessions\n2 (smaller) assignments during the semester (20% of your grade)\n\nFrom 20.03.24 11:15 until 08.04.24 18:00\nFrom 17.04.24 11:15 until 22.04.24 18:00\nFrom 15.05.24 11:15 until 20.05.24 18:00\n\n\n\n\nParticipation in the Hackathon on 15.05.24 (pass/fail)\nFinal project 24.07.2024 23:59 (80% of your grade)"
   },
   {
     "objectID": "syllabus.html#recommended-readings",
@@ -345,9 +345,9 @@
   {
     "objectID": "weeks/week-08.html",
     "href": "weeks/week-08.html",
-    "title": "Student presentations & Writing tips",
+    "title": "Closing session",
     "section": "",
-    "text": "Seminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\nStudent presentations & Writing basics\n\n\nWeek 8\n\n\nNov 29, 2023\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nThere are no readings for this week.\n\n\nTo Do’s before our session\n\nInstall Zotero\n\n\n\nMake sure that you have Zotero installed"
+    "text": "Seminar slides\n\n\n\n\n\n\nTopic\n\n\nSession\n\n\nDate\n\n\n\n\n\n\nClosing Session\n\n\nWeek 08\n\n\nMay 29, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\nMaterials\nThere are no materials for today’s session."
   },
   {
     "objectID": "slides/week-02/02-ScienceOfClimateChange.html#social-and-economic-impacts-of-climate",
@@ -2587,7 +2587,7 @@
     "href": "material.html#material",
     "title": "Schedule",
     "section": "",
-    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 17, 2024\n\n\n\n\nWeek 04\n\n\nDescriptives\n\n\nApril 24, 2024\n\n\n\n\nWeek 05\n\n\nAsynchronous session: ESS Data\n\n\nMay 08, 2024\n\n\n\n\nWeek 06\n\n\nInference\n\n\nMay 15, 2024\n\n\n\n\nWeek 07\n\n\nAsynchronous session: Inference & more ESS data\n\n\nMay 22, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "You can find all course materials below. This includes slides, R scripts, readings, etc. The materials will be updated throughout the semester.\nJust click on the topic of the respective week.\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntro Session\n\n\nMarch 13, 2024\n\n\n\n\nWeek 02\n\n\nImport, tidy, and transform\n\n\nMarch 20, 2024\n\n\n\n\nWeek 03\n\n\nVisualize & Communicate\n\n\nApril 17, 2024\n\n\n\n\nWeek 04\n\n\nDescriptives\n\n\nApril 24, 2024\n\n\n\n\nWeek 05\n\n\nAsynchronous session: ESS Data\n\n\nMay 08, 2024\n\n\n\n\nWeek 06\n\n\nInference\n\n\nMay 15, 2024\n\n\n\n\nWeek 07\n\n\nAsynchronous session: Inference & more ESS data\n\n\nMay 22, 2024\n\n\n\n\nWeek 08\n\n\nClosing session\n\n\nMay 29, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/week-02/02-GrammarOfGraphics.html",
@@ -6844,5 +6844,124 @@
     "title": "Asynchronous session: Inference & more ESS data",
     "section": "Understandings of democracy",
     "text": "Understandings of democracy\n\nLast week, we had a descriptive look at various understandings of democracy in Austria.\nNow, we want to investigate drivers of democratic perceptions and attitudes.\nIn particular, we will replicate some of the findings from Kokkonen, A., & Linde, J. (2023). A nativist divide? Anti‐immigration attitudes and diffuse support for democracy in Western Europe. European Journal of Political Research, 62(3), 977-988. and Kokkonen, A., & Linde, J. (2023). Nativist attitudes and opportunistic support for democracy. West European Politics, 46(1), 49-72.\n\nYou can use Google Scholar to find these articles and then get access the via the University library.\nSpecifically, the supplemental material is interesting to us as it describes the (construction of the) variables in more detail.\n\nTheir main point is that citizens with a nativist attitude differ in their perception of democracy and their democratic attitudes. In short, according to the authors, nativists are citizens who are strongly concerned about immigration (for more information on the concept of nativism, have a look at their articles!).\nWe start with Kokkonen, A., & Linde, J. (2023). A nativist divide? Anti‐immigration attitudes and diffuse support for democracy in Western Europe. European Journal of Political Research, 62(3), 977-988.. You can try to replicate Kokkonen, A., & Linde, J. (2023). Nativist attitudes and opportunistic support for democracy. West European Politics, 46(1), 49-72. as well. The data and variables are quite similiar!"
+  },
+  {
+    "objectID": "syllabus.html#final-project",
+    "href": "syllabus.html#final-project",
+    "title": "Syllabus: Applied Methods of Social Sciences",
+    "section": "Final project",
+    "text": "Final project\nIn a nutshell: Ask a question you’re curious about, collect relevant data and visualize them with regard to your question.\nInstead of a typical term paper, the project for this class will consist of analysis on a dataset of your own choosing (OPTION A) or you can conduct a more guided data analysis (OPTION B). Again, in this final assignment, you need to demonstrate you understanding of the concepts/code covered during the semester. In short, project should include the following:\n\nData import\nTidy and transform the data\nAnswering the research question with descriptives (this includes visualizations) and investigate the question using linear or logistic regression\nPresent your analysis in a quarto document.\n\n\nIn more detail:\nThere are two options. In any case, I recommend to discuss your approach and ideas either via e-mail or during office hours!\nOPTION A: Your own project\nYou can choose the data based on your own interest. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this seminar (and beyond, if you like) and apply them in a meaningful way.\nThe goal is not to do an exhaustive data analysis/visualization, i.e., do not calculate every statistic, visualize the same data with lots of different graphs, but rather let me know that you are proficient at asking a meaningful question and providing answers to this question; that you are proficient in using R, and that you work in a reproducible way.\nTherefore, the project is very open ended. There is no limit on what tools or packages you may use but sticking to packages we learned in class is recommended. But also keep in mind that you do not need to visualize all of the data at once. For example, a single high-quality visualization will receive a much higher grade than a large number of poor-quality visualizations.\nThe scope of your project should be comparable to OPTION B. Again, please discuss your idea and outline with me via e-mail or during office hours.\nOPTION B: European Social Survey & (Perception of) democracy\nAlternatively, you can work on a guided project. Some of the main steps in the workflow are roughly defined (i.e., research question and data), still you need to make your own decisions when it comes to presenting and analyzing the data. Here, we would be interested in the influence of a perceived democratic deficit and satisfaction with democracy. We can investigate this using data from the European Social Survey (ESS) - Round 10.\nOur expectation would be that a higher perceived democratic deficit is associated with a lower satisfaction with democracy. In addition, we can think of various factors with the potential to affect both the perceived democratic deficit and satisfaction with democracy (possible omitted variable bias!): efficacy that is the belief that one can participate in politics and/or has the possibility to influence politics. Further, trust in political actors and/or institutions might confound the relationship we are interested in. Please inspect the documentation (e.g., source questionnaire) of ESS round 10, this is necessary to identify the relevant variables.\nHence, this project would include the following:\nImporting data\nYou can get the data using the ESS Datafile Builder. Select all countries from round 10 (also 10SC - self-completion) and download all variables.\nData transformation\n\nOur first goal is to create a variable called “democratic_deficit” that is the difference between the perceived state of democracy and the respondents’ opinion how democracy should look like. To do so, we need to determine first what variables we want to use to measure respondents’ view of democracy. In this project, we want to focus on the statements that national elections are free and fair, that the media are free to criticise the government, that the rights of minority groups are protected, and the courts treat everyone the same. Let’s create our variables regarding the perceived state of democracy and the respondents’ opinion how democracy should look like by calculating the mean to the aforementioned statements:\n\nIdentify the relevant variables\nDrop values from the data set that indicate that respondent’s “Don’t know” or “Refuse” to answer the question.\nCalculate the means. Hint: Think about how to deal with missing values. Now you can create the democratic deficit variable.\n\nFurther, identify the possible confounding variables as well as the dependent variable.\n\nAgain, keep in mind to drop “Don’t know” or “Refuse” from the dataset.\nThen, for the variables related to efficacy, we are\n\n1) interested in a battery of items asking respondents if they have done a list of things that might improve things in their country or prevent things from going wrong. The first item in this battery asks respondents’ if they have contacted a politician, government or local government official in the last 12 months. These eight questions are binary: Respondents can answer “Yes” or “no”. Based on these questions, calculate an additive index ranging from 0 to 8. A respondent should get the value 8 if he or she answered each question with “Yes”.\n2) interested in the question how much respondents would you say that the political system in their country allows people like themselves to have an influence on politics.\n\nFor trust in political actors and/or institutions, we want to to focus on the trust in their countries parliament (feel free to choose another actor/institution or calculate an average for multiple actors/institutions).\nFinally, for the dependent variable, select the question that asks respondents “And on the whole, how satisfied are you with the way democracy works in [country]?\n\nNow, just select the relevant variables (drop the other variables) and filter the dataset so that you only keep respondents from Austria, Germany, and Switzerland.\n\nDescriptives & Visualization\n\nCreate a table with summary statistics for all remaining variables (minimum, maximum, mean, standard deviation). Do this separately for respondents from Austria, Germany, and Switzerland.\nProduce two plots differentiating by country: 1) show the distribution of the dependent variable, and 2) show the distribution of the main independent variable, i.e., the perceived democratic deficit.\nDescribe the plots. Can you detect any descriptive evidence for our research question?\nProduce a plot that highlights the relationship between the dependent and main independent variable.\n\nInference & Visualization\n\nLet’s start by focusing on the case of Austria only. Run a bivariate regression with satisfaction with democracy as dependent variable and the perceived democratic deficit as independent variable. Is a OLS regression or a logit regression the better approach? Report the results in a table. Interpret the regression coefficient (statistical significance, direction, and effect size).\nLet’s add the possible confounding variables to the regression model. Estimate separate, bivariate models for each confounding variable. Finally estimate a multivariate regression that includes all confounding variables at once. Report the results of these regression models in one table. Interpret the coefficients.\nBased on the multivariate regression, create a coefficient plot.\nFinally, let’s have a look at all three countries. However, include the country variable as a factor variable in the regression. Report the results in a table. Interpret the country coefficients.\n\nReporting with a Quarto document\nPut it all together in one quarto document:\n\nGive it a suitable title, include your name, and the date of submission.\nShow both the code as well as the output of the code in the document. However, hide messages and warnings.\nStructure the document with headings.\nRemember our session on data visualization. Your graphs and figures should have informative captions, axes labels, a theme, etc.\n\n\n\nGrading of the project will take into account the following:\n\nCorrectness - Are data import, transformation, and statistical procedures carried out and explained correctly?\nWriting - What is the quality of the statistical/descriptive presentation, writing, and explanations? You should write a few sentences for each task, explaining your steps and thinking. Give an interpretation if asked for.\nReproducibility: Can the quarto document and possibly other scripts for data pre-processing be executed on another device without error? Annotate your code extensively (Describe the steps you are doing).\nBONUS: Creativity and Critical Thought - Is the project carefully thought out? How well is the project documented? Does it appear that time and effort went into the planning and implementation of the project? (More BONUS points possible for Option A)\n\nA general breakdown of scoring is as follows:\n\n1,0: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.\n1,3 - 2,0: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.\n2,3 - 3,0: Good/Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.\n3,3 - 4,0: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.\nFail: Student is not making a sufficient effort.\n\n\n\nSubmission\nIn case of any questions or problems, please get in touch with me as early as possible. Late submission will result in grade deductions.\n\nSubmission via OLAT.\nDeadline: 24.07.2024 23:59"
+  },
+  {
+    "objectID": "slides/week-07/closing.html#plan-for-today",
+    "href": "slides/week-07/closing.html#plan-for-today",
+    "title": "Closing Session",
+    "section": "Plan for today",
+    "text": "Plan for today\n\nRecap - Content\nFinal project\nOutlook\nRecap - (Your) Feedback"
+  },
+  {
+    "objectID": "slides/week-07/closing.html#recap---content",
+    "href": "slides/week-07/closing.html#recap---content",
+    "title": "Closing Session",
+    "section": "Recap - Content",
+    "text": "Recap - Content\n\nAND: Reproducibility"
+  },
+  {
+    "objectID": "slides/week-07/closing.html#data-project",
+    "href": "slides/week-07/closing.html#data-project",
+    "title": "Closing Session",
+    "section": "Data project",
+    "text": "Data project\nIn a nutshell: Ask a question you’re curious about, collect relevant data and visualize them with regard to your question."
+  },
+  {
+    "objectID": "slides/week-07/closing.html#data-project-1",
+    "href": "slides/week-07/closing.html#data-project-1",
+    "title": "Closing Session",
+    "section": "Data project",
+    "text": "Data project\n\nData import\nTidy and transform the data\nAnswering the research question with descriptives (this includes visualizations) and investigate the question using linear or logistic regression\nPresent your analysis in a quarto document."
+  },
+  {
+    "objectID": "slides/week-07/closing.html#data-project-2",
+    "href": "slides/week-07/closing.html#data-project-2",
+    "title": "Closing Session",
+    "section": "Data project",
+    "text": "Data project\nLet’s have a look at the syllabus for details.\nAND: I recommend discussing your project with me individually at least once via e-mail or office hours!"
+  },
+  {
+    "objectID": "slides/week-07/closing.html#outlook-what-now",
+    "href": "slides/week-07/closing.html#outlook-what-now",
+    "title": "Closing Session",
+    "section": "Outlook: What now?",
+    "text": "Outlook: What now?\nPractice and deep dive:\n\nAccess to Datacamp!\n\nApply, apply, apply!\n\nSeminars, term papers, thesis\nCorrelAid - Data 4 Good"
+  },
+  {
+    "objectID": "slides/week-07/closing.html#recap---feedback",
+    "href": "slides/week-07/closing.html#recap---feedback",
+    "title": "Closing Session",
+    "section": "Recap - Feedback",
+    "text": "Recap - Feedback\n\nOrganizational\nStructure\nParticipation\nLearning"
+  },
+  {
+    "objectID": "slides/week-07/closing.html#your-feedback",
+    "href": "slides/week-07/closing.html#your-feedback",
+    "title": "Closing Session",
+    "section": "Your Feedback",
+    "text": "Your Feedback\n\n“Open round”\nPlease take some time to fill out the survey by the institute. This is both valuable for me professionally but also for further iterations of this seminar!\n\n\n\nStatistics | Summer Semester 2024 | University of Innsbruck"
+  },
+  {
+    "objectID": "slides/week-08/closing.html#plan-for-today",
+    "href": "slides/week-08/closing.html#plan-for-today",
+    "title": "Closing Session",
+    "section": "Plan for today",
+    "text": "Plan for today\n\nRecap - Content\nFinal project\nOutlook\nRecap - (Your) Feedback"
+  },
+  {
+    "objectID": "slides/week-08/closing.html#recap---content",
+    "href": "slides/week-08/closing.html#recap---content",
+    "title": "Closing Session",
+    "section": "Recap - Content",
+    "text": "Recap - Content\n\nAND: Reproducibility"
+  },
+  {
+    "objectID": "slides/week-08/closing.html#data-project",
+    "href": "slides/week-08/closing.html#data-project",
+    "title": "Closing Session",
+    "section": "Data project",
+    "text": "Data project\nIn a nutshell: Ask a question you’re curious about, collect relevant data and visualize them with regard to your question."
+  },
+  {
+    "objectID": "slides/week-08/closing.html#data-project-1",
+    "href": "slides/week-08/closing.html#data-project-1",
+    "title": "Closing Session",
+    "section": "Data project",
+    "text": "Data project\n\nData import\nTidy and transform the data\nAnswering the research question with descriptives (this includes visualizations) and investigate the question using linear or logistic regression\nPresent your analysis in a quarto document."
+  },
+  {
+    "objectID": "slides/week-08/closing.html#data-project-2",
+    "href": "slides/week-08/closing.html#data-project-2",
+    "title": "Closing Session",
+    "section": "Data project",
+    "text": "Data project\nLet’s have a look at the syllabus for details.\nAND: I recommend discussing your project with me individually at least once via e-mail or office hours!"
+  },
+  {
+    "objectID": "slides/week-08/closing.html#outlook-what-now",
+    "href": "slides/week-08/closing.html#outlook-what-now",
+    "title": "Closing Session",
+    "section": "Outlook: What now?",
+    "text": "Outlook: What now?\nPractice and deep dive:\n\nAccess to Datacamp!\n\nApply, apply, apply!\n\nSeminars, term papers, thesis\nCorrelAid - Data 4 Good"
+  },
+  {
+    "objectID": "slides/week-08/closing.html#recap---feedback",
+    "href": "slides/week-08/closing.html#recap---feedback",
+    "title": "Closing Session",
+    "section": "Recap - Feedback",
+    "text": "Recap - Feedback\n\nOrganizational\nStructure\nParticipation\nLearning"
+  },
+  {
+    "objectID": "slides/week-08/closing.html#your-feedback",
+    "href": "slides/week-08/closing.html#your-feedback",
+    "title": "Closing Session",
+    "section": "Your Feedback",
+    "text": "Your Feedback\n\n“Open round”\nPlease take some time to fill out the survey by the institute. This is both valuable for me professionally but also for further iterations of this seminar!\n\n\n\nStatistics | Summer Semester 2024 | University of Innsbruck"
   }
 ]
